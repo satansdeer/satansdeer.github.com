@@ -6,6 +6,7 @@ categories: systems thinking, arbitrage
 ---
 Everything is a system.
 Big systems consist of smaller ones.
+
 Some systems have its own economy.
 Similar goods can have different price in different economical systems.
 Every imbalance of this kind is an arbitrage opportunity.
