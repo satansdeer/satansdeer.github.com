@@ -78,7 +78,6 @@ $on-laptop:        800px;
   width: calc(100% - 225px);
   padding-left: 15px;
   vertical-align: top;
-  font-size: 18px;
 }
 
 .levels_list {
@@ -106,4 +105,27 @@ input[type="submit"] {
 
 section {
   margin-bottom: 30px;
+}
+
+section:last-child {
+  margin-bottom: 0; 
+}
+
+.shadow_overlay {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 20, 20, 0.3);
+  display: none;
+}
+
+.popup {
+  background: $background-color;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  padding: 30px;
 }
