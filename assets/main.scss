@@ -81,12 +81,29 @@ $on-laptop:        800px;
   font-size: 18px;
 }
 
-.avatar-container {
-  margin-bottom: 15px;
-}
-
 .levels_list {
   li {
     margin-bottom: 15px 
   }
+}
+
+input[type="text"] {
+  width: 300px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  height: 30px;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  background-color: #2568ba;
+  padding: 8px 15px;
+  color: #fff;
+  font-size: 18px;
+  font-family: $base-font-family;
+  border: none;
+}
+
+section {
+  margin-bottom: 30px;
 }
