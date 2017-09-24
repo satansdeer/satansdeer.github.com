@@ -18,6 +18,9 @@ plugins:
   - jekyll-paginate-v2
   - jekyll-sitemap
 
+sass:
+  sass_dir: _sass
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

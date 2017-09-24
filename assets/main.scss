@@ -56,3 +56,37 @@ $on-laptop:        800px;
     width: 100%;
   }
 }
+
+.avatar-image_wrapper {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%)
+  }
+}
+
+.avatar-text {
+  display: inline-block;
+  width: calc(100% - 225px);
+  padding-left: 15px;
+  vertical-align: top;
+  font-size: 18px;
+}
+
+.avatar-container {
+  margin-bottom: 15px;
+}
+
+.levels_list {
+  li {
+    margin-bottom: 15px 
+  }
+}
