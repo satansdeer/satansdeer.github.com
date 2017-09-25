@@ -53,12 +53,16 @@ html {
   box-sizing: inherit;
 }
 
+img {
+  border-radius: 6px;
+}
+
 // Import partials from the `whiteglass` theme.
 @import "whiteglass";
 @import "avatar";
 @import "post";
-@import "shadow_overlay";
 @import "popup";
+@import "shadow_overlay";
 
 .levels_list {
   li {
@@ -74,7 +78,7 @@ input[type="text"] {
   border: 1px solid #ccc;
 }
 
-input[type="submit"] {
+input[type="submit"], button {
   background: #2568ba;
   padding: 8px 15px;
   color: #fff;

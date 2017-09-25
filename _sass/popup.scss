@@ -1,8 +1,8 @@
 .popup {
-  background: $background-color;
+  background-color: $background-color;
+  left: 50%;
+  padding: 30px;
   position: absolute;
   top: 40%;
-  left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  padding: 30px;
 }
