@@ -9,14 +9,21 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Build settings
-markdown: kramdown
 theme: jekyll-whiteglass
 plugins:
   - jekyll-feed
   - jekyll-archives
   - jekyll-paginate-v2
   - jekyll-sitemap
+
+# Build settings
+markdown: kramdown
+
+# Markdown Processors
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
 
 sass:
   sass_dir: _sass

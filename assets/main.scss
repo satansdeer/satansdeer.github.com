@@ -55,6 +55,7 @@ html {
 
 img {
   border-radius: 6px;
+  width: 100%;
 }
 
 // Import partials from the `whiteglass` theme.
@@ -63,6 +64,7 @@ img {
 @import "post";
 @import "popup";
 @import "shadow_overlay";
+@import "jekyll_github";
 
 .levels_list {
   li {

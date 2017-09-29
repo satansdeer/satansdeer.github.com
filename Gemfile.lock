@@ -63,6 +63,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-paginate-v2
   jekyll-whiteglass
+  rouge
   tzinfo-data
 
 BUNDLED WITH
