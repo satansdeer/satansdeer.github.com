@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "How To Get Schwifty Fast"
+date:   2017-09-22 22:58:45 +0300
+categories: jekyll update
+image: test_rick_and_morty_background.jpg
+---
+
+That's not a post, it's a draft for a pdf.
+
+![cover imave](/assets/images/test_rick_and_morty_background.jpg)
+
+If you want to succeed as a web developer and actually as a programmer in general – it's very important to get really good in skills I'm listing here. 
+
+## #1 Communication
+In my opinion this one is the most important.
+
+## #2 Empathy
+
+## #3 Automated Testing
+
+## #4 Git
+
