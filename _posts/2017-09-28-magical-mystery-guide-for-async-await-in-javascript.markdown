@@ -2,7 +2,7 @@
 layout: post
 title:  "Magical Mystery Guide For Async/Await In Javascript"
 date:   2017-09-22 22:58:45 +0300
-categories: jekyll update
+categories: javascript
 image: thumb-image.jpg
 ---
 
@@ -127,3 +127,6 @@ When the __async function__ will by executed, it will pause just where the `awai
 
 And also we've learned that using `async/await` you can simplify reading of an asynchronous code by giving a more synchronous flow to it.
 
+Make sure to read the second part, where you'll see how async/await works under the hood, get more usage examples and have a quick glance on the future of this new syntax.
+
+<button>Continue to the second part →</button>

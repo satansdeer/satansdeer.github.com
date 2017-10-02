@@ -6,10 +6,6 @@ categories: jekyll update
 image: top_10_skills_thumb.jpg
 ---
 
-That's not a post, it's a draft for a pdf.
-
-![cover imave](/assets/images/top_10_skills_thumb.jpg)
-
 When you see the term __effective developer__, you probably imagine a person who does a lot of stuff. If yes, then well, you are wrong.
 
 To be __effective__ doesn't mean to do more things, it means to do __the right things__.
@@ -20,6 +16,8 @@ Let's start with the most obvious one.
 
 ## Communication
 
+![communication](/assets/images/communication_1.png)
+
 This one is an absolute golden nugget. You can't imagine, how many problems you avoid if you are a good communicator. And it doesn't only mean that you should know how to express your thoughts clearly or how to be a good listener.
 
 The most important goal of communication is to ensure that everyone is on the same page and has as complete view on a given problem as possible.
@@ -28,7 +26,7 @@ __Example #1:__
 
 Meet Bob and Margaret. Bob is a developer and Margaret is a project manager. They work on a todo list tool _Taskey Doey 3000_
 
-Margaret creates a task "Add a functionality to __copy__ a todo item to a different list". She is completely sure that this new functionality will allow to __share__ items between lists and if you update shared task in one list – it will be updated in all the lists it's shared to.
+Margaret creates a task “Add a functionality to copy a todo item to a different list”. She expects this new functionality to allow to share items between lists. So if you update shared task in one list – it will be updated in all the lists it’s shared to.
 
 Bob starts to work on that task. For him it's obvious that Margaret wants to __copy__ tasks between lists. So he adds the functionality that creates new instances of tasks, that are not linked to each other. So if you update one, it's copies remain untouched.
 
@@ -61,23 +59,35 @@ Now they have to spend extra time to rewrite it and make uniform.
 
 __Conclusion:__
 
-All those examples wouldn't take place if any of the parties would start a discussion and clarify everything beforehand.
+All those examples would end up much better if any of the parties would start a discussion and clarify everything beforehand.
+
+__Actionable items:__
+
+* Before you start working on a task, contact the person who created it. Make sure that you both understand it identically. Don't make assumptions. Better spend a few minutes on a discussion than hours on fixing an implementation later.
+
+* Gather as much information about task as possible. If you work with a designer – make sure you understand the motivation behind every element. Don't work mindlessly.
+
+* Don't hesitate to ask your colleagues if they worked on similar tasks. One simple question can save you hours of unnecessary work.
 
 ## Empathy
 
 __Let's start with an example:__
 
-Meet Alex. He's a new developer in a company named "CranberryPi". On his first weekly meeting he makes a few proposals on how to improve the codebase. But those proposals contain mistakes in them. Another developer, Peter, corrects him, which is good, but does it in unnecesarily berating way.
+![empathy](/assets/images/empathy_1.png)
 
-Now Alex feels bad about himself and becomes hesitant about bringing up his opinions.
+Meet Alex. He's a new developer in a company named "CranberryPi". On his first weekly meeting he makes a few proposals on how to improve the codebase. But those proposals contain mistakes in them and another developer, Peter, corrects him. Usually it is the right thing to do, but Peter does it in unnecesarily berating way.
 
-A few weeks later he's working on a login form of company's website. He makes some mistakes and adds security flaws to the system. But as he now feels insecure, he avoids discussion with teammates and those mistakes remain unnoticed.
+Now Alex feels bad about himself and becomes hesitant about bringing up his opinions. Even John, who was only listening is now less likely to tell his opinions.
+
+A few weeks later Alex is working on a login form of company's website. He makes some mistakes and adds security flaws to the system. But as he now feels insecure, he avoids discussion with teammates and those mistakes remain unnoticed.
 
 Atfer a few days the security flaw is on production. Soon all the user accounts get stolen, customers now don't have trust for the company. And "CranberryPi" goes bancrupt.
 
 __Conclusion:__
 
-Don’t be like Peter. In a given story it's clear that he didn’t have enough __empathy__ to think about what Alex would feel because of him.
+Don’t be like Peter. In a given story it is clear that he didn’t have enough __empathy__ to think about what Alex would feel because of him.
+
+What Alex did is also unacceptable, but having guys like Peter in a team actually increases chances of team members behaving like Alex.
 
 For a team to be effective it’s crucial that all the teammates have trust and feel psychological safety.
 
@@ -87,15 +97,33 @@ Actually it can get even worse. When not feeling psychological security people m
 
 And even one person with this kind of toxic behavior is enough for a team to loose the feeling of psychological security.
 
+__Actionable items:__
+
+* Correcting anyone is fine until it's done in nice and nonoffensive way. Give yourself a few moments to calm down before making spiteful commentary to someones words.
+
+* Put yourself in shoes of your opponent. How would you feel in his place? Think about the concequences of what you are about to say.
+
+* If you have people like Peter in your team make it clear for them that this behavior is unacceptable. Even if Peter is a good developer he may be doing more harm than good by destroing the atmosphere in the team.
+
 ## Planning
 
-It's a crucial skill to write high quality code. If you start working on a task and don't create a plan first, you are more likely to miss some requirements and will have to 
+This is a crucial skill to write high quality code. If you think that by jumping head first in a task the minute you get it saves you any time, then you are wrong.
 
-You need to plan to not have a lot of hacks in your code.
+__Example:__
 
-You need to plan your commit, so your commits will be meaningful and logical chuncs of code.
+Maria is a freelance developer. Recently she got her first project. She wants to impress her employer. They had a video conference and discussed the projects in all the details. What could possibly go wrong?
 
-You need to plan before you start the manual testing of your functionality.
+__Conclusion:__
+
+This was an example of a single person woring without a plan, imaging what would happen to a team.
+
+If you start working on a task and don't create a plan first, you will be more likely to miss requirements, introduce bugs and will loose focus easier. 
+
+__Actionable items:__
+
+* You need to plan your commit, so your commits will be meaningful and logical chuncs of code.
+
+* You need to plan before you start the manual testing of your functionality.
 
 ## Presentation
 
