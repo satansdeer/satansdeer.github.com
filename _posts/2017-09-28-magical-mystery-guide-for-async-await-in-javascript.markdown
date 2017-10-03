@@ -40,7 +40,7 @@ getWorld(function(err, world){
 });
 ```
 
-Doesn't look very good, right? A lot of nesting, also you have to handle errors separately in every callback and it's kinda error prone. You might forget to add a return statement after you've handled an error, or do other silly mistake.
+Doesn't look very good, right? A lot of nesting, also you have to handle errors separately in every callback and it's kinda error prone. You might forget to add a return statement after you've handled an error, or do another silly mistake.
 
 Can we improve this? 
 
@@ -82,7 +82,7 @@ The asterisk after the `function` statement makes it create a __generator functi
 
 And `co` is a nice function that can resolve a __generator function__ and return a promise. 
 
-So in this example, the `getWorld()` returns a promise. Then `yield` pauses further execution of our star signed function and passes the result of `getWorld()` to the `co` function. The `co` function takes the promise, resolves it and passes the value back to the generatior function where it is being assigned to the `world` variable.
+So in this example, the `getWorld()` returns a promise. Then `yield` pauses further execution of our star signed function and passes the result of `getWorld()` to the `co` function. The `co` function takes the promise, resolves it and passes the value back to the generator function where it is being assigned to the `world` variable.
 
 Then the same is repeated for other variables.
 

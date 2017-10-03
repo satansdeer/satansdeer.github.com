@@ -26,11 +26,11 @@ __Example #1:__
 
 Meet Bob and Margaret. Bob is a developer and Margaret is a project manager. They work on a todo list tool _Taskey Doey 3000_
 
-Margaret creates a task “Add a functionality to copy a todo item to a different list”. She expects this new functionality to allow to share items between lists. So if you update shared task in one list – it will be updated in all the lists it’s shared to.
+Margaret creates a task “Add a functionality to __copy__ a todo item to a different list”. She expects this new functionality to allow to __share__ items between lists. So if you update shared task in one list – it will be updated in all the lists it’s shared to.
 
 Bob starts to work on that task. For him it's obvious that Margaret wants to __copy__ tasks between lists. So he adds the functionality that creates new instances of tasks, that are not linked to each other. So if you update one, it's copies remain untouched.
 
-Afwer a few days of dedicated work Bob presents the new functionality. Margaret sees that it's not what she expected, and tells it to Bob. Margaget thinks Bob is an idiot. Bob also questions Margaret's cognitive abilities. 
+After a few days of dedicated work Bob presents the new functionality. Margaret sees that it's not what she expected, and tells it to Bob. Margaget thinks Bob is an idiot. Bob also questions Margaret's cognitive abilities. 
 Later Bob fixes the problem, but the deadline is broken and everyone is unhappy.
 
 This could be prevented if Bob and Margaret would discuss the task before Bob would start to work on it.
@@ -39,7 +39,7 @@ __Example #2:__
 
 Meet designer Paul, and developer Marco. They work on a website for _CheapBargainMart.com_ online store.
 
-Paul created design for exit intent popup. It would capture visitors that didn’t buy anything from the store. He didn’t know that they already had a very similar popup implemented earlier and he could reuse parts of it.
+Paul created a design for exit intent popup. It would capture visitors that didn’t buy anything from the store. He didn’t know that they already had a very similar popup implemented earlier and he could reuse parts of it.
 
 Marco knew about that other popup, but __assumed__ that Paul created the new design from scratch for a reason.
 
@@ -99,13 +99,15 @@ And even one person with this kind of toxic behavior is enough for a team to loo
 
 __Actionable items:__
 
-* Correcting anyone is fine until it's done in nice and nonoffensive way. Give yourself a few moments to calm down before making spiteful commentary to someones words.
+* Correcting anyone is fine as long as it's done in nice and nonoffensive way. Give yourself a few moments to calm down before making spiteful commentary to someones words.
 
-* Put yourself in shoes of your opponent. How would you feel in his place? Think about the concequences of what you are about to say.
+* Put yourself in shoes of your opponent. How would you feel in his place? Think about the consequences of what you are about to say.
 
-* If you have people like Peter in your team make it clear for them that this behavior is unacceptable. Even if Peter is a good developer he may be doing more harm than good by destroing the atmosphere in the team.
+* If you have people like Peter in your team make it clear for them that this behavior is unacceptable. Even if Peter is a good developer he may be doing more harm than good by destroying the atmosphere in the team.
 
 ## Planning
+
+![planning](/assets/images/planning_1.png)
 
 This is a crucial skill to write high quality code. If you think that by jumping head first in a task the minute you get it saves you any time, then you are wrong.
 
@@ -117,7 +119,7 @@ __Conclusion:__
 
 This was an example of a single person woring without a plan, imaging what would happen to a team.
 
-If you start working on a task and don't create a plan first, you will be more likely to miss requirements, introduce bugs and will loose focus easier. 
+If you start working on a task and don't create a plan first, you will be more likely to miss requirements, introduce bugs and will lose focus easier. 
 
 __Actionable items:__
 
