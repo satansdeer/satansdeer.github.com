@@ -8,8 +8,6 @@ image: thumb-image.jpg
 
 Hey there! Today we are going to look at __async__ and __await__ keywords that allow you to pause functions execution, and therefore let you write __asynchronous__ code that reads like __synchronous__.
 
-![cover imave](/assets/images/thumb-image.jpg)
-
 But first let's go through other ways of dealing with asynchronicity in javascript. You know, just to make you __appreciate__ how async/await allows you to write more readable asynchronous code.
 
 ## First We Had Callbacks
