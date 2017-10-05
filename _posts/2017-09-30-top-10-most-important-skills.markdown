@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "7 Skills Of An Effective Web Developer"
+title:  "7 Skills Of An Effective Developer"
 date:   2017-09-22 22:58:45 +0300
 categories: jekyll update
 image: top_10_skills_thumb.jpg
@@ -13,6 +13,8 @@ To be __effective__ doesn't mean to do more things, it means to do __the right t
 In todays world most of the great software is created by teams, not individuals. And to be an effective developer you need to master skills that will make you a good team player.
 
 Let's start with the most obvious one.
+
+_All stories, names, characters, and incidents portrayed in this article are fictitious. Any resemblance to actual persons, living or dead, or actual events is coincidental._
 
 ## Communication
 
@@ -30,7 +32,7 @@ Margaret creates a task “Add a functionality to __copy__ a todo item to a diff
 
 Bob starts to work on that task. For him it's obvious that Margaret wants to __copy__ tasks between lists. So he adds the functionality that creates new instances of tasks, that are not linked to each other. So if you update one, it's copies remain untouched.
 
-After a few days of dedicated work Bob presents the new functionality. Margaret sees that it's not what she expected, and tells it to Bob. Margaget thinks Bob is an idiot. Bob also questions Margaret's cognitive abilities. 
+After a few days of dedicated work Bob presents the new functionality. Margaret sees that it's not what she expected, and tells it to Bob. Margaget thinks Bob is an idiot. Bob also questions Margaret's cognitive abilities.
 Later Bob fixes the problem, but the deadline is broken and everyone is unhappy.
 
 This could be prevented if Bob and Margaret would discuss the task before Bob would start to work on it.
@@ -47,7 +49,7 @@ As a result both guys spent more time on their tasks, and not they have a duplic
 
 __Example #3:__
 
-Here are two developers, Kathy and Jen. They work on a dating app "Datingtron". It matches people using their names and starsigns.
+Here are two developers, Kathy and Jen. They work on a dating app _Datingtron_. It matches people using their names and starsigns.
 
 Kathy is new to the project, but she is really devoted. She get's a task to implement an alternative matching algorithm. What she didn't know, was that they already had a special DSL for matching algorithms.
 
@@ -109,67 +111,164 @@ __Actionable items:__
 
 ![planning](/assets/images/planning_1.png)
 
-This is a crucial skill to write high quality code. If you think that by jumping head first in a task the minute you get it saves you any time, then you are wrong.
+This is a crucial skill to write high quality code. If you think that by jumping head first in a task saves you time, then you are wrong.
 
 __Example:__
 
-Maria is a freelance developer. Recently she got her first project. She wants to impress her employer. They had a video conference and discussed the projects in all the details. What could possibly go wrong?
+Maria is a freelance developer. And she just got her first project.
+
+She had a call with her customer and they discussed the project in every detail. The tasks seems clear. Maria gives some estimation to a customer and starts coding.
+
+Oh no, Maria, you forgot to plan your work!
+
+At first everything seems to be fine. Maria implements specification feature by feature. It looks like she's going to finish way before the deadline.
+
+But wait, a few days later something wrong starts to happen. Maria remembers that she forgot to add some function to one of the first modules. She gets back to that module and adds the function. But now she thinks that actually it's better to rewrite the module. It's fine, there is still plenty of time.
+
+Then something similar happens to another place. Maria begins to lose her focus. She now jumps back and forth between modules. She updates some code, then she has to update specs. Do they cover everything that's needed? Oh that's already too many things to grasp.
+
+In the meantime she tests the application manually. Some functionality is broken, but wait all the specs were green. Ok, time to get back to code and fix the issue. But the error was so cryptic. How to find where did it happen?
+
+Maria wants to use `git bisect` to find the exact commit where that error was introduced. But she was doing commits randomly and almost all of them have the application in broken state.
+
+The deadline is tomorrow, so Maria decides to work all night.
+
+Finally she manages to complete the task. All the functionality works, specs are passing and the customer is happy.
+But did it really have to be so stressful?
 
 __Conclusion:__
 
-This was an example of a single person woring without a plan, imaging what would happen to a team.
+It was a single person working without a plan, imagine what would happen to a team.
 
-If you start working on a task and don't create a plan first, you will be more likely to miss requirements, introduce bugs and will lose focus easier. 
+If you start working on a task and don't create a plan first, you will be more likely to miss requirements, introduce bugs and will lose focus easier.
 
 __Actionable items:__
 
-* You need to plan your commit, so your commits will be meaningful and logical chuncs of code.
+* Plan your work. If you have a task in progress and don't have a plan – stop and make it now. Yes it's that important.
 
-* You need to plan before you start the manual testing of your functionality.
+* Plan your commits as well. If you don't use any VCS or don't even know what commit is – well that's first thing to fix.
 
 ## Presentation
 
-When working in a team you'll have to not only write code and develop functionality. You'll also have to share knowledge.
+If you lack the presentation skills (even though you are a good programmer) you can end up wasting you time and time of your colleagues. Wasting time is not effective.
 
-It can be anything: 
+__Example:__
 
-* It can be a statistical research of current codebase.
-* It can be a description of some coding convention you want your team to adopt.
-* It can be a pitch to use some library or a framework.
-* It can be a showcase of some new functionality you've implemented for a project.
+Michael is a super intelligent guy. He has almost super-human abilities in understanding how stuff works. He can create very complex things as well.
 
-It’s very important to make a proper __presentation__ of those things, so they would pe easy to perceive and digest. And it will make them get the appreciation they deserve.
+One day he creates an efficient but very sophisticated script to bundle assets for an application his team is working on.
 
-## Writing
+Now it's time to present how the thing works and how to use it.
 
-Reading code is a lot harder than writing it.
+Everyone is doing their best to stay focused, but man, is Michael's voice not helping. He mumbles everything monotonously. The presentation doesn't have clear structure and a big part of the audience is starting to lose context. What's with the other part? They are sleeping already.
 
-Probably you already have pretty complex setup involving a variety of different technology.
+Soon the presentation was finished but no one in the team understood how that script works.
 
-You need a good documentation for your code and for the whole technological stack used in your project.
+Now the time is lost, everyone is tired and no one got anything usefull.
 
-This will make onboarding of new developers a much more pleasant experience.
+People will now have to figure out how the script works on their own or ask Michael for help.
 
-But developers are already good with logic and structuring information, so writing good documentation should be easy.
+__Conclusion:__
 
-Wrong. It's a separate skill that requires you to put yourself in place of a person that knows nothing about your code or setup.
+When working in a team you'll not only have to write code and develop functionality. You'll also have to share the knowledge. Make sure to have good __presentation__ skills to do it effectively.
+
+__Actionable points:__
+
+* Announce the structure of presentation in the beginning. This will provide some mental wireframe for your listeners to understand the subject easier.
+* Have a good structure. It will make it easier to follow your presentation.
+* Learn how to use your voice. How to use rhythm and changes in tone to keep the audience engaged.
+
+## Documentation
+
+A typical project structure usually gets complex very fast. Not only the code itself, but the infrastructure around the project also tends to become more complicated over time.
+
+Without proper documentation you are guranteed to get lost in that digital jungle.
+
+__The story of Leo's onboarding:__
+
+_CoderSoft_ is a market leader in AI and Text Editors development. They created an offensively smart IDE that needs a programmer only to type in settings and then it starts to work on it's own.
+
+This was a very successful year for _CoderSoft_ and they hired a bunch of new developers.
+
+Leo is an AI specialist. He's very proud to join _CoderSoft_ and he's eager to start working and providing value to the company.
+
+His first day he opens the documentation and starts wandering around, trying to understand how to build the project locally.
+
+The documentation is very messy, by the most part it describes project structure. Some parts contain instructions for troubleshooting if the project crashed. And no description on how to build the project whatsoever.
+
+Leo starts to investigate. Ok, there seem to be some dependencies, let's install them first. Oh, those turned out to be written in _CoderSoft_. Let's ask some other developer how to install them.
+
+Leo tries to find someone who would tell him where to get that dependencies, but everyone is either to busy or knows nothing about those libraries.
+
+The next day situation repeats. And the day after that nothing changed.
+
+Up until today Leo is still searching for the links to missing dependencies and didn't write a line of code for the company.
+
+__Conclusion:__
+
+Write the documentation. Keep in mind that you are writing it for a person who knows nothing about the project. Make sure to make it well structured and easy to navigate.
+
+__Actionable items:__
+
+* You should have a good onboarding guide. This will save you and newcomers a lot of time.
+* Have a centralized source of information about the project, it should be easy to navigate. Think about the Wiki structure as a reference.
+* Keep the documentation relevant. Nothing is worse than outdated and misleading documentation.
 
 ## Testing
 
-You have to master writing automated tests and be good in manual testing.
+You can't expect to have a sustainable codebase without having a good test coverage. This is just impossible.
 
-You can't aks your teammates to review your PR without making sure that everything works as it should first.
+__Example:__
 
-This might seem obvious, but you won't beleive how many times I've seen a completely opposite behavior.
+_MindBallet_ is a company specializing on educational software. They are developing a platform for interactive courses.
+Eventually the platform becomes very complicated. It is now very hard to add new functionality. Every time you make a change in one place you end up with a bug in another.
 
-Having a decent skill of writing automated tests is also oh so important.
+So Milton the lead developer decides to refactor the codebase.
 
-Current way of how software development is being taught leads to a situation where young software developers know nothing about tests until they land their first job.
+The team starts to work, but the more they refactor – the more new bugs they intoduce.
 
-Actually it's even worse, they can work on several projects and not know that automated tests are absolutely required to write software.
+After a few months of exhausting "refactoring", guys end up with completely rewritten platform. Same level of complexity, same amount of bugs. Even though the code is new it already feels like legacy.
+
+__Conclusion:__
+
+The team forgot about tests. Refactoring is impossible by definition without them. When you refactor you only change the code organization, not the functionality. So actually it wasn't refactoring at all, the team just rewrote the whole thing.
+
+__Actionable items:__
+* Start writing tests. This is a requirement when you develop new functionality. Writing tests before functionality is even a better idea.
+* Cover the module with tests before refactoring it. This is the only way you can guarantee that you won't change the functionality.
+* Red, green, refactor. Make sure you've seen tests failing. A test that never was red is very likely not testing anything.
 
 ## Git
 
-There are some other VCS's, but Git became a de facto standard in modern web development community.
+It is the most popular VCS in modern web development community. It's not just the tool to save your development progress. It's an instrumment of team collaboration. Make sure to master it.
 
-You can't be an effective deveolpers without being able to find an exact commit where some bug was introduced, or knowing how to organise work to avoid hard-to-resolve conflicts.
+Some software or programming languages let you to shoot yourself in a foot. Well, git lets you to blow of legs of the whole team. It will allow to get all the legs back, but you still better know what you are doing.
+
+__Example:__
+
+Jim and Mike worked together on the same webpage. Everything was fine until one day Jim decided to rebase their branch with `master` while Mike was still adding new functionailty.
+
+Jim successfully resolved conflicts with the base branch and did `git push -f` just after Mike pushed all the commits he did today.
+
+Mike informed the team that he finished adding new functionality. Jim saw his message, merged their branch to `master` and deleted it.
+
+Mike did `git pull --prune` and now his changes are lost locally as well.
+
+Soon Mike realized that his whole day of work was removed and now he hates Jim.
+
+__Conclusion:__
+
+You have to follow some strategy to successfully use git inside the team.
+
+__Actionable items:__
+
+* Use `git push --force-with-lease` instead of `--force`. This will save you from overriding other peoples work.
+* Use pull requests, and review the whole thing before merging it to master. It's better if multiple team members will review the pull request.
+
+## Summary
+
+Communicate with your teammates, don't hurt other peoples feelings, plan your work and document your code and infrastructure properly.
+
+Learn how to write automated tests and make sure to master git.
+
+Those skills are crucial for effective collaboration. People often overlook them focusing on programming itself.
