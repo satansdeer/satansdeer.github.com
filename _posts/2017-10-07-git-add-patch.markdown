@@ -203,3 +203,21 @@ index 9737e9f..a2baecd 100644
 ```
 
 Nice, now you can decide what to do about those stinky onions later.
+
+But what if you need to add some specific lines from the new file?
+
+## Use The Intent To Add
+
+Use `git add --intent-to-add` or `git add -N` to add specific file, but not its contents.
+
+Imagine that we had our poem written from scratch.
+
+Now `git diff` shows nothing, and if we'll use `git add -p` it will say `No changes.`
+
+No problem, let's tell git that the file exists.
+
+```bash
+➜  git_add_patch (master) ✗ git add -N poem.txt
+```
+
+Now we can use `git add -p` and then edit the hunk to remove the lines about onions.
