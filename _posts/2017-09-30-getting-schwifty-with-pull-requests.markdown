@@ -63,7 +63,7 @@ You can start commiting the changes and making stacked PRs.
 
 ## First Pull Request
 
-You'll have to use `git add --patch` to add specific changes to a commit.
+You'll have to use `git add --patch` to add specific changes to a commit. I have a [post&nbsp;about&nbsp;this&nbsp;command](/posts/git-add-patch).
 
 But if you have unstaged new files – git won't be able to add them this way. To fix it apply `git add -N` or `--intent-to-add` to a file you want to see in your commit. This will tell git to add file itself but not it contents. After that you will be able to add lines from that file easily.
 
