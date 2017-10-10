@@ -11,6 +11,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 comments: true
 
+google_analytics: UA-107863742-1
+
 theme: jekyll-whiteglass
 plugins:
   - jekyll-feed
