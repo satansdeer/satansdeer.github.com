@@ -240,6 +240,8 @@ __Actionable items:__
 
 ## Git
 
+![github](/assets/images/github_fkc.png)
+
 It is the most popular VCS in modern web development community. It's not just the tool to save your development progress. It's an instrumment of team collaboration. Make sure to master it.
 
 Some software or programming languages let you to shoot yourself in a foot. Well, git lets you to blow of legs of the whole team. It will allow to get all the legs back, but you still better know what you are doing.

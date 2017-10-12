@@ -120,7 +120,7 @@ describe('fizzbuzz', function(){
 });
 ```
 
-This spec represents classic interview question used to weed out the uncompetent programmers. No doubt you are familiar with it.
+This spec represents classic interview question used to weed out the incompetent programmers. No doubt you are familiar with it.
 
 Now start karma.
 
@@ -160,6 +160,6 @@ To keep this tutorial dead-simple I defined `fizzbuzz` globally (it will be avai
 
 It's the most dumb, simple and straightforward solution I know, but now all the tests should pass.
 
-While Karma is running, play arount with the code. Try to improve the solution. Try to implement it as a one-liner.
+While Karma is running, play around with the code. Try to improve the solution. Try to implement it as a one-liner.
 
 What's the minimum amount of characters you need to solve this task?
