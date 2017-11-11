@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Getting Schwifty With Pull Requests"
-date:   2017-09-22 22:58:45 +0300
+date:   2017-09-30 22:58:45 +0300
 categories: git
 image: test.jpg
 ---

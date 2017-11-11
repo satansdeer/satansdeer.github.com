@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Magical Mystery Guide For Async/Await In Javascript"
-date:   2017-09-22 22:58:45 +0300
+date:   2017-09-28 22:58:45 +0300
 categories: javascript
 image: thumb-image.jpg
 ---

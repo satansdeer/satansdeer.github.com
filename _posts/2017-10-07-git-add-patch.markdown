@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Add Specific Lines With Git Patch"
-date:   2017-09-22 22:58:45 +0300
+date:   2017-10-07 22:58:45 +0300
 categories: git
 image: git_patch_thumb.jpg
 ---

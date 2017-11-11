@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "7 Skills Of An Effective Developer"
-date:   2017-09-22 22:58:45 +0300
+date:   2017-09-30 22:58:45 +0300
 categories: jekyll update
 image: top_10_skills_thumb.jpg
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Basic Karma JS Tutorial"
-date:   2017-09-22 22:58:45 +0300
+date:   2017-10-08 22:58:45 +0300
 categories: js tdd
 image: karma_setup_thumb.jpg
 comments: true
