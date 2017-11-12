@@ -7,6 +7,4 @@ image: liskov_substitution_principle.jpg
 comments: true
 ---
 
-I was refactoring specs of some Rails application when I decided to mock the `ImageUploader` class of Carierwave. I wanted to be able to check for cpecific image url. __But was it a good idea?__
-
-
+In __1988__ Barbara Liskov wrote something that now stands for __L__ in __SOLID__ principles. Let's dive in and learn what is it and how does it relate to __TDD__.
