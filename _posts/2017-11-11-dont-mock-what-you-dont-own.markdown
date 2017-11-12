@@ -15,6 +15,8 @@ I know it might be tempting to mock libraries that make database or network call
 
 Test doubles are ment to help you create practical and convinient interfaces between parts of your application.
 
+![mocking](/assets/images/dont_mock_1.png)
+
 Imagine you have to create some _thing_ that you should integrate in already existing code.
 
 Using test double you can easily check if the interface of the _thing_ (that is not implemented yet) is clear and easy to use. And if not – it's cheap to throw it away and start over.
