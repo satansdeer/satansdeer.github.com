@@ -23,4 +23,4 @@ LSP can also be described as a counter-example of [Duck Test](https://en.wikiped
 
 If you have some class __Foo__ and a derived class __SubFoo__, then if you change all the notions of __Foo__ class to __SubFoo__ – the program execution shouldn't change, as __SubFoo__ dosen't change the __Foo__ class functionality, and only extends it.
 
-  
+## Let's See The Example
