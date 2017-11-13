@@ -27,7 +27,7 @@ But not only it's meaningless…
 
 ## Wait, What Perspective?
 
-I mean, TDD is not only about testing, it's also about design. Mocking external lib won't help you to create good design, because you don't have any control over it.
+I mean, __TDD is not only about testing__, it's also about design. Mocking external lib won't help you to create good design, because you don't have any control over it.
 
 The idea is to use mocks as quick and rough prototypes, to see how your _thing_ will be integrated into existing code. If you see that the interface is not very handy – you just write the mock differently, with different methods or with different method signatures.
 
@@ -40,6 +40,8 @@ Got it? Let's continue…
 ## It's Also Harmful
 
 Most obvious danger is getting false positives (or negatives, depends on perspective). In other words your test will pass where the actual thing won't work. Either because you've mocked it in a wrong way or the library you were mocking changed slightly after an upgrade.
+
+Also by mocking an external lib you are binding yourself to a specific implementation and it will be much harder to change the library in the future.
 
 Another downside is that you might end up with a lot of excessive code that doesn't bring any value. It can also make it harder to understand what is going on in your code.
 
