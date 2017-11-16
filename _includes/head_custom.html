@@ -24,13 +24,13 @@
 {% endif %}
 {% if page.image %}
   <meta content="{{ site.url }}/assets/images/{{ page.image }}" property="og:image">
+  <meta name="twitter:image:src" content="{{ site.url }}/assets/images/{{ page.image }}">
 {% else %}
   <meta content="{{ site.url }}/assets/images/main-image.jpg" property="og:image">
+  <meta name="twitter:image:src" content="{{ site.url }}/assets/images/main-image.jpg">
 {% endif %}
 <meta content="1920" property="og:image:width">
 <meta content="1080" property="og:image:height">
-
-<meta name="twitter:card" content="summary_large_image"/>
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
     <meta content="{{ category }}" property="article:section">
