@@ -19,14 +19,14 @@ I mean imaginary world example. Imagine you have a machine that can make _chocol
 describe('CookieMachine', function(){
   describe('#makeCookie', function(){
     it('returns requested cookie when requested cookie with known recipy', function(){
-      let cookieMachine = new CookieMachine();
+      const cookieMachine = new CookieMachine();
 
       expect(cookieMachine.makeCookie('chocolate-chip-cookie')).toEqual('Chocolate chip cookie');
       expect(cookieMachine.makeCookie('fortune-cookie')).toEqual('Fortune cookie');
     });
 
     it('raises an error when requested cookie with unknown recipy', function(){
-      let cookieMachine = new CookieMachine();
+      const cookieMachine = new CookieMachine();
 
       expect(function(){ cookieMachine.makeCookie('unknown-cookie'); }).toThrow('Unknown cookie type.');
     })
@@ -45,18 +45,18 @@ class CookieMachine{
   makeCookie(cookieType){
     switch(cookieType){
       case 'chocolate-chip-cookie':
-        return 'Chocolate chip cookie'
+        return 'Chocolate chip cookie';
       case 'fortune-cookie':
-        return 'Fortune cookie'
+        return 'Fortune cookie';
       default:
-        throw 'Unknown cookie type.'
+        throw 'Unknown cookie type.';
     }
   }
 }
 
 ```
 
-Let's imagine that it's Christmass season and we need to add Pepper cookies. See, we violated OCP and now we have to change `CookieMachine` code add new `case` block.
+Let's imagine that it's Christmass season and we need to cook Pepper cookies. See, we violated OCP and now we have to change `CookieMachine` code and add new `case` block.
 
 ## Let's Fix It
 
@@ -110,14 +110,14 @@ class PepperCookieRecipy extends CookieRecipy{
 }
 ```
 
-And also we'll modify `CookieMachine` to accept these recipies in constructor. We will use the `reduce` the recipies list to an object with cookie types for keys:
+And also we'll modify `CookieMachine` to accept these recipies in constructor. We will use the `reduce` method to reduce the recipies list to an object with cookie types for keys:
 
 ```js
 class CookieMachine{
   constructor(...recipies){
     this._recipies = recipies.reduce(function(accumulator, item){
       accumulator[item.cookieType] = item;
-      return accumulator
+      return accumulator;
     }, {});
   }
 
@@ -140,7 +140,7 @@ Now we have to pass cookie types upon `CookieMachine` creation.
 describe('CookieMachine', function(){
   describe('#makeCookie', function(){
     it('returns requested cookie when requested cookie with known recipy', function(){
-      let cookieMachine = new CookieMachine(new ChocolateChipCookieRecipy(), new FortuneCookieRecipy(), new PepperCookieRecipy());
+      const cookieMachine = new CookieMachine(new ChocolateChipCookieRecipy(), new FortuneCookieRecipy(), new PepperCookieRecipy());
 
       expect(cookieMachine.makeCookie('chocolate-chip-cookie')).toEqual('Chocolate chip cookie');
       expect(cookieMachine.makeCookie('fortune-cookie')).toEqual('Fortune cookie');
@@ -148,7 +148,7 @@ describe('CookieMachine', function(){
     });
 
     it('raises an error when requested cookie with unknown recipy', function(){
-      let cookieMachine = new CookieMachine();
+      const cookieMachine = new CookieMachine();
 
       expect(function(){ cookieMachine.makeCookie('unknown-cookie'); }).toThrow('Unknown cookie type.');
     })

@@ -29,6 +29,8 @@
 {% endif %}
 <meta content="1920" property="og:image:width">
 <meta content="1080" property="og:image:height">
+
+<meta name="twitter:card" content="summary_large_image"/>
 {% if page.categories %}
   {% for category in page.categories limit:1 %}
     <meta content="{{ category }}" property="article:section">
