@@ -31,7 +31,7 @@ Getting back to ducks. Let's describe a `Duck`. We have very low expectations on
 describe('Duck', function(){
   describe('#quack', function(){
     it('produces "Quack" sound', function(){
-      let duck = new Duck();
+      const duck = new Duck();
       expect(duck.quack()).toEqual('Quack');
     });
   });
@@ -87,7 +87,7 @@ class FemaleDuck extends Duck{
   }
 
   layAnEgg(){
-    let egg = this._butt.layAnEgg();
+    const egg = this._butt.layAnEgg();
     return egg;
   } 
 }
