@@ -124,7 +124,3 @@ Inside that function you can use the `await` statement in front of expression th
 When the __async function__ will by executed, it will pause just where the `await` statement is until that `Promise` is resolved.
 
 And also we've learned that using `async/await` you can simplify reading of an asynchronous code by giving a more synchronous flow to it.
-
-Make sure to read the second part, where you'll see how async/await works under the hood, get more usage examples and have a quick glance on the future of this new syntax.
-
-<button>Continue to the second part →</button>
