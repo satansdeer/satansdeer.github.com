@@ -36,6 +36,9 @@ sass:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 # exclude:
+
+exclude: ['node_modules']
+
 #   - Gemfile
 #   - Gemfile.lock
 #   - node_modules

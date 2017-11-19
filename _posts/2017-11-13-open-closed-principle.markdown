@@ -11,6 +11,8 @@ __OCP__ states that software entities (classes, modules, functions) should be op
 
 That basically means that you should write your modules in a way that wouldn't require you to __modify__ it's code in order to __extend__ it's behavior.
 
+![open/closed principle](/assets/images/open_closed_1.png)
+
 ## Let's Get To Real World Example
 
 I mean imaginary world example. Imagine you have a machine that can make _chocolate-chip_ and _fortune_ cookies.
@@ -110,20 +112,20 @@ class PepperCookieRecipy extends CookieRecipy{
 }
 ```
 
-And also we'll modify `CookieMachine` to accept these recipies in constructor. We will use the `reduce` method to reduce the recipies list to an object with cookie types for keys:
+And also we'll modify `CookieMachine` to accept these recipes in constructor. We will use the `reduce` method to reduce the recipes list to an object with cookie types for keys:
 
 ```js
 class CookieMachine{
-  constructor(...recipies){
-    this._recipies = recipies.reduce(function(accumulator, item){
+  constructor(...recipes){
+    this._recipes = recipes.reduce(function(accumulator, item){
       accumulator[item.cookieType] = item;
       return accumulator;
     }, {});
   }
 
   makeCookie(cookieType){
-    if(this._recipies.hasOwnProperty(cookieType)){
-      return this._recipies[cookieType].cook();
+    if(this._recipes.hasOwnProperty(cookieType)){
+      return this._recipes[cookieType].cook();
     }
     throw 'Unknown cookie type.'
   }
