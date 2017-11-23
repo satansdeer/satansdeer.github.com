@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Modal from './Modal';
+import Popup from './Popup';
 import Subscribe from './Subscribe';
 
 class App extends Component {
@@ -9,23 +9,29 @@ class App extends Component {
     this.state = { isOpen: false };
   }
 
-  toggleModal = () => {
+  openPopup = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpen: true
+    });
+  }
+
+  closePopup = () => {
+    this.setState({
+      isOpen: false
     });
   }
 
   render() {
     return (
       <div className="App">
-        <button onClick={this.toggleModal}>
-          Open the modal
+        <button onClick={this.openPopup}>
+          Click Me!
         </button>
 
-        <Modal show={this.state.isOpen}
-          onClose={this.toggleModal}>
+        <Popup show={this.state.isOpen}
+          onClose={this.closePopup}>
           <Subscribe></Subscribe>
-        </Modal>
+        </Popup>
       </div>
     );
   }
