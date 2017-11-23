@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Popup from './Popup';
-import Subscribe from './Subscribe';
+import SubscriptionForm from './SubscriptionForm';
 
 class App extends Component {
   constructor(props) {
@@ -30,7 +30,7 @@ class App extends Component {
 
         <Popup show={this.state.isOpen}
           onClose={this.closePopup}>
-          <Subscribe></Subscribe>
+          <SubscriptionForm></SubscriptionForm>
         </Popup>
       </div>
     );

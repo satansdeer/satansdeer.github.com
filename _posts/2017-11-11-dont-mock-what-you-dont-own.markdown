@@ -7,7 +7,7 @@ image: dont_mock_wat_not_own.jpg
 comments: true
 ---
 
-I was refactoring specs of some Rails application when I decided to mock the `ImageUploader` class of Carierwave. I wanted to be able to check for cpecific image url. __But was it a good idea?__
+I was refactoring specs of some Rails application when I decided to mock the `ImageUploader` class of CarierWave. I wanted to be able to check for cpecific image url. __But was it a good idea?__
 
 ## No, Don't Do It
 

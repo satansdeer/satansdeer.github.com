@@ -63,6 +63,7 @@ img {
 @import "avatar";
 @import "post";
 @import "popup";
+@import "form";
 @import "jekyll_github";
 
 .levels_list {
@@ -72,11 +73,12 @@ img {
 }
 
 input[type="text"], input[type="email"] {
-  width: 300px;
+  border: 1px solid #ccc;
+  height: 30px;
   margin-bottom: 15px;
   margin-left: 10px;
-  height: 30px;
-  border: 1px solid #ccc;
+  max-width: 300px;
+  width: 100%;
 }
 
 input[type="submit"], button {
