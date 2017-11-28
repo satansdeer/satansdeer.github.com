@@ -45,7 +45,7 @@ After answering all required question and cleaning out unnecessary stuff you sho
 Now let's install required dependencies:
 
 ```bash
-➜ npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react react react-dom --save-dev
+➜ npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react react react-dom babel-plugin-transform-class-properties --save-dev
 ```
 
 Create the `.babelrc` with presets configuration:
