@@ -7,7 +7,7 @@ image: modal_window_react.jpg
 comments: true
 ---
 
-Once upon a time (yesterday) I decided that my blog lacks a good old popup. You know, the one that unannoyingly asks to join the mailing list. So if you have jekyll blog and you want to know how to create a popup using __ReactJS__ –this post is totally relevant. 
+Once upon a time (yesterday) I decided that my blog lacks a good old popup. You know, the one that unannoyingly asks to join the mailing list. So if you have jekyll blog and you want to know how to create a popup using __ReactJS__ –this post is totally relevant.
 
 First let's get all pragmatic and see an example of what we'll get.
 
