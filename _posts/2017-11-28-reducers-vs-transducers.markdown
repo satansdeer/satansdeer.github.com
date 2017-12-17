@@ -108,8 +108,8 @@ Great, now we have a chain of `.reduce` function calls, but we still can't compo
 
 ## Transducers FTW
 
-Let's update our `map` and `filter` functions so they would also accept __reducer__ as an argument. Let's start with `filter`. We are going to docompose it and instead of pushing value to __accumulator__ we'll allow
-the passer in __reducer__ to perform it's logic.
+Let's update our `filter` function so it would also accept __reducer__ as an argument. We are going to decompose it and instead of pushing value to __accumulator__ we'll allow
+the passed in __reducer__ to perform it's logic.
 
 ```javascript
 const filter = (predicate) => (reducer) => {
