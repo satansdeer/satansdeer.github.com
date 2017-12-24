@@ -3,11 +3,10 @@ layout: post
 title:  React Native E2E Testing With Detox
 date:   2017-11-28 22:58:45 +0300
 categories: js functional
-state: hidden
-image: reducers_vs_transducers.jpg
+image: e2e_with_detox.jpg
 ---
 
-When you develop for web you have a lot of options to set up your e2e tests. _Protractor, CasperJS, PhantomJS, DalekJS_ and a lot of others. That's not the case in the world of mobile development. But worry not, I'm going to show you the best way (in my opinion) to test your application from users point of view.
+When you develop for web you have a lot of options to set up your e2e tests. _Protractor, CasperJS, PhantomJS, DalekJS_ and a lot of others. That's not the case in the world of mobile development. But worry not, I'm going to show you the best way (__in my opinion__) to test your application from __users point of view__.
 
 I think everyone will agree that having bugs is lame. Testing your application manually is also lame: it requires a lot of time, and you can forget to test certain scenarios or just overlook bugs.
 
@@ -15,13 +14,15 @@ If only you could make robots do your job!
 
 ## E2E Automation
 
-Tests we are going to discuss here sit on top of the Martin Fowler's [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html). They are the slowest and most expensive to support. Every time you change any part of your system – you might break one of those. So as a rule of thumb keep them low. Test only required scenarios, and don't use them to test things that can be tested with __unit tests__. 
+![test pyramid](/assets/images/testing_pyramid.png)
+
+Tests we are going to discuss here sit on top of the Martin Fowler's [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html). They are the slowest and most expensive to support. Every time you change any part of your system – you might break one of those. So as a rule of thumb __keep them low__. Test only required scenarios, and don't use them to test things that can be tested with __unit tests__. 
 
 But even though they are slow, expensive and brittle – it's still much better than a meat-bag poking your app with his sausage fingers.
 
 ## Real Example
 
-I'm going to assume that you are using React Native, but AFAIK the setup and workflow won't change much even if you write native apps.
+I'm going to assume that you are using React Native, but AFAIK the setup and workflow won't change much even if you write __native apps__.
 
 Make sure you have Node v6 or later and XCode 8 or later installed. I recommend to use [n](https://www.npmjs.com/package/n) to manage node versions. Also make sure to install [yarn](https://yarnpkg.com/en/).
 
