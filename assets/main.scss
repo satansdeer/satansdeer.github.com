@@ -65,6 +65,7 @@ img {
 @import "popup";
 @import "form";
 @import "jekyll_github";
+@import "recommended_post";
 
 .levels_list {
   li {
@@ -98,4 +99,9 @@ section {
 
 section:last-child {
   margin-bottom: 0; 
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 32px;
 }

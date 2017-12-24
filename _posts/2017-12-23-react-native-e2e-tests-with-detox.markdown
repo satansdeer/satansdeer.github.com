@@ -2,7 +2,7 @@
 layout: post
 title:  React Native E2E Testing With Detox
 date:   2017-11-28 22:58:45 +0300
-categories: js functional
+categories: js react testing
 image: e2e_with_detox.jpg
 ---
 
