@@ -1,10 +1,15 @@
 const path = require('path');
 
 module.exports = {
-  entry: "./front/entry.js",
+  entry: {
+    bundle: './front/entry.js',
+    dice: './front/dice.js',
+    computed_dice: './front/computed-dice.js',
+    reaction_dice: './front/reaction-dice.js',
+  },
   output: {
     path: path.join(__dirname, "/assets/javascripts"),
-    filename: "bundle.js"
+    filename: "[name].js"
   },
   module: {
   loaders: [
@@ -13,7 +18,8 @@ module.exports = {
       exclude: /(node_modules)/,
       loader: "babel-loader",
       query: {
-        plugins: ['transform-class-properties']
+        presets: ['es2015', 'stage-0', 'react'],
+        plugins: ['transform-runtime', 'transform-decorators-legacy']
       }
     }
     ]
