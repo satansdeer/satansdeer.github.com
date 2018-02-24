@@ -26,7 +26,7 @@ We'll learn how to store data locally, use flatlist, navigator and do multi-scre
 ## Table Of Contents
 
 1. [What is MobX](#)
-2. [Making ReactNative app](#)
+2. [Making ReactNative app](/posts/react-native-mobx-tutorial-part-2)
 2. [Testing stores](#)
 2. [Testing views with Enzyme](#)
 
