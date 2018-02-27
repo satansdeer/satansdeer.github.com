@@ -19,6 +19,8 @@ In the end of second article I'll provide a github repo with this project.
 
 We'll create our own token that will conform the [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) token standard. We'll create a wallet application using ReactJS, that will allow you to play arount with your token using browser with [🦊 Metamask](https://metamask.io/) extension.
 
+![Result](/assets/images/react_ethereum_result.png)
+
 We'll use [Truffle](http://truffleframework.com/) to compile and deploy our token, [Ganache](http://truffleframework.com/ganache/) to set up the test blockchain aNd [Drizzle](http://truffleframework.com/docs/drizzle/getting-started) to integrate all this with ReactJS frontend.
 
 ![Truffle Ganache Drizzle](/assets/images/truffle_ganache_drizzle.png)
