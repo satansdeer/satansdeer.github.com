@@ -8,10 +8,10 @@ image: react_ethereum.jpg
 
 ICO's, crypto, blockchain, dapps. Everyone is discussing it nowadays (or at leas heard). Today I'm going to show you how to create your first distributed app on Ethereum blockchain, using ReactJS.
 
-This articles has two parts:
+This article has two parts:
 
 * [How to create ERC20 token (this one)](#)
-* How to create ReactJS frontend for your DAPP (in progress)
+* [How to create ReactJS frontend for your DAPP](/posts/ethereum-react-dapp-tutorial-part-2)
 
 In the end of second article I'll provide a github repo with this project.
 
