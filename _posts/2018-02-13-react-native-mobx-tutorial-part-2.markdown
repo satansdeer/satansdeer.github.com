@@ -135,6 +135,8 @@ Create api key/secret and save somewhere, we'll use them later.
 
 We need to be able to save those API keys somehow. Let's create our first screen with two inputs and submit button.
 
+![binance tracker](/assets/images/binance_profile.png)
+
 ```html
 /* Imports omitted */
 
