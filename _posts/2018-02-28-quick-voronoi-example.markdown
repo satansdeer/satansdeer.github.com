@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quick D3 Voronoi Example
-date:   2018-02-28 05:58:45 +0300
+date:   2018-02-28 01:58:45 +0300
 categories: js react d3 canvas voronoi
 image: voronoi_d3.jpg
 ---
