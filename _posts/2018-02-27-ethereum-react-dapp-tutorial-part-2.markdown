@@ -34,6 +34,14 @@ By default `react-scripts` don't allow to import stuff outside the `src` folder.
 
 ## Set Up Drizzle
 
+First we need to install dependencies:
+
+```sh
+yarn add redux drizzle drizzle-react drizzle-react-components
+```
+
+Redux is drizzle-react dependency. Drizzle-react-components allow to create basic interface in a few seconds.
+
 Open the `front/src/index.js` file and make following changes:
 
 ```js
@@ -180,6 +188,8 @@ Copy the any other wallet address from ganache and try to send it using the form
 ![Tutorial Token Wallet](/assets/images/tutorial_token_wallet.png)
 
 ## Where To Go Next
+
+If you feel lazy – here is the repo with all the steps done: https://github.com/satansdeer/ethereum-token-tutorial
 
 This is it. Now you can create your own tokens with little to no effort. Use your new power wisely.
 
