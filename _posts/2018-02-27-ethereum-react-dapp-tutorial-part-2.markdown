@@ -189,7 +189,7 @@ Copy the any other wallet address from ganache and try to send it using the form
 
 ## Where To Go Next
 
-If you feel lazy – here is the repo with all the steps done: https://github.com/satansdeer/ethereum-token-tutorial
+If you feel lazy – here is the repo with all the steps done: [https://github.com/satansdeer/ethereum-token-tutorial](https://github.com/satansdeer/ethereum-token-tutorial)
 
 This is it. Now you can create your own tokens with little to no effort. Use your new power wisely.
 
