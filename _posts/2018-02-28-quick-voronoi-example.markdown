@@ -101,4 +101,10 @@ function drawCell(cell, color) {
 }
 ```
 
+Also I import D3 here like this:
+
+```html
+<script src="https://d3js.org/d3.v4.min.js"></script>
+```
+
 As I said it's possible to apply smoothing or blurring on top of it.
