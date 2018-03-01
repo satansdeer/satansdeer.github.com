@@ -14,7 +14,9 @@ Here is the question itself:
 
 I propose to use Voronoi algorithm from [D3js](https://d3js.org/).
 
-The idea is to feed it a list of centers of those square blocks and it will draw polygons, then you can smooth or blur the polygons. Whatever will work better or both.
+D3js has a function `voronoi` that takes list of points (which will be centers of polygons) and then builds voronoi diagram by them.
+
+My idea is to feed it a list of centers of those square blocks and it will draw polygons, then you can smooth or blur the polygons. Whatever will work better, or even both.
 
 Here is quick and rough demo:
 
