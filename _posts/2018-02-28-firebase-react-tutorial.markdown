@@ -247,6 +247,8 @@ export default function PrivateRoute({
 }
 ```
 
+Basically this component will conditionally render either passed `Component` or `<Redirect/>` block, depending on passed `authenticated` prop.
+
 Now let's use it in our `App.js`. Change the `Home` route to `PrivateRoute`:
 
 ```html
