@@ -14,6 +14,8 @@ Super simple app. Just 3 screens: Sign up, Log in and Home screen.
 
 We'll use Firebase Authentication module to handle login/signup and React router to manage routing.
 
+Make sure to read till the end, I'll post a link to github repo with example code there.
+
 ## Set Up Firebase
 
 ### Create New Firebase App
@@ -321,3 +323,5 @@ Now you can add a redirect from login page if you are logged in already, also yo
 Also with this knowledge you can add authentication to wallet app from the [React Ethereum Tutorial](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial) and build your own ICO platform!
 
 So go crazy, build stuff and see you next time.
+
+Oh, btw – here is your [github link](https://github.com/satansdeer/firebase-auth-tutorial)

@@ -193,7 +193,7 @@ If you feel lazy – here is the repo with all the steps done: [https://github.c
 
 This is it. Now you can create your own tokens with little to no effort. Use your new power wisely.
 
-Now you can add authorization to this app and build the whole ICO dashboard around it.
+Now you can [add authorization](http://maksimivanov.com/posts/firebase-react-tutorial) to this app and build the whole ICO dashboard around it.
 
 Stay tuned, I'm going to make more tutorials about Ethereum and DAPPs.
 
