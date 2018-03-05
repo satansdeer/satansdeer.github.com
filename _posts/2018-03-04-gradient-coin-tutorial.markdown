@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Gradient Coin ERC721 Compliant Ethereum Token Tutorial
+title: 🚧 Gradient Coin ERC721 Compliant Ethereum Token Tutorial
 date:   2018-03-04 12:58:45 +0300
 categories: js react ethereum dapps erc721
 image: erc721.jpg
