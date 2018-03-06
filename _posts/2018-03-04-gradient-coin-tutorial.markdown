@@ -145,6 +145,8 @@ contract("Gradient token", async accounts => {
 });
 ```
 
+Note that we first require the `GradientToken` artifact. Which is `json` representation of your token interface. This is the thing that allows you to interact with your contract from javascript code.
+
 This test is unnecessary as this functionality is already tested by the `Ownable` tests in zeppelin library. I've added it only for quick demonstration.
 
 Here we run the `contract` block, that deloys our contract. We wait for contract to be deployed and request `owner()` which returns owners address. Then we assert that owners address is the same as `account[0]`
