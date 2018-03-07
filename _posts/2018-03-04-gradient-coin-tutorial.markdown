@@ -10,11 +10,11 @@ __🚧 CAUTION!! THIS ARTICLE IS WIP!! Read at your own risk 🚧.__ If you've r
 
 ## What Are We Going To Build
 
-I think everyone already has already heard about cryptokitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
+I think everyone has already heard about cryptokitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
 
 ![cryptokitties](/assets/images/cryptokitties.png)
 
-The game has huge success and a lot of kittens are sold for the crazy amount of money, like hundreds of thousands of dollars.
+The game has huge success and a lot of kittens are sold for a crazy amount of money, like hundreds of thousands of dollars.
 
 The game is mostly open-source with a few exceptions (breeding and genetic algorithms).
 
