@@ -18,7 +18,7 @@ The game has huge success and a lot of kittens are sold for a crazy amount of mo
 
 The game is mostly open-source with a few exceptions (breeding and genetic algorithms).
 
-We'll also do a collectible token but with a lot more simple logic. Our token won't be able to breed, only you as an owner will be able to mint new tokens.
+We'll also do a collectible token but with way simpler logic. Our token won't be able to breed, only you as an owner will be able to mint new tokens.
 
 You'll learn how to create non fungible tokens, how to write tests for Ethereum contracts and how to connect them to js frontend.
 
