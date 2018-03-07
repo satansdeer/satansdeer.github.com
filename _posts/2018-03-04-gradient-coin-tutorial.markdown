@@ -99,6 +99,21 @@ cd gradient-token-tutorial
 yarn init
 truffle init
 ```
+Open your `truffle.js` and add set up the development network:
+
+```js
+module.exports = {
+  // See <http://truffleframework.com/docs/advanced/configuration>
+  // to customize your Truffle configuration!
+  networks: {
+    development: {
+      host: "127.0.0.1",
+      port: 7545,
+      network_id: "*" // Match any network id
+    }
+  }
+};
+```
 
 Install `zeppelin-solidity` and create our token contract:
 
@@ -137,6 +152,13 @@ module.exports = function(deployer) {
 ```
 
 We add the index in the beginning of migrations name so truffle can tract successful migrations and not run them twice.
+
+Run the local ethereum network, I recommend to use ganache:
+
+```sh
+yarn add global ganache-cli
+ganache-cli -p 7545
+```
 
 ## Add Tests
 
@@ -266,7 +288,115 @@ We defined temporary `memory` variable `_grad` that we got from our `gradients` 
 
 Then finally we define the return values `outer` and `inner`. They will be returned as an array.
 
-__🚧  ARTICLE IS WIP, will add content as it will be ready 🚧__
+## Add More Tests
 
-I love to write tutorials and I want to make them great. Help me by posting comments. If something is unclear – don't hesitate to ask for clarification. If something is incorrect – don't hesitate to correct me. If you have any ideas on what else to add – feel free to contact me.
+At this point your contract should look like this:
 
+```js
+pragma solidity ^0.4.17;
+
+import 'zeppelin-solidity/contracts/token/ERC721/ERC721Token.sol';
+import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
+
+contract GradientToken is ERC721Token, Ownable {
+  string public constant name = "GradientToken";
+  string public constant symbol = "GRAD";
+
+  struct Gradient {
+    string outer;
+    string inner;
+  }
+
+  Gradient[] public gradients;
+
+  function getGradient( uint _gradientId ) public view returns(string outer, string inner){
+    Gradient memory _grad = gradients[_gradientId];
+
+    outer = _grad.outer;
+    inner = _grad.inner;
+  }
+
+  function mint(string _outer, string _inner) public payable onlyOwner{
+    Gradient memory _gradient = Gradient({ outer: _outer, inner: _inner });
+    uint _gradientId = gradients.push(_gradient) - 1;
+
+    _mint(msg.sender, _gradientId);
+  }
+}
+```
+
+Let's test the `mint` function, add the following test:
+
+```js
+describe("mint", () => {
+  it("creates token with specified outer and inner colors", async () => {
+    let instance = await GradientToken.deployed();
+    let owner = await instance.owner();
+
+    let token = await instance.mint("#ff00dd", "#ddddff");
+
+    let tokens = await instance.tokensOf(owner);
+    let gradients = await instance.getGradient(tokens[0]);
+    assert.deepEqual(gradients, ["#ff00dd", "#ddddff"]);
+  });
+});
+```
+
+This test is simple but it tests two things at once. First we test that we can mint new token with. Then we expect that current account has now that token, and we assert it using that `getGradient` function that we created before.
+
+Now it's time to test if only the contract owner can mint new tokens. Add following test to `mint` block:
+
+```js
+it("allows to mint only to owner", async () => {
+  let instance = await GradientToken.deployed();
+  let other = accounts[1];
+
+  await instance.transferOwnership(other);
+  await assertRevert(instance.mint("#ff00dd", "#ddddff"));
+});
+```
+
+Here we used assertRevert to make sure that mint function would throw error. But we forgot to import it.
+
+Add import statement in the beginning of file:
+
+```js
+import assertRevert from "zeppelin-solidity/test/helpers/assertRevert";
+```
+
+Ok, now it won't run. You can just use `import` in your tests.
+
+## Fix The Setup
+
+Now as we run our code in `node` environment you need to install a few packages to be able to use `import` statement:
+
+```sh
+yarn add babel-polyfill babel-preset-es2015 babel-preset-stage-2 babel-preset-stage-3 babel-register babel-preset-env
+```
+
+Add the following to your `.babelrc`:
+
+```js
+{
+  "presets": ["env"]
+}
+```
+
+And this to your `truffle.js` file:
+
+```js
+require("babel-register")({
+  ignore: /node_modules\/(?!zeppelin-solidity)/
+});
+require("babel-polyfill");
+```
+
+Add it before the `module.exports`.
+
+Try to run the tests:
+
+```sh
+truffle test
+```
+
+Now it should work.
