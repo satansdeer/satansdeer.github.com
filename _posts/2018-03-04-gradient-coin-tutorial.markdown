@@ -171,7 +171,7 @@ Here we run the `contract` block, that deploys our contract. We wait for the con
 
 When you deploy contracts your first contract will usually be the deployer.
 
-Run the tests:
+Run the test:
 
 ```sh
 truffle test
@@ -180,6 +180,91 @@ truffle test
 The test should pass.
 
 ## Add More Functionality
+
+We want to have a gradient associated with every token. We'll use circular gradients represented by two colors.
+
+Solidity allows you to define new types of data in form of structs.
+
+Let's define a struct that will store our gradient representation:
+
+```js
+struct Gradient {
+  string outer;
+  string inner;
+}
+```
+
+Our `Gradient` struct contains two `string` type fields. Structs in solidity can have other structs as fields, but It is not possible for a struct to contain a member of its own type. This restriction is necessary, as the size of the struct has to be finite.
+
+Now let's define an array of gradients.
+
+In solidity there are two types of arrays: fixed and dynamic. For fixed arrays you should define their length.
+
+For example:
+
+```js
+string[7] rainbowColorsArray;
+```
+
+We don't know yet how many gradients do we want to create, so let's define `dynamic` array:
+
+```js
+Gradient[] gradients;
+```
+
+### Minting Gradient Tokens
+
+We want to allow contract owner to mint new __GradientTokens__, let's define the following function:
+
+```js
+function mint(string _outer, string _inner) public onlyOwner{
+  Gradient memory _gradient = Gradient({ outer: _outer, inner: _inner });
+  uint _gradientId = gradients.push(_gradient) - 1;
+
+  _mint(msg.sender, _gradientId);
+}
+```
+
+First we define an in memory `_gradient` varibale. In memory means that lifespan of this variable will be limited by the execution scope.
+
+There are 3 ways of storing data in Solidity:
+
+* Storage - This is most serious and expensive one. The data will be pesisted between contract function calls.
+* Memory - This one is cheaper. Variable will be erased between function calls.
+* Stack - This is only for small local variables like `uint` or `string`
+
+By default `stack` is being used. Theere are only two data types you can control kind of storage: 'Struct' and `Array`.
+
+In our case we need this variable only temporarily se we used `memory` storage.
+
+Then we defined `_gradientId` by getting new length of the `gradients` array (the `push` method returns the new length) minus one, so we start from zero.
+
+Finally we call the `_mint` method that we got from `ERC721Token` that we inherit.
+
+This method is internal and it does the following:
+
+1. Checks that the recipient address is valid (not 0), otherwize throws an error
+2. Creates a token and assigns it an owner.
+3. Fires `Transfer` event.
+
+### Getting Gradient Info
+
+Cool, now let's add a method that will allow us to get gradient data associated with specific token:
+
+```js
+function getGradient( uint _gradientId ) public view returns(string outer, string inner){
+  Gradient memory _grad = gradients[_gradientId];
+
+  outer = _grad.outer;
+  inner = _grad.inner;
+}
+```
+
+This function is also `public`, also we define it as `view` basically promising to only __VIEW__ stuff and not modify the state.
+
+We defined temporary `memory` variable `_grad` that we got from our `gradients` array by requested `_gradientId`.
+
+Then finally we define the return values `outer` and `inner`. They will be returned as an array.
 
 __🚧  ARTICLE IS WIP, will add content as it will be ready 🚧__
 
