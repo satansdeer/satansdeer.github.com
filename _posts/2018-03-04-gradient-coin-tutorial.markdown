@@ -14,8 +14,7 @@ I think everyone has already heard about cryptokitties. A game based on Ethereum
 
 ![cryptokitties](/assets/images/cryptokitties.png)
 
-The game has huge success and a lot of kittens are sold for a crazy amount of money, like hundreds of thousands of dollars.
-
+The game has huge success and a lot of kittens are sold for a crazy amount of money, like hundreds of thousands of dollars.  
 The game is mostly open-source with a few exceptions (breeding and genetic algorithms).
 
 We'll also do a collectible token but with way simpler logic. Our token won't be able to breed, only you as an owner will be able to mint new tokens.
@@ -25,11 +24,11 @@ You'll learn how to create non fungible tokens, how to write tests for Ethereum 
 We'll build a wallet for unique collectibles: gradient tokens. Every token will be represented as a unique css gradient and will look somewhat like this:
 
 <p>
-<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #BF49D1; background: -webkit-radial-gradient(center,#BF49D1,#06855B); background: -o-radial-gradient(center,#BF49D1,#06855B); background: -moz-radial-gradient(center,#BF49D1,#06855B); background: radial-gradient(ellipse at center, #BF49D1, #06855B); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
-<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #6A4AA5; background: -webkit-radial-gradient(center,#6A4AA5,#AD9E64); background: -o-radial-gradient(center,#6A4AA5,#AD9E64); background: -moz-radial-gradient(center,#6A4AA5,#AD9E64); background: radial-gradient(ellipse at center, #6A4AA5, #AD9E64); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
-<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #4FFCFC; background: -webkit-radial-gradient(center,#4FFCFC,#21D152); background: -o-radial-gradient(center,#4FFCFC,#21D152); background: -moz-radial-gradient(center,#4FFCFC,#21D152); background: radial-gradient(ellipse at center, #4FFCFC, #21D152); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
-<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #BF9175; background: -webkit-radial-gradient(center,#BF9175,#F3BA45); background: -o-radial-gradient(center,#BF9175,#F3BA45); background: -moz-radial-gradient(center,#BF9175,#F3BA45); background: radial-gradient(ellipse at center, #BF9175, #F3BA45); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
-<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #C82F82; background: -webkit-radial-gradient(center,#C82F82,#5AA976); background: -o-radial-gradient(center,#C82F82,#5AA976); background: -moz-radial-gradient(center,#C82F82,#5AA976); background: radial-gradient(ellipse at center, #C82F82, #5AA976); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
+<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #FDF574; background: -webkit-radial-gradient(center,#FDF574,#D6A128); background: -o-radial-gradient(center,#FDF574,#D6A128); background: -moz-radial-gradient(center,#FDF574,#D6A128); background: radial-gradient(ellipse at center, #FDF574, #D6A128); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
+<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #86D935; background: -webkit-radial-gradient(center,#86D935,#538521); background: -o-radial-gradient(center,#86D935,#538521); background: -moz-radial-gradient(center,#86D935,#538521); background: radial-gradient(ellipse at center, #86D935, #538521); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
+<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #5C9AFF; background: -webkit-radial-gradient(center,#5C9AFF,#406EF8); background: -o-radial-gradient(center,#5C9AFF,#406EF8); background: -moz-radial-gradient(center,#5C9AFF,#406EF8); background: radial-gradient(ellipse at center, #5C9AFF, #406EF8); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
+<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #D33E2A; background: -webkit-radial-gradient(center,#D33E2A,#9F0604); background: -o-radial-gradient(center,#D33E2A,#9F0604); background: -moz-radial-gradient(center,#D33E2A,#9F0604); background: radial-gradient(ellipse at center, #D33E2A, #9F0604); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
+<div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #B7CEF7; background: -webkit-radial-gradient(center,#B7CEF7,#8378FE); background: -o-radial-gradient(center,#B7CEF7,#8378FE); background: -moz-radial-gradient(center,#B7CEF7,#8378FE); background: radial-gradient(ellipse at center, #B7CEF7, #8378FE); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
 </p>
 
 You will be able to see the list of owned tokens and transfer them between wallets.
@@ -40,6 +39,11 @@ In this tutorial I assume that you have basic knowledge about ReactJS and went t
 
 * [What Is ERC721]()
 * [Setting Up Truffle Suite]()
+* [Creating The Token]()
+* [Adding Tests]()
+* [Minting The Token]()
+* [Some More Tests]()
+* [Fixing The Setup]()
 
 ## What Is ERC721
 
@@ -198,6 +202,8 @@ Run the test:
 ```sh
 truffle test
 ```
+
+![first test](/assets/images/grad_first_test.png)
 
 The test should pass.
 
@@ -398,5 +404,7 @@ Try to run the tests:
 ```sh
 truffle test
 ```
+
+![working tests](/assets/images/gradient_token_tests_working.png)
 
 Now it should work.
