@@ -1,14 +1,14 @@
 ---
 layout: post
-title: 🚧 CryptoKitties Clone In 20 minutes. Non-fungible Token Tutorial
+title: CryptoKitties Clone In 20 minutes. Non-fungible Token Tutorial
 date:   2018-03-04 12:58:45 +0300
 categories: js react ethereum dapps erc721
 image: erc721.jpg
 ---
 
-__🚧 CAUTION!! THIS ARTICLE IS WIP!! Read at your own risk 🚧.__ If you've read previous articles about Ethereum DAPPs ([First](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your very own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
+If you've read previous articles about Ethereum DAPPs ([First](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your very own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
 
-## What Are We Going To Build
+##  <a name='observables'></a>What Are We Going To Build
 
 I think everyone has already heard about cryptokitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
 
@@ -37,15 +37,20 @@ In this tutorial I assume that you have basic knowledge about ReactJS and went t
 
 ## Contents
 
-* [What Is ERC721]()
-* [Setting Up Truffle Suite]()
-* [Creating The Token]()
-* [Adding Tests]()
-* [Minting The Token]()
-* [Some More Tests]()
-* [Fixing The Setup]()
+* Part I
+  * [What Is ERC721](#erc721)
+  * [Set Up The Truffle Suite](#truffle_suite)
+  * [Create The Token](#creating_token)
+  * [Add Tests](#add_tests)
+  * [Minting The Token](#minting)
+  * [Add More Tests](#more_tests)
+  * [Fix The Setup](#fix_setup)
+* Part II
+  * Adding the auction
+* Part III
+  * Making the frontend
 
-## What Is ERC721
+## <a name='erc721'></a>What Is ERC721
 
 ERC721 describes non-fungible token. Btw it is also knowns as __NFT__, which basically means exactly that (__Non Fungible Token__). Non-fungible means that every token is not equal to any other token. As opposite to ERC20 where all tokens are equal.
 
@@ -70,7 +75,7 @@ Also, you want to be able to do some actions like:
 
 This is it, ERC721 provides functions for all of that.
 
-## ERC721 Interface
+### ERC721 Interface
 
 So basically ERC721 describes ownership and requires following functions to be implemented:
 
@@ -90,7 +95,7 @@ ERC721 compliant contract from [Zeppelin-solidity](https://github.com/OpenZeppel
 * _tokensOf( _owner )_ - Returns list of token ID's of specific `_owner`
 * _approvedFor( _tokenId )_ - Returns the approved address to take ownership of a given token ID
 
-## Setting Up Truffle Suite
+## <a name='truffle_suite'></a>Set Up The Truffle Suite
 
 So to build our Gradient Token we'll use Zeppelin's ERC721 template and add one additional function to generate random gradient background upon token creation.
 
@@ -118,6 +123,8 @@ module.exports = {
   }
 };
 ```
+
+## <a name='creating_token'></a>Create The Token
 
 Install `zeppelin-solidity` and create our token contract:
 
@@ -164,7 +171,7 @@ yarn add global ganache-cli
 ganache-cli -p 7545
 ```
 
-## Add Tests
+## <a name='add_tests'></a>Add Tests
 
 Truffle uses `Mocha` as a testing framework, with one additional scope: `contract()`.
 
@@ -207,7 +214,7 @@ truffle test
 
 The test should pass.
 
-## Add More Functionality
+## <a name='erc721'></a>Add More Functionality
 
 We want to have a gradient associated with every token. We'll use circular gradients represented by two colors.
 
@@ -240,7 +247,7 @@ We don't know yet how many gradients do we want to create, so let's define `dyna
 Gradient[] gradients;
 ```
 
-### Minting Gradient Tokens
+### <a name="minting"></a>Minting Gradient Tokens
 
 We want to allow contract owner to mint new __GradientTokens__, let's define the following function:
 
@@ -294,7 +301,7 @@ We defined temporary `memory` variable `_grad` that we got from our `gradients` 
 
 Then finally we define the return values `outer` and `inner`. They will be returned as an array.
 
-## Add More Tests
+## <a name="more_tests"></a>Add More Tests
 
 At this point your contract should look like this:
 
@@ -372,7 +379,7 @@ import assertRevert from "zeppelin-solidity/test/helpers/assertRevert";
 
 Ok, now it won't run. You can just use `import` in your tests.
 
-## Fix The Setup
+## <a name="fix_setup"></a>Fix The Setup
 
 Now as we run our code in `node` environment you need to install a few packages to be able to use `import` statement:
 
