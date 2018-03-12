@@ -141,11 +141,12 @@ pragma solidity ^0.4.17;
 import 'zeppelin-solidity/contracts/token/ERC721/ERC721Token.sol';
 import 'zeppelin-solidity/contracts/ownership/Ownable.sol';
 
-contract GradientToken is ERC721Token {
-    string public constant name = "GradientToken";
-      string public constant symbol = "GRAD";
+contract GradientToken is ERC721Token, Ownable {
+  string public constant name = "GradientToken";
+  string public constant symbol = "GRAD";
 }
 ```
+
 Just defining the token for now.
 
 We inherited it from two contracts: __ERC721Token__ to make it represent a non-fungible token, and from the __Ownable__ contract.
