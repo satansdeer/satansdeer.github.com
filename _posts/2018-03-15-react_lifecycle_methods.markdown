@@ -73,6 +73,10 @@ This method is executed just before your component gets removed from the __DOM__
 
 Use this method to clean up after your component. Remove all timers or listeners created during the lifetime of your component to prevent memory leaks.
 
+## The Course
+
+I'm going to release the whole course about modern react. It will be completely free, subscribe to mailing list to not miss the day when it will be out 😀.
+
 <!-- Begin MailChimp Signup Form -->
 <style type="text/css">
 	#mc_embed_signup{background:#fff; clear:left}
