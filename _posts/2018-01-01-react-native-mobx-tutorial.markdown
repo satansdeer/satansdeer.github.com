@@ -154,3 +154,5 @@ Strictly speaking `observers` aren't part of mobx core. They are provided by the
 They are used to make your views "observe" `observables` and re-render on change.
 
 But I'll cover it in next part.
+
+{% include subscription_form.html %}

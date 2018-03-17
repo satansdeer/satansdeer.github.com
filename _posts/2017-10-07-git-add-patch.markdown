@@ -221,3 +221,5 @@ No problem, let's tell git that the file exists.
 ```
 
 Now we can use `git add -p` and then edit the hunk to remove the lines about onions.
+
+{% include subscription_form.html %}
