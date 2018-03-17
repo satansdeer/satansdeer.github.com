@@ -274,3 +274,5 @@ Communicate with your teammates, don't hurt other peoples feelings, plan your wo
 Learn how to write automated tests and make sure to master git.
 
 Those skills are crucial for effective collaboration. People often overlook them focusing on programming itself.
+
+{% include subscription_form.html %}

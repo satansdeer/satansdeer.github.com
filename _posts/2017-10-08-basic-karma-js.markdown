@@ -163,3 +163,5 @@ It's the most dumb, simple and straightforward solution I know, but now all the 
 While Karma is running, play around with the code. Try to improve the solution. Try to implement it as a one-liner.
 
 What's the minimum amount of characters you need to solve this task?
+
+{% include subscription_form.html %}

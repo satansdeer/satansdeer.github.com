@@ -242,3 +242,5 @@ It is temporal solution, later I plan to switch to [mail-for-good](https://githu
 This is it. We've used `webpack` to build and bundle our javascript. We've added a simple popup component and an opt-in form.
 
 In next article we'll add tests and learn about some tools that we have for testing React applications.
+
+{% include subscription_form.html %}

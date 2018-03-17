@@ -217,3 +217,5 @@ Now we can compose our `map` and `filter` like this:
 I suppose you already knew about __reducers__, and if not – you've learned a nice abstraction to work with collections. Reducers are great to fold different data structures.
 
 Also you've learned how to do your computations effectively using __transducers__.
+
+{% include subscription_form.html %}

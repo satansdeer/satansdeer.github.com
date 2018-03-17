@@ -124,3 +124,5 @@ Inside that function you can use the `await` statement in front of expression th
 When the __async function__ will by executed, it will pause just where the `await` statement is until that `Promise` is resolved.
 
 And also we've learned that using `async/await` you can simplify reading of an asynchronous code by giving a more synchronous flow to it.
+
+{% include subscription_form.html %}
