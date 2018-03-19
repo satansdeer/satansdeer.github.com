@@ -208,8 +208,8 @@ Now we can compose our `map` and `filter` like this:
 
 ```javascript
 [1, 2, 3, 4, 5, 6]
-  .reduce(filterEven,
-          mapDouble);
+  .reduce(compose(filterEven,
+                  mapDouble));
 ```
 
 ## Conclusion
