@@ -100,8 +100,8 @@ Great, we used __decorator__ functions to wrap our reducers. Now we have `map` a
 
 ```javascript
 [1, 2, 3, 4, 5, 6]
-  .reduce(filter((x) => x % 2 === 0))
-  .reduce(map((x) => x * 2))
+  .reduce(filter((x) => x % 2 === 0), [])
+  .reduce(map((x) => x * 2), [])
 ```
 
 Great, now we have a chain of `.reduce` function calls, but we still can't compose our reducers! Good news is there is only one step left. To be able to compose reducers we need to be able to pass them to each other.
@@ -134,17 +134,36 @@ const transducer => (reducer) => {
 
 So basically transducer looks like this `(oneReducer) => anotherReducer`.
 
+Let's rewrite our __mapping__ reducer as well:
+
+```js
+const map = transformer => reducer => {
+  return (accumulator, value) => {
+    return reducer(accumulator, transformer(value));
+  };
+};
+```
+
+Also we need to add a final reducer that will push values to array for us:
+
+```js
+const finalReducer = (acc, val) => {
+  acc.push(val);
+  return acc;
+};
+```
+
 Now we can combine our __mapping__ reducer and __filtering__ transducer and do our calculations in one run.
 
 ```javascript
 const evenPredicate = (x) => x % 2 === 0;
-const doubleTransformer = (x) = x * 2;
+const doubleTransformer = (x) => x * 2;
 
 const filterEven = filter(evenPredicate);
 const mapDouble = map(doubleTransformer);
 
 [1, 2, 3, 4, 5, 6]
-  .reduce(filterEven(mapDouble));
+  .reduce(filterEven(mapDouble(finalReducer)), []);
 ```
 
 Actually we could make our map method a transducer as well and continue this composition indefinitely.
