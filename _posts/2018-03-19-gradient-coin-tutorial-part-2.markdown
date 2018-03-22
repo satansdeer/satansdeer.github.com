@@ -63,34 +63,6 @@ truffle test test/TokenAuctionTest.js
 ```
 
 ### Making Auctions
- solidity ^0.4.18;
-
-import "zeppelin-solidity/contracts/token/ERC721/ERC721.sol";
-
-contract TokenAuction {
-  ERC721 public nonFungibleContract;
-
-  struct Auction {
-    address seller;
-    uint128 price;
-  }
-
-  mapping (uint256 => Auction) public tokenIdToAuction;
-
-  function TokenAuction( address _nftAddress ) public {
-    nonFungibleContract = ERC721(_nftAddress);
-  }
-
-  function createAuction( uint256 _tokenId, uint128 _price ) public {
-    nonFungibleContract.takeOwnership(_tokenId);
-    Auction memory _auction = Auction({
-       seller: msg.sender,
-       price: uint128(_price)
-    });
-    tokenIdToAuction[_tokenId] = _auction;
-  }
-}
-
 
 We need to be able to create new auctions using `tokenId` and `price`. Let's define a method for it and required variables.
 
