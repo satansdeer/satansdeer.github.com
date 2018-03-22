@@ -5,15 +5,14 @@ date:   2018-03-19 02:58:45 +0300
 categories: js react ethereum dapps erc721
 image: erc721-2.jpg
 ---
-
-In [last part](http://maksimivanov.com/posts/gradient-coin-tutorial) we created our own non-fungible token. For the sake of simplicity we didn't create as many fields as CryptoKitties have and went with just 2. Inner and outer color of our GradientToken. In this part we'll add an auction to be able to trade them.
+In [last part](http://maksimivanov.com/posts/gradient-coin-tutorial) we created our own non-fungible token. For the sake of simplicity, we didn't create as many fields as CryptoKitties have and went with just 2. Inner and outer color of our GradientToken. In this part, we'll add an auction to be able to trade them.
 
 ## How Will It Work
 
-We'll use a separate contract to manage trading our GradientToken. It will have the following interface:
+We'll use a separate contract to manage trading of our GradientToken. It will have the following interface:
 
 * `createAuction(_tokenId, _price, _seller)` - creates new auction. Transfers the token to itself until the auction is ended.
-* `bid(_tokenId)` - bids, if everything is fine and the size of the bid was bigger than auction price – transferm token to buyer and money to seller.
+* `bid(_tokenId)` - bids, if everything is fine and the size of the bid was bigger than auction price – transform token to buyer and money to the seller.
 * `cancelAuction(_tokenId)` - cancels the auction, returns token to original owner.
 
 So when you want to sell your token - you create an auction and then it waits for the successful bid or for cancel.
@@ -38,7 +37,7 @@ contract TokenAuction {
 
 Here we imported an `ERC721` token interface from `zeppelin-solidity` lib and defined a contract that accepts __non-fungible token__ address and assigns it to a public variable `nonFungibleContract`.
 
-We need to have a reference to __non-fungible token__ contract to be able to call it's methods, like `transfer`.
+We need to have a reference to the __non-fungible token__ contract to be able to call it's methods, like `transfer`.
 
 Let's add a test to check if it assigns the address successfully. Create file `TokenAuctionTest.js` in `test` folder:
 
@@ -96,9 +95,9 @@ function createAuction( uint256 _tokenId, uint128 _price ) public {
 }
 ```
 
-First this function calls the `ERC721` method `takeOwnership`. This method transfers ownership if thansfer was approved for specific contract. You can approve transfer using `approve` method. 
+First, this function calls the `ERC721` method `takeOwnership`. This method transfers ownership if the transfer was approved for a specific contract. You can approve transfer using `approve` method. 
 
-Then we create new instance of our `Auction` and assign it to temporal in memory variable `_auction`. And finally we make a mapping of this auction to our `_tokenId`.
+Then we create a new instance of our `Auction` and assign it to temporal in-memory variable `_auction`. And finally, we make a mapping of this auction to our `_tokenId`.
 
 By this moment your `TokenAuction.sol` should look like this:
 
@@ -132,7 +131,7 @@ contract TokenAuction {
 }
 ```
 
-Let's add tests for this function. We want to check that `TokenAuction` claims the ownership of the token, and that it creates an auction associated with that token.
+Let's add tests for this function. We want to check that `TokenAuction` claims the ownership of the token and that it creates an auction associated with that token.
 
 Add the following block to your `test/TokenAuctionTest.js`
 
@@ -164,7 +163,7 @@ describe("createAuction", () => {
 });
 ```
 
-In it's `before` block we initialize our contracts, mint new `GradientToken`, approve it for transfering to auction and then call the `createAuction` method. Two `it` blocks check that token ownership was transfered successfully and that auction was created and is stored in `tokenIdToAuction` map respectively.
+In it's `before` block we initialize our contracts, mint new `GradientToken`, approve it for transferring to auction and then call the `createAuction` method. Two `it` blocks check that token ownership was transferred successfully and that auction was created and is stored in `tokenIdToAuction` map respectively.
 
 ### Making Bid
 
@@ -190,11 +189,11 @@ function bid( uint256 _tokenId ) public payable {
 }
 ```
 
-Let's go line by line. First we get the auction representation from our `tokenIdToAuction` map. Then we check that auction seller is non-zero address. It's needed because of how solidity maps work. If there would no `auction` by that id – it would still return the struct, but all the values would be zero.
+Let's go line by line. First, we get the auction representation from our `tokenIdToAuction` map. Then we check that auction seller is non-zero address. It's needed because of how solidity maps work. If there would no `auction` by that id – it would still return the struct, but all the values would be zero.
 
-Then we check if `msg.value` is bigger or equal to the `auction.price`. Our function has `payable` modifier that allows this function to receive money. Received amount can be accessed through `msg.value`
+Then we check if `msg.value` is bigger or equal to the `auction.price`. Our function has `payable` modifier that allows this function to receive money. The received amount can be accessed through `msg.value`
 
-After that we temporarily save seller address and price and remove the auction, preventing further bids to it. Then we transfer money to seller and transfer the `nft` to bidder.
+After that we temporarily save seller address and price and remove the auction, preventing further bids to it. Then we transfer money to the seller and transfer the `nft` to the bidder.
 
 ### Canceling Auction
 
@@ -211,9 +210,9 @@ function cancel( uint256 _tokenId ) public {
 }
 ```
 
-Here we also load the auction but now we don't need to check that `auction.seller` is non-zero, because we check if it's equal to `msg.sender` anyway. We want only auction creator to be able to cancel auctions.
+Here we also load the auction but now we don't need to check that `auction.seller` is non-zero because we check if it's equal to `msg.sender` anyway. We want only auction creator to be able to cancel auctions.
 
-Then we delete the auction and send the token back to seller (which is `msg.sender` in our case).
+Then we delete the auction and send the token back to the seller (which is `msg.sender` in our case).
 
 If you followed the tutorial your `contracts/TokenAuction.sol` should look like this:
 
@@ -274,4 +273,4 @@ contract TokenAuction {
 
 You can check out the code related to this tutorial [here](https://github.com/satansdeer/gradient-token-tutorial)
 
-In next chapter we'll add frontend and have fully functional game on ethereum network.
+In next chapter, we'll add frontend and have a fully functional game on ethereum network.
