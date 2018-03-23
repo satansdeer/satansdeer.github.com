@@ -199,3 +199,9 @@ this.setState({
 ```
 
 In this example `this.state.someOtherKey` will remain unchanged.
+
+## Free React Course
+
+I'm going to release the whole course about modern react. It will be completely free, subscribe to mailing list to not miss the day when it will be out 😀.
+
+{% include subscription_form.html %}
