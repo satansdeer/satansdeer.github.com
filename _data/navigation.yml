@@ -1,6 +1,8 @@
 # If you want to link only specific pages in your header, add the path to the
 # pages in order as they should show up.
 main:
+  - title: "React Course"
+    url: https://basicreact.com
   - title: "Start here"
     url: /
   - title: "About"
