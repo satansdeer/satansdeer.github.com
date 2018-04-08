@@ -1,6 +1,6 @@
 ---
-title:  "Why Should You Use Transform Class Properties Plugin"
-date:   2017-11-27 20:58:45 +0300
+title: Why Should You Use Transform Class Properties Plugin
+date: 2017-11-27T20:58:45.284Z
 categories: js react babel
 image: class_level_properties.jpg
 comments: true

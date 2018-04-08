@@ -1,6 +1,6 @@
 ---
-title:  "Getting Schwifty With Pull Requests"
-date:   2017-09-30 22:58:45 +0300
+title: Getting Schwifty With Pull Requests
+date: 2017-09-30T22:58:45.284Z
 categories: git
 image: test.jpg
 ---

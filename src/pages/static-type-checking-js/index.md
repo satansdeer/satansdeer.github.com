@@ -1,6 +1,6 @@
 ---
 title: Do You Need Static Type Checking?
-date:   2018-04-08 05:58:45 +0300
+date: 2018-04-08T05:58:45.284Z
 categories: js types
 image: static_type_checking.jpg
 comments: true

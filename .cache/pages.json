@@ -31,15 +31,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "react-lifecycle-methods.json",
-        "path": "/react_lifecycle_methods/"
+        "jsonName": "javascript-type-system.json",
+        "path": "/javascript-type-system/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "javascript-type-system.json",
-        "path": "/javascript-type-system/"
+        "jsonName": "react-lifecycle-methods.json",
+        "path": "/react_lifecycle_methods/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -66,15 +66,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "ethereum-react-dapp-tutorial-part-2.json",
-        "path": "/ethereum-react-dapp-tutorial-part-2/"
+        "jsonName": "ethereum-react-dapp-tutorial.json",
+        "path": "/ethereum-react-dapp-tutorial/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "ethereum-react-dapp-tutorial.json",
-        "path": "/ethereum-react-dapp-tutorial/"
+        "jsonName": "ethereum-react-dapp-tutorial-part-2.json",
+        "path": "/ethereum-react-dapp-tutorial-part-2/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
@@ -129,15 +129,15 @@
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "dont-mock-what-you-dont-own.json",
-        "path": "/dont-mock-what-you-dont-own/"
+        "jsonName": "liskov-substitution-principle.json",
+        "path": "/liskov-substitution-principle/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",
         "layout": "layout---index",
         "layoutComponentChunkName": "component---src-layouts-index-js",
-        "jsonName": "liskov-substitution-principle.json",
-        "path": "/liskov-substitution-principle/"
+        "jsonName": "dont-mock-what-you-dont-own.json",
+        "path": "/dont-mock-what-you-dont-own/"
     },
     {
         "componentChunkName": "component---src-templates-blog-post-js",

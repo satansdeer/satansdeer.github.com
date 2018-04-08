@@ -1,6 +1,6 @@
 ---
 title: Surviving The Javascript Type System
-date: 2018-03-11 04:58:45 +0300
+date: 2018-03-11T04:58:45.284Z
 categories: javascript
 image: js_types.jpg
 ---

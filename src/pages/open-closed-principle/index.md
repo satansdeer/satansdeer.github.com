@@ -1,6 +1,6 @@
 ---
-title:  "Open/Closed Principle"
-date:   2017-11-13 20:58:45 +0300
+title: "Open/Closed Principle"
+date: 2017-11-13T20:58:45.284Z
 categories: js tdd
 image: open_closed_principle.jpg
 comments: true

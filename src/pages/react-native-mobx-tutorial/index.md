@@ -1,6 +1,6 @@
 ---
 title: React Native Mobx Tutorial - Part 1
-date:   2018-01-01 22:58:45 +0300
+date: 2018-01-01T22:58:45.284Z
 categories: js react mobx
 image: react_native_mobx_1_thumb.jpg
 ---

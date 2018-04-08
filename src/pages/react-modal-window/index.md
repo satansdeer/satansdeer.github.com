@@ -1,6 +1,6 @@
 ---
-title:  "Popup With ReactJS For Jekyll Blog"
-date:   2017-11-23 20:58:45 +0300
+title: Popup With ReactJS For Jekyll Blog
+date: 2017-11-23T20:58:45.284Z
 categories: js react
 image: modal_window_react.jpg
 comments: true

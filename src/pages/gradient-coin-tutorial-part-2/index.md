@@ -1,6 +1,6 @@
 ---
 title: CryptoKitties Clone Part 2 Adding An Auction
-date:   2018-03-19 02:58:45 +0300
+date: 2018-03-19T02:58:45.284Z
 categories: js react ethereum dapps erc721
 image: erc721-2.jpg
 ---

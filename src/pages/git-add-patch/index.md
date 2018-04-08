@@ -1,6 +1,6 @@
 ---
-title: "Add Specific Lines With Git Patch"
-date:  2017-10-07T22:58:45 +0300
+title: Add Specific Lines With Git Patch
+date: 2017-10-07T22:58:45.284Z
 categories: git
 image: git_patch_thumb.jpg
 ---

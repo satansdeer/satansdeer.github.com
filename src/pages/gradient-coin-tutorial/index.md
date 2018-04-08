@@ -1,6 +1,6 @@
 ---
 title: CryptoKitties Clone In 20 minutes. Non-fungible Token Tutorial
-date:   2018-03-04 12:58:45 +0300
+date: 2018-03-04T12:58:45.284Z
 categories: js react ethereum dapps erc721
 image: erc721.jpg
 ---

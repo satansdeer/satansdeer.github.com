@@ -1,6 +1,6 @@
 ---
 title: CryptoKitties Clone Part 3 Adding Frontend
-date:   2018-03-28 04:58:45 +0300
+date: 2018-03-28T04:58:45.284Z
 categories: js react ethereum dapps erc721
 image: erc721-3.jpg
 ---

@@ -1,6 +1,6 @@
 ---
-title:  "Basic Karma JS Tutorial"
-date:   2017-10-08 22:58:45 +0300
+title: Basic Karma JS Tutorial
+date: 2017-10-08T22:58:45.284Z
 categories: js tdd
 image: karma_setup_thumb.jpg
 comments: true
