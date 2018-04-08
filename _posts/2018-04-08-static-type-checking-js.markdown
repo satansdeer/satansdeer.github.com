@@ -195,3 +195,9 @@ Static type checking is a very powerful instrument. It allows preventing bugs by
 In this article, I used Flow as an example of static type checking tool. There are others, you can use TypeScript, Elm, ReasonML e.t.c.
 
 My main point is that static type checking will help you to ensure that your modules conform the contract and that you use them properly. If you have poor architecture, or your modules are not covered by unit tests – static type checking won't help you.
+
+## Free React Course
+
+I've released a `WIP` version of my [React Course](https://basicreact.com), check it out.
+
+I really wan to make it useful, so join the [Slack Channel](https://join.slack.com/t/frontendartisans/shared_invite/enQtMzM1MjM3ODYyMDY1LWUwYzM4ZDc5ZDU1MjY1ZWM2OWZmNWUzZmZlNGJhOGRiYzA1ZmFiZDBkZDg2YmI3MzMyNTcxODVhZjgzMjNiZjc) and let me know what you'd like to see in __your perfect react course__.
