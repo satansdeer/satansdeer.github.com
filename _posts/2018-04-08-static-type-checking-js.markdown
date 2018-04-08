@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Use Static Type Checking In Javascript
+title: Do You Need Static Type Checking?
 date:   2018-04-08 05:58:45 +0300
 categories: js types
 image: static_type_checking.jpg
