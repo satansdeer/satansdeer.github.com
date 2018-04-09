@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import { Container } from "react-responsive-grid";
 import { rhythm, scale } from "../utils/typography";
+import "../utils/typography";
 
 import "prismjs/themes/prism-okaidia.css";
 

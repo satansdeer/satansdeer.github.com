@@ -1,6 +1,6 @@
 ---
 title: Don't Mock What You Don't Own
-date: 2017-11-10T20:58:45.284Z
+date: 2017-11-11T20:58:45.284Z
 categories: js tdd
 image: dont_mock_wat_not_own.jpg
 comments: true
