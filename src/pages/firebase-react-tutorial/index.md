@@ -21,13 +21,13 @@ Make sure to read till the end, I'll post a link to github repo with example cod
 
 First go to [firebase console](https://console.firebase.google.com/) and create new app.
 
-![New firebase app](/assets/images/firebase_react_1.png)
+![New firebase app](/firebase_react_1.png)
 
 ### Add Auth Method
 
 Click __Authentication__ and then __SET UP SIGN-IN METHOD__.
 
-![New sign in method](/assets/images/firebase_tutorial_2.png)
+![New sign in method](/firebase_tutorial_2.png)
 
 Enable __Email/Password__ authentication.
 
@@ -35,7 +35,7 @@ Enable __Email/Password__ authentication.
 
 Go to project settings:
 
-![New sign in method](/assets/images/firebase_tutorial_3.png)
+![New sign in method](/firebase_tutorial_3.png)
 
 And select __Add firebase to your web app__. Copy your credentials from there and save them to `.env` file in your project's root.
 

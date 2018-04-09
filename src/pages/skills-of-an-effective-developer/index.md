@@ -17,7 +17,7 @@ _All stories, names, characters, and incidents portrayed in this article are fic
 
 ## Communication
 
-![communication](/assets/images/communication_1.png)
+![communication](/communication_1.png)
 
 This one is an absolute golden nugget. You can't imagine, how many problems you avoid if you are a good communicator. And it doesn't only mean that you should know how to express your thoughts clearly or how to be a good listener.
 
@@ -74,7 +74,7 @@ __Actionable items:__
 
 __Let's start with an example:__
 
-![empathy](/assets/images/empathy_1.png)
+![empathy](/empathy_1.png)
 
 Meet Alex. He's a new developer in a company named "CranberryPi". On his first weekly meeting he makes a few proposals on how to improve the codebase. But those proposals contain mistakes in them and another developer, Peter, corrects him. Usually it is the right thing to do, but Peter does it in unnecesarily berating way.
 
@@ -108,7 +108,7 @@ __Actionable items:__
 
 ## Planning
 
-![planning](/assets/images/planning_1.png)
+![planning](/planning_1.png)
 
 This is a crucial skill to write high quality code. If you think that by jumping head first in a task saves you time, then you are wrong.
 
@@ -239,7 +239,7 @@ __Actionable items:__
 
 ## Git
 
-![github](/assets/images/github_fkc.png)
+![github](/github_fkc.png)
 
 It is the most popular VCS in modern web development community. It's not just the tool to save your development progress. It's an instrumment of team collaboration. Make sure to master it.
 

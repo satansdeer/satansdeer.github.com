@@ -18,11 +18,11 @@ In the end of second article I'll provide a github repo with this project.
 
 We'll create our own token that will conform the [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) token standard. We'll create a wallet application using ReactJS, that will allow you to play arount with your token using browser with [🦊 Metamask](https://metamask.io/) extension.
 
-![Result](/assets/images/react_ethereum_result.png)
+![Result](/react_ethereum_result.png)
 
 We'll use [Truffle](http://truffleframework.com/) to compile and deploy our token, [Ganache](http://truffleframework.com/ganache/) to set up the test blockchain aNd [Drizzle](http://truffleframework.com/docs/drizzle/getting-started) to integrate all this with ReactJS frontend.
 
-![Truffle Ganache Drizzle](/assets/images/truffle_ganache_drizzle.png)
+![Truffle Ganache Drizzle image](/truffle_ganache_drizzle.png)
 
 ## About ERC20
 
@@ -132,7 +132,7 @@ module.exports = function(deployer) {
 
 If you haven't done it yet – download [Ganache](http://truffleframework.com/ganache/) and run it. It will start on `7545` port by default.
 
-![Ganache](/assets/images/ganache.png)
+![Ganache image](/ganache.png)
 
 Now go back to terminal and compile your contract:
 
@@ -161,7 +161,7 @@ truffle migrate
 
 After successful migration you should see new transactions in Ganache:
 
-![Ganache](/assets/images/ganache_2.png)
+![Ganache image](/ganache_2.png)
 
 Awesome, your contract is now up and running, let's make simple React app to interact with your token.
 

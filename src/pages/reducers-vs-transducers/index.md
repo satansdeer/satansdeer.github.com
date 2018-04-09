@@ -11,7 +11,7 @@ Sweet chunk of functional paradigm for you today. I don't know why did I write "
 
 Simply speaking a `Reducer` is a function that takes an accumulation and a value, and then returns a new accumulation.
 
-![reducers](/assets/images/reducers_vs_transducers_1.png)
+![reducers](/reducers_vs_transducers_1.png)
 
 You are already familiar with reducers if you've used the `Array.prototype.reduce()` method. The `.reduce()` function itself is not a reducer!
 It iterates over a collection and passes values to it's "callback" that is a __reducer__ here.

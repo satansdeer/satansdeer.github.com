@@ -13,7 +13,7 @@ If only you could make robots do your job!
 
 ## E2E Automation
 
-![test pyramid](/assets/images/testing_pyramid.png)
+![test pyramid](/testing_pyramid.png)
 
 Tests we are going to discuss here sit on top of the Martin Fowler's [Test Pyramid](https://martinfowler.com/bliki/TestPyramid.html). They are the slowest and most expensive to support. Every time you change any part of your system – you might break one of those. So as a rule of thumb __keep them low__. Test only required scenarios, and don't use them to test things that can be tested with __unit tests__. 
 

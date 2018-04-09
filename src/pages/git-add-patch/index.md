@@ -182,7 +182,7 @@ Stage this hunk [y,n,q,a,d,/,e,?]? e
 
 It will open the default text editor and you'll be able to manually edit that hunk.
 
-![editor](/assets/images/edit_hunk.png)
+![editor](/edit_hunk.png)
 
 Just remove the part about onions and here you go:
 

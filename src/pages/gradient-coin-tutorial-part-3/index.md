@@ -9,7 +9,7 @@ In [last part](http://maksimivanov.com/posts/gradient-coin-tutorial-part-2) we a
 
 This is what we'll be building:
 
-![gradient token app preview](/assets/images/gradient_preview.png)
+![gradient token app preview](/gradient_preview.png)
 
 ## Create React App
 
@@ -80,7 +80,7 @@ Now we need to initialize the `truffle-contract`. It needs the `provider` that i
 
 Create the `front/src/utils` folder and create `getProvider.js` there with following contents:
 
-```sh
+```js
 import Web3 from "web3";
 
 const getProvider = () => {

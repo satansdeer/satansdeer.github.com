@@ -48,7 +48,7 @@ Our application will have two screens. `ProfileScreen` where we'll allow to upda
 
 Here is how our `App.js` will look:
 
-```html
+```jsx
 import React from "react";
 import { StyleSheet, View, Text, SafeAreaView } from "react-native";
 import { StackNavigator } from "react-navigation";
@@ -134,9 +134,9 @@ Create api key/secret and save somewhere, we'll use them later.
 
 We need to be able to save those API keys somehow. Let's create our first screen with two inputs and submit button.
 
-![binance tracker](/assets/images/binance_profile.png)
+![binance tracker](/binance_profile.png)
 
-```html
+```jsx
 /* Imports omitted */
 
 /* Style declarations omitted */
@@ -300,7 +300,7 @@ Also it stores old computed values to `AsyncStorage` and allows to calculate dif
 
 Here is the `HomeScreen` layout.
 
-```html
+```jsx
 /* Imports ommited */
 
 /* Styles ommited */

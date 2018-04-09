@@ -11,7 +11,7 @@ If you've read previous articles about Ethereum DAPPs ([First](http://maksimivan
 
 I think everyone has already heard about cryptokitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
 
-![cryptokitties](/assets/images/cryptokitties.png)
+![cryptokitties image](/cryptokitties.png)
 
 The game has huge success and a lot of kittens are sold for a crazy amount of money, like hundreds of thousands of dollars.  
 The game is mostly open-source with a few exceptions (breeding and genetic algorithms).
@@ -210,7 +210,7 @@ Run the test:
 truffle test
 ```
 
-![first test](/assets/images/grad_first_test.png)
+![first test image](/grad_first_test.png)
 
 The test should pass.
 
@@ -412,6 +412,6 @@ Try to run the tests:
 truffle test
 ```
 
-![working tests](/assets/images/gradient_token_tests_working.png)
+![working tests image](/gradient_token_tests_working.png)
 
 Now it should work.

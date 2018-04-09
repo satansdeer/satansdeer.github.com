@@ -10,7 +10,7 @@ __OCP__ states that software entities (classes, modules, functions) should be op
 
 That basically means that you should write your modules in a way that wouldn't require you to __modify__ it's code in order to __extend__ it's behavior.
 
-![open/closed principle](/assets/images/open_closed_1.png)
+![open/closed principle](/open_closed_1.png)
 
 ## Let's Get To Real World Example
 

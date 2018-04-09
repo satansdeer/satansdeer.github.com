@@ -36,7 +36,7 @@ Also, you can't update props inside component itself. Basically `props` come fro
 
 Here is the diagram:
 
-![state vs props](/assets/images/state_vs_props.png)
+![state vs props](/state_vs_props.png)
 
 ## <a name="setting_initial_state"></a>Setting Initial State
 

@@ -18,7 +18,7 @@ Overall we have 4 big phases in components life.
 * [Update](#update)
 * [Unmounting](#unmounting)
 
-![scheme](/assets/images/lifecycle.png)
+![scheme](/lifecycle.png)
 
 In every phase there are several methods being called
 

@@ -4181,7 +4181,7 @@ gatsby-remark-images@^1.5.59:
     slash "^1.0.0"
     unist-util-select "^1.5.0"
 
-gatsby-remark-prismjs@^1.2.21:
+gatsby-remark-prismjs@^1.2.24:
   version "1.2.24"
   resolved "https://registry.yarnpkg.com/gatsby-remark-prismjs/-/gatsby-remark-prismjs-1.2.24.tgz#b2cc4e9c4e71c08d89a32fd847244f927f4a7b79"
   dependencies:

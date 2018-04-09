@@ -18,7 +18,7 @@ We are going to build portfolio tracker for it. On first run we'll save all the 
 
 It'l look somewhat like this:
 
-![binance tracker](/assets/images/binance_tracker.png)
+![binance tracker](/binance_tracker.png)
 
 We'll learn how to store data locally, use flatlist, navigator and do multi-screen applications, also we'll learn how to manage state using mobx.
 
@@ -46,7 +46,7 @@ Observables allow you to subscribe for their changes. You can annotate your clas
 
 Here is simple example. It's a rolling dice – every time you press __ROLL__ button – it re-rolls the dice and displays resulting number from 1 to 6.
 
-```html
+```jsx
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import { observable } from 'mobx';
@@ -89,7 +89,7 @@ ReactDOM.render(<Dice />, document.getElementById('dice'));
 
 Computed values can be derived from observables and will be updated automatically when the latter will be changed. Keep in mind, that in order to be updated `computed` has to be observed.
 
-```html
+```jsx
 @computed get computedValue() {
   return this.value > 3 ? 'WIN' : 'LOOSE'
 }

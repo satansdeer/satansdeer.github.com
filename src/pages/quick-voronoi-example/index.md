@@ -9,7 +9,7 @@ Today I saw a tweet from [@levelsio](https://twitter.com/levelsio/status/9687598
 
 Here is the question itself:
 
-![Twitter question](/assets/images/pieter_question.png)
+![Twitter question](/pieter_question.png)
 
 I propose to use Voronoi algorithm from [D3js](https://d3js.org/).
 

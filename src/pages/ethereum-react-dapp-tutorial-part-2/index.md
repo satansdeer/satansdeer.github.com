@@ -174,7 +174,7 @@ Download and install the Metamask browser extension.
 
 After you've done it – connect to local network. In our case it will be `http://localhost:7545`.
 
-![Metamask](/assets/images/metamask_1.png)
+![Metamask image](/metamask_1.png)
 
 Now import new user using private key. You can get private key by clicking on key icon in ganache.
 
@@ -184,7 +184,7 @@ Reload the page. You should see that you have a bunch of Tutorial Tokens.
  
 Copy the any other wallet address from ganache and try to send it using the form.
 
-![Tutorial Token Wallet](/assets/images/tutorial_token_wallet.png)
+![Tutorial Token Wallet](/tutorial_token_wallet.png)
 
 ## Where To Go Next
 
