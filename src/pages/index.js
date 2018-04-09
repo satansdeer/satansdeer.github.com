@@ -18,7 +18,6 @@ class BlogIndex extends React.Component {
         <Bio />
         {posts.map(({ node }) => {
           const title = get(node, "frontmatter.title") || node.fields.slug;
-          const image = `${node.fields.slug}${get(node, "frontmatter.image")}`;
           return (
             <div key={node.fields.slug}>
               <h3
@@ -30,7 +29,7 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <Img resolutions={data.file.childImageSharp.resolutions} />
+              <Img sizes={node.frontmatter.image.childImageSharp.sizes} />
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
@@ -62,10 +61,8 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
             image {
               childImageSharp {
-                responsiveSizes(maxWidth: 400) {
-                  src
-                  srcSet
-                  sizes
+                sizes(maxWidth: 800) {
+                  ...GatsbyImageSharpSizes
                 }
               }
             }
