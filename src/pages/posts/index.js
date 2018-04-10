@@ -15,13 +15,13 @@ class BlogIndex extends React.Component {
       <div>
         <Helmet title={siteTitle} />
         {posts.map(({ node }) => {
+          if (!node.frontmatter.title) {
+            return;
+          }
           const title = get(node, "frontmatter.title") || node.fields.slug;
           return (
             <div key={node.fields.slug}>
-              <Link
-                style={{ boxShadow: "none" }}
-                to={`/posts${node.fields.slug}`}
-              >
+              <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4)
@@ -29,7 +29,9 @@ class BlogIndex extends React.Component {
                 >
                   {title}
                 </h3>
-                <Img sizes={node.frontmatter.image.childImageSharp.sizes} />
+                {node.frontmatter.image && (
+                  <Img sizes={node.frontmatter.image.childImageSharp.sizes} />
+                )}
               </Link>
               <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />

@@ -14,7 +14,7 @@ export default () => {
         </div>
         <div class="avatar-text">
           <p>
-            Hey, I’m Maksim Ivanov and I{" "}
+            Hey, I’m Maksim Ivanov and I
             <strong>
               help frontend developers take their coding skills and productivity
               to the next level.
@@ -22,7 +22,7 @@ export default () => {
           </p>
           <p>
             I am remote software engineer. I’ve been developing websites, online
-            games and web applications for more than 8 years — and I’d love to{" "}
+            games and web applications for more than 8 years — and I’d love to
             <strong>
               help you become a more proficient frontend developer.
             </strong>
