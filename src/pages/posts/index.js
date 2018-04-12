@@ -20,20 +20,35 @@ class BlogIndex extends React.Component {
           }
           const title = get(node, "frontmatter.title") || node.fields.slug;
           return (
-            <div key={node.fields.slug}>
+            <div
+              key={node.fields.slug}
+              style={{ borderBottom: "1px solid #ccc" }}
+            >
               <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
-                <h3
+                <h2
                   style={{
-                    marginBottom: rhythm(1 / 4)
+                    marginBottom: rhythm(1 / 3),
+                    fontSize: "2rem"
                   }}
                 >
                   {title}
-                </h3>
+                </h2>
+                <small
+                  style={{
+                    marginBottom: rhythm(1),
+                    display: "block",
+                    color: "#aaa"
+                  }}
+                >
+                  {node.frontmatter.date}
+                </small>
                 {node.frontmatter.image && (
-                  <Img sizes={node.frontmatter.image.childImageSharp.sizes} />
+                  <Img
+                    sizes={node.frontmatter.image.childImageSharp.sizes}
+                    style={{ marginBottom: rhythm(1), borderRadius: 6 }}
+                  />
                 )}
               </Link>
-              <small>{node.frontmatter.date}</small>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>
           );

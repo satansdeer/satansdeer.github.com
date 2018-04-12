@@ -46,6 +46,7 @@ module.exports = {
               aliases: {}
             }
           },
+          "gatsby-remark-component",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants"
         ]

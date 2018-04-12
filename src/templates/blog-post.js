@@ -2,8 +2,15 @@ import React from "react";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import get from "lodash/get";
+import rehypeReact from "rehype-react";
+import SignUpForm from "../components/SignUpForm";
 
 import { rhythm, scale } from "../utils/typography";
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { "sign-up-form": SignUpForm }
+}).Compiler;
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -20,12 +27,12 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: "block",
             marginBottom: rhythm(1),
-            marginTop: rhythm(-1)
+            marginTop: rhythm(1)
           }}
         >
           {post.frontmatter.date}
         </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div>{renderAst(post.htmlAst)}</div>
         <hr
           style={{
             marginBottom: rhythm(1)
@@ -73,7 +80,7 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      html
+      htmlAst
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
