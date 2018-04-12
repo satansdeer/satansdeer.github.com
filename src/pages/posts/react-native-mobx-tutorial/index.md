@@ -154,4 +154,4 @@ They are used to make your views "observe" `observables` and re-render on change
 
 But I'll cover it in next part.
 
-{% include subscription_form.html %}
+<sign-up-form></sign-up-form>

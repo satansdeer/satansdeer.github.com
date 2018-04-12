@@ -325,4 +325,4 @@ So go crazy, build stuff and see you next time.
 
 Oh, btw – here is your [github link](https://github.com/satansdeer/firebase-auth-tutorial)
 
-{% include subscription_form.html %}
+<sign-up-form></sign-up-form>

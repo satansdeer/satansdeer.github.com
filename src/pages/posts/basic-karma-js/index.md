@@ -163,4 +163,4 @@ While Karma is running, play around with the code. Try to improve the solution. 
 
 What's the minimum amount of characters you need to solve this task?
 
-{% include subscription_form.html %}
+<sign-up-form></sign-up-form>

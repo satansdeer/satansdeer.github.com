@@ -274,4 +274,4 @@ Learn how to write automated tests and make sure to master git.
 
 Those skills are crucial for effective collaboration. People often overlook them focusing on programming itself.
 
-{% include subscription_form.html %}
+<sign-up-form></sign-up-form>

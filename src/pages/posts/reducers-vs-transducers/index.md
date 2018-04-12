@@ -236,4 +236,4 @@ I suppose you already knew about __reducers__, and if not – you've learned a n
 
 Also you've learned how to do your computations effectively using __transducers__.
 
-{% include subscription_form.html %}
+<sign-up-form></sign-up-form>

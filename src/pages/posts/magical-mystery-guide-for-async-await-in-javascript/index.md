@@ -124,4 +124,4 @@ When the __async function__ will by executed, it will pause just where the `awai
 
 And also we've learned that using `async/await` you can simplify reading of an asynchronous code by giving a more synchronous flow to it.
 
-{% include subscription_form.html %}
+<sign-up-form></sign-up-form>
