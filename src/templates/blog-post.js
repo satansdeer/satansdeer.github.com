@@ -4,12 +4,14 @@ import Link from "gatsby-link";
 import get from "lodash/get";
 import rehypeReact from "rehype-react";
 import SignUpForm from "../components/SignUpForm";
+import Img from "gatsby-image";
+import ReactDisqusComments from "react-disqus-comments";
 
 import { rhythm, scale } from "../utils/typography";
 
 const renderAst = new rehypeReact({
   createElement: React.createElement,
-  components: { "sign-up-form": SignUpForm }
+  components: { "sign-up-form": SignUpForm, image: Img }
 }).Compiler;
 
 class BlogPostTemplate extends React.Component {
@@ -17,6 +19,8 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, "data.site.siteMetadata.title");
     const { previous, next } = this.props.pathContext;
+    const { slug } = post.fields;
+    console.log("-----", slug);
 
     return (
       <div>
@@ -63,6 +67,11 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
+        <ReactDisqusComments
+          identifier={slug}
+          url={`http://maksimivanov.com${slug}`}
+          shortname="maksimivanov-com"
+        />
       </div>
     );
   }
@@ -80,6 +89,9 @@ export const pageQuery = graphql`
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      fields {
+        slug
+      }
       htmlAst
       frontmatter {
         title

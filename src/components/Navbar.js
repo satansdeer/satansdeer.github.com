@@ -34,17 +34,6 @@ export default () => {
           color: "inherit",
           marginRight: 20
         }}
-        to={"/about/"}
-      >
-        About
-      </Link>
-      <Link
-        style={{
-          boxShadow: "none",
-          textDecoration: "none",
-          color: "inherit",
-          marginRight: 20
-        }}
         to={"/posts/"}
       >
         Posts

@@ -26,6 +26,7 @@
     "gatsby-transformer-remark": "^1.7.37",
     "gatsby-transformer-sharp": "^1.6.22",
     "lodash": "^4.17.5",
+    "react-disqus-comments": "^1.2.0",
     "react-responsive-grid": "^0.3.4",
     "rehype-react": "^3.0.2",
     "typeface-merriweather": "0.0.43",

@@ -8,7 +8,7 @@ export default () => {
       <section class="avatar-container">
         <div class="avatar-image_wrapper">
           <img
-            src="https://pp.userapi.com/c628027/v628027303/2f8f2/Lj9uA2PnXPQ.jpg"
+            src="http://starflow.com/images/Maksim_Ivanov.jpg"
             width="200px"
           />
         </div>
