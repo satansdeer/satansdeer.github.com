@@ -18,13 +18,40 @@ class BlogPostTemplate extends React.Component {
   render() {
     const post = this.props.data.markdownRemark;
     const siteTitle = get(this.props, "data.site.siteMetadata.title");
+    const siteUrl = get(this.props, "data.site.siteMetadata.siteUrl");
+    const author = get(this.props, "data.site.siteMetadata.author");
     const { previous, next } = this.props.pathContext;
     const { slug } = post.fields;
-    console.log("-----", slug);
+    console.log("===", post);
+    const image = post.frontmatter.image
+      ? post.frontmatter.image.childImageSharp.sizes.src
+      : "http://starflow.com/images/Maksim_Ivanov.jpg";
 
     return (
       <div>
-        <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
+        <Helmet>
+          <title>{post.frontmatter.title || siteTitle}</title>
+          <meta name="description" content={post.excerpt} />
+          <link rel="canonical" href={`http://maksimivanov.com${slug}`} />
+          <meta property="og:type" content="article" />
+          <meta property="og:site_name" content={author} />
+          <meta
+            property="og:image"
+            content={`http://maksimivanov.com${image}`}
+          />
+          <meta property="og:image:width" content="1920" />
+          <meta property="og:image:height" content="1080" />
+          <meta property="og:url" content={`http://maksimivanov.com${slug}`} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="satansdeer" />
+          <meta name="twitter:title" content="Maksim Ivanov" />
+          <meta name="twitter:creator" content="satansdeer" />
+          <meta name="twitter:description" content={post.excerpt} />
+          <meta
+            name="twitter:image:src"
+            content={`http://maksimivanov.com${image}`}
+          />
+        </Helmet>
         <h1>{post.frontmatter.title}</h1>
         <p
           style={{
@@ -85,10 +112,12 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         author
+        siteUrl
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
+      excerpt
       fields {
         slug
       }
@@ -96,6 +125,13 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        image {
+          childImageSharp {
+            sizes(maxWidth: 800) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }

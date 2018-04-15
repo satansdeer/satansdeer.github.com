@@ -6,18 +6,18 @@ export default () => (
     method="post"
     id="mc-embedded-subscribe-form"
     name="mc-embedded-subscribe-form"
-    class="validate"
+    className="validate"
     target="_blank"
     noValidate
   >
     <div id="mc_embed_signup_scroll">
-      <h2 class="popup-header">Subscribe to my mailing list</h2>
-      <div class="form-row">
-        <label html-for="mce-NAME">Name:</label>
+      <h2 className="popup-header">Subscribe to my mailing list</h2>
+      <div className="form-row">
+        <label htmlFor="mce-NAME">Name:</label>
         <input type="text" name="NAME" className="required" id="mce-NAME" />
       </div>
-      <div class="form-row">
-        <label html-for="mce-EMAIL">Email:</label>
+      <div className="form-row">
+        <label htmlFor="mce-EMAIL">Email:</label>
         <input
           type="email"
           name="EMAIL"
@@ -25,7 +25,7 @@ export default () => (
           id="mce-EMAIL"
         />
       </div>
-      <div id="mce-responses" class="clear">
+      <div id="mce-responses" className="clear">
         <div
           className="response"
           id="mce-error-response"

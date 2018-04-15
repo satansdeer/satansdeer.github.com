@@ -9,11 +9,23 @@ import { rhythm } from "../../utils/typography";
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
+    const author = get(this.props, "data.site.siteMetadata.author");
+    const siteUrl = get(this.props, "data.site.siteMetadata.siteUrl");
+    const siteDescription = get(
+      this,
+      "props.data.site.siteMetadata.description"
+    );
+    console.log("===", get(this, "props.data.site.siteMetadata"));
     const posts = get(this, "props.data.allMarkdownRemark.edges");
 
     return (
       <div>
-        <Helmet title={siteTitle} />
+        <Helmet title={siteTitle}>
+          <meta name="description" content={siteDescription} />
+          <meta property="og:site_name" content={author} />
+          <meta property="og:url" content={`http://maksimivanov.com/posts`} />
+          <link rel="canonical" href={`http://maksimivanov.com/posts`} />
+        </Helmet>
         {posts.map(({ node }) => {
           if (!node.frontmatter.title) {
             return;
@@ -24,7 +36,10 @@ class BlogIndex extends React.Component {
               key={node.fields.slug}
               style={{ borderBottom: "1px solid #ccc" }}
             >
-              <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
+              <Link
+                style={{ boxShadow: "none" }}
+                to={node.fields.slug.replace(/\/$/, "")}
+              >
                 <h2
                   style={{
                     marginBottom: rhythm(1 / 3),
@@ -65,6 +80,8 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        description
+        author
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
