@@ -15,16 +15,23 @@ class BlogIndex extends React.Component {
       this,
       "props.data.site.siteMetadata.description"
     );
-    console.log("===", get(this, "props.data.site.siteMetadata"));
     const posts = get(this, "props.data.allMarkdownRemark.edges");
+    const image = "http://starflow.com/images/Maksim_Ivanov.jpg";
 
     return (
       <div>
         <Helmet title={siteTitle}>
+          <link rel="canonical" href={`http://maksimivanov.com/posts`} />
           <meta name="description" content={siteDescription} />
           <meta property="og:site_name" content={author} />
+          <meta property="og:type" content="blog" />
           <meta property="og:url" content={`http://maksimivanov.com/posts`} />
-          <link rel="canonical" href={`http://maksimivanov.com/posts`} />
+          <meta property="og:image" content={image} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="satansdeer" />
+          <meta name="twitter:title" content="Maksim Ivanov" />
+          <meta name="twitter:creator" content="satansdeer" />
+          <meta name="twitter:description" content={siteDescription} />
         </Helmet>
         {posts.map(({ node }) => {
           if (!node.frontmatter.title) {

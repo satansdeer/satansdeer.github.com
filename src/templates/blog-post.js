@@ -21,8 +21,7 @@ class BlogPostTemplate extends React.Component {
     const siteUrl = get(this.props, "data.site.siteMetadata.siteUrl");
     const author = get(this.props, "data.site.siteMetadata.author");
     const { previous, next } = this.props.pathContext;
-    const { slug } = post.fields;
-    console.log("===", post);
+    const slug = post.fields.slug.replace(/\/$/, "");
     const image = post.frontmatter.image
       ? post.frontmatter.image.childImageSharp.sizes.src
       : "http://starflow.com/images/Maksim_Ivanov.jpg";
@@ -94,11 +93,13 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-        <ReactDisqusComments
-          identifier={slug}
-          url={`http://maksimivanov.com${slug}`}
-          shortname="maksimivanov-com"
-        />
+        {false && (
+          <ReactDisqusComments
+            identifier={slug}
+            url={`http://maksimivanov.com${slug}`}
+            shortname="maksimivanov-com"
+          />
+        )}
       </div>
     );
   }

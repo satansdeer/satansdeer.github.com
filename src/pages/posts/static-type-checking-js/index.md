@@ -199,4 +199,4 @@ My main point is that static type checking will help you to ensure that your mod
 
 I've released a `WIP` version of my [React Course](https://basicreact.com), check it out.
 
-I really wan to make it useful, so join the [Slack Channel](https://join.slack.com/t/frontendartisans/shared_invite/enQtMzM1MjM3ODYyMDY1LWUwYzM4ZDc5ZDU1MjY1ZWM2OWZmNWUzZmZlNGJhOGRiYzA1ZmFiZDBkZDg2YmI3MzMyNTcxODVhZjgzMjNiZjc) and let me know what you'd like to see in __your perfect react course__.
+I really want to make it useful, so join the [Slack Channel](https://join.slack.com/t/frontendartisans/shared_invite/enQtMzM1MjM3ODYyMDY1LWUwYzM4ZDc5ZDU1MjY1ZWM2OWZmNWUzZmZlNGJhOGRiYzA1ZmFiZDBkZDg2YmI3MzMyNTcxODVhZjgzMjNiZjc) and let me know what you'd like to see in __your perfect react course__.
