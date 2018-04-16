@@ -23,7 +23,9 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext;
     const slug = post.fields.slug.replace(/\/$/, "");
     const image = post.frontmatter.image
-      ? post.frontmatter.image.childImageSharp.sizes.src
+      ? `http://maksimivanov.com${
+          post.frontmatter.image.childImageSharp.sizes.src
+        }`
       : "http://starflow.com/images/Maksim_Ivanov.jpg";
 
     return (
@@ -34,10 +36,7 @@ class BlogPostTemplate extends React.Component {
           <link rel="canonical" href={`http://maksimivanov.com${slug}`} />
           <meta property="og:type" content="article" />
           <meta property="og:site_name" content={author} />
-          <meta
-            property="og:image"
-            content={`http://maksimivanov.com${image}`}
-          />
+          <meta property="og:image" content={image} />
           <meta property="og:image:width" content="1920" />
           <meta property="og:image:height" content="1080" />
           <meta property="og:url" content={`http://maksimivanov.com${slug}`} />
@@ -79,7 +78,7 @@ class BlogPostTemplate extends React.Component {
         >
           {previous && (
             <li>
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug.replace(/\/$/, "")} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             </li>
@@ -87,7 +86,7 @@ class BlogPostTemplate extends React.Component {
 
           {next && (
             <li>
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.fields.slug.replace(/\/$/, "")} rel="next">
                 {next.frontmatter.title} →
               </Link>
             </li>
