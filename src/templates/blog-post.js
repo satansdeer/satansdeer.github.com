@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
     const siteUrl = get(this.props, "data.site.siteMetadata.siteUrl");
     const author = get(this.props, "data.site.siteMetadata.author");
     const { previous, next } = this.props.pathContext;
-    const slug = post.fields.slug;
+    const slug = post.fields.slug == "/" ? "" : post.fields.slug;
     const image = post.frontmatter.image
       ? `http://maksimivanov.com${
           post.frontmatter.image.childImageSharp.sizes.src
