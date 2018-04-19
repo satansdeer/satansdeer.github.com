@@ -1,0 +1,4 @@
+# COMMENT: These are two basic redirect rules
+# COMMENT: This is an abbreviated syntax for rules that fit in one line
+redirects = [
+  {from = "/posts/page/2", to = "/"},
