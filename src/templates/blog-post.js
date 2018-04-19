@@ -45,10 +45,7 @@ class BlogPostTemplate extends React.Component {
           <meta name="twitter:title" content="Maksim Ivanov" />
           <meta name="twitter:creator" content="satansdeer" />
           <meta name="twitter:description" content={post.excerpt} />
-          <meta
-            name="twitter:image:src"
-            content={`http://maksimivanov.com${image}`}
-          />
+          <meta name="twitter:image:src" content={image} />
         </Helmet>
         <h1>{post.frontmatter.title}</h1>
         <p
