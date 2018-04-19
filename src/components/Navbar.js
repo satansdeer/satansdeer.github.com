@@ -34,7 +34,7 @@ export default () => {
           color: "inherit",
           marginRight: 20
         }}
-        to={"/posts"}
+        to={"/posts/"}
       >
         Posts
       </Link>
