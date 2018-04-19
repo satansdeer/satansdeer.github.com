@@ -43,10 +43,7 @@ class BlogIndex extends React.Component {
               key={node.fields.slug}
               style={{ borderBottom: "1px solid #ccc" }}
             >
-              <Link
-                style={{ boxShadow: "none" }}
-                to={node.fields.slug.replace(/\/$/, "")}
-              >
+              <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                 <h2
                   style={{
                     marginBottom: rhythm(1 / 3),

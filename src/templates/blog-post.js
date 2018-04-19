@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
     const siteUrl = get(this.props, "data.site.siteMetadata.siteUrl");
     const author = get(this.props, "data.site.siteMetadata.author");
     const { previous, next } = this.props.pathContext;
-    const slug = post.fields.slug.replace(/\/$/, "");
+    const slug = post.fields.slug;
     const image = post.frontmatter.image
       ? `http://maksimivanov.com${
           post.frontmatter.image.childImageSharp.sizes.src
@@ -78,7 +78,7 @@ class BlogPostTemplate extends React.Component {
         >
           {previous && (
             <li>
-              <Link to={previous.fields.slug.replace(/\/$/, "")} rel="prev">
+              <Link to={previous.fields.slug} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             </li>
@@ -86,7 +86,7 @@ class BlogPostTemplate extends React.Component {
 
           {next && (
             <li>
-              <Link to={next.fields.slug.replace(/\/$/, "")} rel="next">
+              <Link to={next.fields.slug} rel="next">
                 {next.frontmatter.title} →
               </Link>
             </li>
