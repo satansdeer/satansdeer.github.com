@@ -1,9 +1,10 @@
 ---
+date: 2017-11-11T20:58:45.284Z
 ---
 
 # Improve Your Frontend Skills
 
-![](http://starflow.com/images/Maksim_Ivanov.jpg)</div>
+![Maksim Ivanov](http://starflow.com/images/Maksim_Ivanov.jpg)
 
 Hey, I’m Maksim Ivanov and I **help frontend developers take their coding skills and productivity to the next level.**
 
