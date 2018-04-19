@@ -21,7 +21,7 @@ class BlogIndex extends React.Component {
     return (
       <div>
         <Helmet title={siteTitle}>
-          <link rel="canonical" href={`http://maksimivanov.com/posts`} />
+          <link rel="canonical" href={`http://maksimivanov.com/posts/`} />
           <meta name="description" content={siteDescription} />
           <meta property="og:site_name" content={author} />
           <meta property="og:type" content="blog" />
