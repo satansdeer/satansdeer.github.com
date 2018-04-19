@@ -1,5 +1,4 @@
 ---
-date: 2017-11-11T20:58:45.284Z
 ---
 
 # Improve Your Frontend Skills

@@ -47,7 +47,7 @@ class BlogPostTemplate extends React.Component {
           <meta name="twitter:description" content={post.excerpt} />
           <meta name="twitter:image:src" content={image} />
         </Helmet>
-        <h1>{post.frontmatter.title}</h1>
+        {post.frontmatter.title && <h1>{post.frontmatter.title}</h1>}
         <p
           style={{
             ...scale(-1 / 5),
