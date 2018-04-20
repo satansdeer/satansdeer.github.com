@@ -97,7 +97,7 @@ Another way to ensure that your units will work together – is by defining cont
 
 And here is where Javascript dynamic nature doesn't help us at all. You can pass any values to your functions – and you'll be able to catch errors only at runtime.
 
-<img style="max-width: 300px" src="http://gifgifmagazine.com/wp-content/uploads/2018/03/brokula-pica-i-pas.gif"/>
+![javascript dynamic nature](/brokula-pica-i-pas.gif)
 
 In React world there is a very popular way to do it – the PropTypes. But it's a runtime check, so you might see some errors late and also it's applicable only to react components.
 
