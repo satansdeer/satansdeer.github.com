@@ -7,7 +7,7 @@ image: erc721.jpg
 
 If you've read previous articles about Ethereum DAPPs ([First](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your very own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
 
-##  <a name='observables'></a>What Are We Going To Build
+## <a name='observables'></a>What Are We Going To Build
 
 I think everyone has already heard about cryptokitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
 

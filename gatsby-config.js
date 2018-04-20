@@ -52,6 +52,9 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-sitemap`
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
