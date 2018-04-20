@@ -16,16 +16,16 @@ class BlogIndex extends React.Component {
       "props.data.site.siteMetadata.description"
     );
     const posts = get(this, "props.data.allMarkdownRemark.edges");
-    const image = "http://starflow.com/images/Maksim_Ivanov.jpg";
+    const image = "https://starflow.com/images/Maksim_Ivanov.jpg";
 
     return (
       <div>
         <Helmet title={siteTitle}>
-          <link rel="canonical" href={`http://maksimivanov.com/posts/`} />
+          <link rel="canonical" href={`https://maksimivanov.com/posts/`} />
           <meta name="description" content={siteDescription} />
           <meta property="og:site_name" content={author} />
           <meta property="og:type" content="blog" />
-          <meta property="og:url" content={`http://maksimivanov.com/posts`} />
+          <meta property="og:url" content={`https://maksimivanov.com/posts`} />
           <meta property="og:image" content={image} />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="satansdeer" />

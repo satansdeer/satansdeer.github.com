@@ -5,7 +5,7 @@ categories: js react ethereum dapps erc721
 image: erc721-3.jpg
 ---
 
-In [last part](http://maksimivanov.com/posts/gradient-coin-tutorial-part-2) we added an auction contract. Now we can buy and sell our GradientTokens. Let's add some nice UI for that.
+In [last part](https://maksimivanov.com/posts/gradient-coin-tutorial-part-2) we added an auction contract. Now we can buy and sell our GradientTokens. Let's add some nice UI for that.
 
 This is what we'll be building:
 
@@ -84,7 +84,7 @@ Create the `front/src/utils` folder and create `getProvider.js` there with follo
 import Web3 from "web3";
 
 const getProvider = () => {
-  return new Web3.providers.HttpProvider("http://localhost:7545");
+  return new Web3.providers.HttpProvider("https://localhost:7545");
 };
 
 export default getProvider;
@@ -176,7 +176,7 @@ export default decorate(GradientTokenStore, {
 });
 ```
 
-Here we defined the `gradientTokenInstance` getter and made it `computed`. Mobx allows to observe `observables` automatically and create `computed` values based on them. You can read more about it in my [Mobx article](http://maksimivanov.com/posts/react-native-mobx-tutorial)
+Here we defined the `gradientTokenInstance` getter and made it `computed`. Mobx allows to observe `observables` automatically and create `computed` values based on them. You can read more about it in my [Mobx article](https://maksimivanov.com/posts/react-native-mobx-tutorial)
 
 We observe this property in `constructor`, using `when`, so once `gradientTokenInstance` is setup – we call the `setup` method.
 

@@ -3,7 +3,7 @@
 
 # Improve Your Frontend Skills
 
-![Maksim Ivanov](http://starflow.com/images/Maksim_Ivanov.jpg)
+![Maksim Ivanov](https://starflow.com/images/Maksim_Ivanov.jpg)
 
 Hey, I’m Maksim Ivanov and I **help frontend developers take their coding skills and productivity to the next level.**
 

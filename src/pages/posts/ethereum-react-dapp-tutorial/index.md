@@ -20,7 +20,7 @@ We'll create our own token that will conform the [ERC20](https://theethereum.wik
 
 ![Result](/react_ethereum_result.png)
 
-We'll use [Truffle](http://truffleframework.com/) to compile and deploy our token, [Ganache](http://truffleframework.com/ganache/) to set up the test blockchain aNd [Drizzle](http://truffleframework.com/docs/drizzle/getting-started) to integrate all this with ReactJS frontend.
+We'll use [Truffle](https://truffleframework.com/) to compile and deploy our token, [Ganache](https://truffleframework.com/ganache/) to set up the test blockchain aNd [Drizzle](https://truffleframework.com/docs/drizzle/getting-started) to integrate all this with ReactJS frontend.
 
 ![Truffle Ganache Drizzle image](/truffle_ganache_drizzle.png)
 
@@ -60,7 +60,7 @@ To write our contract we need local blockchain and an wallet that will allow us 
 
 First install the [🦊 Metamask](https://metamask.io/) browser extension. We'll need it to interact with our contract in browser.
 
-For local ethereum blockchain I recommend [Ganache](http://truffleframework.com/ganache/). Go and download version for your OS.
+For local ethereum blockchain I recommend [Ganache](https://truffleframework.com/ganache/). Go and download version for your OS.
 
 Now install Truffle and initialize new project:
 
@@ -130,7 +130,7 @@ module.exports = function(deployer) {
 };
 ```
 
-If you haven't done it yet – download [Ganache](http://truffleframework.com/ganache/) and run it. It will start on `7545` port by default.
+If you haven't done it yet – download [Ganache](https://truffleframework.com/ganache/) and run it. It will start on `7545` port by default.
 
 ![Ganache image](/ganache.png)
 

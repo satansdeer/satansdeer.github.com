@@ -319,7 +319,7 @@ So now we'll render `Loading...` until we get data from Firebase and update our 
 
 Now you can add a redirect from login page if you are logged in already, also you can add log out functionality (go read [firebase documentation](https://firebase.google.com/docs/auth/web/manage-users))
 
-Also with this knowledge you can add authentication to wallet app from the [React Ethereum Tutorial](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial) and build your own ICO platform!
+Also with this knowledge you can add authentication to wallet app from the [React Ethereum Tutorial](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial) and build your own ICO platform!
 
 So go crazy, build stuff and see you next time.
 

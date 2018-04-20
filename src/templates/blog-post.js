@@ -23,23 +23,23 @@ class BlogPostTemplate extends React.Component {
     const { previous, next } = this.props.pathContext;
     const slug = post.fields.slug == "/" ? "" : post.fields.slug;
     const image = post.frontmatter.image
-      ? `http://maksimivanov.com${
+      ? `https://maksimivanov.com${
           post.frontmatter.image.childImageSharp.sizes.src
         }`
-      : "http://starflow.com/images/Maksim_Ivanov.jpg";
+      : "https://starflow.com/images/Maksim_Ivanov.jpg";
 
     return (
       <div>
         <Helmet>
           <title>{post.frontmatter.title || siteTitle}</title>
           <meta name="description" content={post.excerpt} />
-          <link rel="canonical" href={`http://maksimivanov.com${slug}`} />
+          <link rel="canonical" href={`https://maksimivanov.com${slug}`} />
           <meta property="og:type" content="article" />
           <meta property="og:site_name" content={author} />
           <meta property="og:image" content={image} />
           <meta property="og:image:width" content="1920" />
           <meta property="og:image:height" content="1080" />
-          <meta property="og:url" content={`http://maksimivanov.com${slug}`} />
+          <meta property="og:url" content={`https://maksimivanov.com${slug}`} />
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="satansdeer" />
           <meta name="twitter:title" content="Maksim Ivanov" />
@@ -92,7 +92,7 @@ class BlogPostTemplate extends React.Component {
         {false && (
           <ReactDisqusComments
             identifier={slug}
-            url={`http://maksimivanov.com${slug}`}
+            url={`https://maksimivanov.com${slug}`}
             shortname="maksimivanov-com"
           />
         )}

@@ -6,7 +6,7 @@ image: class_level_properties.jpg
 comments: true
 ---
 
-In my [previous post](http://maksimivanov.com/posts/react-modal-window) I used pretty interesting syntax to define class methods for my `Popup` component. I was able to use arrow functions to change the scope of `this` to class level. Hmm, but it's not actually Javascript, so how did I do that?
+In my [previous post](https://maksimivanov.com/posts/react-modal-window) I used pretty interesting syntax to define class methods for my `Popup` component. I was able to use arrow functions to change the scope of `this` to class level. Hmm, but it's not actually Javascript, so how did I do that?
 
 First let's refresh your memory, i'm talking about this code:
 

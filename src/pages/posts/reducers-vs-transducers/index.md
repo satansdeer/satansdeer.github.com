@@ -177,7 +177,7 @@ Basically we need something that would take a number of functions and compose th
 compose(fn1, fn2, fn3)(x) => fn1(fn2(fn3(x)))
 ```
 
-Luckily a lot of libraries provide this kind of function. For instance [RamdaJS](http://ramdajs.com/docs/#compose). But for educational purposes let's create our own version.
+Luckily a lot of libraries provide this kind of function. For instance [RamdaJS](https://ramdajs.com/docs/#compose). But for educational purposes let's create our own version.
 
 ```javascript
 const compose = (...functions) =>

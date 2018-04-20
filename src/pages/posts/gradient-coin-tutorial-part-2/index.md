@@ -5,7 +5,7 @@ categories: js react ethereum dapps erc721
 image: erc721-2.jpg
 ---
 
-In [last part](http://maksimivanov.com/posts/gradient-coin-tutorial) we created our own non-fungible token. For the sake of simplicity, we didn't create as many fields as CryptoKitties have and went with just 2. Inner and outer color of our GradientToken. In this part, we'll add an auction to be able to trade them.
+In [last part](https://maksimivanov.com/posts/gradient-coin-tutorial) we created our own non-fungible token. For the sake of simplicity, we didn't create as many fields as CryptoKitties have and went with just 2. Inner and outer color of our GradientToken. In this part, we'll add an auction to be able to trade them.
 
 ## How Will It Work
 

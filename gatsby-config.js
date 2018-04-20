@@ -4,7 +4,7 @@ module.exports = {
     author: "Maksim Ivanov",
     description:
       "Hi, my name is Maksim Ivanov and I specialize on best Javascript testing practices.",
-    siteUrl: "http://maksimivanov.com"
+    siteUrl: "https://maksimivanov.com"
   },
   pathPrefix: "/",
   plugins: [

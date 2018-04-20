@@ -172,7 +172,7 @@ If you read the first part of the article – you should already have the local 
 
 Download and install the Metamask browser extension.
 
-After you've done it – connect to local network. In our case it will be `http://localhost:7545`.
+After you've done it – connect to local network. In our case it will be `https://localhost:7545`.
 
 ![Metamask image](/metamask_1.png)
 
@@ -192,7 +192,7 @@ If you feel lazy – here is the repo with all the steps done: [https://github.c
 
 This is it. Now you can create your own tokens with little to no effort. Use your new power wisely.
 
-Now you can [add authorization](http://maksimivanov.com/posts/firebase-react-tutorial) to this app and build the whole ICO dashboard around it.
+Now you can [add authorization](https://maksimivanov.com/posts/firebase-react-tutorial) to this app and build the whole ICO dashboard around it.
 
 Stay tuned, I'm going to make more tutorials about Ethereum and DAPPs.
 

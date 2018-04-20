@@ -5,7 +5,7 @@ categories: js react ethereum dapps erc721
 image: erc721.jpg
 ---
 
-If you've read previous articles about Ethereum DAPPs ([First](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your very own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
+If you've read previous articles about Ethereum DAPPs ([First](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your very own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
 
 ## <a name='observables'></a>What Are We Going To Build
 
@@ -32,7 +32,7 @@ We'll build a wallet for unique collectibles: gradient tokens. Every token will 
 
 You will be able to see the list of owned tokens and transfer them between wallets.
 
-In this tutorial I assume that you have basic knowledge about ReactJS and went though my previous tutorials about Ethereum contracts ([First](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](http://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2))
+In this tutorial I assume that you have basic knowledge about ReactJS and went though my previous tutorials about Ethereum contracts ([First](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2))
 
 ## Contents
 
@@ -111,7 +111,7 @@ Open your `truffle.js` and add set up the development network:
 
 ```js
 module.exports = {
-  // See <http://truffleframework.com/docs/advanced/configuration>
+  // See <https://truffleframework.com/docs/advanced/configuration>
   // to customize your Truffle configuration!
   networks: {
     development: {
