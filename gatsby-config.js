@@ -46,6 +46,12 @@ module.exports = {
               aliases: {}
             }
           },
+          {
+            resolve: "gatsby-remark-emoji",
+            options: {
+              emojiConversion: "shortnameToUnicode"
+            }
+          },
           "gatsby-remark-component",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants"
