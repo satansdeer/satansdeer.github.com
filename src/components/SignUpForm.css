@@ -1,0 +1,28 @@
+.form-row {
+  margin-bottom: 15px;
+}
+
+.form-row label {
+  width: 80px;
+  display: inline-block;
+}
+
+.SignUpForm-submit {
+  font-size: 25px;
+  background: linear-gradient(30deg, rgba(233,167,0,1) 0%, rgba(222,54,47,1) 100%);
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  max-width: 350px;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 75px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 6px;
+  border: none;
+  box-shadow: 0 0 0 1px rgba(16,22,26,.1),0 4px 8px rgba(16,22,26,.2),0 18px 46px 6px rgba(16,22,26,.2);
+  text-transform: uppercase;
+  font-family: 'Open Sans';
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import "./SignUpForm.css";
 
 export default () => (
   <form
@@ -51,7 +52,7 @@ export default () => (
           value="Subscribe"
           name="subscribe"
           id="mc-embedded-subscribe"
-          className="button"
+          className="SignUpForm-submit"
         />
       </div>
     </div>
