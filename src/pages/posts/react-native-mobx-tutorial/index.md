@@ -40,7 +40,8 @@ Mobx has very few core concepts:
 * [Reactions](#reactions)
 * [Actions](#actions)
 
-### <a name='observables'></a>Observables
+<a name='observables'></a>
+### Observables
 
 Observables allow you to subscribe for their changes. You can annotate your class properties with `@observable` decorator and then track their values with `observers`. So every time the values will change – `observers` will be updated accordingly.
 
@@ -80,12 +81,14 @@ import { observer } from 'mobx-react';
 }
 ReactDOM.render(<Dice />, document.getElementById('dice'));
 ```
+
 <p>
   <div id="dice"></div>
-  <script type="text/javascript" src="/javascripts/dice.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://maksimivanov.com/javascripts/dice.js" charset="utf-8"></script>
 </p>
 
-### <a name='computed_values'></a>Computed values
+<a name='computed_values'></a>
+### Computed values
 
 Computed values can be derived from observables and will be updated automatically when the latter will be changed. Keep in mind, that in order to be updated `computed` has to be observed.
 
@@ -107,10 +110,11 @@ render() {
 
 <p>
   <div id="computed_dice"></div>
-  <script type="text/javascript" src="/javascripts/computed_dice.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://maksimivanov.com/javascripts/computed_dice.js" charset="utf-8"></script>
 </p>
 
-### <a name='reactions'></a>Reactions
+<a name='reactions'></a>
+### Reactions
 
 Reactions are very similar to computed values but instead of returning new value they are used to produce side-effects (making network requests, patching dom e.t.c)
 
@@ -133,10 +137,11 @@ constructor() {
 
 <p>
   <div id="reaction_dice"></div>
-  <script type="text/javascript" src="/javascripts/reaction_dice.js" charset="utf-8"></script>
+  <script type="text/javascript" src="https://maksimivanov.com/javascripts/reaction_dice.js" charset="utf-8"></script>
 </p>
 
-### <a name='actions'></a>Actions
+<a name='actions'></a>
+### Actions
 
 Actions are anything that alters the state. So you can use them to explicitly mark that functions with `@action` decorator.
 
