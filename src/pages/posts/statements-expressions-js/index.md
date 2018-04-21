@@ -74,3 +74,22 @@ This is statement. It's useless. It doesn't help, but still. As you can see it c
 Javascript program consists of statements. They are executed one by one, in the same order as they are written. Statements can contain other constructions like expressions, keywords, operators and other stuff.
 
 Expressions are parts of statements that return values. So expressions can be used whenever value is expected.
+
+Sometimes you can use `expression-statements` instead of usual statements, `if-else` is good example:
+
+```js
+let foo;
+if (bar === 'bazz') {
+  foo = bar;
+} else {
+  foo = null;
+}
+```
+
+You can use this `expression` instead:
+
+```js
+let foo = bar === 'bazz' ? bar : null
+```
+
+That's it, it was short, but I hope it helped to structurize the knowledge.
