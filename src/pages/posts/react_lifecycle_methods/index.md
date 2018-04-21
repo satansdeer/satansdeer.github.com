@@ -22,14 +22,16 @@ Overall we have 4 big phases in components life.
 
 In every phase there are several methods being called
 
-## <a name="initialization"></a>Initialization
+<a name="initialization"></a>
+## Initialization
 
 First goes the __initialization__ phase.
 
 And first one to be called is the `constructor` method. This is the place where you initialize your component, set your initial state, default props or bind `this` to functions that need it.
 Don't use this method for anything other than setting up your component. Please, no `AJAX` calls or reading/writing to database.
 
-## <a name="mounting"></a>Mounting
+<a name="mounting"></a>
+## Mounting
 
 Initialization phase is followed by __mounting__ phase.
 
@@ -39,7 +41,8 @@ Next `render` method is executed. You are already familiar with this one. This m
 
 After the component is mounted to DOM – `componentDidMount` gets called. As this function is being executed only once in the whole lifecycle – it's a good place to put your AJAX requests.
 
-## <a name="update"></a>Update
+<a name="update"></a>
+## Update
 
 After __mounting__ phase is completed – component goes to __update__ phase.
 
@@ -62,7 +65,8 @@ Since React 16 we have now have `componentDidCatch(errorString, errorInfo)` meth
 
 Keep in mind that this method will only catch errors in the components below the parent in the tree. It won't catch the errors happened in the component itself.
 
-## <a name="unmounting"></a>Unmounting
+<a name="unmounting"></a>
+## Unmounting
 
 And the final phase of life of any react component is __unmounting__ phase.
 

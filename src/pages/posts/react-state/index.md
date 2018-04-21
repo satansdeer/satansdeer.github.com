@@ -20,7 +20,8 @@ image: state_thumb.jpg
   * [Warning, `setState` Is Asynchronous](#warning_async)
   * [State Updates Are Merged](#state_merged)
 
-## <a name="what_is_state"></a>What Is State
+<a name="what_is_state"></a>
+## What Is State
 
 So basically `state` is a plain javascript object where component stores relevant data. The difference between `state` and any other object you can store inside your component is that React monitors it and will trigger re-render on `state` update.
 
@@ -28,7 +29,8 @@ As state updates cause re-render – it makes sense to only store variables that
 
 Also, consider `state` as private to the component. So you can only access or update `state` from inside the component. You can't access it from its parent nor from its children.
 
-## <a name="differente_from_props"></a>Difference From Props
+<a name="differente_from_props"></a>
+## Difference From Props
 
 Just like `props` – `state` is an object and it causes the component to re-render when updated. The difference is that `props` come from parent component and `state` is internal to the component.
 
@@ -38,7 +40,8 @@ Here is the diagram:
 
 ![state vs props](/state_vs_props.png)
 
-## <a name="setting_initial_state"></a>Setting Initial State
+<a name="setting_initial_state"></a>
+## Setting Initial State
 
 There are several methods of defining the initial state of your component.
 
@@ -46,7 +49,8 @@ There are several methods of defining the initial state of your component.
 * [Inside `constructor` method](#insideconstructor)
 * [As a class property](#asaclassprop)
 
-### <a name="getinitialstate"></a>Using `getInitialState` Method
+<a name="getinitialstate"></a>
+### Using `getInitialState` Method
 
 If you define your component using `React.createClass` – use `getInitialState`;
 
@@ -70,7 +74,8 @@ const ExampleComponent = React.createClass({
 export default ExampleComponent;
 ```
 
-### <a name="insideconstructor"></a>Inside `constructor` Method
+<a name="insideconstructor"></a>
+### Inside `constructor` Method
 
 If you define your component using `ES6` classes – define the `state` inside your `constructor` method:
 
@@ -96,7 +101,8 @@ export default ExampleComponent;
 
 Keep in mind that in order for `this` to be defined in your `constructor` – you should call `super()` first. Also, don't forget to accept `props` as an argument and pass it to `super` as well.
 
-### <a name="asaclassprop"></a>As a Class Property
+<a name="asaclassprop"></a>
+### As a Class Property
 
 Another option if you use `ES6` classes would be using class property. It allows you to write way less boilerplate:
 
@@ -116,7 +122,8 @@ class ExampleComponent extends React.Component {
 export default ExampleComponent;
 ```
 
-## <a name="updating_state"></a>Updating State
+<a name="updating_state"></a>
+## Updating State
 
 There are several things to note about updating state:
 
@@ -124,7 +131,8 @@ There are several things to note about updating state:
 * [Warning, `setState` Is Asynchronous](#warning_async)
 * [State Updates Are Merged](#state_merged)
 
-### <a name="first_rule"></a>First Rule Of Updating State
+<a name="first_rule"></a>
+### First Rule Of Updating State
 
 And first rule of updating state is "Never tell anyone about updating state", oh wait, it's from somewhere else. First rule is – don't update `state` directly:
 
@@ -141,7 +149,8 @@ In all other places `this.setState` instead.
 this.setState({someValueInState: 'NEW VALUE'});
 ```
 
-### <a name="warning_async"></a>Warning, `setState` Is Asynchronous
+<a name="warning_async"></a>
+### Warning, `setState` Is Asynchronous
 
 Here are two things to note. First, don't rely on `this.state` and `this.props` when calculating next state, as they might be updates asynchronously.
 
@@ -173,7 +182,8 @@ this.setState({
 );
 ```
 
-### <a name="state_merged"></a>State Updates Are Merged
+<a name="state_merged"></a>
+### State Updates Are Merged
 
 When you call setState(), React merges the object you provide into the current state. So you don't have to worry about overriding values you don't want to override.
 

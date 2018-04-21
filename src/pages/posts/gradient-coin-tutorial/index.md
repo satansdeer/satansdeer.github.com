@@ -7,7 +7,8 @@ image: erc721.jpg
 
 If you've read previous articles about Ethereum DAPPs ([First](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your very own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
 
-## <a name='observables'></a>What Are We Going To Build
+<a name='observables'></a>
+## What Are We Going To Build
 
 I think everyone has already heard about cryptokitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
 
@@ -49,7 +50,8 @@ In this tutorial I assume that you have basic knowledge about ReactJS and went t
 * Part III
   * Making the frontend
 
-## <a name='erc721'></a>What Is ERC721
+<a name='erc721'></a>
+## What Is ERC721
 
 ERC721 describes non-fungible token. Btw it is also knowns as __NFT__, which basically means exactly that (__Non Fungible Token__). Non-fungible means that every token is not equal to any other token. As opposite to ERC20 where all tokens are equal.
 
@@ -94,7 +96,8 @@ ERC721 compliant contract from [Zeppelin-solidity](https://github.com/OpenZeppel
 * _tokensOf( _owner )_ - Returns list of token ID's of specific `_owner`
 * _approvedFor( _tokenId )_ - Returns the approved address to take ownership of a given token ID
 
-## <a name='truffle_suite'></a>Set Up The Truffle Suite
+<a name='truffle_suite'></a>
+## Set Up The Truffle Suite
 
 So to build our Gradient Token we'll use Zeppelin's ERC721 template and add one additional function to generate random gradient background upon token creation.
 
@@ -123,7 +126,8 @@ module.exports = {
 };
 ```
 
-## <a name='creating_token'></a>Create The Token
+<a name='creating_token'></a>
+## Create The Token
 
 Install `zeppelin-solidity` and create our token contract:
 
@@ -171,7 +175,8 @@ yarn add global ganache-cli
 ganache-cli -p 7545
 ```
 
-## <a name='add_tests'></a>Add Tests
+<a name='add_tests'></a>
+## Add Tests
 
 Truffle uses `Mocha` as a testing framework, with one additional scope: `contract()`.
 
@@ -214,7 +219,8 @@ truffle test
 
 The test should pass.
 
-## <a name='erc721'></a>Add More Functionality
+<a name='erc721'></a>
+## Add More Functionality
 
 We want to have a gradient associated with every token. We'll use circular gradients represented by two colors.
 
@@ -247,7 +253,8 @@ We don't know yet how many gradients do we want to create, so let's define `dyna
 Gradient[] gradients;
 ```
 
-### <a name="minting"></a>Minting Gradient Tokens
+<a name="minting"></a>
+### Minting Gradient Tokens
 
 We want to allow contract owner to mint new __GradientTokens__, let's define the following function:
 
@@ -301,7 +308,8 @@ We defined temporary `memory` variable `_grad` that we got from our `gradients` 
 
 Then finally we define the return values `outer` and `inner`. They will be returned as an array.
 
-## <a name="more_tests"></a>Add More Tests
+<a name="more_tests"></a>
+## Add More Tests
 
 At this point your contract should look like this:
 
@@ -379,7 +387,8 @@ import assertRevert from "zeppelin-solidity/test/helpers/assertRevert";
 
 Ok, now it won't run. You can just use `import` in your tests.
 
-## <a name="fix_setup"></a>Fix The Setup
+<a name="fix_setup"></a>
+## Fix The Setup
 
 Now as we run our code in `node` environment you need to install a few packages to be able to use `import` statement:
 
