@@ -82,7 +82,7 @@ ReactDOM.render(<Dice />, document.getElementById('dice'));
 ```
 <p>
   <div id="dice"></div>
-  <script type="text/javascript" src="/assets/javascripts/dice.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/javascripts/dice.js" charset="utf-8"></script>
 </p>
 
 ### <a name='computed_values'></a>Computed values
@@ -107,7 +107,7 @@ render() {
 
 <p>
   <div id="computed_dice"></div>
-  <script type="text/javascript" src="/assets/javascripts/computed_dice.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/javascripts/computed_dice.js" charset="utf-8"></script>
 </p>
 
 ### <a name='reactions'></a>Reactions
@@ -133,7 +133,7 @@ constructor() {
 
 <p>
   <div id="reaction_dice"></div>
-  <script type="text/javascript" src="/assets/javascripts/reaction_dice.js" charset="utf-8"></script>
+  <script type="text/javascript" src="/javascripts/reaction_dice.js" charset="utf-8"></script>
 </p>
 
 ### <a name='actions'></a>Actions
