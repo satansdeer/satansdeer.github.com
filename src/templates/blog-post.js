@@ -89,13 +89,11 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-        {false && (
-          <ReactDisqusComments
-            identifier={slug}
-            url={`https://maksimivanov.com${slug}`}
-            shortname="maksimivanov-com"
-          />
-        )}
+        <ReactDisqusComments
+          identifier={slug}
+          url={`https://maksimivanov.com${slug}`}
+          shortname="maksimivanov-com"
+        />
       </div>
     );
   }
