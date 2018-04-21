@@ -8,6 +8,12 @@ comments: true
 
 Let's talk about __statements__ and __expressions__. It's very important to understand difference between them.
 
+I've checked several articles on this topic and in a lot of them authors say something like: Ok, we have statements, we have expressions, we can use expressions in place of statements but not in reverse. It is kind of true, but not completely.
+
+It's not like you can apply hammer-wrench 🛠️ analogy. Like __statement__ is a hammer 🔨 and __expression__ is a wrench 🔧. And as like with heavy enough wrench you can use it as a hammer – you can apply __expression__ in place of a __statement__.
+
+No, it's not like that. An expression is always part of statement. Even if that statement only consists of that expression.
+
 ## Contents
 
 * [Statements](#statements)
