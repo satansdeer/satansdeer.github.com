@@ -10,17 +10,38 @@ Let's talk about __statements__ and __expressions__. It's very important to unde
 
 ## Contents
 
-* [Overview](#overview)
-* [Expressions](#expressions)
 * [Statements](#statements)
-* [Expression statements](#expression_statements)
+* [Expressions](#expressions)
+* [Conclusion](#conclusion)
 
-<a name='overview'></a>
-## Overview
+<a name='statements'></a>
+## Statements
 
-When we write programs - we describe the sequences of actions that should be performed to get a desired result. 
+When we write programs - we describe the sequences of actions that should be performed to get a desired result. In programming languages those actions are called statements. 
+So every _Javascript_ program basically consists of statements. In javascript statements are separated by semicolons.
 
-Simply speaking an __expression__ produces a value:
+Important note:
+
+> You can use just newlines and omit semicolons, because Javascipt puts semicolons in the end of lines automatically, but ❌ __this is not recommended__. There are cases where it can lead to ambiguity. See the [automatic semicolon insertion](https://www.ecma-international.org/ecma-262/#sec-automatic-semicolon-insertion) section of ECMAScript specification.
+
+All of those are statements:
+
+```js
+let declaredVariable; // variable declaration is a statement
+let otherVariable = 0; // even with assignment
+function functionCall() { // function declaration is a statement
+}
+if(true){} // if is statement
+2+2; // even this is statement
+// Even though it consists from only one expression
+```
+
+As you can see statements just do things. They are kind of language _phrases_. They can contain smaller parts, for example expressions.
+
+<a name='expressions'></a>
+## Expressions
+
+Simply speaking an __expression__ returns a value:
 
 ```js
 2+2
@@ -31,31 +52,19 @@ declaredVariable // whatever the variable value was
 declaredVariable = 'new value' // assignment is an expression
 ```
 
-Statement performs an action:
+Actually just `"foo"`, `{foo: 'bar'}`, `[1,2,3]`, or `42` are also expressions, they are called `literals` (string, object, array and number literal) because they just return their literal value.
+
+And even this small expressions can be statements on their own.
 
 ```js
-let declaredVariable; // variable declaration is a statement
-let otherVariable = 0; // even with assignment
-function functionCall() { // function declaration is a statement
-}
-if(true){} // if is statement
+2;
 ```
 
-Important thing to note:
+This is statement. It's useless. It doesn't help, but still. As you can see it consists from only one expression. Statements like this are called `expression statements`.
 
-> Javascript expressions can be used in place of statements (so-called _expression statements_). But it doesn't apply in reverse.
+<a name='conclusion'></a>
+## Conclusion
 
-Here is an analogy, I call it a hammer-wrench 🛠️ analogy.
+Javascript program consists of statements. They are executed one by one, in the same order as they are written. Statements can contain other constructions like expressions, keywords, operators and other stuff.
 
-Imagine that __expression__ is a hammer 🔨 (because you can __express__ your anger by breaking stuff with it). Then wrench 🔧 will be a __statement__ (because of unknown reasons). So you can hammer the nails with hammer and to some extent with wrench, but hammer will never work as a wrench.
-
-<a name='expressions'></a>
-## Expressions
-
-As I already mentioned - expressions always return value.
-
-<a name='statements'></a>
-## Statements
-
-<a name='expression_statements'></a>
-## Expression Statements
+Expressions are parts of statements that return values. So expressions can be used whenever value is expected.
