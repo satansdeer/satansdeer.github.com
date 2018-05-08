@@ -13,7 +13,7 @@ Simply speaking: _"Derived class objects must be substitutable for the base clas
 
 Speaking even more simply: _"Derived class objects should __complement__, not __substitute__ base class behavior."_
 
-![liskov](/assets/images/liskov_1.png)
+![liskov](/liskov_1.png)
 
 LSP can also be described as a counter-example of [Duck Test](https://en.wikipedia.org/wiki/Duck_test): _"If it looks like a duck, quacks like a duck, but needs batteries – you probably have the wrong abstraction"_
 

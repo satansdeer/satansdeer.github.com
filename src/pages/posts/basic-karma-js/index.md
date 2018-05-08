@@ -27,7 +27,7 @@ Server is the main part, it:
 * serves the code and tests to clients (through HTTP)
 * reposts test results to you
 
-![high level architecture](/assets/images/karma_scheme.png)
+![karma high level architecture](/karma_scheme.png)
 
 Client runs tests against the code and reports the results to server.
 
