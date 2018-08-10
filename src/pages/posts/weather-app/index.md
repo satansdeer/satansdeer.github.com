@@ -1,5 +1,5 @@
 ---
-title: React App Video Course
+title: React App Video Course, Parts 1-5
 date: 2018-08-05T04:58:45.284Z
 categories: javascript
 image: weather-app.jpg
@@ -11,7 +11,7 @@ My biggest mistake when doing tutorial videos was starting over the recording ev
 
 Now I decided to not care about mistakes, record everything in one shot and then edit out the messed up parts. Seems to be working waaaaaaay better.
 
-If you want to learn how to make a simple weathe app with react - check out those videos:
+If you want to learn how to make a simple weather app with react - check out those videos:
 
 ### #1
 `youtube:https://www.youtube.com/embed/smfAz-Vt6VQ`
