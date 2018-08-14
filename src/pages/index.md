@@ -7,7 +7,7 @@
 
 Hey, I’m Maksim Ivanov and I **help frontend developers take their coding skills and productivity to the next level.**
 
-I am remote software engineer. I’ve been developing websites, online games and web applications for more than 8 years — and I’d love to **help you become a more proficient frontend developer.**
+~~I am remote software engineer~~. I'm an IT consultant, living in Stockholm, Sweden. I’ve been developing websites, online games and web applications for more than 8 years — and I’d love to **help you become a more proficient frontend developer.**
 
 ## Check Out My YouTube Channel
 
