@@ -9,6 +9,10 @@ Hey, I’m Maksim Ivanov and I **help frontend developers take their coding skil
 
 I am remote software engineer. I’ve been developing websites, online games and web applications for more than 8 years — and I’d love to **help you become a more proficient frontend developer.**
 
+## Check Out My YouTube Channel
+
+Recently I've started to post programming tutorials to [My YouTube Channel](https://www.youtube.com/user/satansdeer1/videos). I try post a video a day. And currently there is an ongoing [series on how to create react app for beginners](https://www.youtube.com/watch?v=smfAz-Vt6VQ&list=PLIvCYh5AD3HwK0BrFIc_5UfudUOYiL8nc)
+
 ## Check Out The Basic React Course
 
 ReactJS is a super popular framework for building user interfaces. It allows you to define complex UI in a simple and declarative way.
