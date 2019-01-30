@@ -1,4 +1,5 @@
 ---
+
 ---
 
 # Improve Your Frontend Skills
@@ -11,7 +12,7 @@ Hey, I’m Maksim Ivanov and I **help frontend developers take their coding skil
 
 ## Check Out My YouTube Channel
 
-Recently I've started to post programming tutorials to [My YouTube Channel](https://www.youtube.com/user/satansdeer1/videos). I try post a video a day. And currently there is an ongoing [series on how to create react app for beginners](https://www.youtube.com/watch?v=smfAz-Vt6VQ&list=PLIvCYh5AD3HwK0BrFIc_5UfudUOYiL8nc)
+Recently I've started to post programming tutorials to [My YouTube Channel](https://www.youtube.com/user/satansdeer1/videos). So if you want to learn to develop web applications - you will be interested.
 
 ## Check Out The Basic React Course
 

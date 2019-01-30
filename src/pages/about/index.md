@@ -1,6 +1,6 @@
 # Hey, Nice To Meet You!
 
-My name is Maksim Ivanov, I'm 27 years old and have a dog and two cats and I'm **addicted to programming**.
+My name is Maksim Ivanov, I'm 28 years old and have a dog and two cats and I'm **addicted to programming**.
 
 First thing that I **developed was a small game** about a mouse trapped inside a maze. I'm not sure if that project could be qualified as a game, because there really was no way to win it, you could only fall into a trap or catch a bullet and the level would start over.😅.
 
