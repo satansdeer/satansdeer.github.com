@@ -5,7 +5,6 @@ import get from "lodash/get";
 import rehypeReact from "rehype-react";
 import SignUpForm from "../components/SignUpForm";
 import Img from "gatsby-image";
-import ReactDisqusComments from "react-disqus-comments";
 
 import { rhythm, scale } from "../utils/typography";
 
@@ -89,11 +88,6 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-        <ReactDisqusComments
-          identifier={slug}
-          url={`https://maksimivanov.com${slug}`}
-          shortname="maksimivanov-com"
-        />
       </div>
     );
   }
