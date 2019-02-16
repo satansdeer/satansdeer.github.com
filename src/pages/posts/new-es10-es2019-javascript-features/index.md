@@ -1,6 +1,6 @@
 ---
 title: What's New in ES10? Javascript Features ES2019
-date: 2019-02-17T02:58:45.284Z
+date: 2019-02-16T04:58:45.284Z
 categories: javascript
 image: new_javascript_features.jpg
 ---
