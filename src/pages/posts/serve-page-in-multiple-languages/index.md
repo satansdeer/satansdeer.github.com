@@ -78,3 +78,5 @@ And lastly we need to make sure to let search engines know that we have localize
 Serving same page in multiple languages can lead to a lot of duplicated content, which can harm ranking your page in search engines.
 
 To avoid that you should specify the canonical url - with default or main language of your content and specify localized versions of this page as alternatives with language specified in hreflang field. Using `<link rel="alternate" hreflang='en-gb'>`
+
+`youtube:https://www.youtube.com/embed/9wJPOPywU3w`

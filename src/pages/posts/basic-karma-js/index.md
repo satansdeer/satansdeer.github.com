@@ -6,11 +6,11 @@ image: karma_setup_thumb.jpg
 comments: true
 ---
 
-_Psst, do you write javascript that runs in browser?_ I have something for you, it's&nbsp;called&nbsp;__Karma__, you'll like it.
+_Psst, do you write javascript that runs in browser?_ I have something for you, it's&nbsp;called&nbsp;**Karma**, you'll like it.
 
 When you write javascript code, you have to test it. The same code might work slightly differently in different browsers, so you better test your code at least in most common of them.
 
-That's what __Karma__ is for.
+That's what **Karma** is for.
 
 Karma is a test runner. It allows you to run your tests in real browsers with real DOM. It can even connect to remote clients and you can test your code on _Browserstack_.
 
@@ -18,7 +18,7 @@ That's not the only benefit you get using Karma. It can speed up your work by wa
 
 ## How does it work?
 
-__Karma__ has two parts, server and client (or clients).
+**Karma** has two parts, server and client (or clients).
 
 Server is the main part, it:
 
@@ -46,7 +46,7 @@ $ yarn add karma-jasmine jasmine-core karma-chrome-launcher
 
 This will install karma and its plugins into `node_modules` in your current working directory and also save these as `devDependencies` in `package.json`.
 
-Now create the __Karma__ config file.
+Now create the **Karma** config file.
 
 ```bash
 karma init
@@ -86,36 +86,36 @@ Press tab to list possible options.
 > yes
 ```
 
-Now __Karma__ should say that config file was successfully created.
+Now **Karma** should say that config file was successfully created.
 
 ## Let's write some specs!
 
-You are probably familiar with the problem we are going to describe with specs. Keep in mind that __Karma__ doesn't give you any functionality to write specs. All those `describe`, `it`, `expect` are coming from __Jasmine__, that we are using as testing framework here.
+You are probably familiar with the problem we are going to describe with specs. Keep in mind that **Karma** doesn't give you any functionality to write specs. All those `describe`, `it`, `expect` are coming from **Jasmine**, that we are using as testing framework here.
 
 Create file `test/fizzbuzz_spec.js` and paste the following contents to it:
 
 ```javascript
-describe('fizzbuzz', function(){
-  describe('#process', function(){
-    it('returns Fizz if number is divisible by 3', function(){
-      expect(fizzbuzz.process(3)).toBe('Fizz');
-      expect(fizzbuzz.process(6)).toBe('Fizz');
+describe("fizzbuzz", function() {
+  describe("#process", function() {
+    it("returns Fizz if number is divisible by 3", function() {
+      expect(fizzbuzz.process(3)).toBe("Fizz");
+      expect(fizzbuzz.process(6)).toBe("Fizz");
     });
 
-    it('returns Buzz if number is divisible by 5', function(){
-      expect(fizzbuzz.process(5)).toBe('Buzz');
-      expect(fizzbuzz.process(10)).toBe('Buzz');
+    it("returns Buzz if number is divisible by 5", function() {
+      expect(fizzbuzz.process(5)).toBe("Buzz");
+      expect(fizzbuzz.process(10)).toBe("Buzz");
     });
 
-    it('returns FizzBuzz if number is divisible by both 3 and 5', function(){
-      expect(fizzbuzz.process(15)).toBe('FizzBuzz');
-      expect(fizzbuzz.process(30)).toBe('FizzBuzz');
+    it("returns FizzBuzz if number is divisible by both 3 and 5", function() {
+      expect(fizzbuzz.process(15)).toBe("FizzBuzz");
+      expect(fizzbuzz.process(30)).toBe("FizzBuzz");
     });
 
-    it('returns number itself if number is not divisible by 3 or 5', function(){
+    it("returns number itself if number is not divisible by 3 or 5", function() {
       expect(fizzbuzz.process(4)).toBe(4);
     });
-  })
+  });
 });
 ```
 
@@ -134,25 +134,24 @@ As you don't have the fizzbuzz module, all four specs should fail.
 Create the file `js/fizzbuzz.js` and paste the following code there:
 
 ```javascript
-var fizzbuzz = (function(){
-  function process(n){
-    if(!(n%15)){
-      return 'FizzBuzz'
+var fizzbuzz = (function() {
+  function process(n) {
+    if (!(n % 15)) {
+      return "FizzBuzz";
     }
-    if(!(n%3)){
-      return 'Fizz'
+    if (!(n % 3)) {
+      return "Fizz";
     }
-    if(!(n%5)){
-      return 'Buzz'
+    if (!(n % 5)) {
+      return "Buzz";
     }
-    return n
+    return n;
   }
 
   return {
     process: process
-  }
-})()
-
+  };
+})();
 ```
 
 To keep this tutorial dead-simple I defined `fizzbuzz` globally (it will be available from `window.fizzbuzz`) as self-invoking anonymous function.
@@ -162,5 +161,7 @@ It's the most dumb, simple and straightforward solution I know, but now all the 
 While Karma is running, play around with the code. Try to improve the solution. Try to implement it as a one-liner.
 
 What's the minimum amount of characters you need to solve this task?
+
+`youtube:https://www.youtube.com/embed/0_XhWBqgx-c`
 
 <sign-up-form></sign-up-form>

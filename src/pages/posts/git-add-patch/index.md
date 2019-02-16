@@ -5,7 +5,7 @@ categories: git
 image: git_patch_thumb.jpg
 ---
 
-You know that `git add` adds files to index. But did do you know that it can add __specific&nbsp;lines__ of files? Or even add files, ignoring their contents? Let's check this out!
+You know that `git add` adds files to index. But did do you know that it can add **specific&nbsp;lines** of files? Or even add files, ignoring their contents? Let's check this out!
 
 First let's get familiar with `git add --patch` command or it's shorthand `git add -p`. What does it do?
 
@@ -70,19 +70,19 @@ index 39f13e6..f4b70ab 100644
 Stage this hunk [y,n,q,a,d,/,s,e,?]?
 ```
 
-See the last line, __Stage this hunk [y,n,q,a,d,/,s,e,?]__? Here it gives you some options where the most important are:
+See the last line, **Stage this hunk [y,n,q,a,d,/,s,e,?]**? Here it gives you some options where the most important are:
 
-* __y__ - stage this hunk
-* __n__ - do not stage this hunk
-* __q__ - quit; do not stage this hunk or any of the remaining ones
-* __a__ - stage this hunk and all later hunks in the file
-* __d__ - do not stage this hunk or any of the later hunks in the file
-* __s__ - split the current hunk into smaller hunks
-* __e__ - manually edit the current hunk
+* **y** - stage this hunk
+* **n** - do not stage this hunk
+* **q** - quit; do not stage this hunk or any of the remaining ones
+* **a** - stage this hunk and all later hunks in the file
+* **d** - do not stage this hunk or any of the later hunks in the file
+* **s** - split the current hunk into smaller hunks
+* **e** - manually edit the current hunk
 
-There are some more opions, you can see them by chosing the __?__ option.
+There are some more opions, you can see them by chosing the **?** option.
 
-Here we want only the first part about the sugar and sweetness, so we choose the option&nbsp;__s__.
+Here we want only the first part about the sugar and sweetness, so we choose the option&nbsp;**s**.
 
 ```diff
 Stage this hunk [y,n,q,a,d,/,s,e,?]? s
@@ -111,7 +111,7 @@ Stage this hunk [y,n,q,a,d,/,j,J,g,e,?]? y
 Stage this hunk [y,n,q,a,d,/,K,g,e,?]? n
 ```
 
-And we don't want to stage this one, so we choose __n__.
+And we don't want to stage this one, so we choose **n**.
 
 Great, let's see what we have now.
 
@@ -136,7 +136,7 @@ Cool beans, time to commit this thing.
 ➜  git_add_patch (master) ✗ git commit -m "Complete the first couplet"
 ```
 
-Git splits hunks by the empty lines, but what if you really need to stage only __specific&nbsp;lines__.
+Git splits hunks by the empty lines, but what if you really need to stage only **specific&nbsp;lines**.
 
 ## Behold The Power Of E
 
@@ -160,9 +160,9 @@ index 9737e9f..a2baecd 100644
 
 And you are really concerned about that onion part, but you don't want to remove it. So you want to stage only the _"Flowers smell good"_ and _"And so do you"_ lines.
 
-Now the __s__ option won't help us, because those lines aren't separated by empty lines, and git considers them as one hunk.
+Now the **s** option won't help us, because those lines aren't separated by empty lines, and git considers them as one hunk.
 
-__e__ option to the rescue.
+**e** option to the rescue.
 
 ```bash
 ➜  git_add_patch (master) ✗ git add -p
@@ -220,5 +220,7 @@ No problem, let's tell git that the file exists.
 ```
 
 Now we can use `git add -p` and then edit the hunk to remove the lines about onions.
+
+`youtube:https://www.youtube.com/embed/b0t8XL6ZoeQ`
 
 <sign-up-form></sign-up-form>

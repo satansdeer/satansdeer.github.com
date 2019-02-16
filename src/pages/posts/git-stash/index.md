@@ -14,7 +14,7 @@ Sometimes you have uncommited changes and you need to switch to another branch. 
 
 When switching between tasks you sometimes have uncommited work. In this case you can temporarily save changes in git without commiting them. Here's how it looks.
 
-First make sure your changes are staged (use `git add`). Git stash can only be applied to __staged__ changes.
+First make sure your changes are staged (use `git add`). Git stash can only be applied to **staged** changes.
 
 ```bash
 $> git status

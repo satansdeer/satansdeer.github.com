@@ -47,3 +47,5 @@ Now take a look at the paragraph in the bottom. I have an uppercased class name 
 You can check out the list of quirks that will be used for your page on mozilla website.
 
 Now to sum it up: Doctype is a type declaration that should go as the first line in your html document before the opening html tag. It makes browser render the page in stadards mode. And you should only use the `<!doctype html>` since the html5 was released.
+
+`youtube:https://www.youtube.com/embed/5E1eQ_gNmyU`

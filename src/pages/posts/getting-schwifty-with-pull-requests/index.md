@@ -20,7 +20,7 @@ The difference is what you are basing them off. In first case you base them on `
 
 ## Merging Early And Often
 
-This is the __preferred option__. You better have a good plan of what you are going to do though. You don't want to end up creating meaningless pull requests with lonely components that don't interact with anything. Like models that no one uses.
+This is the **preferred option**. You better have a good plan of what you are going to do though. You don't want to end up creating meaningless pull requests with lonely components that don't interact with anything. Like models that no one uses.
 
 Do it as incremental improvements. In your first PR set the base structure and then gradually improve it by adding more components and upgrading the old ones.
 
@@ -128,3 +128,5 @@ $ git merge stacked-pr-example-2 # integrate changes from stacked-pr-example-2
 Now, after you've applied all feedback and got you PRs approved – time to land the stack.
 
 As github [supports updating the base branch](https://github.com/blog/2224-change-the-base-branch-of-a-pull-request) since August 2016, you can merge your stack in any order.
+
+`youtube:https://www.youtube.com/embed/Lqczzlh7420`

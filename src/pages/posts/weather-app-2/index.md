@@ -8,16 +8,21 @@ image: weather-app.jpg
 I'm super proud of myself, managed to deliver an epidose daily so far. And the best part is that it's getting easier with each one.
 
 ### #6
-`youtube:https://www.youtube.com/embed?v=jiJM18Lc1n8`
+
+`youtube:https://www.youtube.com/embed/jiJM18Lc1n8`
 
 ### #7
-`youtube:https://www.youtube.com/embed?v=3AbzaIl-ojw`
+
+`youtube:https://www.youtube.com/embed/3AbzaIl-ojw`
 
 ### #8
-`youtube:https://www.youtube.com/embed?v=fimloo8wrwQ`
+
+`youtube:https://www.youtube.com/embed/fimloo8wrwQ`
 
 ### #9
-`youtube:https://www.youtube.com/embed?v=SubZAme1iRQ`
+
+`youtube:https://www.youtube.com/embed/SubZAme1iRQ`
 
 ### #10
-`youtube:https://www.youtube.com/embed?v=Zfc5DbQgUrQ`
+
+`youtube:https://www.youtube.com/embed/Zfc5DbQgUrQ`
