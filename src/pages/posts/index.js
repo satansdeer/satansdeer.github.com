@@ -61,12 +61,12 @@ class BlogIndex extends React.Component {
                 >
                   {node.frontmatter.date}
                 </small>
-                {node.frontmatter.image && (
+                {/* {node.frontmatter.image && (
                   <Img
                     sizes={node.frontmatter.image.childImageSharp.sizes}
                     style={{ marginBottom: rhythm(1), borderRadius: 6 }}
                   />
-                )}
+                )} */}
               </Link>
               <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
             </div>

@@ -5,8 +5,6 @@ categories: javascript
 image: new_javascript_features.jpg
 ---
 
-# Javascript 2019 - ES10 New Features
-
 It is 2019, and there is a bunch of new features that got approved by the **TC39** consortium and soon will become part of ES10 standard.
 
 ## Array.flat
