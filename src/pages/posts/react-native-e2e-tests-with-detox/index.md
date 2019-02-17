@@ -1,7 +1,7 @@
 ---
 title: React Native E2E Testing With Detox
 date: 2017-11-29T22:58:45.284Z
-categories: js react testing
+categories: ReactNative
 image: e2e_with_detox.jpg
 ---
 

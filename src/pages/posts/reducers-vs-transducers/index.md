@@ -1,7 +1,7 @@
 ---
 title: Reducers VS Transducers
 date: 2017-11-28T22:58:45.284Z
-categories: js functional
+categories: Javascript
 image: reducers_vs_transducers.jpg
 ---
 

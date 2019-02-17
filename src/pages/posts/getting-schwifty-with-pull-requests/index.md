@@ -1,7 +1,7 @@
 ---
 title: Getting Schwifty With Pull Requests
 date: 2017-10-01T22:58:45.284Z
-categories: git
+categories: Git
 image: test.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Git Stash
 date: 2018-07-12T22:58:45.284Z
-categories: git 
+categories: Git 
 image: git-stash.jpg
 comments: true
 ---

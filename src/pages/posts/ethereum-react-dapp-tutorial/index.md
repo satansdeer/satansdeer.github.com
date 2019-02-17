@@ -1,7 +1,7 @@
 ---
 title: Ethereum Distributed App With React Tutorial
 date: 2018-02-13T05:58:45.284Z
-categories: js react mobx
+categories: Ethereum
 image: react_ethereum.jpg
 ---
 

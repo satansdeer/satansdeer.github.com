@@ -1,7 +1,7 @@
 ---
 title: How do you serve a page with content in multiple languages?
 date: 2019-02-03T01:58:45.284Z
-categories: html i18n
+categories: HTML
 image: multiple_languages.jpg
 ---
 

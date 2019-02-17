@@ -1,7 +1,7 @@
 ---
 title: React 16 Course - Component Lifecycle Methods
 date: 2018-03-11T04:58:45.284Z
-categories: javascript
+categories: React
 image: lifecycle_thumb.jpg
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Js Statements Vs Expressions
 date: 2018-04-20T22:58:45.284Z
-categories: js
+categories: Javascript
 image: statements_expressions.png
 comments: true
 ---

@@ -1,7 +1,7 @@
 ---
 title: Liskov Substitution Principle
 date: 2017-11-10T20:58:45.284Z
-categories: js tdd
+categories: Programming
 image: liskov_substitution_principle.jpg
 ---
 

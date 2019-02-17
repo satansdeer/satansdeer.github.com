@@ -1,7 +1,7 @@
 ---
 title: Do You Need Static Type Checking?
 date: 2018-04-08T05:58:45.284Z
-categories: js types
+categories: Javascript
 image: static_type_checking.jpg
 comments: true
 ---

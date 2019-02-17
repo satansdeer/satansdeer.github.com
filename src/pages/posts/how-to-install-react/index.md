@@ -1,7 +1,7 @@
 ---
 title: How To Install ReactJS
 date: 2019-02-16T01:58:45.284Z
-categories: react
+categories: React
 image: how_to_install_react.jpg
 ---
 

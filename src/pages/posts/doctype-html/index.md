@@ -1,7 +1,7 @@
 ---
 title: What is doctype in HTML documents? And why do you have to specify the doctype?
 date: 2019-01-30T04:58:45.284Z
-categories: javascript
+categories: HTML
 image: doctype_html.jpg
 ---
 

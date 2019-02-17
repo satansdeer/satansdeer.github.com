@@ -1,7 +1,7 @@
 ---
 title: "7 Skills Of An Effective Developer"
 date: 2017-09-30T22:58:45.284Z
-categories: jekyll update
+categories: Random
 image: top_10_skills_thumb.jpg
 ---
 

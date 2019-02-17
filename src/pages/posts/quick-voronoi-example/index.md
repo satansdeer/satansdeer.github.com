@@ -1,7 +1,7 @@
 ---
 title: Quick D3 Voronoi Example
 date: 2018-02-28T15:58:45.284Z
-categories: js react d3 canvas voronoi
+categories: Javascript
 image: voronoi_d3.jpg
 ---
 

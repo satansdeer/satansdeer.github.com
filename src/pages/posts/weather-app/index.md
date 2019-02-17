@@ -1,7 +1,7 @@
 ---
 title: React App Video Course, Parts 1-5
 date: 2018-08-05T04:58:45.284Z
-categories: javascript
+categories: React
 image: weather-app.jpg
 ---
 

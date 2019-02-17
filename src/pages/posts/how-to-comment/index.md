@@ -1,7 +1,7 @@
 ---
 title: How To Comment React JSX Code
 date: 2018-05-13T22:58:45.284Z
-categories: js react mobx
+categories: React
 image: thumb.jpg
 ---
 

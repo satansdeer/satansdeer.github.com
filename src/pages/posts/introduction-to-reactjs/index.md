@@ -1,7 +1,7 @@
 ---
 title: Introduction To ReactJS
 date: 2019-02-15T01:58:45.284Z
-categories: react
+categories: React
 image: intro_to_react.jpg
 ---
 

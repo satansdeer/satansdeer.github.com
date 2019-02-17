@@ -1,7 +1,7 @@
 ---
 title: My First Javascript Talk
 date: 2018-04-21T22:58:45.284Z
-categories: js react flow
+categories: Random
 image: my_first_talk.jpg
 comments: true
 ---

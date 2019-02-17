@@ -1,7 +1,7 @@
 ---
 title: React 16 Course - Managing State
 date: 2018-03-22T04:58:45.284Z
-categories: javascript
+categories: React
 image: state_thumb.jpg
 ---
 

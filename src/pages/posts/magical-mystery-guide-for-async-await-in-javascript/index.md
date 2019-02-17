@@ -1,7 +1,7 @@
 ---
 title: Magical Mystery Guide For Async/Await In Javascript
 date: 2017-09-28T22:58:45.284Z
-categories: javascript
+categories: Javascript
 image: thumb-image.jpg
 ---
 

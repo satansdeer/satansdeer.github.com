@@ -1,7 +1,7 @@
 ---
 title: What Is React?
 date: 2018-05-06T22:58:45.284Z
-categories: js tdd
+categories: React
 image: what_is_react.jpg
 comments: true
 ---

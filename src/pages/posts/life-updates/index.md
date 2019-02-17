@@ -1,7 +1,7 @@
 ---
 title: Life Updates 2018
 date: 2018-06-13T07:58:45.284Z
-categories: js react
+categories: Random
 image: life_updates.jpg
 comments: true
 ---

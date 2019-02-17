@@ -60,6 +60,8 @@ class BlogIndex extends React.Component {
                   }}
                 >
                   {node.frontmatter.date}
+                  {" · "}
+                  {node.frontmatter.categories}
                 </small>
                 {/* {node.frontmatter.image && (
                   <Img
@@ -98,6 +100,7 @@ export const pageQuery = graphql`
           frontmatter {
             title
             date(formatString: "DD MMMM, YYYY")
+            categories
             image {
               childImageSharp {
                 sizes(maxWidth: 800) {

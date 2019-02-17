@@ -1,7 +1,7 @@
 ---
 title: Basic Karma JS Tutorial
 date: 2017-10-08T22:58:45.284Z
-categories: js tdd
+categories: Javascript
 image: karma_setup_thumb.jpg
 comments: true
 ---
