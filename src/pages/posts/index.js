@@ -6,6 +6,51 @@ import Img from "gatsby-image";
 
 import { rhythm } from "../../utils/typography";
 
+const colorsByCat = cat => {
+  switch (cat.toLowerCase()) {
+    case "react":
+      return {
+        backgroundColor: "#282c34",
+        color: "#61dafb"
+      };
+    case "javascript":
+      return {
+        backgroundColor: "#ecdb54",
+        color: "#000"
+      };
+    case "html":
+      return {
+        backgroundColor: "#f16529",
+        color: "#fff"
+      };
+    case "git":
+      return {
+        backgroundColor: "#dd4132",
+        color: "#fff"
+      };
+    case "ethereum":
+      return {
+        backgroundColor: "#5f658b",
+        color: "#fff"
+      };
+    case "reactnative":
+      return {
+        backgroundColor: "#05a5d1",
+        color: "#fff"
+      };
+    case "programming":
+      return {
+        backgroundColor: "#010301",
+        color: "#15d709"
+      };
+    default:
+      return {
+        backgroundColor: "#ce3175",
+        color: "#fff"
+      };
+  }
+};
+
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = get(this, "props.data.site.siteMetadata.title");
@@ -61,7 +106,17 @@ class BlogIndex extends React.Component {
                 >
                   {node.frontmatter.date}
                   {" · "}
-                  {node.frontmatter.categories}
+                  <span
+                    style={{
+                      borderRadius: "6px",
+                      padding: "5px 10px",
+                      textShadow: "none",
+                      fontFamily: "'Varela Round', sans-serif",
+                      ...colorsByCat(node.frontmatter.categories)
+                    }}
+                  >
+                    {node.frontmatter.categories}
+                  </span>
                 </small>
                 {/* {node.frontmatter.image && (
                   <Img
