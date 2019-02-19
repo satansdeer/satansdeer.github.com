@@ -91,7 +91,7 @@ class BlogIndex extends React.Component {
               <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                 <h2
                   style={{
-                    marginBottom: rhythm(1 / 3),
+                    marginBottom: rhythm(1 / 2),
                     fontSize: "30px"
                   }}
                 >
@@ -111,7 +111,6 @@ class BlogIndex extends React.Component {
                       borderRadius: "6px",
                       padding: "5px 10px",
                       textShadow: "none",
-                      fontFamily: "'Varela Round', sans-serif",
                       ...colorsByCat(node.frontmatter.categories)
                     }}
                   >
