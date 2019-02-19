@@ -5,6 +5,8 @@ categories: Javascript
 image: generators.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/28qwwfZEMdk`
+
 ES6 brought a bunch of new functions to deal with asynchronous data streams. Generator functions and async/await syntax among them.
 
 Generators are special kind of function that can be paused and then resumed.
