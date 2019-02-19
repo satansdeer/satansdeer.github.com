@@ -12,9 +12,6 @@ lincoln.overrideThemeStyles = () => ({
   body: {
     fontFamily:
       "-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif"
-  },
-  html: {
-    backghoundColor: "#F4F7F9"
   }
 });
 
