@@ -64,3 +64,5 @@ Basically it's an isolated piece of interface, that can contain some layout, som
 Components can have children components inside of them, that can have their children and so on.
 
 This allows you to describe your application UI as a nested tree of components.
+
+![reactjs component tree](/component_tree.png)
