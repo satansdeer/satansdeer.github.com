@@ -92,7 +92,7 @@ class BlogIndex extends React.Component {
                 <h2
                   style={{
                     marginBottom: rhythm(1 / 3),
-                    fontSize: "2rem"
+                    fontSize: "30px"
                   }}
                 >
                   {title}
