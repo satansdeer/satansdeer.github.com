@@ -5,7 +5,7 @@ categories: React
 image: firebase_react.jpg
 ---
 
-Sometimes you just need to make a fast prototype and you don't want to mess with backend, authentication, authorization and all of that. Here is where Google's firebase can help you. In this tutorial I'll show you haw to connect your react app with Firebase authentication module.
+Sometimes you just need to make a fast prototype and you don't want to mess with backend, authentication, authorization and all of that. Here is where Google's firebase can help you. In this tutorial I'll show you how to connect your react app with Firebase authentication module.
 
 ## What Are We Going To Build
 
@@ -25,11 +25,11 @@ First go to [firebase console](https://console.firebase.google.com/) and create 
 
 ### Add Auth Method
 
-Click __Authentication__ and then __SET UP SIGN-IN METHOD__.
+Click **Authentication** and then **SET UP SIGN-IN METHOD**.
 
 ![New sign in method](/firebase_tutorial_2.png)
 
-Enable __Email/Password__ authentication.
+Enable **Email/Password** authentication.
 
 ### Get Firebase Credentials
 
@@ -37,7 +37,7 @@ Go to project settings:
 
 ![New sign in method](/firebase_tutorial_3.png)
 
-And select __Add firebase to your web app__. Copy your credentials from there and save them to `.env` file in your project's root.
+And select **Add firebase to your web app**. Copy your credentials from there and save them to `.env` file in your project's root.
 
 ```sh
 REACT_APP_FIREBASE_KEY=your_key
@@ -122,17 +122,14 @@ export default App;
 
 Create `Home`, `LogIn` and `SignUp` components, for now just render some header. Here, for instance `src/Home.js`:
 
-
 ```js
 import React from "react";
 
 const Home = () => {
-  return (
-    <h1>Home</h1>
-  )
-}
+  return <h1>Home</h1>;
+};
 
-export default Home
+export default Home;
 ```
 
 Run the application. You should have all routes available.
@@ -142,6 +139,7 @@ Run the application. You should have all routes available.
 Now let's add some sign up logic. Create the `src/SignUp` directory and move our `SignUp.js` there. Also rename it to `SignUpView.js`. Make it look like this:
 
 `src/SignUp/SignUpView.js`
+
 ```html
 import React from "react";
 
@@ -266,7 +264,7 @@ First remake your `App.js` to normal `Component` and set initial state:
 class App extends Component {
   state = { loading: true, authenticated: false, user: null };
 
-  render(){
+  render() {
     const { authenticated, loading } = this.state;
 
     if (loading) {
@@ -286,7 +284,7 @@ class App extends Component {
           <Route exact path="/signup" component={SignUp} />
         </div>
       </Router>
-    )
+    );
   }
 }
 ```

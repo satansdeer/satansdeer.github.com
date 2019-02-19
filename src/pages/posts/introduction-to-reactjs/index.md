@@ -27,7 +27,29 @@ Now you may see those terms and wonder, what does declarative mean, and what the
 
 When you write **imperative** code you specify sequence of statements that should be executed in that order to produce desired result.
 
+```js
+var mountingPoint = document.querySelector("#root");
+// Find mounting point
+
+var header = document.createElement("h1");
+// Create HTML node
+
+header.innerHTML = "Hello Imperative Code!";
+// Add content to the new element
+
+// Insert the element after our target element
+mountingPoint.appendChild(header);
+```
+
 Opposed to that when you write **declarative** code - you describe what result do you want to get instead of specifying the steps needed to achieve that result.
+
+Here is how same thing would look in ReactJS:
+
+```jsx
+import React from "react";
+
+export default () => <h1>Hello React Code</h1>;
+```
 
 Good analogy is HTML, as it is a **declarative** way to describe layout of web pages.
 
@@ -36,6 +58,8 @@ Good analogy is HTML, as it is a **declarative** way to describe layout of web p
 Second important concept is **component**. In fact it is the central part of ReactJS paradigm.
 
 Basically it's an isolated piece of interface, that can contain some layout, some bound state and some logic. Component can be as simple as just a button or text input, or it can be complex and be composed from many other simpler components.
+
+![react component structure](/react_component_structure.png)
 
 Components can have children components inside of them, that can have their children and so on.
 
