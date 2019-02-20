@@ -5,6 +5,8 @@ categories: React
 image: intro_to_react.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/FleEIijoXtk`
+
 An introduction to ReactJS for beginners.
 
 ## What Is ReactJS?
