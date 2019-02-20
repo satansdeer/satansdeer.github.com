@@ -4,6 +4,7 @@ import Link from "gatsby-link";
 import get from "lodash/get";
 import rehypeReact from "rehype-react";
 import SignUpForm from "../components/SignUpForm";
+import Share from "../components/Share";
 import Img from "gatsby-image";
 
 import { rhythm, scale } from "../utils/typography";
@@ -19,8 +20,13 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = get(this.props, "data.site.siteMetadata.title");
     const siteUrl = get(this.props, "data.site.siteMetadata.siteUrl");
     const author = get(this.props, "data.site.siteMetadata.author");
+    const twitterHandle = get(
+      this.props,
+      "data.site.siteMetadata.twitterHandle"
+    );
     const { previous, next } = this.props.pathContext;
     const slug = post.fields.slug == "/" ? "" : post.fields.slug;
+    const { title, categories } = post.frontmatter;
     const image = post.frontmatter.image
       ? `https://maksimivanov.com${
           post.frontmatter.image.childImageSharp.sizes.src
@@ -58,8 +64,19 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div>{renderAst(post.htmlAst)}</div>
+        <Share
+          socialConfig={{
+            twitterHandle,
+            config: {
+              url: `${siteUrl}${slug}`,
+              title
+            }
+          }}
+          tags={[categories]}
+        />
         <hr
           style={{
+            marginTop: rhythm(1),
             marginBottom: rhythm(1)
           }}
         />
@@ -102,6 +119,7 @@ export const pageQuery = graphql`
         title
         author
         siteUrl
+        twitterHandle
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -121,6 +139,7 @@ export const pageQuery = graphql`
             }
           }
         }
+        categories
       }
     }
   }

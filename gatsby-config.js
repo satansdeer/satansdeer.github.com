@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Maksim Ivanov",
     author: "Maksim Ivanov",
+    twitterHandle: "@satansdeer",
     description:
       "Hi, my name is Maksim Ivanov and I specialize on best Javascript testing practices.",
     siteUrl: "https://maksimivanov.com"
@@ -80,6 +81,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-feed`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-catch-links`,
