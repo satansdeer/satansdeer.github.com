@@ -50,7 +50,7 @@ React escapes html strings by default
 
 One of the things you need to remember is even though **JSX** resembles **HTML**, it is not **HTML**. Here are some differences to keep in mind:
 
-* attributes are now camelCased
+* attributes are now `camelCased`
 
   Attributes that had no case at all for example `onclick` is now `onClick`.
 
@@ -73,7 +73,7 @@ One of the things you need to remember is even though **JSX** resembles **HTML**
 
 * style attribute changes syntax
 
-  In **JSX** you pass Javascript object to `style` attribute. Therefore `css` fields will have to be camelCased:
+  In **JSX** you pass Javascript object to `style` attribute. Therefore `css` fields will have to be `camelCased`:
 
   ```jsx
   <div style={{ fontSize: 12, backgroundColor: "#333333" }} />
@@ -103,7 +103,7 @@ const ExampleComponent = () => "Hello! I'm custom functional component!";
 
 ## Including Javascript In Your JSX
 
-You can have actual Javacript expressions inside your JSX.
+You can have actual Javascript expressions inside your JSX.
 
 To do this you need to wrap them into curly braces. Here is an example:
 
@@ -152,7 +152,7 @@ render() {
 
 ## JSX is Converted To Javascript Expressions
 
-JSX is not supported by browser by defult, it needs to be **transpiled**. Which means it needs to be converted to regular Javascript code that can be understood by the browser.
+JSX is not supported by browser by default, it needs to be **transpiled**. Which means it needs to be converted to regular Javascript code that can be understood by the browser.
 
 To do this we use [Babel](https://babeljs.io/).
 
@@ -160,7 +160,7 @@ You can play around with transpiling **JSX** to Javascript at [Babel Interactive
 
 You'll see that all the JSX expressions become just calls to `React.createElement`. This method takes three attributes. First goes kind of the element you are going to create. It will be string if you create html elements, like `<h1 />`, `<div />` or `<p />`. Otherwise it will be reference to your custom component.
 
-Next goes list of attributes passed to the element. It is a simple Javascript object. It's also a reason why the attributes passed to JSX should be camelCased.
+Next goes list of attributes passed to the element. It is a simple Javascript object. It's also a reason why the attributes passed to JSX should be `camelCased`.
 
 And the last attribute is children of this element.
 

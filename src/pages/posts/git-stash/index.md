@@ -27,9 +27,9 @@ Changes to be committed:
         new file:   webpage.html
 ```
 
-Ok, here we have 3 new files that we don't want to commit yet, but we need to switch to another branch.
+OK, here we have 3 new files that we don't want to commit yet, but we need to switch to another branch.
 
-So we use `git stash` and after applying this command we see a message indicating that changes are stashed successfuly.
+So we use `git stash` and after applying this command we see a message indicating that changes are stashed successfully.
 
 ```bash
 Saved working directory and index state WIP on master: bccdab5 Initial commit

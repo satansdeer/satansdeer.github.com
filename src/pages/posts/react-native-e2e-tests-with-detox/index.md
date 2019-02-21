@@ -125,10 +125,10 @@ This is super simple usage scenario, but it's enough for our purposes. Let's aut
 
 ## Setup Detox
 
-Even though there are other optons like Appium, I highly recommend [Detox](https://github.com/wix/detox). Reasons are totally practical:
+Even though there are other options like Appium, I highly recommend [Detox](https://github.com/wix/detox). Reasons are totally practical:
 
 * It's faster.
-* It's less flacky.
+* It's less flaky.
 * It's platform agnostic (you can test both iOS and Android)
 * It works both with React Native and regular applications
 * it has great documentation.
@@ -171,7 +171,7 @@ Also add these lines to `scripts` block:
 "test:e2e:build": "detox build"
 ```
 
-Now create `e2e` folwer in your projects root and create file `init.js` with following contents:
+Now create `e2e` folder in your projects root and create file `init.js` with following contents:
 
 ```js
 const detox = require('detox');

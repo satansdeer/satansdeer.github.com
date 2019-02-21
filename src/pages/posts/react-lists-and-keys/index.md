@@ -7,7 +7,7 @@ image: lists_and_keys.jpg
 
 How to display lists of elements in React?
 
-You can use `map` method to loop through an array of items and then use curly braces to insert it into your jsx code:
+You can use `map` method to loop through an array of items and then use curly braces to insert it into your JSX code:
 
 ```jsx
 const todos = ["buy milk", "learn react", "walk the dog"];

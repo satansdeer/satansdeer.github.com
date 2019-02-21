@@ -13,14 +13,14 @@ This is what we'll be building:
 
 ## Create React App
 
-Let's start by bootstrapping the frontend with `create-react-app`. From your projects root call:
+Let's start by bootstrapping the front end with `create-react-app`. From your projects root call:
 
 ```sh
 create-react-app front
 cd front
 ```
 
-Create react app scripts won't allow importing from outside the `src` folder. Create a symlink to contract artifacts.o
+Create react app scripts won't allow importing from outside the `src` folder. Create a symlink to contract artifacts. o
 
 ```sh
 ln -s ../../build/contracts src/contracts
@@ -90,7 +90,7 @@ const getProvider = () => {
 export default getProvider;
 ```
 
-Here we connect directly to our local network. You can also use the provider injected to `window` object by __Metamask__. We'll just use `HttpProvider` for simplicity.
+Here we connect directly to our local network. You can also use the provider injected to `window` object by __MetaMask__. We'll just use `HttpProvider` for simplicity.
 
 Let's use our `getProvider` function. Create `front/src/utils/getGradientContractInstance` with following content:
 
@@ -112,7 +112,7 @@ export default async function getGradientContractInstance() {
 
 Here we initialize `truffle-contract` with JSON artifact, set provider and connect our contract to the deployed instance using the address from `addresses.json`.
 
-Now we have a utility function to get the contract instance – let's use the mobx store to store it.
+Now we have a utility function to get the contract instance – let's use the MobX store to store it.
 
 Create `front/src/stores/ContractsStore.js` with following contents:
 
@@ -140,7 +140,7 @@ export default decorate(ContractsStore, {
 
 The only function of this store is to have an observable reference to `gradientTokenInstance`. Initially it `null` but after `setup` method is called it gets the instance using our `getGradientContractInstance` utility function.
 
-`gradientTokenInstance` is observable so we can derive changes from it in other classes. Let's create another mobx store.
+`gradientTokenInstance` is observable so we can derive changes from it in other classes. Let's create another MobX store.
 
 ## Using The Contract
 
@@ -176,7 +176,7 @@ export default decorate(GradientTokenStore, {
 });
 ```
 
-Here we defined the `gradientTokenInstance` getter and made it `computed`. Mobx allows to observe `observables` automatically and create `computed` values based on them. You can read more about it in my [Mobx article](https://maksimivanov.com/posts/react-native-mobx-tutorial)
+Here we defined the `gradientTokenInstance` getter and made it `computed`. MobX allows to observe `observables` automatically and create `computed` values based on them. You can read more about it in my [MobX article](https://maksimivanov.com/posts/react-native-mobx-tutorial)
 
 We observe this property in `constructor`, using `when`, so once `gradientTokenInstance` is setup – we call the `setup` method.
 
@@ -235,7 +235,7 @@ Add new method `fetchTokens` to `GradientTokenStore`:
 
 First, we call our contract method `tokensOf`. It will return an array of token ids, now we need to get associated gradients. We call the `getGradient` method for every id. And in order to wait until all the promises will be resolved - we wrap it into `Promise.all`
 
-After gradients are loaded - we update the `isLoading` attribute, and if `gradients` array is not empty we call the `setTokens` method. `setTokens` is trivial it is just a mobx action that sets the `tokens` attribute:
+After gradients are loaded - we update the `isLoading` attribute, and if `gradients` array is not empty we call the `setTokens` method. `setTokens` is trivial it is just a MobX action that sets the `tokens` attribute:
 
 ```js
 setTokens(tokens) {
@@ -271,7 +271,7 @@ mintToken = async () => {
 };
 ```
 
-Here I hardcoded the black and white gradient for simplicity.
+Here I hard-coded the black and white gradient for simplicity.
 
 Important note, here we call the transaction using `httpProvider`. Transactions require gas. As we don't use any kind of wallet here that would automatically calculate the required amount of gas – we set it manually.
 

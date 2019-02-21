@@ -69,7 +69,7 @@ The ordinary way to do it would be to use `.map` and `.filter` functions:
   .map((x) => x * 2)
 ```
 
-But what if your array had 1000,000 elements? You have to loop through the whole array for every operation, that's extremely uneffective.
+But what if your array had 1000,000 elements? You have to loop through the whole array for every operation, that's extremely ineffective.
 
 We need some way to combine the functions we passed to `map` and `filter`. But we can't do this as they have different interface. The function
 that we passed to `filter` is called __predicate__ and it takes a value and returns __True__ or __False__ depending on inner logic. And the function

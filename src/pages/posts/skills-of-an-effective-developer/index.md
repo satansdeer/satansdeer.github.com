@@ -9,7 +9,7 @@ When you see the term __effective developer__, you probably imagine a person who
 
 To be __effective__ doesn't mean to do more things, it means to do __the right things__.
 
-In todays world most of the great software is created by teams, not individuals. And to be an effective developer you need to master skills that will make you a good team player.
+In today's world most of the great software is created by teams, not individuals. And to be an effective developer you need to master skills that will make you a good team player.
 
 Let's start with the most obvious one.
 
@@ -25,13 +25,13 @@ The most important goal of communication is to ensure that everyone is on the sa
 
 __Example #1:__
 
-Meet Bob and Margaret. Bob is a developer and Margaret is a project manager. They work on a todo list tool _Taskey Doey 3000_
+Meet Bob and Margaret. Bob is a developer and Margaret is a project manager. They work on a to-do list tool _Taskey Doey 3000_
 
-Margaret creates a task “Add a functionality to __copy__ a todo item to a different list”. She expects this new functionality to allow to __share__ items between lists. So if you update shared task in one list – it will be updated in all the lists it’s shared to.
+Margaret creates a task “Add a functionality to __copy__ a to-do item to a different list”. She expects this new functionality to allow to __share__ items between lists. So if you update shared task in one list – it will be updated in all the lists it’s shared to.
 
 Bob starts to work on that task. For him it's obvious that Margaret wants to __copy__ tasks between lists. So he adds the functionality that creates new instances of tasks, that are not linked to each other. So if you update one, it's copies remain untouched.
 
-After a few days of dedicated work Bob presents the new functionality. Margaret sees that it's not what she expected, and tells it to Bob. Margaget thinks Bob is an idiot. Bob also questions Margaret's cognitive abilities.
+After a few days of dedicated work Bob presents the new functionality. Margaret sees that it's not what she expected, and tells it to Bob. Margaret thinks Bob is an idiot. Bob also questions Margaret's cognitive abilities.
 Later Bob fixes the problem, but the deadline is broken and everyone is unhappy.
 
 This could be prevented if Bob and Margaret would discuss the task before Bob would start to work on it.
@@ -40,15 +40,15 @@ __Example #2:__
 
 Meet designer Paul, and developer Marco. They work on a website for _CheapBargainMart.com_ online store.
 
-Paul created a design for exit intent popup. It would capture visitors that didn’t buy anything from the store. He didn’t know that they already had a very similar popup implemented earlier and he could reuse parts of it.
+Paul created a design for exit intent pop up. It would capture visitors that didn’t buy anything from the store. He didn’t know that they already had a very similar pop up implemented earlier and he could reuse parts of it.
 
-Marco knew about that other popup, but __assumed__ that Paul created the new design from scratch for a reason.
+Marco knew about that other pop up, but __assumed__ that Paul created the new design from scratch for a reason.
 
 As a result both guys spent more time on their tasks, and not they have a duplicated set of almost identical elements for no good reason.
 
 __Example #3:__
 
-Here are two developers, Kathy and Jen. They work on a dating app _Datingtron_. It matches people using their names and starsigns.
+Here are two developers, Kathy and Jen. They work on a dating app _Datingtron_. It matches people using their names and star signs.
 
 Kathy is new to the project, but she is really devoted. She get's a task to implement an alternative matching algorithm. What she didn't know, was that they already had a special DSL for matching algorithms.
 
@@ -76,13 +76,13 @@ __Let's start with an example:__
 
 ![empathy](/empathy_1.png)
 
-Meet Alex. He's a new developer in a company named "CranberryPi". On his first weekly meeting he makes a few proposals on how to improve the codebase. But those proposals contain mistakes in them and another developer, Peter, corrects him. Usually it is the right thing to do, but Peter does it in unnecesarily berating way.
+Meet Alex. He's a new developer in a company named "CranberryPi". On his first weekly meeting he makes a few proposals on how to improve the codebase. But those proposals contain mistakes in them and another developer, Peter, corrects him. Usually it is the right thing to do, but Peter does it in unnecessarily berating way.
 
 Now Alex feels bad about himself and becomes hesitant about bringing up his opinions. Even John, who was only listening is now less likely to tell his opinions.
 
 A few weeks later Alex is working on a login form of company's website. He makes some mistakes and adds security flaws to the system. But as he now feels insecure, he avoids discussion with teammates and those mistakes remain unnoticed.
 
-Atfer a few days the security flaw is on production. Soon all the user accounts get stolen, customers now don't have trust for the company. And "CranberryPi" goes bancrupt.
+After a few days the security flaw is on production. Soon all the user accounts get stolen, customers now don't have trust for the company. And "CranberryPi" goes bankrupt.
 
 __Conclusion:__
 
@@ -96,15 +96,15 @@ Why? Because otherwise, people start to hesitate asking questions, or giving the
 
 Actually it can get even worse. When not feeling psychological security people may start hiding their mistakes. And that can bring a ton of trouble.
 
-And even one person with this kind of toxic behavior is enough for a team to loose the feeling of psychological security.
+And even one person with this kind of toxic behaviour is enough for a team to loose the feeling of psychological security.
 
 __Actionable items:__
 
-* Correcting anyone is fine as long as it's done in nice and nonoffensive way. Give yourself a few moments to calm down before making spiteful commentary to someones words.
+* Correcting anyone is fine as long as it's done in nice and non-offensive way. Give yourself a few moments to calm down before making spiteful commentary to someone's words.
 
 * Put yourself in shoes of your opponent. How would you feel in his place? Think about the consequences of what you are about to say.
 
-* If you have people like Peter in your team make it clear for them that this behavior is unacceptable. Even if Peter is a good developer he may be doing more harm than good by destroying the atmosphere in the team.
+* If you have people like Peter in your team make it clear for them that this behaviour is unacceptable. Even if Peter is a good developer he may be doing more harm than good by destroying the atmosphere in the team.
 
 ## Planning
 
@@ -126,7 +126,7 @@ But wait, a few days later something wrong starts to happen. Maria remembers tha
 
 Then something similar happens to another place. Maria begins to lose her focus. She now jumps back and forth between modules. She updates some code, then she has to update specs. Do they cover everything that's needed? Oh that's already too many things to grasp.
 
-In the meantime she tests the application manually. Some functionality is broken, but wait all the specs were green. Ok, time to get back to code and fix the issue. But the error was so cryptic. How to find where did it happen?
+In the meantime she tests the application manually. Some functionality is broken, but wait all the specs were green. OK, time to get back to code and fix the issue. But the error was so cryptic. How to find where did it happen?
 
 Maria wants to use `git bisect` to find the exact commit where that error was introduced. But she was doing commits randomly and almost all of them have the application in broken state.
 
@@ -163,7 +163,7 @@ Everyone is doing their best to stay focused, but man, is Michael's voice not he
 
 Soon the presentation was finished but no one in the team understood how that script works.
 
-Now the time is lost, everyone is tired and no one got anything usefull.
+Now the time is lost, everyone is tired and no one got anything useful.
 
 People will now have to figure out how the script works on their own or ask Michael for help.
 
@@ -181,7 +181,7 @@ __Actionable points:__
 
 A typical project structure usually gets complex very fast. Not only the code itself, but the infrastructure around the project also tends to become more complicated over time.
 
-Without proper documentation you are guranteed to get lost in that digital jungle.
+Without proper documentation you are guaranteed to get lost in that digital jungle.
 
 __The story of Leo's onboarding:__
 
@@ -195,7 +195,7 @@ His first day he opens the documentation and starts wandering around, trying to 
 
 The documentation is very messy, by the most part it describes project structure. Some parts contain instructions for troubleshooting if the project crashed. And no description on how to build the project whatsoever.
 
-Leo starts to investigate. Ok, there seem to be some dependencies, let's install them first. Oh, those turned out to be written in _CoderSoft_. Let's ask some other developer how to install them.
+Leo starts to investigate. OK, there seem to be some dependencies, let's install them first. Oh, those turned out to be written in _CoderSoft_. Let's ask some other developer how to install them.
 
 Leo tries to find someone who would tell him where to get that dependencies, but everyone is either to busy or knows nothing about those libraries.
 
@@ -224,7 +224,7 @@ Eventually the platform becomes very complicated. It is now very hard to add new
 
 So Milton the lead developer decides to refactor the codebase.
 
-The team starts to work, but the more they refactor – the more new bugs they intoduce.
+The team starts to work, but the more they refactor – the more new bugs they introduce.
 
 After a few months of exhausting "refactoring", guys end up with completely rewritten platform. Same level of complexity, same amount of bugs. Even though the code is new it already feels like legacy.
 
@@ -241,13 +241,13 @@ __Actionable items:__
 
 ![github](/github_fkc.png)
 
-It is the most popular VCS in modern web development community. It's not just the tool to save your development progress. It's an instrumment of team collaboration. Make sure to master it.
+It is the most popular VCS in modern web development community. It's not just the tool to save your development progress. It's an instrument of team collaboration. Make sure to master it.
 
 Some software or programming languages let you to shoot yourself in a foot. Well, git lets you to blow of legs of the whole team. It will allow to get all the legs back, but you still better know what you are doing.
 
 __Example:__
 
-Jim and Mike worked together on the same webpage. Everything was fine until one day Jim decided to rebase their branch with `master` while Mike was still adding new functionailty.
+Jim and Mike worked together on the same webpage. Everything was fine until one day Jim decided to rebase their branch with `master` while Mike was still adding new functionality.
 
 Jim successfully resolved conflicts with the base branch and did `git push -f` just after Mike pushed all the commits he did today.
 

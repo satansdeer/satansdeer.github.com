@@ -5,7 +5,7 @@ categories: React
 image: weather-app.jpg
 ---
 
-I'm super proud of myself, managed to deliver an epidose daily so far. And the best part is that it's getting easier with each one.
+I'm super proud of myself, managed to deliver an episode daily so far. And the best part is that it's getting easier with each one.
 
 ### #6
 

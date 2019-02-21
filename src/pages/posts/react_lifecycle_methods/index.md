@@ -58,10 +58,10 @@ Then as in __mounting__ phase, we have `render` method.
 
 After `render` method was executed successfully we have `componentDidUpdate` which you can use to perform AJAX calls and other side-effect causing operations.
 
-Since React 16 we have now have `componentDidCatch(errorString, errorInfo)` method. This method works similar to javascript `try/catch` block but for components. You can use this method in parent component to catch errors happened in its children. It receives to parameters
+Since React 16 we have now have `componentDidCatch(errorString, errorInfo)` method. This method works similar to Javascript `try/catch` block but for components. You can use this method in parent component to catch errors happened in its children. It receives to parameters
 
 * `errorString` – the message of an error
-* `info` – an object with a single field componentStack which represent the stack trace back to where the error occurred.
+* `info` – an object with a single field `componentStack` which represent the stack trace back to where the error occurred.
 
 Keep in mind that this method will only catch errors in the components below the parent in the tree. It won't catch the errors happened in the component itself.
 

@@ -6,7 +6,7 @@ image: modal_window_react.jpg
 comments: true
 ---
 
-Once upon a time (yesterday) I decided that my blog lacks a good old popup. You know, the one that unannoyingly asks to join the mailing list. So if you have jekyll blog and you want to know how to create a popup using __ReactJS__ –this post is totally relevant.
+Once upon a time (yesterday) I decided that my blog lacks a good old pop up. You know, the one that unannoyingly asks to join the mailing list. So if you have Jekyll blog and you want to know how to create a pop up using __ReactJS__ –this post is totally relevant.
 
 First let's get all pragmatic and see an example of what we'll get.
 
@@ -15,7 +15,7 @@ First let's get all pragmatic and see an example of what we'll get.
   <script type="text/javascript" src="/assets/javascripts/bundle.js" charset="utf-8"></script>
 </p>
 
-In this article I'm assuming that you are using __github pages__ to host your jekyll blog.
+In this article I'm assuming that you are using __Github pages__ to host your Jekyll blog.
 
 ## Let's Get Our Hands Dirty
 
@@ -99,13 +99,13 @@ Run webpack, it should build your `bundle.js` inside `/assets/javascripts` folde
 ➜ webpack
 ```
 
-Now put add this line in your layour. I don't know maybe in your footer or just in the bottom of your `_layouts/default.html`:
+Now put add this line in your layout. I don't know maybe in your footer or just in the bottom of your `_layouts/default.html`:
 
 ```html
 <script type="text/javascript" src="/assets/javascripts/bundle.js" charset="utf-8"></script>
 ```
 
-Open your site. You should see `It works!` in javascript console. If not – double check webpack config and make sure that `bundle.js` was built.
+Open your site. You should see `It works!` in Javascript console. If not – double check webpack config and make sure that `bundle.js` was built.
 
 ## Add React
 
@@ -187,7 +187,7 @@ class Popup extends React.Component {
 export default Popup;
 ```
 
-It returns `null` and renders nothing if we pass false, or renders our popup layout if we pass true.
+It returns `null` and renders nothing if we pass false, or renders our pop up layout if we pass true.
 
 We've also passed `closePopup` as value of `onClosed` prop. And now we trigger it as `onClick` callback of close button.
 
@@ -238,7 +238,7 @@ It is temporal solution, later I plan to switch to [mail-for-good](https://githu
 
 ## Summary
 
-This is it. We've used `webpack` to build and bundle our javascript. We've added a simple popup component and an opt-in form.
+This is it. We've used `webpack` to build and bundle our Javascript. We've added a simple pop up component and an opt-in form.
 
 In next article we'll add tests and learn about some tools that we have for testing React applications.
 

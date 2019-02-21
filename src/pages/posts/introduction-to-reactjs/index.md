@@ -17,9 +17,9 @@ It was then made public in 2013, and since then was used in thousands and thousa
 
 ## ReactJS Key Features
 
-What makes React so special? The core idea behind ReactJS is to provide a convinient way to describe UI of your application as a tree of encapsulated **components**.
+What makes React so special? The core idea behind ReactJS is to provide a convenient way to describe UI of your application as a tree of encapsulated **components**.
 
-It does it by providing an API to describe those components in a **declarative** way. ReactJS will update UI of your application when state of your application will change. And it will do it efficeintly so only components that were affected by that data change will be re-rendered.
+It does it by providing an API to describe those components in a **declarative** way. ReactJS will update UI of your application when state of your application will change. And it will do it efficiently so only components that were affected by that data change will be re-rendered.
 
 Now you may see those terms and wonder, what does declarative mean, and what the heck is component.
 

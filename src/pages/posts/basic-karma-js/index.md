@@ -6,15 +6,15 @@ image: karma_setup_thumb.jpg
 comments: true
 ---
 
-_Psst, do you write javascript that runs in browser?_ I have something for you, it's&nbsp;called&nbsp;**Karma**, you'll like it.
+_Psst, do you write Javascript that runs in browser?_ I have something for you, it's&nbsp;called&nbsp;**Karma**, you'll like it.
 
-When you write javascript code, you have to test it. The same code might work slightly differently in different browsers, so you better test your code at least in most common of them.
+When you write Javascript code, you have to test it. The same code might work slightly differently in different browsers, so you better test your code at least in most common of them.
 
 That's what **Karma** is for.
 
-Karma is a test runner. It allows you to run your tests in real browsers with real DOM. It can even connect to remote clients and you can test your code on _Browserstack_.
+Karma is a test runner. It allows you to run your tests in real browsers with real DOM. It can even connect to remote clients and you can test your code on _BrowserStack_.
 
-That's not the only benefit you get using Karma. It can speed up your work by watching the files and re-running specs when you save the related files. This will shorten the feedback loop so you'll have much smoother coding expirience.
+That's not the only benefit you get using Karma. It can speed up your work by watching the files and re-running specs when you save the related files. This will shorten the feedback loop so you'll have much smoother coding experience.
 
 ## How does it work?
 

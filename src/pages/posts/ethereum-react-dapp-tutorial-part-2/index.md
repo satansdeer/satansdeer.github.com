@@ -5,12 +5,12 @@ categories: Ethereum
 image: react_ethereum_part_2.jpg
 ---
 
-So, we have a token. Time to create frontend part and try to send it between accounts.
+So, we have a token. Time to create front end part and try to send it between accounts.
 
 This article has two parts:
 
 * [How to create ERC20 token](/posts/ethereum-react-dapp-tutorial)
-* [How to create ReactJS frontend for your DAPP (this one)](#)
+* [How to create ReactJS front end for your DAPP (this one)](#)
 
 Go read the first part if you missed it, you'll learn how to create a token and run local ethereum network.
 
@@ -79,7 +79,7 @@ registerServiceWorker();
 
 Here we imported `DrizzleProvider` from `drizzle-react` and provided it with required options.
 
-`DrizzleProvider` works a lot like redux provider, and is actually based on it.
+`DrizzleProvider` works a lot like Redux provider, and is actually based on it.
 
 It allows us to use `drizzleConnect` to inject data from drizzle state to props.
 
@@ -170,7 +170,7 @@ After checking their internals I can't recommend using them. `drizzle-react-comp
 
 If you read the first part of the article – you should already have the local ethereum network running. If not – I highly recommend to do it.
 
-Download and install the Metamask browser extension.
+Download and install the MetaMask browser extension.
 
 After you've done it – connect to local network. In our case it will be `https://localhost:7545`.
 

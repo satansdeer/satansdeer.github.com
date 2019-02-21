@@ -5,9 +5,9 @@ categories: React
 image: weather-app.jpg
 ---
 
-Initially I was going to just use this app as an example in my [basicreact.com](https://basicreact.com) course. But then I decided to make a separate series on youtube to practice making videos.
+Initially I was going to just use this app as an example in my [basicreact.com](https://basicreact.com) course. But then I decided to make a separate series on YouTube to practice making videos.
 
-My biggest mistake when doing tutorial videos was starting over the recording every time I did some mistake. So whenever i would say the word improperly or mess up a bit with typing something - I would stop the recording, stress out and then start over again.
+My biggest mistake when doing tutorial videos was starting over the recording every time I did some mistake. So whenever I would say the word improperly or mess up a bit with typing something - I would stop the recording, stress out and then start over again.
 
 Now I decided to not care about mistakes, record everything in one shot and then edit out the messed up parts. Seems to be working waaaaaaay better.
 

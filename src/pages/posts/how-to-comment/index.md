@@ -17,7 +17,7 @@ render(){
 }
 ```
 
-Even though JSX will be compiled to Javascript - you can't use regular JS comments. They willbe parsed as text and added to your layout.
+Even though JSX will be compiled to Javascript - you can't use regular JS comments. They will be parsed as text and added to your layout.
 
 So the only working option is to __use multiline comments inside curly braces__:
 

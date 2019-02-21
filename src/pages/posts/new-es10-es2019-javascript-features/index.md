@@ -85,13 +85,13 @@ Now let's say that we want to combine those arrays so after each fruit emoji we'
 
 To do this we map through the fruits array with index and for each fruit we return an array combining fruit and fruit name with same index.
 
-If we log it we'll see that we got a two dimentional array of fruits and their names.
+If we log it we'll see that we got a two dimensional array of fruits and their names.
 
-Let's change `map` to `flatMap` - now we get a regular one dimentional array of fruits with their names.
+Let's change `map` to `flatMap` - now we get a regular one dimensional array of fruits with their names.
 
 ## String.trimStart/trimEnd
 
-String prototype also got some updates, now we can trim whitespaces from beginning or end of our string using trimLeft / trimRight methors:
+String prototype also got some updates, now we can trim whitespaces from beginning or end of our string using trimLeft / trimRight methods:
 
 ```js
 const untrimmedString = "     Trim me 😢    ";
@@ -165,7 +165,7 @@ It's a good read - so check it out.
 Function `toString` method was reviewed. In **ES6** when `toString` was invoked on a function it would return string representation of that function
 depending on ECMAScript engine.
 
-When possible it would return the source code, otherwise - a standartized placeholder. So if `toString` couldn't create syntactically valid Javascript code, it would return a string for which `eval` throws a SyntaxError. It was a requirement so that `eval` couldn't parse this string.
+When possible it would return the source code, otherwise - a standardized placeholder. So if `toString` couldn't create syntactically valid Javascript code, it would return a string for which `eval` throws a SyntaxError. It was a requirement so that `eval` couldn't parse this string.
 
 Problem with that was that you could never be 100% sure that a future version of ECMAScript won't make it syntactically valid.
 
@@ -233,14 +233,14 @@ Looks much cleaner, right?
 
 Now as I've promised you in the beginning - how to keep up to date with new Javascript features.
 
-Track the **TC39** [proposals repository](https://github.com/tc39/proposals). **TC39** is a commettee that eveolves Javascript.
+Track the **TC39** [proposals repository](https://github.com/tc39/proposals). **TC39** is a committee that evolves Javascript.
 
 In that repo you'll find documents describing proposals on 4 stages:
 
 * Stage 0 - Strawman
   Those are either yet to be presented to the committee or presented but not yet achieved criteria to get into stage 1. Strawman proposals don't have any criteria.
 * Stage 1 - Proposal
-  This is a stage when proposal stops being a strawman and starts to shape as something that might potentially become a javascript feature. It needs to have some illustrative examples, and high-level API described. At this point proposal should have a "champion" assigned to it who will advance it's addition to standard.
+  This is a stage when proposal stops being a strawman and starts to shape as something that might potentially become a Javascript feature. It needs to have some illustrative examples, and high-level API described. At this point proposal should have a "champion" assigned to it who will advance it's addition to standard.
 * Stage 2 - Draft
   Proposals at this stage should also get an initial spec text.
 * Stage 3 - Candidate

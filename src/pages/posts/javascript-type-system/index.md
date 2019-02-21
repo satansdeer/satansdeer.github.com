@@ -9,7 +9,7 @@ _"Everything is crooked. Reality is poison. I want to go back, I hate this. I ca
 
 ## What Type System Does Javascript Have?
 
-If you search internets about javascript and its type system - you'll find that there is some controversy. Javascript type system is often being referred as
+If you search internets about Javascript and its type system - you'll find that there is some controversy. Javascript type system is often being referred as
 
 * Dynamic
 * Weakly typed
@@ -49,7 +49,7 @@ const intValue = 2
 const result = strValue + intValue // test2
 ```
 
-It can lead to a lot of weird behavior (I think everyone has already seen the WAT talk). We'll get back to it later.
+It can lead to a lot of weird behaviour (I think everyone has already seen the WAT talk). We'll get back to it later.
 
 ### Javascript Is Unityped/Untyped
 
@@ -61,7 +61,7 @@ As we are discussing __Javascript type system__ – let's define what does type 
 
 Here is definition from Benjamin Pierce book [Types and Programming Languages](http://www.cis.upenn.edu/~bcpierce/tapl/index.html)
 
-> A type system is a tractable syntactic method for proving the absence of certain program behaviors by classifying phrases according to the kinds of values they compute.
+> A type system is a tractable syntactic method for proving the absence of certain program behaviours by classifying phrases according to the kinds of values they compute.
 
 Syntactic means that it is a language feature. And it basically means that a language will only generate a program when it can prove that the types align.
 
@@ -69,7 +69,7 @@ So in a typed language, a program might not be generated, because types might no
 
 Opposed to that, Javascript program will be generated regardless of kinds of data you do the computations on. For Javascript types always match up, which means that actually there is only one type.
 
-Here we need to make a note about types and classes. Both are data structuring mechanisms that describe things with certain structure and behavior.
+Here we need to make a note about types and classes. Both are data structuring mechanisms that describe things with certain structure and behaviour.
 
 The difference is that types are being mostly used at compile time to ensure program correctness. And Javascript doesn't have the compilation stage or static check stage by default. What Javascript does at runtime can be categorized as classification and has nothing to do with language syntax.
 

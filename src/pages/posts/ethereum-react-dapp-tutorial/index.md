@@ -5,22 +5,22 @@ categories: Ethereum
 image: react_ethereum.jpg
 ---
 
-ICO's, crypto, blockchain, dapps. Everyone is discussing it nowadays (or at leas heard). Today I'm going to show you how to create your first distributed app on Ethereum blockchain, using ReactJS.
+ICO's, crypto, blockchain, DAPPs. Everyone is discussing it nowadays (or at leas heard). Today I'm going to show you how to create your first distributed app on Ethereum blockchain, using ReactJS.
 
 This article has two parts:
 
 * [How to create ERC20 token (this one)](#)
-* [How to create ReactJS frontend for your DAPP](/posts/ethereum-react-dapp-tutorial-part-2)
+* [How to create ReactJS front end for your DAPP](/posts/ethereum-react-dapp-tutorial-part-2)
 
-In the end of second article I'll provide a github repo with this project.
+In the end of second article I'll provide a Github repo with this project.
 
 ## What Are We Going To Build
 
-We'll create our own token that will conform the [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) token standard. We'll create a wallet application using ReactJS, that will allow you to play arount with your token using browser with [🦊 Metamask](https://metamask.io/) extension.
+We'll create our own token that will conform the [ERC20](https://theethereum.wiki/w/index.php/ERC20_Token_Standard) token standard. We'll create a wallet application using ReactJS, that will allow you to play around with your token using browser with [🦊 MetaMask](https://metamask.io/) extension.
 
 ![Result](/react_ethereum_result.png)
 
-We'll use [Truffle](https://truffleframework.com/) to compile and deploy our token, [Ganache](https://truffleframework.com/ganache/) to set up the test blockchain aNd [Drizzle](https://truffleframework.com/docs/drizzle/getting-started) to integrate all this with ReactJS frontend.
+We'll use [Truffle](https://truffleframework.com/) to compile and deploy our token, [Ganache](https://truffleframework.com/ganache/) to set up the test blockchain aNd [Drizzle](https://truffleframework.com/docs/drizzle/getting-started) to integrate all this with ReactJS front end.
 
 ![Truffle Ganache Drizzle image](/truffle_ganache_drizzle.png)
 
@@ -28,7 +28,7 @@ We'll use [Truffle](https://truffleframework.com/) to compile and deploy our tok
 
 ERC20 basically represents fungible token, that means that any token of this kind is equal to any other token of this kind. Like 1$ is always equal to 1$.
 
-Overall this standard reqires to have 6 methods and 2 events defined.
+Overall this standard requires to have 6 methods and 2 events defined.
 
 3 of those methods are totally necessary to make a fungible token and a remaining 3 are needed to make it ERC20 compliant (they are needed to do automatic transactions).
 
@@ -58,7 +58,7 @@ Also it needs to define the `Approval` that tells that some amount of tokens are
 
 To write our contract we need local blockchain and an wallet that will allow us to test the DAPP locally.
 
-First install the [🦊 Metamask](https://metamask.io/) browser extension. We'll need it to interact with our contract in browser.
+First install the [🦊 MetaMask](https://metamask.io/) browser extension. We'll need it to interact with our contract in browser.
 
 For local ethereum blockchain I recommend [Ganache](https://truffleframework.com/ganache/). Go and download version for your OS.
 
@@ -75,7 +75,7 @@ truffle init
 `truffle init` will install all required dependencies and generate 3 folders:
 
 * `contracts` - contain actual contracts. Our token contract will be here.
-* `migrations` - migrations are js scripts that deploy your contracts to ethereum network.
+* `migrations` - migrations are `js` scripts that deploy your contracts to ethereum network.
 * `test` - folder for your tests. JS and Solidity. 
 
 ## Writing Contract
@@ -165,7 +165,7 @@ After successful migration you should see new transactions in Ganache:
 
 Awesome, your contract is now up and running, let's make simple React app to interact with your token.
 
-See you in the next part, where we'll set up frontend and send our tokens between wallets.
+See you in the next part, where we'll set up front end and send our tokens between wallets.
 
 To not miss the article – subscribe to my mailing list:
 <p>

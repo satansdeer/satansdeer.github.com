@@ -5,22 +5,22 @@ categories: ReactNative
 image: react_native_mobx_1_thumb.jpg
 ---
 
-__Mobx__ is state management solution that is gaining popularity very fast. I'll show you
-how to create a simple __React-Native__ app using __Mobx__.
+__MobX__ is state management solution that is gaining popularity very fast. I'll show you
+how to create a simple __React-Native__ app using __MobX__.
 
 ## What Are We Going To Build
 
-I have a few crypto coins on some exchanges. Not like I'm trading or something, I just bought some tokens that I liked and now just hold them and buy/sell ocasionally.
+I have a few crypto coins on some exchanges. Not like I'm trading or something, I just bought some tokens that I liked and now just hold them and buy/sell occasionally.
 
 On [Binance](https://www.binance.com/?ref=12930619) you can see how many coins you have and what's their worth in bitcoin and even in dollars, but you can't see what's the difference since the last time you've checked it.
 
 We are going to build portfolio tracker for it. On first run we'll save all the coins prices and then we'll show the difference.
 
-It'l look somewhat like this:
+It'll look somewhat like this:
 
 ![binance tracker](/binance_tracker.png)
 
-We'll learn how to store data locally, use flatlist, navigator and do multi-screen applications, also we'll learn how to manage state using mobx.
+We'll learn how to store data locally, use flatlist, navigator and do multi-screen applications, also we'll learn how to manage state using MobX.
 
 ## Table Of Contents
 
@@ -29,11 +29,11 @@ We'll learn how to store data locally, use flatlist, navigator and do multi-scre
 2. [Testing stores](#)
 2. [Testing views with Enzyme](#)
 
-## Why Mobx?
+## Why MobX?
 
 MobX is usually faster than Redux, requires less boilerplate and in general it's easier to grasp for novice.
 
-Mobx has very few core concepts:
+MobX has very few core concepts:
 
 * [Observables](#observables)
 * [Computed values](#computed_values)
@@ -116,11 +116,11 @@ render() {
 <a name='reactions'></a>
 ### Reactions
 
-Reactions are very similar to computed values but instead of returning new value they are used to produce side-effects (making network requests, patching dom e.t.c)
+Reactions are very similar to computed values but instead of returning new value they are used to produce side-effects (making network requests, patching DOM etc.)
 
-Mobx provides 3 types of reaction functions [when](https://mobx.js.org/refguide/when.html), [autorun](https://mobx.js.org/refguide/autorun.html) and [reaction](https://mobx.js.org/refguide/reaction.html)
+MobX provides 3 types of reaction functions [when](https://mobx.js.org/refguide/when.html), [autorun](https://mobx.js.org/refguide/autorun.html) and [reaction](https://mobx.js.org/refguide/reaction.html)
 
-* `when` accepts two functions: predicate and effect. It runs and observes predicate until it returns `true`, and then runs the `effect` function. After thet it disposes, and stops reacting observed property.
+* `when` accepts two functions: predicate and effect. It runs and observes predicate until it returns `true`, and then runs the `effect` function. After that it disposes, and stops reacting observed property.
 * `autorun` is for cases when you need reactive function that will fire every time the observed value is updated. Unlike `computed` it doesn't have to be observed itself.
 * `reaction` is like `autorun` but gives you more control over what properties to observe. It accepts two functions `data-function` and `side-effect-function`. `data-function` is tracked and returns data that is used in `side-effect-function`.
 
@@ -153,7 +153,7 @@ This decorator takes function and wraps it into `transaction`, `untracked` and `
 
 ## Observers
 
-Strictly speaking `observers` aren't part of mobx core. They are provided by the `mobx-react` package. But anyway…
+Strictly speaking `observers` aren't part of MobX core. They are provided by the `mobx-react` package. But anyway…
 
 They are used to make your views "observe" `observables` and re-render on change.
 

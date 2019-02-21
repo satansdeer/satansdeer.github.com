@@ -6,13 +6,13 @@ image: dont_mock_wat_not_own.jpg
 comments: true
 ---
 
-I was refactoring specs of some Rails application when I decided to mock the `ImageUploader` class of CarierWave. I wanted to be able to check for cpecific image url. __But was it a good idea?__
+I was refactoring specs of some Rails application when I decided to mock the `ImageUploader` class of CarierWave. I wanted to be able to check for specific image url. __But was it a good idea?__
 
 ## No, Don't Do It
 
 I know it might be tempting to mock libraries that make database or network calls to make specs run faster, but that's not what test doubles are meant for.
 
-Test doubles are ment to help you create practical and convinient interfaces between parts of your application.
+Test doubles are meant to help you create practical and convenient interfaces between parts of your application.
 
 ![mocking](/dont_mock_1.png)
 

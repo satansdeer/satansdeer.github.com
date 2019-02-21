@@ -167,7 +167,7 @@ In it's `before` block we initialize our contracts, mint new `GradientToken`, ap
 
 ### Making Bid
 
-Ok, we are done with creating auctions – let's add the `bid` method.
+OK, we are done with creating auctions – let's add the `bid` method.
 
 This method should check if bid value is bigger or equal to auction price and if yes – transfer token to new owner and remove auction.
 
@@ -197,7 +197,7 @@ After that we temporarily save seller address and price and remove the auction, 
 
 ### Canceling Auction
 
-Ok, we can make auctions and bid, time to add function to cancel auctions.
+OK, we can make auctions and bid, time to add function to cancel auctions.
 
 ```js
 function cancel( uint256 _tokenId ) public {
@@ -273,4 +273,4 @@ contract TokenAuction {
 
 You can check out the code related to this tutorial [here](https://github.com/satansdeer/gradient-token-tutorial)
 
-In next chapter, we'll add frontend and have a fully functional game on ethereum network.
+In next chapter, we'll add front end and have a fully functional game on ethereum network.

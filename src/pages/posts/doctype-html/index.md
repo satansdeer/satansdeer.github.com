@@ -22,7 +22,7 @@ Before html5, there were several others that had more complex syntax. You had to
 
 If you open the link, you will see how those type declarations used to look. It was a structured document that was telling browser what elements and attributes are allowed to use in current html version.
 
-But as I said the modern type declaration dosent' requiere you to specify the link to declaration file manually. And the only thing you have to worry about is to include this instruction in the beginning of your html document.
+But as I said the modern type declaration doesn't' require you to specify the link to declaration file manually. And the only thing you have to worry about is to include this instruction in the beginning of your html document.
 
 Now why, do you need to specify it?
 
@@ -30,22 +30,22 @@ In the dark ages of the internet, before the web standards, there we two huge br
 
 After the creation of the standards browsers introduced two ways of rendering, one for standards compliant websites and quirks mode to support the legacy sites.
 
-So when you specify the doctype in the beginning of your doument - you tell the browser that the webpage should be rendered in standards mode.
+So when you specify the doctype in the beginning of your document - you tell the browser that the webpage should be rendered in standards mode.
 
 Otherwise if you omit it - you make the browser to use the quirks mode.
 
-Let's look at the examples, i've created a two webpages with almost identical content. I've set the doctype for one page and omitted for another. Let's see how will they render.
+Let's look at the examples, I've created a two webpages with almost identical content. I've set the doctype for one page and omitted for another. Let's see how will they render.
 
 If you right click the page and check out the page info, you'll see what mode is currently being used to render the page.
 
-First thing i'd like you to note is different margin of the h1 element. In quirks mode it doesn't have the top margin.
+First thing I'd like you to note is different margin of the `h1` element. In quirks mode it doesn't have the top margin.
 
 Next you can see that I have an orphaned list item element here. And in quirks mode this item has a bullet point.
 
-Now take a look at the paragraph in the bottom. I have an uppercased class name for it. And in styles it has lowercase notation. As you can see in quirks mode classNames are case insensitive, so the class name is still being applied.
+Now take a look at the paragraph in the bottom. I have an uppercased class name for it. And in styles it has lowercase notation. As you can see in quirks mode class names are case insensitive, so the class name is still being applied.
 
-You can check out the list of quirks that will be used for your page on mozilla website.
+You can check out the list of quirks that will be used for your page on Mozilla website.
 
-Now to sum it up: Doctype is a type declaration that should go as the first line in your html document before the opening html tag. It makes browser render the page in stadards mode. And you should only use the `<!doctype html>` since the html5 was released.
+Now to sum it up: Doctype is a type declaration that should go as the first line in your html document before the opening html tag. It makes browser render the page in standards mode. And you should only use the `<!doctype html>` since the html5 was released.
 
 `youtube:https://www.youtube.com/embed/5E1eQ_gNmyU`

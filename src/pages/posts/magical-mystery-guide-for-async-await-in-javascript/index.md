@@ -7,7 +7,7 @@ image: thumb-image.jpg
 
 Hey there! Today we are going to look at __async__ and __await__ keywords that allow you to pause functions execution, and therefore let you write __asynchronous__ code that reads like __synchronous__.
 
-But first let's go through other ways of dealing with asynchronicity in javascript. You know, just to make you __appreciate__ how async/await allows you to write more readable asynchronous code.
+But first let's go through other ways of dealing with asynchronicity in Javascript. You know, just to make you __appreciate__ how async/await allows you to write more readable asynchronous code.
 
 ## First We Had Callbacks
 
@@ -73,7 +73,7 @@ co(function* (){
 })
 ```
 
-Ok, the part where we use our imaginary __API__ looks nice now, but the other code is cryptic! What does that `*` in function declaration do and what are those `yield` statements?
+OK, the part where we use our imaginary __API__ looks nice now, but the other code is cryptic! What does that `*` in function declaration do and what are those `yield` statements?
 
 The asterisk after the `function` statement makes it create a __generator function__ and the `yield` keyword pauses __generator function__ execution and the value of the expression following the `yield` keyword is returned to the generator's caller. 
 
@@ -102,7 +102,7 @@ async function(){
 ```
 Looks familiar, right? We just changed `yield` to `await`, instead of `fuction*` we now have `async function` statement and we don't use the `co` function here.
 
-Oh, and another thing, we now use the `try/catch` to handle errors. This is good, because we can now handle both sychronous and asynchronous code errors the same way.
+Oh, and another thing, we now use the `try/catch` to handle errors. This is good, because we can now handle both synchronous and asynchronous code errors the same way.
 
 __So what happens here?__
 
@@ -112,7 +112,7 @@ Also an __async function__ can contain an `await` expression, that pauses the ex
 
 The execution flow will go a lot like in previous example. When we'll stumble upon the first `await` statement – our __async function__ will get paused until the `getWorld()` promise will be resolved. Then __async function__ will get unpaused and the resolved value will be assigned to the `world` variable.
 
-Then the same will be repeated for other varibales.
+Then the same will be repeated for other variables.
 
 ## Summary
 

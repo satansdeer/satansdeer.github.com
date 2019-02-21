@@ -5,15 +5,15 @@ categories: React
 image: firebase_react.jpg
 ---
 
-Sometimes you just need to make a fast prototype and you don't want to mess with backend, authentication, authorization and all of that. Here is where Google's firebase can help you. In this tutorial I'll show you how to connect your react app with Firebase authentication module.
+Sometimes you just need to make a fast prototype and you don't want to mess with back end, authentication, authorization and all of that. Here is where Google's firebase can help you. In this tutorial I'll show you how to connect your react app with Firebase authentication module.
 
 ## What Are We Going To Build
 
 Super simple app. Just 3 screens: Sign up, Log in and Home screen.
 
-We'll use Firebase Authentication module to handle login/signup and React router to manage routing.
+We'll use Firebase Authentication module to handle login/sign up and React router to manage routing.
 
-Make sure to read till the end, I'll post a link to github repo with example code there.
+Make sure to read till the end, I'll post a link to Github repo with example code there.
 
 ## Set Up Firebase
 
@@ -52,9 +52,9 @@ REACT_APP_FIREBASE_SENDER_ID=sender_id
 
 Read more about it in [create-react-app documentation](https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-custom-environment-variables)
 
-## Set Up The Frontend
+## Set Up The Front End
 
-We will set up the application using `create-react-app`. I assume that you have modern verion of `npm` so I'm going to use `npx` to run the script.
+We will set up the application using `create-react-app`. I assume that you have modern version of `npm` so I'm going to use `npx` to run the script.
 
 ```sh
 npx create-react-app firebase-auth-tutorial
@@ -134,7 +134,7 @@ export default Home;
 
 Run the application. You should have all routes available.
 
-### Create The SignUp And LogIn Components
+### Create The Sign Up And LogIn Components
 
 Now let's add some sign up logic. Create the `src/SignUp` directory and move our `SignUp.js` there. Also rename it to `SignUpView.js`. Make it look like this:
 
@@ -321,6 +321,6 @@ Also with this knowledge you can add authentication to wallet app from the [Reac
 
 So go crazy, build stuff and see you next time.
 
-Oh, btw – here is your [github link](https://github.com/satansdeer/firebase-auth-tutorial)
+Oh, BTW – here is your [Github link](https://github.com/satansdeer/firebase-auth-tutorial)
 
 <sign-up-form></sign-up-form>

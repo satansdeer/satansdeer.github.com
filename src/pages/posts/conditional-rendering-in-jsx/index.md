@@ -65,7 +65,7 @@ function ToDoList({ items, isLoading}) {
 
 In general I would recommend to avoid that as it makes code less readable.
 
-Overall ternary operator is a great way to have conditions in your **JSX**. I recommend useing them over `if/else` statements.
+Overall ternary operator is a great way to have conditions in your **JSX**. I recommend using them over `if/else` statements.
 
 ## Logical AND
 
@@ -75,11 +75,11 @@ Often times you don't need the `else` part of your ternary operator. Instead of 
 <div>{isLoading && <p>Loading...</p>}</div>
 ```
 
-If isLoading is `false`, this code will result in just empty `<div/>`.
+If `isLoading` is `false`, this code will result in just empty `<div/>`.
 
 ## Switch Case
 
-You can use `switch` staements inside your component `render()` method. It can be useful when you have multiple options to render.
+You can use `switch` statements inside your component `render()` method. It can be useful when you have multiple options to render.
 
 ```jsx
 function Notification({ message, type }) {
@@ -102,7 +102,7 @@ It's important to always have the `default` in your `switch` statements.
 
 If Javascript you can use an object consisting of key-value parts as an ENUM.
 
-For example here is a size enum:
+For example here is a size ENUM:
 
 ```jsx
 const sizes = {
@@ -112,7 +112,7 @@ const sizes = {
 };
 ```
 
-This opens great possibilities for conditional rendering in React, because you can use **components** as values in your enum and then access them by their keys.
+This opens great possibilities for conditional rendering in React, because you can use **components** as values in your ENUM and then access them by their keys.
 
 ```jsx
 function Notification({ message, type }) {
@@ -130,4 +130,4 @@ function Notification({ message, type }) {
 }
 ```
 
-This way you can use enums instead of `switch-case` statements.
+This way you can use ENUMs instead of `switch-case` statements.

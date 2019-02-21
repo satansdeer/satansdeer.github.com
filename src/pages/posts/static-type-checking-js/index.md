@@ -6,7 +6,7 @@ image: static_type_checking.jpg
 comments: true
 ---
 
-We'll talk about types and static type checking in javascript. Why you might want it and how to apply it.
+We'll talk about types and static type checking in Javascript. Why you might want it and how to apply it.
 
 ## WAT? Javascript Has No Types
 
@@ -44,15 +44,15 @@ This notion is more common in academic circles.
 
 Here I'll refer to the definition of Benjamin Pierce book "Types and Programming Languages" where he gives the following definition of the type system.
 
-> A type system is a tractable syntactic method for proving the absence of certain program behaviors by classifying phrases according to the kinds of values they compute.
+> A type system is a tractable syntactic method for proving the absence of certain program behaviours by classifying phrases according to the kinds of values they compute.
 
-Ok, I hope that I look smart now 🤓.
+OK, I hope that I look smart now 🤓.
 
 And basically, this phrase means that type system allows to check the syntax of the program and mark some phrases invalid if kinds of values it computes don't align.
 
 The fact that we can tell it just by the syntax – means that we do it statically, not at runtime.
 
-In javascript there is no way to say that some values won't align, all of that expressions are valid:
+In Javascript there is no way to say that some values won't align, all of that expressions are valid:
 
 ```js
 [] + 1
@@ -181,7 +181,7 @@ concat(true, false);  // Error!
 
 Now you can be very specific with kinds of values your functions accept. You can limit it to nominal types, literals, or even structural types, using interfaces.
 
-Actually, I was lacking interfaces in javascript for a long time. Now you can the define some interface and ensure that only objects that conform to it (have all required methods and properties) will be accepted in some function.
+Actually, I was lacking interfaces in Javascript for a long time. Now you can the define some interface and ensure that only objects that conform to it (have all required methods and properties) will be accepted in some function.
 
 Also you can list allowed values for your function. `function getColor(name: "success" | "warning" | "danger")`.
 
@@ -191,7 +191,7 @@ It's a lot more powerful than what `PropTypes` can provide.
 
 Static type checking is a very powerful instrument. It allows preventing bugs by defining clear contracts for your units of code. It adds some noise when you read and you have to type (pun intended) a bit more. 
 
-In this article, I used Flow as an example of static type checking tool. There are others, you can use TypeScript, Elm, ReasonML e.t.c.
+In this article, I used Flow as an example of static type checking tool. There are others, you can use TypeScript, Elm, ReasonML etc.
 
 My main point is that static type checking will help you to ensure that your modules conform the contract and that you use them properly. If you have poor architecture, or your modules are not covered by unit tests – static type checking won't help you.
 

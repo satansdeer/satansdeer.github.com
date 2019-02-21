@@ -89,7 +89,7 @@ There is a nice CLI tool `hub` that will allow us to create a PRs easier:
 $ hub pull-request
 ```
 
-It will open the default editor and you'll be able to add PR descirption.
+It will open the default editor and you'll be able to add PR description.
 
 ## Next Pull Requests
 
@@ -127,6 +127,6 @@ $ git merge stacked-pr-example-2 # integrate changes from stacked-pr-example-2
 
 Now, after you've applied all feedback and got you PRs approved – time to land the stack.
 
-As github [supports updating the base branch](https://github.com/blog/2224-change-the-base-branch-of-a-pull-request) since August 2016, you can merge your stack in any order.
+As Github [supports updating the base branch](https://github.com/blog/2224-change-the-base-branch-of-a-pull-request) since August 2016, you can merge your stack in any order.
 
 `youtube:https://www.youtube.com/embed/Lqczzlh7420`

@@ -1,0 +1,243 @@
+# markdown-spellcheck spelling configuration file
+# Format - lines beginning # are comments
+# global dictionary is at the start, file overrides afterwards
+# one word per line, to define a file override use ' - filename'
+# where filename is relative to this configuration file
+Javascript
+BrowserStack
+specs
+plugins
+config
+spec
+fizzbuzz
+JSX
+`isLoading`
+ENUMs
+ENUM
+webpage
+doctypes
+doctype
+html5
+webpages
+html4.01
+w3.org
+`h1`
+uppercased
+lowercase
+CarierWave
+url
+erc20
+ReactJS
+DAPP
+ethereum
+Redux
+MetaMask
+ganache
+ICO
+DAPPs
+blockchain
+Github
+`js`
+JS
+auth
+webpack
+PRs
+unstaged
+uncommited
+commiting
+CryptoKitties
+GradientToken
+struct
+canceling
+GradientTokens
+artifact
+MobX
+erc721
+NFT
+deployer
+colors
+structs
+`assertRevert`
+VSCode
+CodeSandbox
+NodeJS
+Walke
+ES6
+async
+unpause
+Morty
+unityped
+WAT
+GraphQL
+merch
+anyways
+LSP
+SubFoo
+MagicalWorldAPI
+unpaused
+TC39
+ES10
+whitespaces
+accessor
+OCP
+centers
+D3
+unannoyingly
+Mailchimp
+AWS
+e2e
+CasperJS
+PhantomJS
+DalekJS
+XCode
+Appium
+gray
+Homebrew
+ReactNative
+Binance
+IphoneX
+ApiKeysStore
+lifecycle
+`componentStack`
+FTW
+RamdaJS
+voila
+`lang`
+`hreflang`
+VCS
+onboarding
+CoderSoft
+`camelCased`
+structurize
+PropTypes
+WebStorm
+ReasonML
+Udemy
+Paypal
+UIs
+jQuery
+ - src/pages/posts/ethereum-react-dapp-tutorial/index.md
+1
+6
+2
+3
+_to_
+100
+BasicToken
+ - src/pages/posts/firebase-react-tutorial/index.md
+handleSignUpbind
+thishistorywithRouterpreventDefaultpasswordemailelementscreateUserWithEmailAndPasswordLogIncreateUserWithEmailAndPasswordsignInWithEmailAndPasswordsrc
+PrivateRoute.jsComponent
+authenticatedApp.jsHomePrivateRouteauthenticatedstateApp.jsComponentcomponentWillMountApp.jsLoading.
+PrivateRouteLog
+ - src/pages/posts/getting-schwifty-with-pull-requests/index.md
+1.5k
+Koonce
+2016
+ - src/pages/posts/git-add-patch/index.md
+poem.txt
+ - src/pages/posts/gradient-coin-tutorial-part-2/index.md
+color
+ - src/pages/posts/gradient-coin-tutorial/index.md
+js
+99
+totalSupply
+_balanceOf
+_ownerOf
+tokenId
+_transfer
+_to
+_takeOwnership
+_approve
+_tokensOf
+_approvedFor
+ERC721Token
+Ownable
+onlyOwner
+0
+ - src/pages/posts/introduction-to-reactjs/index.md
+2011
+2013
+ - src/pages/posts/javascript-type-system/index.md
+Mindblowers
+internets
+7
+ - src/pages/posts/life-updates/index.md
+2018
+0x.se
+starflow.com
+Markus
+Thurlin
+Kabardin
+Alessandro
+Cortini
+ahaha
+ - src/pages/posts/liskov-substitution-principle/index.md
+1988
+Liskov
+o1
+o2
+ - src/pages/posts/my-first-talk/index.md
+nipher_jonas
+WayeBenjamin
+Verbenko
+ - src/pages/posts/new-es10-es2019-javascript-features/index.md
+2019
+Array.flat
+Lodash
+Array.flatMap
+String.trimStart
+trimEnd
+trimLeft
+trimRight
+Object.fromEntries
+Rauschmayer
+toString
+SyntaxError
+4
+Strawman
+strawman
+ - src/pages/posts/quick-voronoi-example/index.md
+levelsio
+HoodMaps
+Voronoi
+D3js
+ - src/pages/posts/react-lists-and-keys/index.md
+todos
+ - src/pages/posts/react-native-e2e-tests-with-detox/index.md
+v6
+8
+ - src/pages/posts/react-native-mobx-tutorial/index.md
+flatlist
+autorun
+ - src/pages/posts/react-state/index.md
+setState
+ - src/pages/posts/react_lifecycle_methods/index.md
+WIP
+Lifecycle
+16
+ - src/pages/posts/reducers-vs-transducers/index.md
+1000
+000
+fn1
+ - src/pages/posts/serve-page-in-multiple-languages/index.md
+developer.mozilla.org
+charset
+Windows-1252
+256
+ - src/pages/posts/skills-of-an-effective-developer/index.md
+Taskey
+Doey
+3000
+CheapBargainMart.com
+Datingtron
+CranberryPi
+MindBallet
+ - src/pages/posts/weather-app-2/index.md
+9
+10
+ - src/pages/posts/weather-app/index.md
+basicreact.com
+waaaaaaay
+5
+facepalm

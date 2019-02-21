@@ -15,7 +15,7 @@ First we need to recognize what language is preferred by current user.
 
 Essentially you have two options - either to let user specify the preferred language explicitly, or make your best guess based on existing data about the user.
 
-Let's begin with setting language explisitly.
+Let's begin with setting language explicitly.
 
 ### Setting Language Explicitly
 
@@ -35,7 +35,7 @@ This is good, it allows your users to specify preferred language and doesn't req
 
 ### Guessing Language Preference
 
-There is special `Accept-Language` request header that you can use to get the langage preference.
+There is special `Accept-Language` request header that you can use to get the language preference.
 
 This header has a list of locales with priorities, where default priority is 1.
 
@@ -43,7 +43,7 @@ This header has a list of locales with priorities, where default priority is 1.
 Accept-Language: fr-CH, fr;q=0.9, en;q=0.8, de;q=0.7, *;q=0.5
 ```
 
-All major browsers allow users to specify preferred languages. To do this in firefox you go to `about:preferences`, **General** tab and click the **Choose** button on **Language** section. By moving languages up and down you'll specify their priority.
+All major browsers allow users to specify preferred languages. To do this in Firefox you go to `about:preferences`, **General** tab and click the **Choose** button on **Language** section. By moving languages up and down you'll specify their priority.
 
 This information will end up in the `Accept-Language` request header.
 
@@ -69,14 +69,14 @@ There is also an html attribute `lang`, that allows you to provide the info abou
 
 Look at this:
 
-If most of your page is in english but you have a few paragraphs in german or french - you can specify language of those paragraphs by setting the lang attribute.
+If most of your page is in English but you have a few paragraphs in German or French - you can specify language of those paragraphs by setting the `lang` attribute.
 
 And lastly we need to make sure to let search engines know that we have localized versions of some page, so they won't be treated as content duplicates.
 
-## Optimizing For Seo
+## Optimizing For SEO
 
 Serving same page in multiple languages can lead to a lot of duplicated content, which can harm ranking your page in search engines.
 
-To avoid that you should specify the canonical url - with default or main language of your content and specify localized versions of this page as alternatives with language specified in hreflang field. Using `<link rel="alternate" hreflang='en-gb'>`
+To avoid that you should specify the canonical url - with default or main language of your content and specify localized versions of this page as alternatives with language specified in `hreflang` field. Using `<link rel="alternate" hreflang='en-gb'>`
 
 `youtube:https://www.youtube.com/embed/9wJPOPywU3w`

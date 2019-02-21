@@ -7,7 +7,7 @@ image: how_to_install_react.jpg
 
 How to install React?
 
-ReactJS is a javascript library so by asking how to install it - you most likely mean "How to setup a React project?".
+ReactJS is a Javascript library so by asking how to install it - you most likely mean "How to setup a React project?".
 
 ## Use A Sandbox
 

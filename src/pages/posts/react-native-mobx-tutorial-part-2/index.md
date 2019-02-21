@@ -5,7 +5,7 @@ categories: ReactNative
 image: react_native_mobx_1_thumb-2.jpg
 ---
 
-This is second part of the MobX tutodial series, today we'll setup project and add our mobx stores.
+This is second part of the MobX tutorial series, today we'll setup project and add our MobX stores.
 
 ## Table Of Contents
 
@@ -16,7 +16,7 @@ This is second part of the MobX tutodial series, today we'll setup project and a
 
 ## Setting Up
 
-Ok, enough rolling dice, let's do the real thing.
+OK, enough rolling dice, let's do the real thing.
 
 We'll use `create-react-native-app` to setup our project structure.
 
@@ -28,7 +28,7 @@ $ create-react-native-app binance-tracker
 $ cd binance-tracker
 ```
 
-Now you can execute `yarn start` to run the project in __Expo__ app or exucute your app in simulator running `yarn ios` or `yarn android`.
+Now you can execute `yarn start` to run the project in __Expo__ app or execute your app in simulator running `yarn ios` or `yarn android`.
 
 Install dependencies:
 
@@ -36,7 +36,7 @@ Install dependencies:
 $ yarn add mobx mobx-react react-navigation
 ```
 
-* Mobx is needed for state management
+* MobX is needed for state management
 * `mobx-react` will provide the `@observer` decorator 
 * `react-navigation` will provide necessary navigation capabilities
 
@@ -91,7 +91,7 @@ export default class App extends React.Component {
 }
 ```
 
-Here we use `StackNavigator` from `react-navigation` package to be able to temporarliy add `ProfileScreen` on top of `HomeScreen`. It handles the animation and history. So we can easily get back to our previous screen.
+Here we use `StackNavigator` from `react-navigation` package to be able to temporarily add `ProfileScreen` on top of `HomeScreen`. It handles the animation and history. So we can easily get back to our previous screen.
 
 `SafeAreaView` is needed only for IphoneX, it adds vertical margins to not interfere with it's form factor.
 
@@ -124,11 +124,11 @@ export default class ProfileScreen extends React.Component {
 
 ## Getting API Keys
 
-In order to communicate with Binance we first need to get the `API_KEY` and `API_SECRET`. To do that – [create new account there](https://www.binance.com/?ref=12930619) (yes, it's my affiliate link, remove the `ref` attribute if you don't want me to get any affiliate comissions from you).
+In order to communicate with Binance we first need to get the `API_KEY` and `API_SECRET`. To do that – [create new account there](https://www.binance.com/?ref=12930619) (yes, it's my affiliate link, remove the `ref` attribute if you don't want me to get any affiliate commissions from you).
 
-From your account page go to [api setup page](https://www.binance.com/userCenter/createApi.html).
+From your account page go to [API setup page](https://www.binance.com/userCenter/createApi.html).
 
-Create api key/secret and save somewhere, we'll use them later.
+Create API key/secret and save somewhere, we'll use them later.
 
 ## Adding First Screen
 
@@ -358,10 +358,10 @@ export default class HomeScreen extends Component {
 }
 ```
 
-First we make `ApiKeyStore` load the API keys, then we `try` to load the account and tickers data and if we get anerror – we navigate user to `ProfileScreen` to enter valid credentials.
+First we make `ApiKeyStore` load the API keys, then we `try` to load the account and tickers data and if we get an error – we navigate user to `ProfileScreen` to enter valid credentials.
 
-When eveything is fine and we got the `computedBalances` we display them using `FlatList`. We'll take closer look on rendered components in last article where we'll cover them with view tests using `Enzyme`.
+When everything is fine and we got the `computedBalances` we display them using `FlatList`. We'll take closer look on rendered components in last article where we'll cover them with view tests using `Enzyme`.
 
 ## Summary
 
-In this article I ommited a lot of code, we'll take a closer look on our stores in next article when we'll cover them with tests.
+In this article I omitted a lot of code, we'll take a closer look on our stores in next article when we'll cover them with tests.

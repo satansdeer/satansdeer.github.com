@@ -18,7 +18,7 @@ Here is a fun video from the office:
 
 `youtube:https://www.youtube.com/embed/mISuWx7k49k`
 
-I learned a lot about react, react native, flow, static typing, graphQL while working there.
+I learned a lot about react, react native, flow, static typing, GraphQL while working there.
 
 I worked there the whole winter and bigger part of spring, until...
 
@@ -45,7 +45,7 @@ Lip balm, anyone?
 
 ![mona lisa](mona_lisa.jpg)
 
-Also thanks to my friend Nikita Kabardin - I got to listen to Alessandro Cortini. That was super awesome. You could percieve the music not only with your ears but with the whole body. Some of the tones would resonate with different body parts. Crazy experience.
+Also thanks to my friend Nikita Kabardin - I got to listen to Alessandro Cortini. That was super awesome. You could perceive the music not only with your ears but with the whole body. Some of the tones would resonate with different body parts. Crazy experience.
 
 ## Now I'm Working On Battlefield V
 

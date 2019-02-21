@@ -80,7 +80,7 @@ See the last line, **Stage this hunk [y,n,q,a,d,/,s,e,?]**? Here it gives you so
 * **s** - split the current hunk into smaller hunks
 * **e** - manually edit the current hunk
 
-There are some more opions, you can see them by chosing the **?** option.
+There are some more options, you can see them by choosing the **?** option.
 
 Here we want only the first part about the sugar and sweetness, so we choose the option&nbsp;**s**.
 

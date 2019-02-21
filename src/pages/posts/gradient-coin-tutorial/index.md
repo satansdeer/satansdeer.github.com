@@ -10,7 +10,7 @@ If you've read previous articles about Ethereum DAPPs ([First](https://maksimiva
 <a name='observables'></a>
 ## What Are We Going To Build
 
-I think everyone has already heard about cryptokitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
+I think everyone has already heard about CryptoKitties. A game based on Ethereum blockchain where you collect and breed adorable kittens:
 
 ![cryptokitties image](/cryptokitties.png)
 
@@ -19,9 +19,9 @@ The game is mostly open-source with a few exceptions (breeding and genetic algor
 
 We'll also do a collectible token but with way simpler logic. Our token won't be able to breed, only you as an owner will be able to mint new tokens.
 
-You'll learn how to create non fungible tokens, how to write tests for Ethereum contracts and how to connect them to js frontend.
+You'll learn how to create non fungible tokens, how to write tests for Ethereum contracts and how to connect them to js front end.
 
-We'll build a wallet for unique collectibles: gradient tokens. Every token will be represented as a unique css gradient and will look somewhat like this:
+We'll build a wallet for unique collectibles: gradient tokens. Every token will be represented as a unique CSS gradient and will look somewhat like this:
 
 <p>
 <div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #FDF574; background: -webkit-radial-gradient(center,#FDF574,#D6A128); background: -o-radial-gradient(center,#FDF574,#D6A128); background: -moz-radial-gradient(center,#FDF574,#D6A128); background: radial-gradient(ellipse at center, #FDF574, #D6A128); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
@@ -48,12 +48,12 @@ In this tutorial I assume that you have basic knowledge about ReactJS and went t
 * Part II
   * Adding the auction
 * Part III
-  * Making the frontend
+  * Making the front end
 
 <a name='erc721'></a>
 ## What Is ERC721
 
-ERC721 describes non-fungible token. Btw it is also knowns as __NFT__, which basically means exactly that (__Non Fungible Token__). Non-fungible means that every token is not equal to any other token. As opposite to ERC20 where all tokens are equal.
+ERC721 describes non-fungible token. BTW it is also knowns as __NFT__, which basically means exactly that (__Non Fungible Token__). Non-fungible means that every token is not equal to any other token. As opposite to ERC20 where all tokens are equal.
 
 Most known example of ERC721 is CryptoKitties, where each kitten is a token described by the ERC721 compliant contract with a bunch of additional functions.
 
@@ -201,9 +201,9 @@ contract("Gradient token", accounts => {
 });
 ```
 
-Note that we first require the `GradientToken` artifact. Which is `json` representation of your token interface. This is the thing that allows you to interact with your contract from javascript code.
+Note that we first require the `GradientToken` artifact. Which is `json` representation of your token interface. This is the thing that allows you to interact with your contract from Javascript code.
 
-This test is unnecessary as this functionality is already tested by the `Ownable` tests in zeppelin library. I've added it only for quick demonstration.
+This test is unnecessary as this functionality is already tested by the `Ownable` tests in Zeppelin library. I've added it only for quick demonstration.
 
 Here we run the `contract` block, that deploys our contract. We wait for the contract to be deployed and request `owner()` which returns owners address. Then we assert that owners address is the same as `account[0]`
 
@@ -267,17 +267,17 @@ function mint(string _outer, string _inner) public onlyOwner{
 }
 ```
 
-First we define an in memory `_gradient` varibale. In memory means that lifespan of this variable will be limited by the execution scope.
+First we define an in memory `_gradient` variable. In memory means that lifespan of this variable will be limited by the execution scope.
 
 There are 3 ways of storing data in Solidity:
 
-* Storage - This is most serious and expensive one. The data will be pesisted between contract function calls.
+* Storage - This is most serious and expensive one. The data will be persisted between contract function calls.
 * Memory - This one is cheaper. Variable will be erased between function calls.
 * Stack - This is only for small local variables like `uint` or `string`
 
-By default `stack` is being used. Theere are only two data types you can control kind of storage: 'Struct' and `Array`.
+By default `stack` is being used. There are only two data types you can control kind of storage: 'Struct' and `Array`.
 
-In our case we need this variable only temporarily se we used `memory` storage.
+In our case we need this variable only temporarily so we used `memory` storage.
 
 Then we defined `_gradientId` by getting new length of the `gradients` array (the `push` method returns the new length) minus one, so we start from zero.
 
@@ -285,7 +285,7 @@ Finally we call the `_mint` method that we got from `ERC721Token` that we inheri
 
 This method is internal and it does the following:
 
-1. Checks that the recipient address is valid (not 0), otherwize throws an error
+1. Checks that the recipient address is valid (not 0), otherwise throws an error
 2. Creates a token and assigns it an owner.
 3. Fires `Transfer` event.
 
@@ -377,7 +377,7 @@ it("allows to mint only to owner", async () => {
 });
 ```
 
-Here we used assertRevert to make sure that mint function would throw error. But we forgot to import it.
+Here we used `assertRevert` to make sure that mint function would throw error. But we forgot to import it.
 
 Add import statement in the beginning of file:
 
@@ -385,7 +385,7 @@ Add import statement in the beginning of file:
 import assertRevert from "zeppelin-solidity/test/helpers/assertRevert";
 ```
 
-Ok, now it won't run. You can just use `import` in your tests.
+OK, now it won't run. You can just use `import` in your tests.
 
 <a name="fix_setup"></a>
 ## Fix The Setup

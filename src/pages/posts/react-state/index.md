@@ -5,7 +5,7 @@ categories: React
 image: state_thumb.jpg
 ---
 
-`state` in react is a plain javascript object used to manage data specific to some component. Keep in mind that only data that is going to be needed for rendering should belong to the state.
+`state` in react is a plain Javascript object used to manage data specific to some component. Keep in mind that only data that is going to be needed for rendering should belong to the state.
 
 ## Contents
 
@@ -23,7 +23,7 @@ image: state_thumb.jpg
 <a name="what_is_state"></a>
 ## What Is State
 
-So basically `state` is a plain javascript object where component stores relevant data. The difference between `state` and any other object you can store inside your component is that React monitors it and will trigger re-render on `state` update.
+So basically `state` is a plain Javascript object where component stores relevant data. The difference between `state` and any other object you can store inside your component is that React monitors it and will trigger re-render on `state` update.
 
 As state updates cause re-render – it makes sense to only store variables that are needed for rendering. So if you have some variable related to the component, but that you don't use in your `render` method – it makes sense to just use it as a regular instance variable and not put it into `state`.
 

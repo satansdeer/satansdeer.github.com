@@ -8,7 +8,7 @@ comments: true
 
 In my [previous post](https://maksimivanov.com/posts/react-modal-window) I used pretty interesting syntax to define class methods for my `Popup` component. I was able to use arrow functions to change the scope of `this` to class level. Hmm, but it's not actually Javascript, so how did I do that?
 
-First let's refresh your memory, i'm talking about this code:
+First let's refresh your memory, I'm talking about this code:
 
 ```html
 import React, { Component } from 'react';
@@ -79,7 +79,7 @@ More traditional and verbose approach would be to bind `this` manually. You can 
   }
 ```
 
-You have to do this for every funcion that will use `this` reference, and it's very repetitive.
+You have to do this for every function that will use `this` reference, and it's very repetitive.
 
 ## You Can Bind In Render Function
 

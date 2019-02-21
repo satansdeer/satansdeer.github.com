@@ -8,7 +8,7 @@ comments: true
 
 Last Tuesday I had my first talk in Stockholm and actually ever in life.
 
-Recently (3 months ago) I moved to Stockholm. Now I work in [0+x](https://0x.se/) as a consultant. And recently I had a chance to participate in local ReactJS meetup organized by 0+x. I was talking about type checking javascript statically.
+Recently (3 months ago) I moved to Stockholm. Now I work in [0+x](https://0x.se/) as a consultant. And recently I had a chance to participate in local ReactJS meetup organized by 0+x. I was talking about type checking Javascript statically.
 
 I want to thank [@nipher_jonas](https://twitter.com/nipher_jonas), [@WayeBenjamin](https://twitter.com/WayeBenjamin) and Maria Verbenko for help and support.
 

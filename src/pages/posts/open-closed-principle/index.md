@@ -8,7 +8,7 @@ comments: true
 
 __OCP__ states that software entities (classes, modules, functions) should be open for extension, but closed for modification. Let's figure out what exactly does it mean…
 
-That basically means that you should write your modules in a way that wouldn't require you to __modify__ it's code in order to __extend__ it's behavior.
+That basically means that you should write your modules in a way that wouldn't require you to __modify__ it's code in order to __extend__ it's behaviour.
 
 ![open/closed principle](/open_closed_1.png)
 
@@ -57,7 +57,7 @@ class CookieMachine{
 
 ```
 
-Let's imagine that it's Christmass season and we need to cook Pepper cookies. See, we violated OCP and now we have to change `CookieMachine` code and add new `case` block.
+Let's imagine that it's Christmas season and we need to cook Pepper cookies. See, we violated OCP and now we have to change `CookieMachine` code and add new `case` block.
 
 ## Let's Fix It
 
@@ -131,7 +131,7 @@ class CookieMachine{
 }
 ```
 
-Great, now if we want to cook some new cookie – we just create new cookie recipy.
+Great, now if we want to cook some new cookie – we just create new cookie recipe.
 
 ## Let's Update The Specs
 

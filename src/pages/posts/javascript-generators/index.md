@@ -45,7 +45,7 @@ const iterator = generator();
 console.log(iterator.next()); // {value: "Hey!", done: true}
 ```
 
-Every time you call `next()` on your **iterator** it will return and object with `value` and `done` fields. `value` will contain what you pass to your yield or return, and `done` sinifies if function finished execution.
+Every time you call `next()` on your **iterator** it will return and object with `value` and `done` fields. `value` will contain what you pass to your yield or return, and `done` signifies if function finished execution.
 
 ```js
 function* sampleGenerator() {
