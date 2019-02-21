@@ -5,7 +5,8 @@ import { rhythm, scale } from "../utils/typography";
 import Header from "../components/Header";
 import "../utils/typography";
 
-import "prismjs/themes/prism-okaidia.css";
+import "prism-themes/themes/prism-ghcolors.css";
+import "prismjs/plugins/line-numbers/prism-line-numbers.css";
 
 class Template extends React.Component {
   render() {
