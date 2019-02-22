@@ -6,6 +6,8 @@ image: karma_setup_thumb.jpg
 comments: true
 ---
 
+`youtube:https://www.youtube.com/embed/0_XhWBqgx-c`
+
 _Psst, do you write Javascript that runs in browser?_ I have something for you, it's&nbsp;called&nbsp;**Karma**, you'll like it.
 
 When you write Javascript code, you have to test it. The same code might work slightly differently in different browsers, so you better test your code at least in most common of them.
@@ -161,7 +163,5 @@ It's the most dumb, simple and straightforward solution I know, but now all the 
 While Karma is running, play around with the code. Try to improve the solution. Try to implement it as a one-liner.
 
 What's the minimum amount of characters you need to solve this task?
-
-`youtube:https://www.youtube.com/embed/0_XhWBqgx-c`
 
 <sign-up-form></sign-up-form>

@@ -35,7 +35,7 @@ const SimpleComponent = () => <div>Very basic component.</div>;
 
 If your code takes more than one line - just wrap it into brackets:
 
-```jsx
+```jsx{numberLines: true}
 const SimpleComponent = () => (
   <div>
     <h1>More Complex Component</h1>
