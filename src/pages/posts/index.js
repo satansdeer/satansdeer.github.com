@@ -43,6 +43,11 @@ const colorsByCat = cat => {
         backgroundColor: "#010301",
         color: "#15d709"
       };
+    case "typescript":
+      return {
+        backgroundColor: "#0074c1",
+        color: "#fff"
+      };
     default:
       return {
         backgroundColor: "#ce3175",
