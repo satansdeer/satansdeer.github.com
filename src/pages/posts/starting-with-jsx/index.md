@@ -44,7 +44,13 @@ This is not a surprise that you can use simple text inside of your JSX code.
 <p>Simple paragraph of text</p>
 ```
 
-React escapes html strings by default
+React escapes html strings by default.
+
+You can insert HTML entities within literal text in JSX:
+
+```jsx
+<div>First &middot; Second</div>
+```
 
 ## Using HTML Elements
 
