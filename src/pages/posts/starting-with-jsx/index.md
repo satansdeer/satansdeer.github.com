@@ -32,7 +32,7 @@ As you can see JSX is actually syntactic sugar around Javascript expressions. In
 There are four things that can end up in JSX code:
 
 * Strings
-* Html elements
+* HTML elements
 * Custom components
 * Javascript code
 
@@ -54,11 +54,25 @@ You can insert HTML entities within literal text in JSX:
 
 ## Using HTML Elements
 
+JSX tags that start from lowercase letter render as HTML tags.
+
 One of the things you need to remember is even though **JSX** resembles **HTML**, it is not **HTML**. Here are some differences to keep in mind:
 
 * attributes are now `camelCased`
 
   Attributes that had no case at all for example `onclick` is now `onClick`.
+
+  ```jsx
+  <button onClick={clickHandler}>Click me</button>
+  ```
+  
+  **There are two exceptions** `data-*` and `aria-*` attributes that stay lowercased.
+
+  ```jsx
+  <div aria-hidden={true} />
+
+  <div data-custom-attribute="some-value" />
+  ```
 
 * `class` becomes `className`
 
@@ -88,6 +102,10 @@ One of the things you need to remember is even though **JSX** resembles **HTML**
 ## Using Custom Components
 
 You can define your own components. There is one important rule though. Your custom component names **should always start with capital letter**.
+
+This is due to the fact that React determines if it should use custom component refence or html tag depending on the first letter of the tag name. If it's capital letter - it will use custom component reference, otherwise - html element.
+
+
 
 There are mainly two ways of defining a component in react: using class or using a function.
 
@@ -125,7 +143,11 @@ const text = "Hello i'm a text!"
 <div>{text}</div>
 ```
 
-And it can be any Javascript code. You can have loops, conditions and even switch statements there.
+You also can pass Javascript expressions as attributes.
+
+```jsx
+<div data-custom-field={2+2} />
+```
 
 ## How To Comment JSX
 
