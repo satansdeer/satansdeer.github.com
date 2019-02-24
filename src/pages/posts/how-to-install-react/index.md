@@ -5,6 +5,8 @@ categories: React
 image: how_to_install_react.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/7tNMajgCy1M`
+
 How to install React?
 
 ReactJS is a Javascript library so by asking how to install it - you most likely mean "How to setup a React project?".
@@ -73,7 +75,7 @@ First make sure you have **NodeJS** installed, to do this run `node -v`, it will
 After you've made sure you have **NodeJS** installed - go to the folder where you have your programming projects, on my machine I have folder named `Workspace`. And execute the following command there:
 
 ```
-npm create-react-app hello-react
+npx create-react-app hello-react
 ```
 
 This script will create folder structure for your project and install all the required libraries. Also it will provide you with some script fields in your `package.json` so you can `start`, `build` and `test` your react application.
