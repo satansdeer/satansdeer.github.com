@@ -24,11 +24,11 @@ In this example `name` and `surname` will end up in `props` object that will loo
 Components defined as a function get `props` as an argument:
 
 ```jsx
-const BlogPostExcerpt = props => {
+const UserCard = props => {
   return (
     <div>
-      <h1>{props.title}</h1>
-      <p>{props.description}</p>
+      <h1>{props.name}</h1>
+      <p>{props.bio}</p>
     </div>
   )
 }
@@ -39,12 +39,12 @@ In class components `props` are available as `this.props` on Component instance.
 ```jsx
 import React, { Component } from 'react'
 
-class BlogPostExcerpt extends Component {
+class UserCard extends Component {
   render() {
     return (
       <div>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.description}</p>
+        <h1>{this.props.name}</h1>
+        <p>{this.props.bio}</p>
       </div>
     )
   }
