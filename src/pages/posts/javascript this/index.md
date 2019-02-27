@@ -33,7 +33,16 @@ function withStrict () {
 When a function is invoked with `new` keyword then the function is known as constructor function and returns a new instance. In such cases, the value of “this” refers to newly created instance.
 
 ```js
+function Person() {
+    this.name = "Maksim"
 
+    this.logName = function(){
+        console.log(this.name)
+    }
+}
+
+const person = new Person();
+person.logName() // Will output `Maksim`
 ```
 
 ## This In Methods
@@ -50,6 +59,22 @@ const user = {
         // will log `Maksim`
     }
 }
+```
+
+But `method` can loose reference to it's parent object. In this example if we assign `logName` to an external variable and then call it - `this` inside of it will be global object (or `undefined` in **strict** mode).
+
+```js
+const user = {
+    name: 'Maksim',
+    logName: function(){
+        'use strict'
+        console.log(this)
+        console.log(this.name)
+    }
+}
+
+const brokenLogName = user.logName
+brokenLogName() // Will give `TypeError: this is undefined`
 ```
 
 ## This In Browser Event Handlers
