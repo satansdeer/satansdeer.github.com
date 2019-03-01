@@ -217,3 +217,5 @@ serviceWorker.unregister();
 ## 9. Run Your Application
 
 Now you can run your app, try adding different locale codes to your url.
+
+Here is the [code for the app in this tutorial](https://github.com/satansdeer/react-intl-example).
