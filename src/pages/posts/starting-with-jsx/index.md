@@ -105,8 +105,6 @@ You can define your own components. There is one important rule though. Your cus
 
 This is due to the fact that React determines if it should use custom component refence or html tag depending on the first letter of the tag name. If it's capital letter - it will use custom component reference, otherwise - html element.
 
-
-
 There are mainly two ways of defining a component in react: using class or using a function.
 
 If you define a class based component - you have to define `render()` function to specify the layout of your component.

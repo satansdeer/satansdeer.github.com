@@ -36,4 +36,10 @@ render() {
 
 Now, good news if you use VSCode, you can press `Ctrl + /` and it will add `{/* */}` around selected lines.
 
+## More About JSX
+
+Btw I wrote a couple of new articles about JSX:
+
+* [Starting With JSX](https://maksimivanov.com/posts/starting-with-jsx/)
+* [Conditions Inside JSX](https://maksimivanov.com/posts/conditional-rendering-in-jsx/)
 
