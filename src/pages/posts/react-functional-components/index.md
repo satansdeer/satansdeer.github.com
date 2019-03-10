@@ -5,9 +5,9 @@ categories: React
 image: react_dev_tools.jpg
 ---
 
-The simplest way to define a component in React is to use `function`.
+The simplest way to define a component in React is to use function.
 
-To do it you just declare a function that receives `props` and returns some **JSX** layout.
+You just declare a function that receives `props` and returns some **JSX** layout.
 
 Here is an example:
 
