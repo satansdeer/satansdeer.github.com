@@ -48,6 +48,11 @@ const colorsByCat = cat => {
         backgroundColor: "#0074c1",
         color: "#fff"
       };
+    case "markdown":
+      return {
+        backgroundColor: "#b4f4e9",
+        color: "#fff"
+      };
     default:
       return {
         backgroundColor: "#ce3175",
