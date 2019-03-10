@@ -1,5 +1,5 @@
 ---
-title: React Functional Components
+title: React Synthetic Events
 date: 2019-03-10T03:09:45.284Z
 categories: React
 image: react_dev_tools.jpg

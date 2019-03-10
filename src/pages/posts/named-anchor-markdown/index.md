@@ -1,6 +1,6 @@
 ---
 title: How To Add Named Anchor In Markdown
-date: 2019-03-10T04:58:45.284Z
+date: 2019-03-10T01:56:45.284Z
 categories: Markdown
 image: image.jpg
 ---
