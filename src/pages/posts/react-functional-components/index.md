@@ -25,7 +25,7 @@ const Header = ({text}) => <h1>{text}</h1>;
 
 Overall functions is preferred way of writing components in react.
 
-This is due to the fact that functions, especially if they are [pure](https://maksimivanov.com/posts/pure-functions-and-side-effects) are easy to read, test and reason about.
+This is due to the fact that functions, especially if they are [pure](https://maksimivanov.com/posts/pure-functions-and-side-effects/) are easy to read, test and reason about.
 
 If you have a component that doesn't have internal `state` and doesn't have event listeners defined, and doesn't rely on lifecycle methods - use functional component.
 
