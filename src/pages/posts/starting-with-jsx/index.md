@@ -9,7 +9,7 @@ image: starting_with_jsx.jpg
 
 Today we continue to learn ReactJS. In this React tutorial for beginners you'll get familiar with **JSX** - syntax used in React applications to describe the layout of your components.
 
-At this moment I expect you to know [what is React](https://maksimivanov.com/posts/introduction-to-reactjs/) and [how to setup React Applications](https://maksimivanov.com/posts/how-to-install-react/).
+At this moment I expect you to know [what is React](/posts/introduction-to-reactjs/) and [how to setup React Applications](/posts/how-to-install-react/).
 
 ## Introduction to JSX
 
