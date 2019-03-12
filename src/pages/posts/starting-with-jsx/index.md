@@ -5,7 +5,11 @@ categories: React
 image: starting_with_jsx.jpg
 ---
 
-JSX is a syntax used in React applications to describe the layout of your components.
+`youtube:https://www.youtube.com/embed/Z9XppQBgArc`
+
+Today we continue to learn ReactJS. In this React tutorial for beginners you'll get familiar with **JSX** - syntax used in React applications to describe the layout of your components.
+
+At this moment I expect you to know [what is React](https://maksimivanov.com/posts/introduction-to-reactjs/) and [how to setup React Applications](https://maksimivanov.com/posts/how-to-install-react/).
 
 ## Introduction to JSX
 
@@ -27,7 +31,13 @@ _Without JSX:_
 const element = React.createElement("h1", null, "Hello, React!");
 ```
 
-As you can see JSX is actually syntactic sugar around Javascript expressions. In this example `<h1>` tag is equivalent of calling `React.createElement` and passing `h1` as first argument.
+As you can see JSX is actually syntactic sugar around Javascript expressions.
+
+> **Syntactic sugar** is a feature of language that let's you do something in an alternative, easier way. For example you can type `x = x + 5`, to increment `x` by 5 but you can also do it by writing `x += 5`.
+
+In this example `<h1>` tag is equivalent of calling `React.createElement` and passing `h1` as first argument.
+
+It is important to note that as all **JSX** expressions get converted to `React.createElement` - `React` should always be in scope when you write your **JSX** code. So don't forget to import it in your `jsx` files.
 
 There are four things that can end up in JSX code:
 
@@ -45,6 +55,14 @@ This is not a surprise that you can use simple text inside of your JSX code.
 ```
 
 React escapes html strings by default.
+
+```jsx
+const text = "<h1>Html layout inside a string<h1>";
+
+<p>{text}</p>
+```
+
+Here  you'll see `jsx` actually output the `"<h1>Html layout inside a string<h1>"` string, instead of rendering it as HTML.
 
 You can insert HTML entities within literal text in JSX:
 
