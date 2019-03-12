@@ -105,6 +105,12 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
+        <script
+          src="https://my.hellobar.com/a6408d3dff509734ace038481db64316a99b8015.js"
+          type="text/javascript"
+          charset="utf-8"
+          async="async"
+        />
       </div>
     );
   }
