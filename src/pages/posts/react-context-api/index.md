@@ -5,7 +5,7 @@ categories: React
 image: react_dev_tools.jpg
 ---
 
-In React application data and event handlers are passed domn to children components through props. But sometimes you need to make some data available on several levels at once.
+In React application data and event handlers are passed down to children components through props. But sometimes you need to make some data available on several levels at once.
 
 Passing data through props manually can be cumbersome.
 
