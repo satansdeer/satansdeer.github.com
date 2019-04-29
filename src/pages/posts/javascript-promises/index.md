@@ -5,6 +5,8 @@ categories: Javascript
 image: react_dev_tools.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/3R9Yekajvl8`
+
 In Javascript Promises are special sort of objects that serve as a proxy for data that is initially unknown.
 
 The concept is not unique for Javascript, similar constructs exist in other languages as well.
