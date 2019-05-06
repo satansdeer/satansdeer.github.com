@@ -5,6 +5,8 @@ categories: React
 image: firebase_react.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/unr4s3jd9qA`
+
 Sometimes you just need to make a fast prototype and you don't want to mess with back end, authentication, authorization and all of that. Here is where Google's firebase can help you. In this tutorial I'll show you how to connect your react app with Firebase authentication module.
 
 ## What Are We Going To Build
