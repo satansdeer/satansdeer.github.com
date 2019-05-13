@@ -5,6 +5,8 @@ categories: Git
 image: git-husky.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/qod6E738cc4`
+
 Git provides an interface to run some code as reaction on specific triggers. Those triggers are called githooks (hooks used by git). You can run code on every commit, push, pull or other actions.
 
 > Hooks are programs you can place in a hooks directory to trigger actions at certain points in git’s execution.
