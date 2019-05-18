@@ -23,9 +23,9 @@ class Template extends React.Component {
         <div
           style={{
             position: "absolute",
-            top: "0",
+            top: "-50px",
             left: "0",
-            height: "500px",
+            height: "550px",
             background:
               "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAD0lEQVQImWNgQAX/yeAAAIHCA/0RE2WAAAAAAElFTkSuQmCC) repeat",
             transform: "skewY(-5deg)",
