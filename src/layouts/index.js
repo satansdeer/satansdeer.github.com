@@ -19,15 +19,32 @@ class Template extends React.Component {
     }
 
     return (
-      <Container
-        style={{
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`
-        }}
-      >
-        <Header />
-        {children()}
-      </Container>
+      <div>
+        <div
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+            height: "500px",
+            background:
+              "url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAD0lEQVQImWNgQAX/yeAAAIHCA/0RE2WAAAAAAElFTkSuQmCC) repeat",
+            transform: "skewY(-5deg)",
+            width: "100%",
+            zIndex: "-1",
+          }}
+        />
+        <Container
+          style={{
+            maxWidth: rhythm(24),
+            padding: `${rhythm(3 / 4)}`,
+            backgroundColor: '#f7f7f7',
+            marginTop: '110px'
+          }}
+        >
+          <Header />
+          {children()}
+        </Container>
+      </div>
     );
   }
 }

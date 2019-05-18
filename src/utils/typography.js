@@ -2,6 +2,14 @@ import Typography from "typography";
 import lincoln from "typography-theme-lincoln";
 
 lincoln.overrideThemeStyles = () => ({
+  ':not(pre) > code[class*="language-"]': {
+    background: 'linear-gradient( rgba(0,0,0,0) 0% 40%,#fbf07b 40%, 30%, #fbf07b 100%) !important',
+    border: 'none !important'
+  },
+  "pre": {
+    border: 'none !important',
+    borderRadius: '6px'
+  },
   "a": {
     backgroundImage: "none",
     textShadow: "none"
@@ -12,7 +20,8 @@ lincoln.overrideThemeStyles = () => ({
   },
   "h1, h2, h3, h4, h5, h6": {
     fontFamily:
-      "-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif"
+      "-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif",
+    marginTop: ".79rem"
   },
   body: {
     fontFamily:

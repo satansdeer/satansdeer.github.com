@@ -96,7 +96,7 @@ class BlogIndex extends React.Component {
           return (
             <div
               key={node.fields.slug}
-              style={{ borderBottom: "1px solid #ccc" }}
+              style={{ borderBottom: "1px solid #ccc", marginBottom: '30px' }}
             >
               <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                 <h2
