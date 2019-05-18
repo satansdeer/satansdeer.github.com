@@ -8,16 +8,33 @@ export default () => {
   return (
     <div
       style={{
-        minHeight: 56,
-        position: "relative",
+        minHeight: "56px",
+        position: "fixed",
         display: "flex",
         justifyContent: "space-between",
-        alignItems: "baseline",
-        flexWrap: "wrap"
+        alignItems: "center",
+        flexWrap: "wrap",
+        top: 0,
+        backgroundColor: "#ffe900",
+        width: "100%",
+        left: 0,
+        zIndex: 100,
+        boxShadow: '0px 0px 6px -4px rgba(0, 0, 0, 0.35)'
       }}
     >
-      <Logo />
-      <Navbar />
+      <div
+        style={{
+          padding: "0 50px 0 50px",
+          width: "100%",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap"
+        }}
+      >
+        <Logo />
+        <Navbar />
+      </div>
     </div>
   );
 };

@@ -2,8 +2,13 @@ import Typography from "typography";
 import lincoln from "typography-theme-lincoln";
 
 lincoln.overrideThemeStyles = () => ({
+  "a": {
+    backgroundImage: "none",
+    textShadow: "none"
+  },
   "a.gatsby-resp-image-link": {
-    backgroundImage: "none"
+    backgroundImage: "none",
+    textShadow: "none"
   },
   "h1, h2, h3, h4, h5, h6": {
     fontFamily:

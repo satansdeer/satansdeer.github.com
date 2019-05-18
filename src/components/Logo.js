@@ -7,9 +7,10 @@ export default () => {
     <Link
       style={{
         boxShadow: "none",
-        fontFamily: "Montserrat, sans-serif",
+        fontFamily: "Open Sans, sans-serif",
         textDecoration: "none",
         fontSize: 26,
+        fontWeight: 800,
         backgroundImage: "none",
         color: "inherit"
       }}
