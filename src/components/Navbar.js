@@ -27,6 +27,17 @@ export default () => {
       >
         Posts
       </Link>
+      <a
+        style={{
+          boxShadow: "none",
+          textDecoration: "none",
+          color: "inherit",
+          marginRight: 20
+        }}
+        href={"https://www.youtube.com/user/satansdeer1/videos"}
+      >
+        Videos
+      </a>
     </div>
   );
 };
