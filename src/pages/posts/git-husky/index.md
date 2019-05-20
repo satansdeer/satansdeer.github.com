@@ -1,6 +1,6 @@
 ---
 title: Automate Git With Hooks And Husky
-date: 2019-06-01T01:58:45.284Z
+date: 2019-05-01T01:58:45.284Z
 categories: Git
 image: git-husky.jpg
 ---
