@@ -12,11 +12,16 @@ export default () => {
         fontSize: 26,
         fontWeight: 800,
         backgroundImage: "none",
-        color: "inherit"
+        color: "inherit",
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'flex-start',
+        justifyContent: 'flex-start',
       }}
       to={"/"}
     >
       Maksim Ivanov
+      <span style={{fontSize: 12, fontWeight: 400, fontFamily: 'monospace', marginTop: -4, marginBottom: 4}}>Programming tutorials</span>      
     </Link>
   );
 };
