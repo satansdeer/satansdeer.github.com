@@ -5,6 +5,8 @@ categories: Graphql
 image: generators.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/MY-xI06yPHI`
+
 In this tutorial, we'll build a simple Instagram clone using React and GraphQL. In our version, it will only contain cat pictures.
 
 GraphQL allows you to fetch data using **Queries** and update it using **Mutations**. Today we'll focus on fetching data. We'll create both backend and frontend.
@@ -38,7 +40,7 @@ Let's consider a blog example. It has posts and each post can have multiple comm
 
 In **REST API**, one has to gather the required information from multiple endpoints. In order to fetch the content of a blog post and its comments, a client would have to first fetch a particular post and then request another endpoint for comments based on post `id` for every post.
 
-Here we first get the post with `id` 1 to get its title (and maybe other fields, like `content`).
+Here we first get the post with `id` 1 to get its title (and maybe other fields, like `content` or `text`).
 
 ```js
 GET someblog.com/posts/1;
