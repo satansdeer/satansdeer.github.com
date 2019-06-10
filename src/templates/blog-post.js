@@ -2,17 +2,9 @@ import React from "react";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import get from "lodash/get";
-import rehypeReact from "rehype-react";
-import SignUpForm from "../components/SignUpForm";
-import Share from "../components/Share";
-import Img from "gatsby-image";
-
-import { rhythm, scale } from "../utils/typography";
-
-const renderAst = new rehypeReact({
-  createElement: React.createElement,
-  components: { "sign-up-form": SignUpForm, image: Img }
-}).Compiler;
+import Layout from '../components/layout'
+import Share from '../components/Share'
+import SignUpForm from '../components/SignUpForm'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -34,7 +26,7 @@ class BlogPostTemplate extends React.Component {
       : "https://starflow.com/images/Maksim_Ivanov.jpg";
 
     return (
-      <div>
+      <Layout>
         <Helmet>
           <title>{post.frontmatter.title || siteTitle}</title>
           <meta name="description" content={post.excerpt} />
@@ -55,15 +47,15 @@ class BlogPostTemplate extends React.Component {
         {post.frontmatter.title && <h1>{post.frontmatter.title}</h1>}
         <p
           style={{
-            ...scale(-1 / 5),
+            // ...scale(-1 / 5),
             display: "block",
-            marginBottom: rhythm(1),
-            marginTop: rhythm(1)
+            // marginBottom: rhythm(1),
+            // marginTop: rhythm(1)
           }}
         >
           {post.frontmatter.date}
         </p>
-        <div>{renderAst(post.htmlAst)}</div>
+        <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <Share
           socialConfig={{
             twitterHandle,
@@ -76,8 +68,8 @@ class BlogPostTemplate extends React.Component {
         />
         <hr
           style={{
-            marginTop: rhythm(1),
-            marginBottom: rhythm(1)
+            // marginTop: rhythm(1),
+            // marginBottom: rhythm(1)
           }}
         />
         <ul
@@ -105,7 +97,8 @@ class BlogPostTemplate extends React.Component {
             </li>
           )}
         </ul>
-      </div>
+        <SignUpForm/>
+      </Layout>
     );
   }
 }
@@ -125,10 +118,10 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt
+      html
       fields {
         slug
       }
-      htmlAst
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

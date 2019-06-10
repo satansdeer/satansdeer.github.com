@@ -12,14 +12,13 @@ export default () => (
     noValidate
   >
     <div id="mc_embed_signup_scroll">
-      <h2 className="popup-header">Subscribe to my mailing list</h2>
+      <h2 className="popup-header">Get new tutorials to your inbox:</h2>
       <div className="form-row">
-        <label htmlFor="mce-NAME">Name:</label>
-        <input type="text" name="NAME" className="required" id="mce-NAME" />
+        <input placeholder="Name" type="text" name="NAME" className="required" id="mce-NAME" />
       </div>
       <div className="form-row">
-        <label htmlFor="mce-EMAIL">Email:</label>
         <input
+          placeholder="Email"
           type="email"
           name="EMAIL"
           className="required email"
@@ -52,7 +51,6 @@ export default () => (
           value="Subscribe"
           name="subscribe"
           id="mc-embedded-subscribe"
-          className="SignUpForm-submit"
         />
       </div>
     </div>

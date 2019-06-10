@@ -5,10 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
   FacebookShareButton,
-  GooglePlusShareButton,
   LinkedinShareButton,
   TwitterShareButton,
-  WhatsappShareButton,
   RedditShareButton
 } from "react-share";
 
@@ -39,14 +37,6 @@ const Share = ({ socialConfig, tags }) => (
           <FontAwesomeIcon icon={["fab", "twitter"]} />
         </span>
       </TwitterShareButton>
-      <GooglePlusShareButton
-        url={socialConfig.config.url}
-        className="button is-outlined is-rounded googleplus"
-      >
-        <span className="icon">
-          <FontAwesomeIcon icon={["fab", "google-plus-g"]} />
-        </span>
-      </GooglePlusShareButton>
       <LinkedinShareButton
         url={socialConfig.config.url}
         className="button is-outlined is-rounded linkedin"
