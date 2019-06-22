@@ -14,9 +14,9 @@ image: webpack.jpg
   </iframe>
 </div>
 
-Usually `create-react-app` is enough to create new React applications, and if you need to have some specific settings - you can always `eject` and alter it's webpack configuration. But sometimes you just need to set up project from scratch.
+Usually `create-react-app` is enough to create new React applications, and if you need to have some specific settings - you can always `eject` and alter its webpack configuration. But sometimes you just need to set up a project from scratch.
 
-In this tutorial you will learn how to setup Webpack with Babel and React support. We'll also configure a dev server.
+In this tutorial, you will learn how to setup Webpack with Babel and React support. We'll also configure a dev server.
 
 ## Step 1: Initialize Project
 
