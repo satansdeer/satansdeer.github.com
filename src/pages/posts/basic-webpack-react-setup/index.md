@@ -178,3 +178,5 @@ npm start
 It should open a browser window and you should see this:
 
 ![Running React App](./hello-app.png)
+
+> You can find code for this tutorial [in webpack-react-tutorial github repo](https://github.com/satansdeer/webpack-react-tutorial).
