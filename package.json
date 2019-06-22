@@ -46,6 +46,7 @@
     "typography-theme-lincoln": "^0.16.19"
   },
   "devDependencies": {
+    "gatsby-cli": "^2.7.0",
     "prettier": "^1.18.0"
   },
   "keywords": [

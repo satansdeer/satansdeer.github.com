@@ -43,6 +43,13 @@ const Layout = ({ children }) => (
             justifyContent: "center",
           }}
         >
+          <aside style={{
+            backgroundColor: '#f7f7f7'
+          }}>
+            <h2>
+              Categories
+            </h2>
+          </aside>
           <main
             style={{
               maxWidth: typography.rhythm(24),

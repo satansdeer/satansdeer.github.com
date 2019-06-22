@@ -140,7 +140,6 @@ class BlogIndex extends React.Component {
           render={data => {
             const siteTitle = get(data, "site.siteMetadata.title")
             const author = get(data, "site.siteMetadata.author")
-            const siteUrl = get(data, "site.siteMetadata.siteUrl")
             const siteDescription = get(
               data,
               "site.siteMetadata.description"
@@ -171,7 +170,7 @@ class BlogIndex extends React.Component {
                 </Helmet>
                 {posts.map(({ node }) => {
                   if (!node.frontmatter.title) {
-                    return
+                    return null
                   }
                   const title =
                     get(node, "frontmatter.title") || node.fields.slug

@@ -37,7 +37,7 @@ export default () => {
             alignItems: "center"
           }}
         >
-          {/* <input
+          <input
             type="text"
             placeholder="Search..."
             style={{
@@ -47,7 +47,7 @@ export default () => {
               borderRadius: "5px",
               padding: "0 20px"
             }}
-          /> */}
+          />
           <Navbar />
         </div>
       </div>

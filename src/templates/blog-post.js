@@ -2,7 +2,7 @@ import React from "react";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import get from "lodash/get";
-import Layout from '../components/layout'
+import Layout from '../components/Layout'
 import Share from '../components/Share'
 import SignUpForm from '../components/SignUpForm'
 
@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
       "data.site.siteMetadata.twitterHandle"
     );
     const { previous, next } = this.props.pathContext;
-    const slug = post.fields.slug == "/" ? "" : post.fields.slug;
+    const slug = post.fields.slug === "/" ? "" : post.fields.slug;
     const { title, categories } = post.frontmatter;
     const image = post.frontmatter.image
       ? `https://maksimivanov.com${
