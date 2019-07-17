@@ -1,13 +1,28 @@
-const _ = require("lodash");
-const Promise = require("bluebird");
-const path = require("path");
-const { createFilePath } = require("gatsby-source-filesystem");
+const _ = require("lodash")
+const Promise = require("bluebird")
+const path = require("path")
+const { createFilePath } = require("gatsby-source-filesystem")
+const categories = [
+  "react",
+  "javascript",
+  "html",
+  "git",
+  "ethereum",
+  "reactnative",
+  "graphql",
+  "random",
+  "programming",
+  "typescript",
+  "markdown",
+]
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  const categoriesTemplate = path.resolve("src/templates/categories.js")
 
   return new Promise((resolve, reject) => {
-    const blogPost = path.resolve("./src/templates/blog-post.js");
+    const blogPost = path.resolve("./src/templates/blog-post.js")
     resolve(
       graphql(
         `
@@ -31,16 +46,16 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         `
       ).then(result => {
         if (result.errors) {
-          reject(result.errors);
+          reject(result.errors)
         }
 
         // Create blog posts pages.
-        const posts = result.data.allMarkdownRemark.edges;
+        const posts = result.data.allMarkdownRemark.edges
 
         _.each(posts, (post, index) => {
           const previous =
-            index === posts.length - 1 ? false : posts[index + 1].node;
-          const next = index === 0 ? false : posts[index - 1].node;
+            index === posts.length - 1 ? false : posts[index + 1].node
+          const next = index === 0 ? false : posts[index - 1].node
 
           createPage({
             path: post.node.fields.slug,
@@ -48,19 +63,29 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             context: {
               slug: post.node.fields.slug,
               previous,
-              next
-            }
-          });
-        });
+              next,
+            },
+          })
+        })
+
+        categories.forEach(category => {
+          createPage({
+            path: `/categories/${_.kebabCase(category)}/`,
+            component: categoriesTemplate,
+            context: {
+              category,
+            },
+          })
+        })
       })
-    );
-  });
-};
+    )
+  })
+}
 
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode})
+    const slug = createFilePath({ node, getNode })
     createNodeField({
       node,
       name: `slug`,
@@ -68,4 +93,3 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     })
   }
 }
-

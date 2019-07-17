@@ -5,6 +5,7 @@ import get from "lodash/get";
 import Layout from '../components/Layout'
 import Share from '../components/Share'
 import SignUpForm from '../components/SignUpForm'
+import { graphql } from 'gatsby'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -16,7 +17,7 @@ class BlogPostTemplate extends React.Component {
       this.props,
       "data.site.siteMetadata.twitterHandle"
     );
-    const { previous, next } = this.props.pathContext;
+    const { previous, next } = this.props.pageContext;
     const slug = post.fields.slug === "/" ? "" : post.fields.slug;
     const { title, categories } = post.frontmatter;
     const image = post.frontmatter.image

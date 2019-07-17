@@ -1,13 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import typography from "../utils/typography"
 import Header from "./Header"
 
-import "../utils/typography";
+import "../utils/typography"
 
-import "prism-themes/themes/prism-ghcolors.css";
+import "prism-themes/themes/prism-ghcolors.css"
 import "prismjs/plugins/line-numbers/prism-line-numbers.css"
+import { categories, colorsByCat } from "../utils/categories"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -41,14 +42,41 @@ const Layout = ({ children }) => (
             display: "flex",
             width: "100%",
             justifyContent: "center",
+            alignItems: "flex-start"
           }}
         >
-          <aside style={{
-            backgroundColor: '#f7f7f7'
-          }}>
-            <h2>
-              Categories
-            </h2>
+          <aside
+            style={{
+              maxWidth: typography.rhythm(8),
+              padding: `${typography.rhythm(3 / 4)}`,
+              backgroundColor: "#f7f7f7",
+              marginTop: "110px",
+              marginRight: "30px",
+              boxShadow: "4px 4px #c3c3c3",
+              borderRadius: "5px",
+              border: "1px solid #c3c3c3",
+              flexGrow: 0,
+            }}
+          >
+            <h2>Categories</h2>
+            <div style={{ display: "flex", flexFlow: "wrap" }}>
+              {categories.map(cat => (
+                <Link
+                  style={{
+                    padding: "5px 10px",
+                    paddingLeft: "10px",
+                    color: "#191919",
+                    fontSize: "16px",
+                    backgroundRepeat: "no-repeat",
+                    backgroundPositionY: "center",
+                    textTransform: "capitalize",
+                    textDecoration: "underline",
+                    ...colorsByCat(cat),
+                  }}
+                  to={`categories/${cat}`}
+                >{`${cat}  `}</Link>
+              ))}
+            </div>
           </aside>
           <main
             style={{
