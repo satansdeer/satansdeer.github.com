@@ -1,5 +1,5 @@
 ---
-title: Liskov Substitution Principle
+title: Liskov Substitution Principle - SOLID
 date: 2017-11-10T20:58:45.284Z
 categories: Programming
 image: liskov_substitution_principle.jpg

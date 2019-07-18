@@ -1,5 +1,5 @@
 ---
-title: "Open/Closed Principle"
+title: Open/Closed Principle - SOLID
 date: 2017-11-13T20:58:45.284Z
 categories: Programming
 image: open_closed_principle.jpg
