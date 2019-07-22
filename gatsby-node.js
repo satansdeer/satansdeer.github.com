@@ -5,6 +5,7 @@ const { createFilePath } = require("gatsby-source-filesystem")
 const categories = [
   "react",
   "javascript",
+  "vscode",
   "html",
   "git",
   "ethereum",
