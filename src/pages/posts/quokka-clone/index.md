@@ -52,6 +52,19 @@ VSCode provides a Yeoman generator to bootstrap new extensions.
     > * Launch VSCode regular way.
     > * Open the Command Palette (`⇧⌘P` on Mac) and type `shell command` to find the _Shell Command: Install 'code' command in PATH command._
 
+* Change command title in `package.json`. It is located in `contributes.commands` block.
+
+    ```json
+    "contributes": {
+      "commands": [
+        {
+          "command": "extension.<your extension name>",
+          "title": "Run wombat"
+        }
+      ]
+    },
+    ```
+
 ## Get Data From Node Inspector
 
 Since version 6.3 node provides a built-in inspector which API we are gonna use to get runtime information about our code.
