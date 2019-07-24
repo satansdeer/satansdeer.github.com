@@ -2,7 +2,7 @@
 title: Quokka Clone In 10 Minutes - VSCode Extention Tutorial
 date: 2019-07-22T03:09:45.284Z
 categories: VSCode 
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 In this tutorial, we'll learn how to create a VSCode extension that will communicate with Node Inspector to collect execution data - basically a Quokka.js clone.

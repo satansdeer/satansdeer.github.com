@@ -2,7 +2,7 @@
 title: Render HUGE Lists In React - React Window Tutorial
 date: 2019-07-17T03:09:45.284Z
 categories: React
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 `youtube:https://www.youtube.com/embed/ki6yr9aYsTk`

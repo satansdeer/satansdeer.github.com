@@ -2,7 +2,7 @@
 title: React Synthetic Events
 date: 2019-03-10T03:09:45.284Z
 categories: React
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 The events that you get when your event handlers get triggered are actually `SyntheticEvents` - an abstraction around browser events provided by React.

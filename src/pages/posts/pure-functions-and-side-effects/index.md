@@ -2,7 +2,7 @@
 title: Pure Functions And Side Effects
 date: 2019-03-10T02:08:45.284Z
 categories: Programming
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 In computer programming **pure function** is a function that satisfies two conditions:

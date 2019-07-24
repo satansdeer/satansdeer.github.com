@@ -1,3 +1,7 @@
+---
+image: thumb.jpg
+---
+
 # Hey, Nice To Meet You!
 
 My name is Maksim Ivanov, I'm 28 years old and have a dog and two cats and I'm **addicted to programming**.

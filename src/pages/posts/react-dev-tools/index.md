@@ -2,7 +2,7 @@
 title: React Dev Tools
 date: 2019-02-27T01:58:45.284Z
 categories: React
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 To develop React applications effectively - you'll need to use React DevTools browser extension. It's available for both Chrome and Firefox.

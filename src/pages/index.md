@@ -1,5 +1,5 @@
 ---
-
+image: thumb.jpg
 ---
 
 # Improve Your Frontend Skills

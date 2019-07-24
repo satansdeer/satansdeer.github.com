@@ -2,7 +2,7 @@
 title: Controlled And Uncontrolled Forms In React
 date: 2019-03-10T04:09:45.284Z
 categories: React
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 There are two ways of working with forms in React. **Controlled** and **uncontrolled**.

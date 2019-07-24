@@ -2,7 +2,7 @@
 title: React PropTypes
 date: 2019-04-02T01:58:45.284Z
 categories: React
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 Javascrpt is dynamic language, it doesn't have static typechecking. You can't

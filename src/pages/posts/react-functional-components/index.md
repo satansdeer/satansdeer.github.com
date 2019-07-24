@@ -2,7 +2,7 @@
 title: React Functional Components
 date: 2019-03-10T02:09:45.284Z
 categories: React
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 The simplest way to define a component in React is to use function.

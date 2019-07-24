@@ -2,7 +2,7 @@
 title: React Context API
 date: 2019-03-29T01:58:45.284Z
 categories: React
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 In React application data and event handlers are passed down to children components through props. But sometimes you need to make some data available on several levels at once.

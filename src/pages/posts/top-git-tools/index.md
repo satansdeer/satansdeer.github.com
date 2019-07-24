@@ -2,7 +2,7 @@
 title: 5 Git Tools You Must Use Today
 date: 2019-07-21T03:09:45.284Z
 categories: Git 
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 In this article I'll list 5 git tools that you must use today.

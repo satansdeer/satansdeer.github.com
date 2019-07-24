@@ -34,13 +34,6 @@ class BlogIndex extends React.Component {
                       title
                       date(formatString: "DD MMMM, YYYY")
                       categories
-                      image {
-                        childImageSharp {
-                          sizes(maxWidth: 800) {
-                            ...GatsbyImageSharpSizes
-                          }
-                        }
-                      }
                     }
                   }
                 }

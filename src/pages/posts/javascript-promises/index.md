@@ -2,7 +2,7 @@
 title: Promises In Javascript
 date: 2019-04-14T01:58:45.284Z
 categories: Javascript
-image: react_dev_tools.jpg
+image: thumb.jpg
 ---
 
 `youtube:https://www.youtube.com/embed/3R9Yekajvl8`
