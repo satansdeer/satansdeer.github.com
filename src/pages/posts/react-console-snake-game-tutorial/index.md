@@ -1,11 +1,13 @@
 ---
 title: Command Line Applications Using React - Snake Game Tutorial
-date: 2019-07-23T03:09:45.284Z
+date: 2019-07-24T03:09:45.284Z
 categories: React
 image: thumb.jpg
 ---
 
-In this tutorial we'll learn how to build a CLI program using React and Javascript. We'll be building a classic snake game using Ink library.
+Absolutely CRAZY combo!
+
+In this tutorial we'll learn how to build a **CLI** Snake game using **React** and Javascript.
 
 One of the most powerful features of React is that it supports different renderers. That means you aren't limited with browser and DOM.
 
