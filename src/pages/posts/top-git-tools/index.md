@@ -5,6 +5,8 @@ categories: Git
 image: thumb.jpg
 ---
 
+`youtube:https://www.youtube.com/embed/uj_e_tGPfPE`
+
 In this article I'll list 5 git tools that you must use today.
 
 ## Hub
