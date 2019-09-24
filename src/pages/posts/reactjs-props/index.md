@@ -2,7 +2,7 @@
 title: React Props
 date: 2019-02-24T04:58:45.284Z
 categories: React
-image: props_thumb.jpg
+image: thumb.jpg
 ---
 
 In ReactJS `props` is how components get data from their parent. When you add a tag to your JSX code and pass it some attributes - the components referenced by this tag will receive them as a `props` object.

@@ -2,7 +2,7 @@
 title: React Concept - Virtual DOM
 date: 2019-03-08T04:58:45.284Z
 categories: React
-image: virtual_dom.jpg
+image: thumb.jpg
 ---
 
 Unlike many other frameworks - React doesn't update DOM directly on every change and uses VirtualDOM to to optimize re-renders.

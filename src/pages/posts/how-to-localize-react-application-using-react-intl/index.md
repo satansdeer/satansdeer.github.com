@@ -2,7 +2,7 @@
 title: How To Localize React Application Using `react-intl`
 date: 2019-02-28T01:58:45.284Z
 categories: React
-image: how-to-localize.jpg
+image: thumb.jpg
 ---
 
 In this tutorial we'll localize React application from start to finish using [react-intl](https://github.com/yahoo/react-intl) made by Yahoo.

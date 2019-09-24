@@ -2,7 +2,7 @@
 title: Handling Events In ReactJS
 date: 2019-02-25T04:58:45.284Z
 categories: React
-image: props_thumb.jpg
+image: thumb.jpg
 ---
 
 Handling events in ReactJS is very similar to how it's done on DOM elements. There are a few differences though.

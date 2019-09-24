@@ -2,7 +2,7 @@
 title: For Loop In Javascript
 date: 2019-03-24T01:58:45.284Z
 categories: Javascript
-image: this.jpg
+image: thumb.jpg
 ---
 
 Sometimes you need to do some action repeatedly.

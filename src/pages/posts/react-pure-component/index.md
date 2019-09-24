@@ -2,7 +2,7 @@
 title: React Pure Components
 date: 2019-03-10T02:10:45.284Z
 categories: React
-image: pure_components.jpg
+image: thumb.jpg
 ---
 
 By default, a plain `React.Component` has `shouldComponentUpdate` set to return `true`. You can write your own implementation of this method to avoid unnecessady re-renders.

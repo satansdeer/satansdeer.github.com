@@ -2,7 +2,7 @@
 title: Javascript `this`
 date: 2019-02-26T01:58:45.284Z
 categories: Javascript
-image: this.jpg
+image: thumb.jpg
 ---
 
 A lot of people find `this` keyword in Javascript very confusing. Depending on where is it used and defined it can have different value.

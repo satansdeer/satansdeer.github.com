@@ -2,7 +2,7 @@
 title: What Is The Difference Between Let, Const and Var In Javascript 
 date: 2019-03-09T01:58:45.284Z
 categories: Javascript
-image: image.jpg
+image: thumb.jpg
 ---
 
 One of the most important things in programming is to clearly express your intent.

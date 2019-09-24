@@ -2,7 +2,7 @@
 title: How To Add Named Anchor In Markdown
 date: 2019-03-10T01:56:45.284Z
 categories: Markdown
-image: image.jpg
+image: thumb.jpg
 ---
 
 Sometimes you might want to have a link to an item inside your markdown document. It can pe especially useful when you create table of contents for your document.

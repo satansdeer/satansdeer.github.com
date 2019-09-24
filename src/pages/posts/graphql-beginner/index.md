@@ -2,7 +2,7 @@
 title: Fullstack GraphQL Beginner Tutorial - Instagram Clone
 date: 2019-05-20T01:58:45.284Z
 categories: Graphql
-image: generators.jpg
+image: thumb.jpg
 ---
 
 `youtube:https://www.youtube.com/embed/MY-xI06yPHI`

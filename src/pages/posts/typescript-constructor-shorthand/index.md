@@ -2,7 +2,7 @@
 title: Typescript Constructor Shorthand
 date: 2019-02-22T01:58:45.284Z
 categories: Typescript
-image: typescript_shorthand.jpg
+image: thumb.jpg
 ---
 
 Here is a thing, in Typescript there is a shorthand to create and assign class properties from constructor params.

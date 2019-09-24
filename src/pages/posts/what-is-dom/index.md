@@ -2,7 +2,7 @@
 title: What Is DOM
 date: 2019-06-03T04:58:45.284Z
 categories: HTML
-image: virtual_dom.jpg
+image: thumb.jpg
 ---
 
 DOM (Document Object Model) is a programming api for your HTML (or XML) documents. Basically it is an object representing parsed code of your page.

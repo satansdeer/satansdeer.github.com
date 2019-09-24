@@ -2,7 +2,7 @@
 title: Handling Errors In React
 date: 2019-03-10T04:16:45.284Z
 categories: React
-image: errors.jpg
+image: thumb.jpg
 ---
 
 One of the problems you might face when working on your React application is that some error happens in one of your components - it breaks the whole app.

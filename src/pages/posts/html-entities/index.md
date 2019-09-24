@@ -2,7 +2,7 @@
 title: Html Entities
 date: 2019-02-23T01:58:45.284Z
 categories: HTML
-image: html_entities.jpg
+image: thumb.jpg
 ---
 
 HTML entities are strigns inside HTML code that start with ampersand `&` and end with semicolon `;`. They allow you to add wide variety of characters to your HTML code.

@@ -26,6 +26,7 @@ lincoln.overrideThemeStyles = () => ({
   "h1": {
     fontWeight: 800
   },
+  '@media screen and (max-width: 760px){aside{display:none}}': {},
   body: {
     fontFamily:
       "-apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,roboto,noto,segoe ui,arial,sans-serif"
