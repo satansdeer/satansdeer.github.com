@@ -1,0 +1,27 @@
+{
+  "id": "04b54ec3-ee12-4a85-917f-3bca5205ea88",
+  "uid": "molestias-illo-aperiam",
+  "type": "main-page-content",
+  "data": {
+    "recommendedPosts": [
+      {
+        "post": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "post": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "post": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      }
+    ]
+  }
+}

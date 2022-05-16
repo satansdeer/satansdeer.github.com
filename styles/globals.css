@@ -16,36 +16,5 @@ a {
 }
 
 @tailwind base;
-
-h1 {
-  @apply text-4xl mb-8 font-raleway font-black;
-}
-h2 {
-  @apply text-2xl mt-24 mb-8 font-raleway font-bold;
-}
-h3 {
-  @apply text-xl mt-24 mb-8 font-raleway font-bold;
-}
-a {
-  @apply text-blue-600;
-}
-
-p {
-	@apply text-lg mb-5;
-}
-
-p code {
-	@apply bg-gray-200 rounded-md px-1.5 py-1;
-}
-
-pre code {
-	@apply font-fira-code;
-}
-
-code[class*='language-javascript'],
-pre[class*='language-javascript'] {
-	@apply font-fira-code;
-}
-
 @tailwind components;
 @tailwind utilities;

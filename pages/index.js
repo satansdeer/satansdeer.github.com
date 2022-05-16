@@ -1,6 +1,7 @@
-import NextImage from "next/image";
 import { PrismicLink, PrismicText } from "@prismicio/react";
+import { SliceZone } from "@prismicio/react";
 import * as prismicH from "@prismicio/helpers";
+import { components } from "../slices";
 
 import { Header } from "../components/Header";
 import { createClient } from "../prismicio";
@@ -58,16 +59,27 @@ const Post = ({ post }) => {
   );
 };
 
-const Index = ({ posts, navigation, settings }) => {
+const Index = ({ navigation, settings, mainPageContent }) => {
+	console.log(mainPageContent.data);
+  const recommendedPosts = mainPageContent.data.recommendedPosts
+
   return (
     <>
       <Header navigation={navigation} settings={settings} />
-      <div className="container mx-auto md:max-w-4xl px-4 font-sans">
-        <ul className="grid grid-cols-1 gap-16">
-          {posts.map((post) => (
-            <Post key={post.id} post={post} />
-          ))}
-        </ul>
+      <div className="w-full flex flex-col flex-grow">
+        <div className="container mx-auto px-6">
+          <article className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20">
+            <main className="prose sm:prose-lg lg:prose-xl">
+              <SliceZone
+                slices={mainPageContent.data.slices}
+                components={components}
+              />
+							{/* {recommendedPosts.map((post) => (
+								<Post key={post.uid} post={post} />
+							))} */}
+            </main>
+          </article>
+        </div>
       </div>
     </>
   );
@@ -78,20 +90,15 @@ export default Index;
 export async function getStaticProps({ previewData }) {
   const client = createClient({ previewData });
 
-  const posts = await client.getAllByType("post", {
-    orderings: [
-      { field: "my.post.date", direction: "asc" },
-      { field: "document.first_publication_date", direction: "asc" },
-    ],
-  });
   const navigation = await client.getSingle("navigation");
   const settings = await client.getSingle("settings");
+  const mainPageContent = await client.getSingle("main-page-content");
 
   return {
     props: {
-      posts,
       navigation,
       settings,
+      mainPageContent,
     },
   };
 }

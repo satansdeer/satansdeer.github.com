@@ -13,16 +13,20 @@ const Page = ({ page, navigation, settings }) => {
       <Head>
         <title>{page.data.Title}</title>
       </Head>
-      <main>
-        <div className="pt-12 pb-9">
-          <div className="container mx-auto md:max-w-4xl px-4">
-            <h1>{page.data.Title}</h1>
-          </div>
+      <div className="w-full flex flex-col flex-grow">
+        <div className="container mx-auto px-6">
+          <article className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20">
+            <header>
+              <h1 className="w-full max-w-screen-md mb-8 text-3xl font-black lg:text-6xl md:text-5xl sm:text-4xl lg:mb-10 leading-tighter">
+                {page.data.Title}
+              </h1>
+            </header>
+            <main className="prose sm:prose-lg lg:prose-xl">
+              <SliceZone slices={page.data.slices} components={components} />
+            </main>
+          </article>
         </div>
-        <div className="container mx-auto md:max-w-4xl px-4 font-sans">
-          <SliceZone slices={page.data.slices} components={components} />
-        </div>
-      </main>
+      </div>
     </>
   );
 };

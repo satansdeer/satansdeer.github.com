@@ -3,7 +3,10 @@
     "post": {},
     "navigation": {},
     "page": {},
-    "settings": {}
+    "settings": {},
+    "main-page-content": {
+      "recommendedPosts": {}
+    }
   },
   "slices": {
     "TextBlock": {

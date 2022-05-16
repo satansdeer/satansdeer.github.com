@@ -1,0 +1,39 @@
+{
+  "id": "main-page-content",
+  "label": "Main Page Content",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "recommendedPosts": {
+        "type": "Group",
+        "config": {
+          "label": "Recommented Posts",
+          "fields": {
+            "post": {
+              "type": "Link",
+              "config": {
+                "label": "Post",
+                "select": "document",
+                "customtypes": [
+                  "post"
+                ]
+              }
+            }
+          }
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "markdown": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}

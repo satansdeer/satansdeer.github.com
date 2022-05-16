@@ -9,20 +9,22 @@ import { Header } from "../components/Header";
 const Page = ({ page, navigation, settings }) => {
   return (
     <>
-			<Header navigation={navigation} settings={settings}/>
+      <Header navigation={navigation} settings={settings} />
       <Head>
         <title>{page.data.Title}</title>
       </Head>
-      <main>
-        <div className="pt-12 pb-9">
-          <div className="container mx-auto md:max-w-4xl px-4">
-            <h1>{page.data.Title}</h1>
+      <div className="w-full flex flex-col flex-grow">
+        <div className="container mx-auto px-6">
+          <div className="pt-12 pb-9">
+            <div className="container mx-auto md:max-w-4xl px-4">
+              <h1>{page.data.Title}</h1>
+            </div>
           </div>
+          <main className="prose sm:prose-lg lg:prose-xl">
+            <SliceZone slices={page.data.slices} components={components} />
+          </main>
         </div>
-        <div className="container mx-auto md:max-w-4xl px-4 font-sans">
-          <SliceZone slices={page.data.slices} components={components} />
-        </div>
-      </main>
+      </div>
     </>
   );
 };
