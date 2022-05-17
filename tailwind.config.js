@@ -9,6 +9,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+			colors: {
+				'logo-green-start': '#00ff97',
+				'logo-green-end': '#76ff1d',
+				'logo-purple-start': '#ff2575',
+				'logo-purple-end': '#1d20ff',
+			},
       fontFamily: {
         raleway: ['Raleway'],
         "fira-code": ['Fira Code'],

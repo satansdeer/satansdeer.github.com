@@ -23,14 +23,6 @@ export const Logo = ({ theme, ...props }) => {
             offset="1"
             stopColor="var(--tw-gradient-to)"
           />
-          {/* <stop
-            offset="0"
-            stopColor={theme === "dark" ? "#00ff97" : "#ff2575"}
-          />
-          <stop
-            offset="1"
-            stopColor={theme === "dark" ? "#76ff1d" : "#1d20ff"}
-          /> */}
         </linearGradient>
 
         <linearGradient
