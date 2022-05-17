@@ -12,14 +12,6 @@ const dateFormatter = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
 });
 
-const findFirstImage = (slices) => {
-  const imageSlice = slices.find((slice) => slice.slice_type === "image");
-
-  if (imageSlice && prismicH.isFilled.image(imageSlice.primary.image)) {
-    return imageSlice.primary.image;
-  }
-};
-
 const getExcerpt = (slices) => {
   const text = slices
     .filter((slice) => slice.slice_type === "markdown")
@@ -42,17 +34,19 @@ const Post = ({ post }) => {
   const excerpt = getExcerpt(post.data.slices);
 
   return (
-    <li>
-      <h2>
-        <PrismicLink document={post}>{post.data.Title}</PrismicLink>
-      </h2>
-      <p className="text-slate-500">{dateFormatter.format(date)}</p>
+    <PrismicLink
+      className="block p-6 rounded-lg border border-gray-200 shadow-md no-underline bg-white hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700"
+      document={post}
+    >
+      <h3 className="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+        {post.data.Title}
+      </h3>
       {excerpt && (
-        <p className="font-serif leading-relaxed md:text-lg md:leading-relaxed">
+        <p className="prose dark:prose-invert  sm:prose-lg lg:prose-xl">
           {excerpt}
         </p>
       )}
-    </li>
+    </PrismicLink>
   );
 };
 
@@ -68,10 +62,13 @@ const Index = ({ navigation, settings, mainPageContent, posts }) => {
                 slices={mainPageContent.data.slices}
                 components={components}
               />
-              {posts.map((post) => (
-                <Post key={post.uid} post={post} />
-              ))}
             </main>
+            {posts.map((post) => (
+							<div className="mt-12">
+
+              <Post key={post.uid} post={post} />
+							</div>
+            ))}
           </article>
         </div>
       </div>
@@ -90,18 +87,18 @@ export async function getStaticProps({ previewData }) {
 
   const recommendedPosts = mainPageContent.data.recommendedPosts;
 
-	let posts = []
-	for (const item of recommendedPosts) {
-  	const postData = await client.getByUID("post", item.post.uid);
-		posts.push(postData)
-	}
+  let posts = [];
+  for (const item of recommendedPosts) {
+    const postData = await client.getByUID("post", item.post.uid);
+    posts.push(postData);
+  }
 
   return {
     props: {
       navigation,
       settings,
       mainPageContent,
-			posts,
+      posts,
     },
   };
 }
