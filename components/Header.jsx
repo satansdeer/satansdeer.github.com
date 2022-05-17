@@ -1,46 +1,49 @@
 import { PrismicLink, PrismicText } from "@prismicio/react";
 import * as prismicH from "@prismicio/helpers";
 import NextImage from "next/image";
-import { SunIcon } from "./SunIcon"
+import { SunIcon } from "./SunIcon";
+import { Logo } from "./Logo";
+import { useTheme } from "next-themes";
 
 const NavItem = ({ children }) => {
   return (
-    <li className="font-semibold tracking-tight text-slate-800">{children}</li>
+    <li className="font-semibold tracking-tight text-slate-800 dark:text-slate-200">
+      {children}
+    </li>
   );
 };
 
 export const Header = ({ navigation, settings }) => {
+  const { theme, setTheme } = useTheme();
+
+  console.log(theme);
+
   return (
     <header className="w-full">
-      <div className="container mx-auto px-6 py-3">
-        <div className="max-w-screen-md mx-auto flex gap-6 items-center">
+      <div className="container mx-auto p-6">
+        <div className="max-w-screen-md mx-auto flex gap-10 items-center">
           {prismicH.isFilled.image(settings.data.logo) && (
             <PrismicLink href="/">
-              <div className="h-8 w-32 mr-4 relative">
-                <NextImage
-                  src={prismicH.asImageSrc(settings.data.logo, {
-                    w: undefined,
-                    h: undefined,
-                  })}
-                  alt={settings.data.logo.alt}
-                  layout="fill"
-                  className="object-contain w-auto"
-                />
-              </div>
+              <Logo theme={theme} className="h-6"/>
             </PrismicLink>
           )}
-          <nav>
-            <ul className="flex flex-wrap gap-10">
-              {navigation.data?.links.map((item) => (
-                <NavItem key={item.title}>
-                  <PrismicLink field={item.url}>{item.title}</PrismicLink>
-                </NavItem>
-              ))}
-            </ul>
-          </nav>
-					<div>
-						<SunIcon/>
-					</div>
+          <div className="flex flex-grow w-max justify-between">
+            <nav>
+              <ul className="flex flex-wrap gap-10">
+                {navigation.data?.links.map((item) => (
+                  <NavItem key={item.title}>
+                    <PrismicLink field={item.url}>{item.title}</PrismicLink>
+                  </NavItem>
+                ))}
+              </ul>
+            </nav>
+            <div>
+              <SunIcon
+                checked={theme === "dark"}
+                onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </header>

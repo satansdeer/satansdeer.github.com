@@ -1,4 +1,7 @@
+const { spacing, fontFamily } = require('tailwindcss/defaultTheme');
+
 module.exports = {
+	darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -7,10 +10,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        "raleway": ['Raleway'],
+        raleway: ['Raleway'],
         "fira-code": ['Fira Code'],
       },
-    },
+    }
   },
   plugins: [
 		require('@tailwindcss/typography'),

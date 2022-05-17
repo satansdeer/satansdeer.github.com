@@ -60,7 +60,6 @@ const Post = ({ post }) => {
 };
 
 const Index = ({ navigation, settings, mainPageContent }) => {
-	console.log(mainPageContent.data);
   const recommendedPosts = mainPageContent.data.recommendedPosts
 
   return (

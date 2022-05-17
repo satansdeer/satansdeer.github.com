@@ -21,7 +21,7 @@ const Page = ({ page, navigation, settings }) => {
                 {page.data.Title}
               </h1>
             </header>
-            <main className="prose sm:prose-lg lg:prose-xl">
+            <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
               <SliceZone slices={page.data.slices} components={components} />
             </main>
           </article>
@@ -35,8 +35,6 @@ export default Page;
 
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData });
-
-  console.log(previewData);
 
   const page = await client.getByUID("post", params.uid);
   const navigation = await client.getSingle("navigation");
@@ -55,7 +53,6 @@ export async function getStaticPaths() {
   const client = createClient();
 
   const pages = await client.getAllByType("post");
-  console.log(pages);
 
   return {
     paths: pages.map((page) => prismicH.asLink(page, linkResolver)),

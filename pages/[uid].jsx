@@ -34,8 +34,6 @@ export default Page;
 export async function getStaticProps({ params, previewData }) {
   const client = createClient({ previewData });
 
-  console.log(previewData);
-
   const page = await client.getByUID("page", params.uid);
   const navigation = await client.getSingle("navigation");
   const settings = await client.getSingle("settings");
