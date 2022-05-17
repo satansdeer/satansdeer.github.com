@@ -20,7 +20,7 @@ const Page = ({ page, navigation, settings }) => {
               <h1>{page.data.Title}</h1>
             </div>
           </div>
-          <main className="prose sm:prose-lg lg:prose-xl">
+          <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
             <SliceZone slices={page.data.slices} components={components} />
           </main>
         </div>

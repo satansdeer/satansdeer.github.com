@@ -17,12 +17,20 @@ export const Logo = ({ theme, ...props }) => {
         >
           <stop
             offset="0"
-            stop-color={theme === "dark" ? "#00ff97" : "#ff2575"}
+            stopColor="var(--tw-gradient-from)"
           />
           <stop
             offset="1"
-            stop-color={theme === "dark" ? "#76ff1d" : "#1d20ff"}
+            stopColor="var(--tw-gradient-to)"
           />
+          {/* <stop
+            offset="0"
+            stopColor={theme === "dark" ? "#00ff97" : "#ff2575"}
+          />
+          <stop
+            offset="1"
+            stopColor={theme === "dark" ? "#76ff1d" : "#1d20ff"}
+          /> */}
         </linearGradient>
 
         <linearGradient

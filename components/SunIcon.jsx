@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, {useState, useEffect} from 'react';
 import { useSpring, animated } from 'react-spring';
 
 export const defaultProperties = {
@@ -48,6 +48,7 @@ export const SunIcon = ({
   style,
   ...rest
 }) => {
+	const [mounted, setMounted] = useState(false)
   const [id, setId] = React.useState(0);
 
   React.useEffect(() => {
@@ -81,6 +82,10 @@ export const SunIcon = ({
     ...lines,
     config: animationProperties.springConfig,
   });
+
+	useEffect(() => setMounted(true), [])
+
+  if (!mounted) return null
 
   const toggle = () => onChange(!checked);
 

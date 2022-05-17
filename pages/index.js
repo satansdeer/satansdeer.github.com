@@ -36,9 +36,6 @@ const getExcerpt = (slices) => {
 };
 
 const Post = ({ post }) => {
-  const featuredImage =
-    (prismicH.isFilled.image(post.data.image) && post.data.image) ||
-    findFirstImage(post.data.slices);
   const date = prismicH.asDate(
     post.data.publishDate || post.first_publication_date
   );
@@ -59,23 +56,21 @@ const Post = ({ post }) => {
   );
 };
 
-const Index = ({ navigation, settings, mainPageContent }) => {
-  const recommendedPosts = mainPageContent.data.recommendedPosts
-
+const Index = ({ navigation, settings, mainPageContent, posts }) => {
   return (
     <>
       <Header navigation={navigation} settings={settings} />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
           <article className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20">
-            <main className="prose sm:prose-lg lg:prose-xl">
+            <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
               <SliceZone
                 slices={mainPageContent.data.slices}
                 components={components}
               />
-							{/* {recommendedPosts.map((post) => (
-								<Post key={post.uid} post={post} />
-							))} */}
+              {posts.map((post) => (
+                <Post key={post.uid} post={post} />
+              ))}
             </main>
           </article>
         </div>
@@ -93,11 +88,20 @@ export async function getStaticProps({ previewData }) {
   const settings = await client.getSingle("settings");
   const mainPageContent = await client.getSingle("main-page-content");
 
+  const recommendedPosts = mainPageContent.data.recommendedPosts;
+
+	let posts = []
+	for (const item of recommendedPosts) {
+  	const postData = await client.getByUID("post", item.post.uid);
+		posts.push(postData)
+	}
+
   return {
     props: {
       navigation,
       settings,
       mainPageContent,
+			posts,
     },
   };
 }

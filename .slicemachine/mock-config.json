@@ -4,9 +4,7 @@
     "navigation": {},
     "page": {},
     "settings": {},
-    "main-page-content": {
-      "recommendedPosts": {}
-    }
+    "main-page-content": {}
   },
   "slices": {
     "TextBlock": {

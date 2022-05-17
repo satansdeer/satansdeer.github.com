@@ -8,7 +8,7 @@
       "recommendedPosts": {
         "type": "Group",
         "config": {
-          "label": "Recommented Posts",
+          "label": "Recommended Posts",
           "fields": {
             "post": {
               "type": "Link",

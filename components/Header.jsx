@@ -24,7 +24,7 @@ export const Header = ({ navigation, settings }) => {
         <div className="max-w-screen-md mx-auto flex gap-10 items-center">
           {prismicH.isFilled.image(settings.data.logo) && (
             <PrismicLink href="/">
-              <Logo theme={theme} className="h-6"/>
+              <Logo theme={theme} className="h-6 from-purple-500 to-blue-800 dark:from-lime-500 dark:to-green-800" />
             </PrismicLink>
           )}
           <div className="flex flex-grow w-max justify-between">
