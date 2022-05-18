@@ -40,6 +40,17 @@
           }
         }
       }
+    },
+    "Recommendations": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "CategoryPosts": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

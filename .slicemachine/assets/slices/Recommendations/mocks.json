@@ -1,0 +1,28 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "recommendations",
+    "items": [
+      {
+        "post": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "post": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "post": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      }
+    ],
+    "primary": {}
+  }
+]

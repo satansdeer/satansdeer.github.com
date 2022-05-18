@@ -35,6 +35,9 @@
             },
             "text_block": {
               "type": "SharedSlice"
+            },
+            "category_posts": {
+              "type": "SharedSlice"
             }
           }
         }

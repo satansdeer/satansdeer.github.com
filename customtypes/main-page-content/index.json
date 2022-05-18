@@ -5,30 +5,15 @@
   "status": true,
   "json": {
     "Main": {
-      "recommendedPosts": {
-        "type": "Group",
-        "config": {
-          "label": "Recommended Posts",
-          "fields": {
-            "post": {
-              "type": "Link",
-              "config": {
-                "label": "Post",
-                "select": "document",
-                "customtypes": [
-                  "post"
-                ]
-              }
-            }
-          }
-        }
-      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
         "config": {
           "choices": {
             "markdown": {
+              "type": "SharedSlice"
+            },
+            "recommendations": {
               "type": "SharedSlice"
             }
           }

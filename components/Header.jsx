@@ -16,8 +16,6 @@ const NavItem = ({ children }) => {
 export const Header = ({ navigation, settings }) => {
   const { theme, setTheme } = useTheme();
 
-  console.log(theme);
-
   return (
     <header className="w-full">
       <div className="container mx-auto p-6">

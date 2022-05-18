@@ -1,6 +1,54 @@
 {
   "slices": {
     "components": {
+      "category_posts": {
+        "library": "slices",
+        "id": "category_posts",
+        "name": "CategoryPosts",
+        "description": "CategoryPosts",
+        "model": {
+          "id": "category_posts",
+          "type": "SharedSlice",
+          "name": "CategoryPosts",
+          "description": "CategoryPosts",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "CategoryPosts",
+              "primary": {
+                "category": {
+                  "type": "Text",
+                  "config": {
+                    "label": "Category",
+                    "placeholder": ""
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "category_posts",
+            "items": [],
+            "primary": {
+              "category": "engage virtual technologies"
+            }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "code_block": {
         "library": "slices",
         "id": "code_block",
@@ -177,6 +225,74 @@
                 }
               ]
             }
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "recommendations": {
+        "library": "slices",
+        "id": "recommendations",
+        "name": "Recommendations",
+        "description": "Recommendations",
+        "model": {
+          "id": "recommendations",
+          "type": "SharedSlice",
+          "name": "Recommendations",
+          "description": "Recommendations",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Recommendations",
+              "primary": {},
+              "items": {
+                "post": {
+                  "type": "Link",
+                  "config": {
+                    "label": "Post",
+                    "select": "document",
+                    "customtypes": [
+                      "post"
+                    ]
+                  }
+                }
+              },
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "name": "Default",
+            "slice_type": "recommendations",
+            "items": [
+              {
+                "post": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "post": {
+                  "link_type": "Web",
+                  "url": "http://google.com"
+                }
+              },
+              {
+                "post": {
+                  "link_type": "Web",
+                  "url": "https://slicemachine.dev"
+                }
+              }
+            ],
+            "primary": {}
           }
         },
         "meta": {

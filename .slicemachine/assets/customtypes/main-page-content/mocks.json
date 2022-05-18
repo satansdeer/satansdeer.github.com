@@ -1,51 +1,6 @@
 {
-  "id": "ee419164-eff7-48ac-9d99-01fb7703b0bf",
-  "uid": "esse-atque-expedita",
+  "id": "104ef553-5ad2-459c-be8d-56c83b5b95cf",
+  "uid": "vitae-ut-non",
   "type": "main-page-content",
-  "data": {
-    "recommendedPosts": [
-      {
-        "post": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "post": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "post": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "post": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "post": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
-        }
-      },
-      {
-        "post": {
-          "link_type": "Web",
-          "url": "https://slicemachine.dev"
-        }
-      },
-      {
-        "post": {
-          "link_type": "Web",
-          "url": "http://google.com"
-        }
-      }
-    ]
-  }
+  "data": {}
 }
