@@ -1,0 +1,16 @@
+{
+  "id": "8d3393cf-ada0-4143-9266-29034ad6a57f",
+  "uid": "illum-maxime-ullam",
+  "type": "settings",
+  "data": {
+    "logo": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "category_posts",
+    "items": [],
+    "primary": {
+      "category": "engage virtual technologies"
+    }
+  }
+]

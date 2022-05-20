@@ -1,0 +1,17 @@
+[
+  {
+    "variation": "default",
+    "name": "Default",
+    "slice_type": "text_block",
+    "items": [],
+    "primary": {
+      "text": [
+        {
+          "type": "paragraph",
+          "text": "Velit dolor sit aliqua labore ad irure ullamco.",
+          "spans": []
+        }
+      ]
+    }
+  }
+]

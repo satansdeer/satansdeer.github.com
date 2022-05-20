@@ -1,0 +1,28 @@
+{
+  "id": "markdown",
+  "type": "SharedSlice",
+  "name": "Markdown",
+  "description": "Markdown",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "sktwi1xtmkfgx8626",
+      "description": "Markdown",
+      "primary": {
+        "text": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Text",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "single": "preformatted"
+          }
+        }
+      },
+      "items": {},
+      "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+    }
+  ]
+}

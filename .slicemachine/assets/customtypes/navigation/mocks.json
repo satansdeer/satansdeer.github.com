@@ -1,0 +1,38 @@
+{
+  "id": "8db059f8-e6d0-446b-8a1f-b00b7cb51924",
+  "uid": "aut-error-ut",
+  "type": "navigation",
+  "data": {
+    "homepageLabel": "envisioneer open-source web-readiness",
+    "links": [
+      {
+        "title": "aggregate user-centric content",
+        "url": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "title": "integrate sticky partnerships",
+        "url": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "title": "synergize dot-com e-tailers",
+        "url": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "title": "disintermediate innovative models",
+        "url": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ]
+  }
+}

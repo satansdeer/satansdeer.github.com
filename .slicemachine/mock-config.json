@@ -1,0 +1,56 @@
+{
+  "_cts": {
+    "post": {},
+    "navigation": {},
+    "page": {},
+    "settings": {},
+    "main-page-content": {}
+  },
+  "slices": {
+    "TextBlock": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "CodeBlock": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Image": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Markdown": {
+      "default": {
+        "primary": {
+          "text": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "Recommendations": {
+      "default": {
+        "primary": {},
+        "items": {}
+      }
+    },
+    "CategoryPosts": {
+      "default": {
+        "primary": {}
+      }
+    }
+  }
+}

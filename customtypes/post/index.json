@@ -1,0 +1,96 @@
+{
+  "id": "post",
+  "label": "Post",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "type": "UID",
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        }
+      },
+      "Title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "Date": {
+        "type": "Date",
+        "config": {
+          "label": "Date",
+          "placeholder": ""
+        }
+      },
+      "Image": {
+        "type": "Image",
+        "config": {
+          "label": "Image",
+          "constraint": {},
+          "thumbnails": []
+        }
+      },
+      "description": {
+        "type": "StructuredText",
+        "config": {
+          "label": "Description",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "category": {
+        "type": "Select",
+        "config": {
+          "label": "Category",
+          "placeholder": "",
+          "options": [
+            "React",
+            "Javascript",
+            "Typescript"
+          ]
+        }
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "text_block": {
+              "type": "SharedSlice"
+            },
+            "code_block": {
+              "type": "SharedSlice"
+            },
+            "image": {
+              "type": "SharedSlice"
+            },
+            "markdown": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    },
+    "SEO": {
+      "meta-title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "meta-description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
+    }
+  }
+}

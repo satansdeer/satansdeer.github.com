@@ -1,0 +1,28 @@
+{
+  "id": "9bfd5fdd-bf9a-4d21-803f-104e0190c7df",
+  "uid": "aliquam-et-atque",
+  "type": "post",
+  "data": {
+    "Title": "expedite end-to-end interfaces",
+    "Date": "2018-01-07",
+    "Image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
+    },
+    "description": [
+      {
+        "type": "paragraph",
+        "text": "Ad in Lorem amet est labore in fugiat dolor dolore laboris sit. Nulla culpa fugiat consequat ad esse nulla non.",
+        "spans": []
+      }
+    ],
+    "category": "React",
+    "meta-title": "whiteboard collaborative architectures",
+    "meta-description": "empower customized web-readiness"
+  }
+}
