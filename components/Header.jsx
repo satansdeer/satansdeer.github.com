@@ -46,7 +46,9 @@ export const Header = ({ navigation, settings }) => {
                 onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="h-6 w-6"
               />
-              <RSSIcon />
+              <PrismicLink href="/feed">
+                <RSSIcon />
+              </PrismicLink>
             </div>
           </div>
         </div>

@@ -75,6 +75,22 @@
           }
         }
       }
+    },
+    "SEO": {
+      "meta-title": {
+        "type": "Text",
+        "config": {
+          "label": "Title",
+          "placeholder": ""
+        }
+      },
+      "meta-description": {
+        "type": "Text",
+        "config": {
+          "label": "Meta Description",
+          "placeholder": ""
+        }
+      }
     }
   }
 }

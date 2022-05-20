@@ -1,10 +1,10 @@
 {
-  "id": "35694fe7-a953-4787-b371-495f0afd24bb",
-  "uid": "occaecati-et-rerum",
+  "id": "9bfd5fdd-bf9a-4d21-803f-104e0190c7df",
+  "uid": "aliquam-et-atque",
   "type": "post",
   "data": {
-    "Title": "recontextualize wireless mindshare",
-    "Date": "2019-01-17",
+    "Title": "expedite end-to-end interfaces",
+    "Date": "2018-01-07",
     "Image": {
       "dimensions": {
         "width": 900,
@@ -12,15 +12,17 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1586952518485-11b180e92764?w=900&h=500&fit=crop"
     },
     "description": [
       {
         "type": "paragraph",
-        "text": "Est exercitation deserunt exercitation sint nostrud velit eu aliquip anim.",
+        "text": "Ad in Lorem amet est labore in fugiat dolor dolore laboris sit. Nulla culpa fugiat consequat ad esse nulla non.",
         "spans": []
       }
     ],
-    "category": "Typescript"
+    "category": "React",
+    "meta-title": "whiteboard collaborative architectures",
+    "meta-description": "empower customized web-readiness"
   }
 }
