@@ -17,6 +17,7 @@ const NavItem = ({ children, item }) => {
 
 export const Header = ({ navigation, settings }) => {
   const { theme, setTheme } = useTheme();
+	console.log(theme)
 
   return (
     <header className="w-full">
@@ -42,7 +43,7 @@ export const Header = ({ navigation, settings }) => {
             </nav>
             <div className="flex gap-4 items-center">
               <SunIcon
-                checked={theme === "dark"}
+                checked={theme !== "light"}
                 onChange={() => setTheme(theme === "dark" ? "light" : "dark")}
                 className="h-6 w-6"
               />

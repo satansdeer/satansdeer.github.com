@@ -5,7 +5,7 @@ const Recommendations = ({ slice }) => {
   return (
     <div className="not-prose">
       {slice.items.map(({ post }) => (
-        <div className="my-10">
+        <div key={post.uid} className="my-10">
           <Post post={post} />
         </div>
       ))}
