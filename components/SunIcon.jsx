@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from 'react';
-import { useSpring, animated } from 'react-spring';
+import React, { useState, useEffect } from "react";
+import { useSpring, animated } from "react-spring";
 
 export const defaultProperties = {
   dark: {
@@ -7,11 +7,11 @@ export const defaultProperties = {
       r: 9,
     },
     mask: {
-      cx: '50%',
-      cy: '23%',
+      cx: "50%",
+      cy: "23%",
     },
     svg: {
-      transform: 'rotate(40deg)',
+      transform: "rotate(40deg)",
     },
     lines: {
       opacity: 0,
@@ -22,11 +22,11 @@ export const defaultProperties = {
       r: 5,
     },
     mask: {
-      cx: '100%',
-      cy: '0%',
+      cx: "100%",
+      cy: "0%",
     },
     svg: {
-      transform: 'rotate(90deg)',
+      transform: "rotate(90deg)",
     },
     lines: {
       opacity: 1,
@@ -43,12 +43,12 @@ export const SunIcon = ({
   checked = false,
   size = 24,
   animationProperties = defaultProperties,
-  moonColor = 'white',
-  sunColor = 'black',
+  moonColor = "white",
+  sunColor = "black",
   style,
   ...rest
 }) => {
-	const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
   const [id, setId] = React.useState(0);
 
   React.useEffect(() => {
@@ -64,7 +64,7 @@ export const SunIcon = ({
     return animationProperties;
   }, [animationProperties]);
 
-  const { circle, svg, lines, mask } = properties[checked ? 'dark' : 'light'];
+  const { circle, svg, lines, mask } = properties[checked ? "dark" : "light"];
 
   const svgContainerProps = useSpring({
     ...svg,
@@ -83,12 +83,58 @@ export const SunIcon = ({
     config: animationProperties.springConfig,
   });
 
-	useEffect(() => setMounted(true), [])
+  useEffect(() => setMounted(true), []);
 
-  if (!mounted) return null
+  if (!mounted)
+    return (
+      <>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="block dark:hidden"
+        >
+          <circle cx="12" cy="12" r="5" fill="black" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          color="white"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="hidden dark:block h-6 w-6"
+          style={{ transform: "rotate(40deg)" }}
+        >
+          <mask id="mask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            <circle cx="50%" cy="23%" r="9" fill="black" />
+          </mask>
+          <circle fill="white" cx="12" cy="12" r="9" mask="url(#mask)" />
+        </svg>
+      </>
+    );
 
   const toggle = () => onChange(!checked);
-
   const uniqueMaskId = `circle-mask-${id}`;
 
   return (
@@ -105,7 +151,7 @@ export const SunIcon = ({
       stroke="currentColor"
       onClick={toggle}
       style={{
-        cursor: 'pointer',
+        cursor: "pointer",
         ...svgContainerProps,
         ...style,
       }}
