@@ -4,7 +4,7 @@ title: Make Cloudflare Pages production deploys repeatable
 status: In Progress
 assignee: []
 created_date: '2026-05-15 10:30'
-updated_date: '2026-05-15 13:50'
+updated_date: '2026-05-15 13:53'
 labels:
   - deploy
   - automation
@@ -53,4 +53,6 @@ Manual recovery deploy was tested after commit 0642abc9b702d8d6a4f4ce663f768bd0b
 After observing that the pushed Deploy Cloudflare Pages workflow failed on the default branch while secrets are absent, adjusted the workflow to keep the branch clean: it now installs dependencies, checks whether both Cloudflare GitHub Actions secrets are present, always builds the static export, and skips only the Cloudflare deploy step with a warning until secrets are configured. Once secrets are added, the same workflow deploys on the next push or manual dispatch.
 
 Fixed the GitHub Actions build failure caused by the fresh CI install enforcing react/jsx-no-target-blank in components/site/MarkdownContent.jsx. The anchor prop spread now appears before the enforced external-link target and rel attributes, so markdown external links keep rel="noopener noreferrer". Local npm run build passes again with only the existing non-blocking warnings.
+
+Adjusted the markdown external-link implementation again after GitHub Actions still flagged the conditional target/rel expression. External and internal links now render through separate JSX branches, giving CI a literal rel="noopener noreferrer" on the external branch. Local npm run build passes with only the existing hook and img warnings.
 <!-- SECTION:NOTES:END -->

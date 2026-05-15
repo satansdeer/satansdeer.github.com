@@ -29,13 +29,16 @@ export const MarkdownContent = ({ children }) => {
         a: ({ href, children, ...props }) => {
           const isExternal = href && /^https?:\/\//.test(href);
 
+          if (isExternal) {
+            return (
+              <a href={href} {...props} target="_blank" rel="noopener noreferrer">
+                {children}
+              </a>
+            );
+          }
+
           return (
-            <a
-              href={href}
-              {...props}
-              target={isExternal ? "_blank" : undefined}
-              rel={isExternal ? "noopener noreferrer" : undefined}
-            >
+            <a href={href} {...props}>
               {children}
             </a>
           );
