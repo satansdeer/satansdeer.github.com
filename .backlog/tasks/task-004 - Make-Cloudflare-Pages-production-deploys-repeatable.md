@@ -4,7 +4,7 @@ title: Make Cloudflare Pages production deploys repeatable
 status: In Progress
 assignee: []
 created_date: '2026-05-15 10:30'
-updated_date: '2026-05-15 13:53'
+updated_date: '2026-05-15 16:18'
 labels:
   - deploy
   - automation
@@ -55,4 +55,6 @@ After observing that the pushed Deploy Cloudflare Pages workflow failed on the d
 Fixed the GitHub Actions build failure caused by the fresh CI install enforcing react/jsx-no-target-blank in components/site/MarkdownContent.jsx. The anchor prop spread now appears before the enforced external-link target and rel attributes, so markdown external links keep rel="noopener noreferrer". Local npm run build passes again with only the existing non-blocking warnings.
 
 Adjusted the markdown external-link implementation again after GitHub Actions still flagged the conditional target/rel expression. External and internal links now render through separate JSX branches, giving CI a literal rel="noopener noreferrer" on the external branch. Local npm run build passes with only the existing hook and img warnings.
+
+Ran the GitHub CLI setup on 2026-05-15. Re-authenticated gh successfully as satansdeer using the GitHub device flow in the unrestricted environment. Set repository Actions secret CLOUDFLARE_ACCOUNT_ID on satansdeer/satansdeer.github.com. Verified gh secret list shows CLOUDFLARE_ACCOUNT_ID. Did not set CLOUDFLARE_API_TOKEN because the only local .env.local token still returns Cloudflare 403 Authentication error for the Pages project API, so it is not a valid Pages deploy token. AC #2 remains open until a Pages Edit / Pages Write Cloudflare API token is available and stored as CLOUDFLARE_API_TOKEN.
 <!-- SECTION:NOTES:END -->
