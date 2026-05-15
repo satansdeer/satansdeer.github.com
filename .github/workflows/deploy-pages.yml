@@ -31,24 +31,24 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
-      - name: Validate Cloudflare credentials
+      - name: Check Cloudflare deploy secrets
+        id: cloudflare
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
         run: |
-          if [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then
-            echo "::error::Missing GitHub Actions secret CLOUDFLARE_ACCOUNT_ID"
-            exit 1
-          fi
-          if [ -z "$CLOUDFLARE_API_TOKEN" ]; then
-            echo "::error::Missing GitHub Actions secret CLOUDFLARE_API_TOKEN"
-            exit 1
+          if [ -n "$CLOUDFLARE_ACCOUNT_ID" ] && [ -n "$CLOUDFLARE_API_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::warning::Cloudflare Pages deploy skipped because CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN are not both configured."
+            echo "ready=false" >> "$GITHUB_OUTPUT"
           fi
 
       - name: Build static export
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
+        if: steps.cloudflare.outputs.ready == 'true'
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}

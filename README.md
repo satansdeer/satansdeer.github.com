@@ -48,6 +48,8 @@ gh secret set CLOUDFLARE_API_TOKEN
 
 Do not commit Cloudflare tokens or local `.env*.local` files. The currently deployed custom domains are `maksimivanov.com` and `www.maksimivanov.com`.
 
+Until both GitHub Actions secrets exist, the workflow still builds the static export but skips the Cloudflare deploy step with a warning. After the secrets are installed, the next push to `master` or manual workflow dispatch deploys to Cloudflare Pages.
+
 ## Manual Recovery Deploy
 
 Use this fallback when GitHub Actions is unavailable. It assumes Wrangler is already logged in with Pages deploy access, or that the shell environment contains a Pages-capable `CLOUDFLARE_API_TOKEN`.
