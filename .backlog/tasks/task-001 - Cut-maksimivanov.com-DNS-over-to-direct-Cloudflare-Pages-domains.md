@@ -1,9 +1,10 @@
 ---
 id: TASK-001
 title: Cut maksimivanov.com DNS over to direct Cloudflare Pages domains
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-05-15 10:30'
+updated_date: '2026-05-15 10:45'
 labels:
   - cloudflare
   - dns
@@ -32,3 +33,15 @@ Make Cloudflare Pages project `maksimivanov-com` own `maksimivanov.com` and `www
 - [ ] #4 `curl -I https://maksimivanov.com/`, `curl -I https://www.maksimivanov.com/`, and `curl -I https://maksimivanov.com/posts/javascript-this/` return the expected successful or canonical redirect responses.
 - [ ] #5 The chosen canonical host behavior for apex vs `www` is documented in the task final summary.
 <!-- AC:END -->
+
+## Implementation Plan
+
+<!-- SECTION:PLAN:BEGIN -->
+1. Verify current Pages project domains, Worker routes, DNS records, and HTTP behavior. 2. Add or repair Pages custom domains for apex and www. 3. Update DNS records so apex and www point directly at the Pages project. 4. Validate SSL/domain activation and production HTTP behavior. 5. Record canonical host behavior and final verification in the task.
+<!-- SECTION:PLAN:END -->
+
+## Implementation Notes
+
+<!-- SECTION:NOTES:BEGIN -->
+Current state verified on 2026-05-15: Cloudflare Pages project `maksimivanov-com` has custom domains `maksimivanov.com` and `www.maksimivanov.com`, but both are still `pending` with verification error `CNAME record not set`. Retried Pages domain validation through the Cloudflare Pages API and status remained pending. The Wrangler OAuth token is authenticated as `satansdeer@proton.me` and has `pages:write` plus `zone:read`, but DNS record API access fails with Cloudflare 403 authentication error when listing `/zones/{zone_id}/dns_records`; Wrangler OAuth scope list does not expose DNS Read/Write scopes. Completing this task requires DNS record edit access through the Cloudflare dashboard or a Cloudflare API token with DNS Write on the `maksimivanov.com` zone. Required DNS target remains CNAME/flattened CNAME to `maksimivanov-com.pages.dev` for apex and `www`.
+<!-- SECTION:NOTES:END -->
