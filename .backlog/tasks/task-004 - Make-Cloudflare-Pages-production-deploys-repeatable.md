@@ -1,10 +1,10 @@
 ---
 id: TASK-004
 title: Make Cloudflare Pages production deploys repeatable
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-05-15 10:30'
-updated_date: '2026-05-15 16:18'
+updated_date: '2026-05-15 20:07'
 labels:
   - deploy
   - automation
@@ -32,7 +32,7 @@ Choose and implement one repeatable deployment path so future pushes do not depe
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
 - [x] #1 A documented production deployment path exists and can be run without relying on the original recovery shell session.
-- [ ] #2 Required Cloudflare credentials are stored in the chosen platform's secret store, not committed to the repository.
+- [x] #2 Required Cloudflare credentials are stored in the chosen platform's secret store, not committed to the repository.
 - [x] #3 A push to `master` can produce a fresh Cloudflare Pages deployment, or the documented manual fallback is explicit and tested.
 - [x] #4 The README or another durable project document records the production deploy command and recovery fallback.
 <!-- AC:END -->
@@ -57,4 +57,12 @@ Fixed the GitHub Actions build failure caused by the fresh CI install enforcing 
 Adjusted the markdown external-link implementation again after GitHub Actions still flagged the conditional target/rel expression. External and internal links now render through separate JSX branches, giving CI a literal rel="noopener noreferrer" on the external branch. Local npm run build passes with only the existing hook and img warnings.
 
 Ran the GitHub CLI setup on 2026-05-15. Re-authenticated gh successfully as satansdeer using the GitHub device flow in the unrestricted environment. Set repository Actions secret CLOUDFLARE_ACCOUNT_ID on satansdeer/satansdeer.github.com. Verified gh secret list shows CLOUDFLARE_ACCOUNT_ID. Did not set CLOUDFLARE_API_TOKEN because the only local .env.local token still returns Cloudflare 403 Authentication error for the Pages project API, so it is not a valid Pages deploy token. AC #2 remains open until a Pages Edit / Pages Write Cloudflare API token is available and stored as CLOUDFLARE_API_TOKEN.
+
+Completed the remaining credential setup on 2026-05-15. Verified the updated local CLOUDFLARE_API_TOKEN can access Cloudflare Pages project maksimivanov-com with a 200 Pages API response. Stored the token in GitHub Actions as CLOUDFLARE_API_TOKEN without printing it, and verified gh secret list shows both CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN. Triggered GitHub Actions workflow Deploy Cloudflare Pages by workflow_dispatch; run 25938799955 succeeded, including the Deploy to Cloudflare Pages step. Cloudflare Pages deployment list shows production deployment 2911e490-326a-4c78-b4f6-a13613b112d2 on branch master from source 1efaf13 at https://2911e490.maksimivanov-com.pages.dev. Production smoke checks passed for https://maksimivanov.com/, /feed, and /posts/javascript-this/.
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Repeatable Cloudflare Pages production deploys are now configured and verified. GitHub Actions workflow .github/workflows/deploy-pages.yml builds the static export and deploys to Cloudflare Pages when the Cloudflare secrets are present. Repository secrets CLOUDFLARE_ACCOUNT_ID and CLOUDFLARE_API_TOKEN are installed. The secret-backed workflow dispatch succeeded and created production deployment 2911e490 from source 1efaf13. README documents the workflow, required secrets, and manual Wrangler recovery fallback.
+<!-- SECTION:FINAL_SUMMARY:END -->
