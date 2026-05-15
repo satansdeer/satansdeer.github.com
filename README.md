@@ -1,34 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# maksimivanov.com
 
-## Getting Started
+Static recovery of `maksimivanov.com`, built with Next.js static export and deployed to Cloudflare Pages project `maksimivanov-com`.
 
-First, run the development server:
+## Local Development
 
 ```bash
+npm install --no-audit --no-fund
 npm run dev
-# or
-yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The local development server runs at `http://localhost:3000`.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## Static Build
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```bash
+npm run build
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The `prebuild` script regenerates static assets, then `next build && next export` writes the Cloudflare Pages artifact to `out/`.
 
-## Learn More
+## Production Deploy
 
-To learn more about Next.js, take a look at the following resources:
+Production deploys are handled by GitHub Actions in `.github/workflows/deploy-pages.yml`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The workflow runs on every push to `master` and can also be started manually from the GitHub Actions UI. It installs dependencies, runs `npm run build`, and deploys `out/` with Wrangler:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```bash
+npx wrangler pages deploy out \
+  --project-name maksimivanov-com \
+  --branch master \
+  --commit-hash "$GITHUB_SHA" \
+  --commit-message "$COMMIT_MESSAGE" \
+  --commit-dirty=false
+```
 
-## Deploy on Vercel
+Required GitHub Actions secrets:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `CLOUDFLARE_ACCOUNT_ID`: `ee13217ce6d0d1a961c275db7e351868`
+- `CLOUDFLARE_API_TOKEN`: Cloudflare API token with the Cloudflare Pages permission set to Edit, also shown as `Pages Write` in the Cloudflare API permissions, for the account that owns `maksimivanov-com`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Install the secrets with GitHub CLI after authenticating as a repository admin:
+
+```bash
+gh secret set CLOUDFLARE_ACCOUNT_ID --body "ee13217ce6d0d1a961c275db7e351868"
+gh secret set CLOUDFLARE_API_TOKEN
+```
+
+Do not commit Cloudflare tokens or local `.env*.local` files. The currently deployed custom domains are `maksimivanov.com` and `www.maksimivanov.com`.
+
+## Manual Recovery Deploy
+
+Use this fallback when GitHub Actions is unavailable. It assumes Wrangler is already logged in with Pages deploy access, or that the shell environment contains a Pages-capable `CLOUDFLARE_API_TOKEN`.
+
+```bash
+npm run build
+touch /tmp/wrangler-empty.env
+npx wrangler pages deploy out \
+  --project-name maksimivanov-com \
+  --branch master \
+  --commit-hash "$(git rev-parse HEAD)" \
+  --commit-message "$(git log -1 --pretty=%B | head -n 1)" \
+  --commit-dirty=false \
+  --env-file /tmp/wrangler-empty.env
+```
+
+The explicit empty Wrangler env file prevents a local DNS-only `.env.local` token from overriding Wrangler OAuth during a recovery deploy.
