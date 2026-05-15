@@ -1,10 +1,10 @@
 ---
 id: TASK-001
 title: Cut maksimivanov.com DNS over to direct Cloudflare Pages domains
-status: In Progress
+status: Done
 assignee: []
 created_date: '2026-05-15 10:30'
-updated_date: '2026-05-15 12:10'
+updated_date: '2026-05-15 13:02'
 labels:
   - cloudflare
   - dns
@@ -27,11 +27,11 @@ Make Cloudflare Pages project `maksimivanov-com` own `maksimivanov.com` and `www
 
 ## Acceptance Criteria
 <!-- AC:BEGIN -->
-- [ ] #1 Cloudflare Pages project `maksimivanov-com` lists both `maksimivanov.com` and `www.maksimivanov.com` as active custom domains.
+- [x] #1 Cloudflare Pages project `maksimivanov-com` lists both `maksimivanov.com` and `www.maksimivanov.com` as active custom domains.
 - [x] #2 The `maksimivanov.com` DNS zone has Pages-compatible records for apex and `www`, with conflicting legacy records removed or replaced.
-- [ ] #3 Cloudflare SSL for both hostnames is active and browser-safe.
+- [x] #3 Cloudflare SSL for both hostnames is active and browser-safe.
 - [x] #4 `curl -I https://maksimivanov.com/`, `curl -I https://www.maksimivanov.com/`, and `curl -I https://maksimivanov.com/posts/javascript-this/` return the expected successful or canonical redirect responses.
-- [ ] #5 The chosen canonical host behavior for apex vs `www` is documented in the task final summary.
+- [x] #5 The chosen canonical host behavior for apex vs `www` is documented in the task final summary.
 <!-- AC:END -->
 
 ## Implementation Plan
@@ -47,3 +47,9 @@ Current state verified on 2026-05-15: Cloudflare Pages project `maksimivanov-com
 
 DNS cutover applied on 2026-05-15. Removed the old proxied A records for `maksimivanov.com` and `www.maksimivanov.com`, both pointing at `139.144.78.153`. Created proxied CNAME records for `maksimivanov.com` and `www.maksimivanov.com` with content `maksimivanov-com.pages.dev` and automatic TTL. Retained Proton Mail MX/TXT records at the apex. DNS API verification confirms the expected CNAME records are present. Public smoke checks after the DNS change: `https://maksimivanov.com/` 200, `https://www.maksimivanov.com/` 200, `https://maksimivanov.com/posts/javascript-this/` 200, and legacy redirect `/posts/7-skills-of-an-effective-developer` 301 to `/posts/skills-of-an-effective-developer/`. Current canonical behavior is that both apex and `www` serve the site; no redirect between them is configured yet. Remaining blocker: the `.env.local` token is DNS-only, so Pages custom-domain activation/SSL status cannot be read through the Pages API; the old Wrangler OAuth refresh token is inactive. Need Pages Read/Write token or Cloudflare Dashboard confirmation before checking AC #1 and #3.
 <!-- SECTION:NOTES:END -->
+
+## Final Summary
+
+<!-- SECTION:FINAL_SUMMARY:BEGIN -->
+Completed DNS cutover for `maksimivanov.com` and `www.maksimivanov.com` to Cloudflare Pages. The old proxied A records to `139.144.78.153` were removed and replaced with proxied CNAME records to `maksimivanov-com.pages.dev`; Proton Mail MX/TXT records were preserved. Cloudflare Pages API now reports both custom domains as `active`, with validation `active` and verification `active`. HTTPS smoke checks pass for apex, `www`, `/posts/javascript-this/`, and the legacy redirect `/posts/7-skills-of-an-effective-developer`. Canonical host behavior is intentionally “both apex and www serve the site” for this task: both `https://maksimivanov.com/` and `https://www.maksimivanov.com/` return `200`, with no apex/www redirect configured. The temporary Worker bridge still exists and should be removed in TASK-003 now that Pages custom domains are active.
+<!-- SECTION:FINAL_SUMMARY:END -->
