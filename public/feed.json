@@ -1,0 +1,729 @@
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "Maksim Ivanov Blog",
+  "home_page_url": "https://maksimivanov.com/",
+  "feed_url": "https://maksimivanov.com/feed.json",
+  "description": "Frontend developer tutorials by Maksim Ivanov.",
+  "items": [
+    {
+      "id": "https://maksimivanov.com/posts/react-console-snake-game-tutorial/",
+      "url": "https://maksimivanov.com/posts/react-console-snake-game-tutorial/",
+      "title": "Command Line Applications Using React - Snake Game Tutorial",
+      "summary": "Absolutely CRAZY combo! In this tutorial we'll learn how to build a CLI Snake game using React and Javascript. One of the most powerful features of React is that it supports different renderers. That means you aren't lim",
+      "date_published": "2019-07-24T03:09:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/quokka-clone/",
+      "url": "https://maksimivanov.com/posts/quokka-clone/",
+      "title": "Quokka Clone In 10 Minutes - VSCode Extention Tutorial",
+      "summary": "In this tutorial, we'll learn how to create a VSCode extension that will communicate with Node Inspector to collect execution data basically a Quokka.js clone. For those who don't know what Quokka.js is it's a live scrat",
+      "date_published": "2019-07-22T03:09:45.284Z",
+      "tags": [
+        "VSCode"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/top-git-tools/",
+      "url": "https://maksimivanov.com/posts/top-git-tools/",
+      "title": "5 Git Tools You Must Use Today",
+      "summary": "Watch the video on YouTube In this article I'll list 5 git tools that you must use today. Hub Hub is my favourite tool and I use it a lot. If you use GitHub to store your repositories this tool will save you a ton of tim",
+      "date_published": "2019-07-21T03:09:45.284Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-window/",
+      "url": "https://maksimivanov.com/posts/react-window/",
+      "title": "Render HUGE Lists In React - React Window Tutorial",
+      "summary": "Watch the video on YouTube This is a tutorial on react window, at the end of the article there is a link to a Github repo with code examples. Rendering lists in React is simple, I would say trivial. You just map through ",
+      "date_published": "2019-07-17T03:09:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/basic-webpack-react-setup/",
+      "url": "https://maksimivanov.com/posts/basic-webpack-react-setup/",
+      "title": "Basic Webpack React Setup",
+      "summary": "Open the Glitch example Usually create react app is enough to create new React applications, and if you need to have some specific settings you can always eject and alter its webpack configuration. But sometimes you just",
+      "date_published": "2019-06-22T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/what-is-dom/",
+      "url": "https://maksimivanov.com/posts/what-is-dom/",
+      "title": "What Is DOM",
+      "summary": "DOM (Document Object Model) is a programming api for your HTML (or XML) documents. Basically it is an object representing parsed code of your page. It has tree like structure and allows you to traverse, access and modify",
+      "date_published": "2019-06-03T04:58:45.284Z",
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/graphql-beginner/",
+      "url": "https://maksimivanov.com/posts/graphql-beginner/",
+      "title": "Fullstack GraphQL Beginner Tutorial - Instagram Clone",
+      "summary": "Watch the video on YouTube In this tutorial, we'll build a simple Instagram clone using React and GraphQL. In our version, it will only contain cat pictures. GraphQL allows you to fetch data using Queries and update it u",
+      "date_published": "2019-05-20T01:58:45.284Z",
+      "tags": [
+        "Graphql"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/git-husky/",
+      "url": "https://maksimivanov.com/posts/git-husky/",
+      "title": "Automate Git With Hooks And Husky",
+      "summary": "Watch the video on YouTube Git provides an interface to run some code as reaction on specific triggers. Those triggers are called githooks (hooks used by git). You can run code on every commit, push, pull or other action",
+      "date_published": "2019-05-01T01:58:45.284Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/javascript-promises/",
+      "url": "https://maksimivanov.com/posts/javascript-promises/",
+      "title": "Promises In Javascript",
+      "summary": "Watch the video on YouTube In Javascript Promises are special sort of objects that serve as a proxy for data that is initially unknown. The concept is not unique for Javascript, similar constructs exist in other language",
+      "date_published": "2019-04-14T01:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-proptypes/",
+      "url": "https://maksimivanov.com/posts/react-proptypes/",
+      "title": "React PropTypes",
+      "summary": "Javascrpt is dynamic language, it doesn't have static typechecking. You can't syntactically specify that you function works only with strings, or only with numbers. Same applies to React components. You can pass a prop t",
+      "date_published": "2019-04-02T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-context-api/",
+      "url": "https://maksimivanov.com/posts/react-context-api/",
+      "title": "React Context API",
+      "summary": "In React application data and event handlers are passed down to children components through props. But sometimes you need to make some data available on several levels at once. Passing data through props manually can be ",
+      "date_published": "2019-03-29T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/for-loops-javascript/",
+      "url": "https://maksimivanov.com/posts/for-loops-javascript/",
+      "title": "For Loop In Javascript",
+      "summary": "Sometimes you need to do some action repeatedly. For example here, for whatever reason I want to output \"Hello loops\" five times. Loops offer an easy way to do this. There are several different ways to implement loops in",
+      "date_published": "2019-03-24T01:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/handling-errors-react/",
+      "url": "https://maksimivanov.com/posts/handling-errors-react/",
+      "title": "Handling Errors In React",
+      "summary": "One of the problems you might face when working on your React application is that some error happens in one of your components it breaks the whole app. To solve this problem React has error boundaries . What Is An Error ",
+      "date_published": "2019-03-10T04:16:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/forms-in-react/",
+      "url": "https://maksimivanov.com/posts/forms-in-react/",
+      "title": "Controlled And Uncontrolled Forms In React",
+      "summary": "There are two ways of working with forms in React. Controlled and uncontrolled . Let's see when should you use each of them. Uncontrolled Forms The easiest way to handle forms in react is to use uncontrolled inputs. In u",
+      "date_published": "2019-03-10T04:09:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-synthetic-events/",
+      "url": "https://maksimivanov.com/posts/react-synthetic-events/",
+      "title": "React Synthetic Events",
+      "summary": "The events that you get when your event handlers get triggered are actually SyntheticEvents an abstraction around browser events provided by React. It has the same interface as the browser’s native event, including stopP",
+      "date_published": "2019-03-10T03:09:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-pure-component/",
+      "url": "https://maksimivanov.com/posts/react-pure-component/",
+      "title": "React Pure Components",
+      "summary": "By default, a plain React.Component has shouldComponentUpdate set to return true. You can write your own implementation of this method to avoid unnecessady re renders. What Is PureComponent? React provides React.PureComp",
+      "date_published": "2019-03-10T02:10:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-functional-components/",
+      "url": "https://maksimivanov.com/posts/react-functional-components/",
+      "title": "React Functional Components",
+      "summary": "The simplest way to define a component in React is to use function. You just declare a function that receives props and returns some JSX layout. Here is an example: You can use object destructuring to get specific props:",
+      "date_published": "2019-03-10T02:09:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/pure-functions-and-side-effects/",
+      "url": "https://maksimivanov.com/posts/pure-functions-and-side-effects/",
+      "title": "Pure Functions And Side Effects",
+      "summary": "In computer programming pure function is a function that satisfies two conditions: It is deterministic , which means that for any given input it will always return same output. It has no side effects . Which means it doe",
+      "date_published": "2019-03-10T02:08:45.284Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-lifecycle-methods/",
+      "url": "https://maksimivanov.com/posts/react-lifecycle-methods/",
+      "title": "React Lifecycle Methods",
+      "summary": "ReactJS provides a bunch of methods that are executed during different stages of components life. Those are called lifecycle methods . Lifecycle methods are only available for class based components. For functional compo",
+      "date_published": "2019-03-10T01:59:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/named-anchor-markdown/",
+      "url": "https://maksimivanov.com/posts/named-anchor-markdown/",
+      "title": "How To Add Named Anchor In Markdown",
+      "summary": "Sometimes you might want to have a link to an item inside your markdown document. It can pe especially useful when you create table of contents for your document. The most common way to do this is to provide a named anch",
+      "date_published": "2019-03-10T01:56:45.284Z",
+      "tags": [
+        "Markdown"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/javascript-let-const-var/",
+      "url": "https://maksimivanov.com/posts/javascript-let-const-var/",
+      "title": "What Is The Difference Between Let, Const and Var In Javascript",
+      "summary": "One of the most important things in programming is to clearly express your intent. With release of ES6 we got two new keywords to define identifiers for our values: let and const. Before that we had only var in our toolb",
+      "date_published": "2019-03-09T01:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/virtual-dom/",
+      "url": "https://maksimivanov.com/posts/virtual-dom/",
+      "title": "React Concept - Virtual DOM",
+      "summary": "Unlike many other frameworks React doesn't update DOM directly on every change and uses VirtualDOM to to optimize re renders. What Is DOM DOM (Document Object Model) is a programming api for your HTML (or XML) documents.",
+      "date_published": "2019-03-08T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/how-to-localize-react-application-using-react-intl/",
+      "url": "https://maksimivanov.com/posts/how-to-localize-react-application-using-react-intl/",
+      "title": "How To Localize React Application Using `react-intl`",
+      "summary": "In this tutorial we'll localize React application from start to finish using react intl made by Yahoo. We'll use create react app to generate a new application and then we'll go through the whole set of steps needed to l",
+      "date_published": "2019-02-28T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-dev-tools/",
+      "url": "https://maksimivanov.com/posts/react-dev-tools/",
+      "title": "React Dev Tools",
+      "summary": "To develop React applications effectively you'll need to use React DevTools browser extension. It's available for both Chrome and Firefox. It has two main features: view of a component tree and the current state and prop",
+      "date_published": "2019-02-27T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/javascript-this/",
+      "url": "https://maksimivanov.com/posts/javascript-this/",
+      "title": "Javascript `this`",
+      "summary": "A lot of people find this keyword in Javascript very confusing. Depending on where is it used and defined it can have different value. This In Functions In normal Javascript functions this refers to global object. It wil",
+      "date_published": "2019-02-26T01:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/reactjs-handling-events/",
+      "url": "https://maksimivanov.com/posts/reactjs-handling-events/",
+      "title": "Handling Events In ReactJS",
+      "summary": "Handling events in ReactJS is very similar to how it's done on DOM elements. There are a few differences though. Event names are camelCased, so instead of onclick you have to use onClick: Also as you can see event handle",
+      "date_published": "2019-02-25T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/reactjs-props/",
+      "url": "https://maksimivanov.com/posts/reactjs-props/",
+      "title": "React Props",
+      "summary": "In ReactJS props is how components get data from their parent. When you add a tag to your JSX code and pass it some attributes the components referenced by this tag will receive them as a props object. In this example na",
+      "date_published": "2019-02-24T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/html-entities/",
+      "url": "https://maksimivanov.com/posts/html-entities/",
+      "title": "Html Entities",
+      "summary": "HTML entities are strigns inside HTML code that start with ampersand & and end with semicolon ;. They allow you to add wide variety of characters to your HTML code. For example characters are reserved in HTML because the",
+      "date_published": "2019-02-23T01:58:45.284Z",
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/typescript-constructor-shorthand/",
+      "url": "https://maksimivanov.com/posts/typescript-constructor-shorthand/",
+      "title": "Typescript Constructor Shorthand",
+      "summary": "Here is a thing, in Typescript there is a shorthand to create and assign class properties from constructor params. Imagine you have following code, let's say you have class User: You can write same class using shorter sy",
+      "date_published": "2019-02-22T01:58:45.284Z",
+      "tags": [
+        "Typescript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-components/",
+      "url": "https://maksimivanov.com/posts/react-components/",
+      "title": "React Components",
+      "summary": "Introduction to ReactJS Components. What Is Component A component is an isolated piece of interface. It contains some piece of layout describing what should appear on the screen. It can also have some bound state and con",
+      "date_published": "2019-02-21T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-lists-and-keys/",
+      "url": "https://maksimivanov.com/posts/react-lists-and-keys/",
+      "title": "Lists And Keys In React",
+      "summary": "How to display lists of elements in React? You can use map method to loop through an array of items and then use curly braces to insert it into your JSX code: Here we mapped through the array of strings array using the a",
+      "date_published": "2019-02-20T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/javascript-generators/",
+      "url": "https://maksimivanov.com/posts/javascript-generators/",
+      "title": "Javascript Generators",
+      "summary": "Watch the video on YouTube ES6 brought a bunch of new functions to deal with asynchronous data streams. Generator functions and async/await syntax among them. Generators are special kind of function that can be paused an",
+      "date_published": "2019-02-19T01:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/conditional-rendering-in-jsx/",
+      "url": "https://maksimivanov.com/posts/conditional-rendering-in-jsx/",
+      "title": "Conditional Rendering In JSX",
+      "summary": "There are many ways to have conditional expressions in your JSX code. Let's look at them. If Statement The easiest way to have condition in your render code is to use if statement in render() method of your component. Yo",
+      "date_published": "2019-02-18T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/starting-with-jsx/",
+      "url": "https://maksimivanov.com/posts/starting-with-jsx/",
+      "title": "Starting With JSX",
+      "summary": "Watch the video on YouTube Today we continue to learn ReactJS. In this React tutorial for beginners you'll get familiar with JSX syntax used in React applications to describe the layout of your components. At this moment",
+      "date_published": "2019-02-17T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/new-es10-es2019-javascript-features/",
+      "url": "https://maksimivanov.com/posts/new-es10-es2019-javascript-features/",
+      "title": "What's New in ES10? Javascript Features ES2019",
+      "summary": "It is 2019, and there is a bunch of new features that got approved by the TC39 consortium and soon will become part of ES10 standard. Array.flat First thing we're gonna look at is Array.flat method. What it does is it fl",
+      "date_published": "2019-02-16T04:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/how-to-install-react/",
+      "url": "https://maksimivanov.com/posts/how-to-install-react/",
+      "title": "How To Install ReactJS",
+      "summary": "Watch the video on YouTube How to install React? ReactJS is a Javascript library so by asking how to install it you most likely mean \"How to setup a React project?\". Use A Sandbox If you just want to tackle with React an",
+      "date_published": "2019-02-16T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/introduction-to-reactjs/",
+      "url": "https://maksimivanov.com/posts/introduction-to-reactjs/",
+      "title": "Introduction To ReactJS",
+      "summary": "Watch the video on YouTube An introduction to ReactJS for beginners. What Is ReactJS? ReactJS is a Javascript Library for building User Interfaces. It was initially created by Jordan Walke in Facebook. First time it was ",
+      "date_published": "2019-02-15T01:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/serve-page-in-multiple-languages/",
+      "url": "https://maksimivanov.com/posts/serve-page-in-multiple-languages/",
+      "title": "How do you serve a page with content in multiple languages?",
+      "summary": "How do you serve a page with content in multiple languages? Serving webpages in multiple languages is a very big topic and for me it breaks down into three main parts. First we need to recognize what language is preferre",
+      "date_published": "2019-02-03T01:58:45.284Z",
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/doctype-html/",
+      "url": "https://maksimivanov.com/posts/doctype-html/",
+      "title": "What is doctype in HTML documents? And why do you have to specify the doctype?",
+      "summary": "If you open any webpage, and look at it's source code, you'll always see a little thingy just before the opening html tag. So what is it, and what does it do? This string is a document type declaration, and it's importan",
+      "date_published": "2019-01-30T04:58:45.284Z",
+      "tags": [
+        "HTML"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/weather-app-2/",
+      "url": "https://maksimivanov.com/posts/weather-app-2/",
+      "title": "React App Video Course, Parts 6-10",
+      "summary": "I'm super proud of myself, managed to deliver an episode daily so far. And the best part is that it's getting easier with each one. 6 Watch the video on YouTube 7 Watch the video on YouTube 8 Watch the video on YouTube 9",
+      "date_published": "2018-08-10T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/weather-app/",
+      "url": "https://maksimivanov.com/posts/weather-app/",
+      "title": "React App Video Course, Parts 1-5",
+      "summary": "Initially I was going to just use this app as an example in my basicreact.com course. But then I decided to make a separate series on YouTube to practice making videos. My biggest mistake when doing tutorial videos was s",
+      "date_published": "2018-08-05T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/git-stash/",
+      "url": "https://maksimivanov.com/posts/git-stash/",
+      "title": "Git Stash",
+      "summary": "Sometimes you have uncommited changes and you need to switch to another branch. Here is where git stash is very handy. Basic Usage Watch the video on YouTube When switching between tasks you sometimes have uncommited wor",
+      "date_published": "2018-07-12T22:58:45.284Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/life-updates/",
+      "url": "https://maksimivanov.com/posts/life-updates/",
+      "title": "Life Updates 2018",
+      "summary": "For me 2018 is a year of dramatic changes. New people, new places, new projects. Let me share what happened to me during these months. I Moved To Sweden Right after new year I got hired to 0x.se consultancy and moved to ",
+      "date_published": "2018-06-13T07:58:45.284Z",
+      "tags": [
+        "Random"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/how-to-comment/",
+      "url": "https://maksimivanov.com/posts/how-to-comment/",
+      "title": "How To Comment React JSX Code",
+      "summary": "Sometimes you need to comment out some JSX code or just add some informative comment to your layout. How to do it? First problem is that JSX is not HTML and HTML comments wont work: Even though JSX will be compiled to Ja",
+      "date_published": "2018-05-13T22:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/what-is-react/",
+      "url": "https://maksimivanov.com/posts/what-is-react/",
+      "title": "What Is React?",
+      "summary": "This article is part of react course I'm currently working on. It will be free beginners course published on Udemy. This is an introduction, where I tell what is React, what are React key features and give a quick app ex",
+      "date_published": "2018-05-06T22:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/my-first-talk/",
+      "url": "https://maksimivanov.com/posts/my-first-talk/",
+      "title": "My First Javascript Talk",
+      "summary": "Last Tuesday I had my first talk in Stockholm and actually ever in life. Recently (3 months ago) I moved to Stockholm. Now I work in 0+x as a consultant. And recently I had a chance to participate in local ReactJS meetup",
+      "date_published": "2018-04-21T22:58:45.284Z",
+      "tags": [
+        "Random"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/statements-expressions-js/",
+      "url": "https://maksimivanov.com/posts/statements-expressions-js/",
+      "title": "Js Statements Vs Expressions",
+      "summary": "Let's talk about statements and expressions . It's very important to understand difference between them. I've checked several articles on this topic and in a lot of them authors say something like: OK, we have statements",
+      "date_published": "2018-04-20T22:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/static-type-checking-js/",
+      "url": "https://maksimivanov.com/posts/static-type-checking-js/",
+      "title": "Do You Need Static Type Checking?",
+      "summary": "We'll talk about types and static type checking in Javascript. Why you might want it and how to apply it. WAT? Javascript Has No Types Well, maybe I went a bit extreme. Let me explain myself. If you will search the inter",
+      "date_published": "2018-04-08T05:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/gradient-coin-tutorial-part-3/",
+      "url": "https://maksimivanov.com/posts/gradient-coin-tutorial-part-3/",
+      "title": "CryptoKitties Clone Part 3 Adding Frontend",
+      "summary": "In last part we added an auction contract. Now we can buy and sell our GradientTokens. Let's add some nice UI for that. This is what we'll be building: Create React App Let's start by bootstrapping the front end with cre",
+      "date_published": "2018-03-28T04:58:45.284Z",
+      "tags": [
+        "Ethereum"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-state/",
+      "url": "https://maksimivanov.com/posts/react-state/",
+      "title": "React 16 Course - Managing State",
+      "summary": "state in react is a plain Javascript object used to manage data specific to some component. Keep in mind that only data that is going to be needed for rendering should belong to the state. Contents What Is State Differen",
+      "date_published": "2018-03-22T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/gradient-coin-tutorial-part-2/",
+      "url": "https://maksimivanov.com/posts/gradient-coin-tutorial-part-2/",
+      "title": "CryptoKitties Clone Part 2 Adding An Auction",
+      "summary": "In last part we created our own non fungible token. For the sake of simplicity, we didn't create as many fields as CryptoKitties have and went with just 2. Inner and outer color of our GradientToken. In this part, we'll ",
+      "date_published": "2018-03-19T02:58:45.284Z",
+      "tags": [
+        "Ethereum"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/javascript-type-system/",
+      "url": "https://maksimivanov.com/posts/javascript-type-system/",
+      "title": "Surviving The Javascript Type System",
+      "summary": "\"Everything is crooked. Reality is poison. I want to go back, I hate this. I can’t live like this.\" Morty from the Morty's Mindblowers episode. Also me after investigating about Javascript type system. What Type System D",
+      "date_published": "2018-03-12T04:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react_lifecycle_methods/",
+      "url": "https://maksimivanov.com/posts/react_lifecycle_methods/",
+      "title": "React 16 Course - Component Lifecycle Methods",
+      "summary": "Like everything in existence – react components follow their natural cycle of creation, existence and destruction. This article is part of WIP React 2018 course for beginners. React Lifecycle Methods Let's see what happe",
+      "date_published": "2018-03-11T04:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/gradient-coin-tutorial/",
+      "url": "https://maksimivanov.com/posts/gradient-coin-tutorial/",
+      "title": "CryptoKitties Clone In 20 minutes. Non-fungible Token Tutorial",
+      "summary": "If you've read previous articles about Ethereum DAPPs (First, Second) – you already have your very own ERC20 compliant token. Today we'll make ourselves familiar with ERC721 . What Are We Going To Build I think everyone ",
+      "date_published": "2018-03-05T12:58:45.284Z",
+      "tags": [
+        "Ethereum"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/firebase-react-tutorial/",
+      "url": "https://maksimivanov.com/posts/firebase-react-tutorial/",
+      "title": "Firebase React Authentication Tutorial",
+      "summary": "Watch the video on YouTube Sometimes you just need to make a fast prototype and you don't want to mess with back end, authentication, authorization and all of that. Here is where Google's firebase can help you. In this t",
+      "date_published": "2018-03-04T05:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/quick-voronoi-example/",
+      "url": "https://maksimivanov.com/posts/quick-voronoi-example/",
+      "title": "Quick D3 Voronoi Example",
+      "summary": "Today I saw a tweet from @levelsio where he asked how to draw areas on his HoodMaps project as vector curves instead of blocks. Here is my version. Here is the question itself: I propose to use Voronoi algorithm from D3j",
+      "date_published": "2018-02-28T15:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2/",
+      "url": "https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2/",
+      "title": "Ethereum Distributed App With React Tutorial – Part 2",
+      "summary": "So, we have a token. Time to create front end part and try to send it between accounts. This article has two parts: How to create ERC20 token How to create ReactJS front end for your DAPP (this one) Go read the first par",
+      "date_published": "2018-02-14T05:58:45.284Z",
+      "tags": [
+        "Ethereum"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/ethereum-react-dapp-tutorial/",
+      "url": "https://maksimivanov.com/posts/ethereum-react-dapp-tutorial/",
+      "title": "Ethereum Distributed App With React Tutorial",
+      "summary": "ICO's, crypto, blockchain, DAPPs. Everyone is discussing it nowadays (or at leas heard). Today I'm going to show you how to create your first distributed app on Ethereum blockchain, using ReactJS. This article has two pa",
+      "date_published": "2018-02-13T05:58:45.284Z",
+      "tags": [
+        "Ethereum"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-native-mobx-tutorial-part-2/",
+      "url": "https://maksimivanov.com/posts/react-native-mobx-tutorial-part-2/",
+      "title": "React Native Mobx Tutorial - Part 2",
+      "summary": "This is second part of the MobX tutorial series, today we'll setup project and add our MobX stores. Table Of Contents 1. What is MobX 2. Making ReactNative app 2. Testing stores 2. Testing views with Enzyme Setting Up OK",
+      "date_published": "2018-02-13T05:58:45.284Z",
+      "tags": [
+        "ReactNative"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-native-mobx-tutorial/",
+      "url": "https://maksimivanov.com/posts/react-native-mobx-tutorial/",
+      "title": "React Native Mobx Tutorial - Part 1",
+      "summary": "MobX is state management solution that is gaining popularity very fast. I'll show you how to create a simple React Native app using MobX . What Are We Going To Build I have a few crypto coins on some exchanges. Not like ",
+      "date_published": "2018-01-01T22:58:45.284Z",
+      "tags": [
+        "ReactNative"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-native-e2e-tests-with-detox/",
+      "url": "https://maksimivanov.com/posts/react-native-e2e-tests-with-detox/",
+      "title": "React Native E2E Testing With Detox",
+      "summary": "When you develop for web you have a lot of options to set up your e2e tests. Protractor, CasperJS, PhantomJS, DalekJS and a lot of others. That's not the case in the world of mobile development. But worry not, I'm going ",
+      "date_published": "2017-11-29T22:58:45.284Z",
+      "tags": [
+        "ReactNative"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/reducers-vs-transducers/",
+      "url": "https://maksimivanov.com/posts/reducers-vs-transducers/",
+      "title": "Reducers VS Transducers",
+      "summary": "Sweet chunk of functional paradigm for you today. I don't know why did I write \"versus\" while they compliment each other. Anyway, let's get to the good&nbsp;stuff… Reducers Simply speaking a Reducer is a function that ta",
+      "date_published": "2017-11-28T22:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/why-you-should-use-transform-class-properties-plugin/",
+      "url": "https://maksimivanov.com/posts/why-you-should-use-transform-class-properties-plugin/",
+      "title": "Why Should You Use Transform Class Properties Plugin",
+      "summary": "In my previous post I used pretty interesting syntax to define class methods for my Popup component. I was able to use arrow functions to change the scope of this to class level. Hmm, but it's not actually Javascript, so",
+      "date_published": "2017-11-27T20:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/react-modal-window/",
+      "url": "https://maksimivanov.com/posts/react-modal-window/",
+      "title": "Popup With ReactJS For Jekyll Blog",
+      "summary": "Once upon a time (yesterday) I decided that my blog lacks a good old pop up. You know, the one that unannoyingly asks to join the mailing list. So if you have Jekyll blog and you want to know how to create a pop up using",
+      "date_published": "2017-11-23T20:58:45.284Z",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/open-closed-principle/",
+      "url": "https://maksimivanov.com/posts/open-closed-principle/",
+      "title": "Open/Closed Principle - SOLID",
+      "summary": "OCP states that software entities (classes, modules, functions) should be open for extension, but closed for modification. Let's figure out what exactly does it mean… That basically means that you should write your modul",
+      "date_published": "2017-11-13T20:58:45.284Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/dont-mock-what-you-dont-own/",
+      "url": "https://maksimivanov.com/posts/dont-mock-what-you-dont-own/",
+      "title": "Don't Mock What You Don't Own",
+      "summary": "I was refactoring specs of some Rails application when I decided to mock the ImageUploader class of CarierWave. I wanted to be able to check for specific image url. But was it a good idea? No, Don't Do It I know it might",
+      "date_published": "2017-11-11T20:58:45.284Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/liskov-substitution-principle/",
+      "url": "https://maksimivanov.com/posts/liskov-substitution-principle/",
+      "title": "Liskov Substitution Principle - SOLID",
+      "summary": "In 1988 Barbara Liskov wrote something that now stands for L in SOLID principles. Let's dive in and learn what is it and how does it relate to TDD . Here is the original formulation: \"If for each object o1 of type S ther",
+      "date_published": "2017-11-10T20:58:45.284Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/basic-karma-js/",
+      "url": "https://maksimivanov.com/posts/basic-karma-js/",
+      "title": "Basic Karma JS Tutorial",
+      "summary": "Watch the video on YouTube Psst, do you write Javascript that runs in browser? I have something for you, it's&nbsp;called&nbsp; Karma , you'll like it. When you write Javascript code, you have to test it. The same code m",
+      "date_published": "2017-10-08T22:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/git-add-patch/",
+      "url": "https://maksimivanov.com/posts/git-add-patch/",
+      "title": "Add Specific Lines With Git Patch",
+      "summary": "You know that git add adds files to index. But did do you know that it can add specific&nbsp;lines of files? Or even add files, ignoring their contents? Let's check this out! First let's get familiar with git add patch c",
+      "date_published": "2017-10-07T22:58:45.284Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/getting-schwifty-with-pull-requests/",
+      "url": "https://maksimivanov.com/posts/getting-schwifty-with-pull-requests/",
+      "title": "Getting Schwifty With Pull Requests",
+      "summary": "Once I was working on a big feature. Everything was going fine until I got carried away and started to commit everything in one branch instead of splitting to multiple smaller ones. As a result I ended up with a huge PR ",
+      "date_published": "2017-10-01T22:58:45.284Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/skills-of-an-effective-developer/",
+      "url": "https://maksimivanov.com/posts/skills-of-an-effective-developer/",
+      "title": "7 Skills Of An Effective Developer",
+      "summary": "When you see the term effective developer , you probably imagine a person who does a lot of stuff. If yes, then well, you are wrong. To be effective doesn't mean to do more things, it means to do the right things . In to",
+      "date_published": "2017-09-30T22:58:45.284Z",
+      "tags": [
+        "Random"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/magical-mystery-guide-for-async-await-in-javascript/",
+      "url": "https://maksimivanov.com/posts/magical-mystery-guide-for-async-await-in-javascript/",
+      "title": "Magical Mystery Guide For Async/Await In Javascript",
+      "summary": "Hey there! Today we are going to look at async and await keywords that allow you to pause functions execution, and therefore let you write asynchronous code that reads like synchronous . But first let's go through other ",
+      "date_published": "2017-09-28T22:58:45.284Z",
+      "tags": [
+        "Javascript"
+      ]
+    }
+  ]
+}

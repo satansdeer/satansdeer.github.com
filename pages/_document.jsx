@@ -16,21 +16,21 @@ class MyDocument extends Document {
             rel="alternative"
             type="application/rss+xml"
             title="RSS feed for maksimivanov.com"
-            href="/feed"
+            href="/rss.xml"
           />
           <link
             key="atom-feed"
             rel="alternative"
             type="application/atom+xml"
             title="Atom feed for maksimivanov.com"
-            href="/feed/atom"
+            href="/atom.xml"
           />
           <link
             key="json-feed"
             rel="alternative"
             type="application/feed+json"
             title="JSON feed for maksimivanov.com"
-            href="/feed/json"
+            href="/feed.json"
           />
         </Head>
         <body className="dark:bg-slate-900 transition-colors duration-300">

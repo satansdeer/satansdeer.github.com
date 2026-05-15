@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Maksim Ivanov Blog</title>
+  <link href="https://maksimivanov.com/" />
+  <updated>2019-07-24T03:09:45.284Z</updated>
+  <id>https://maksimivanov.com/</id>
+  <entry>
+    <title>Command Line Applications Using React - Snake Game Tutorial</title>
+    <link href="https://maksimivanov.com/posts/react-console-snake-game-tutorial/" />
+    <id>https://maksimivanov.com/posts/react-console-snake-game-tutorial/</id>
+    <updated>2019-07-24T03:09:45.284Z</updated>
+    <summary>Absolutely CRAZY combo! In this tutorial we&apos;ll learn how to build a CLI Snake game using React and Javascript. One of the most powerful features of React is that it supports different renderers. That means you aren&apos;t lim</summary>
+  </entry>
+  <entry>
+    <title>Quokka Clone In 10 Minutes - VSCode Extention Tutorial</title>
+    <link href="https://maksimivanov.com/posts/quokka-clone/" />
+    <id>https://maksimivanov.com/posts/quokka-clone/</id>
+    <updated>2019-07-22T03:09:45.284Z</updated>
+    <summary>In this tutorial, we&apos;ll learn how to create a VSCode extension that will communicate with Node Inspector to collect execution data basically a Quokka.js clone. For those who don&apos;t know what Quokka.js is it&apos;s a live scrat</summary>
+  </entry>
+  <entry>
+    <title>5 Git Tools You Must Use Today</title>
+    <link href="https://maksimivanov.com/posts/top-git-tools/" />
+    <id>https://maksimivanov.com/posts/top-git-tools/</id>
+    <updated>2019-07-21T03:09:45.284Z</updated>
+    <summary>Watch the video on YouTube In this article I&apos;ll list 5 git tools that you must use today. Hub Hub is my favourite tool and I use it a lot. If you use GitHub to store your repositories this tool will save you a ton of tim</summary>
+  </entry>
+  <entry>
+    <title>Render HUGE Lists In React - React Window Tutorial</title>
+    <link href="https://maksimivanov.com/posts/react-window/" />
+    <id>https://maksimivanov.com/posts/react-window/</id>
+    <updated>2019-07-17T03:09:45.284Z</updated>
+    <summary>Watch the video on YouTube This is a tutorial on react window, at the end of the article there is a link to a Github repo with code examples. Rendering lists in React is simple, I would say trivial. You just map through </summary>
+  </entry>
+  <entry>
+    <title>Basic Webpack React Setup</title>
+    <link href="https://maksimivanov.com/posts/basic-webpack-react-setup/" />
+    <id>https://maksimivanov.com/posts/basic-webpack-react-setup/</id>
+    <updated>2019-06-22T04:58:45.284Z</updated>
+    <summary>Open the Glitch example Usually create react app is enough to create new React applications, and if you need to have some specific settings you can always eject and alter its webpack configuration. But sometimes you just</summary>
+  </entry>
+  <entry>
+    <title>What Is DOM</title>
+    <link href="https://maksimivanov.com/posts/what-is-dom/" />
+    <id>https://maksimivanov.com/posts/what-is-dom/</id>
+    <updated>2019-06-03T04:58:45.284Z</updated>
+    <summary>DOM (Document Object Model) is a programming api for your HTML (or XML) documents. Basically it is an object representing parsed code of your page. It has tree like structure and allows you to traverse, access and modify</summary>
+  </entry>
+  <entry>
+    <title>Fullstack GraphQL Beginner Tutorial - Instagram Clone</title>
+    <link href="https://maksimivanov.com/posts/graphql-beginner/" />
+    <id>https://maksimivanov.com/posts/graphql-beginner/</id>
+    <updated>2019-05-20T01:58:45.284Z</updated>
+    <summary>Watch the video on YouTube In this tutorial, we&apos;ll build a simple Instagram clone using React and GraphQL. In our version, it will only contain cat pictures. GraphQL allows you to fetch data using Queries and update it u</summary>
+  </entry>
+  <entry>
+    <title>Automate Git With Hooks And Husky</title>
+    <link href="https://maksimivanov.com/posts/git-husky/" />
+    <id>https://maksimivanov.com/posts/git-husky/</id>
+    <updated>2019-05-01T01:58:45.284Z</updated>
+    <summary>Watch the video on YouTube Git provides an interface to run some code as reaction on specific triggers. Those triggers are called githooks (hooks used by git). You can run code on every commit, push, pull or other action</summary>
+  </entry>
+  <entry>
+    <title>Promises In Javascript</title>
+    <link href="https://maksimivanov.com/posts/javascript-promises/" />
+    <id>https://maksimivanov.com/posts/javascript-promises/</id>
+    <updated>2019-04-14T01:58:45.284Z</updated>
+    <summary>Watch the video on YouTube In Javascript Promises are special sort of objects that serve as a proxy for data that is initially unknown. The concept is not unique for Javascript, similar constructs exist in other language</summary>
+  </entry>
+  <entry>
+    <title>React PropTypes</title>
+    <link href="https://maksimivanov.com/posts/react-proptypes/" />
+    <id>https://maksimivanov.com/posts/react-proptypes/</id>
+    <updated>2019-04-02T01:58:45.284Z</updated>
+    <summary>Javascrpt is dynamic language, it doesn&apos;t have static typechecking. You can&apos;t syntactically specify that you function works only with strings, or only with numbers. Same applies to React components. You can pass a prop t</summary>
+  </entry>
+  <entry>
+    <title>React Context API</title>
+    <link href="https://maksimivanov.com/posts/react-context-api/" />
+    <id>https://maksimivanov.com/posts/react-context-api/</id>
+    <updated>2019-03-29T01:58:45.284Z</updated>
+    <summary>In React application data and event handlers are passed down to children components through props. But sometimes you need to make some data available on several levels at once. Passing data through props manually can be </summary>
+  </entry>
+  <entry>
+    <title>For Loop In Javascript</title>
+    <link href="https://maksimivanov.com/posts/for-loops-javascript/" />
+    <id>https://maksimivanov.com/posts/for-loops-javascript/</id>
+    <updated>2019-03-24T01:58:45.284Z</updated>
+    <summary>Sometimes you need to do some action repeatedly. For example here, for whatever reason I want to output &quot;Hello loops&quot; five times. Loops offer an easy way to do this. There are several different ways to implement loops in</summary>
+  </entry>
+  <entry>
+    <title>Handling Errors In React</title>
+    <link href="https://maksimivanov.com/posts/handling-errors-react/" />
+    <id>https://maksimivanov.com/posts/handling-errors-react/</id>
+    <updated>2019-03-10T04:16:45.284Z</updated>
+    <summary>One of the problems you might face when working on your React application is that some error happens in one of your components it breaks the whole app. To solve this problem React has error boundaries . What Is An Error </summary>
+  </entry>
+  <entry>
+    <title>Controlled And Uncontrolled Forms In React</title>
+    <link href="https://maksimivanov.com/posts/forms-in-react/" />
+    <id>https://maksimivanov.com/posts/forms-in-react/</id>
+    <updated>2019-03-10T04:09:45.284Z</updated>
+    <summary>There are two ways of working with forms in React. Controlled and uncontrolled . Let&apos;s see when should you use each of them. Uncontrolled Forms The easiest way to handle forms in react is to use uncontrolled inputs. In u</summary>
+  </entry>
+  <entry>
+    <title>React Synthetic Events</title>
+    <link href="https://maksimivanov.com/posts/react-synthetic-events/" />
+    <id>https://maksimivanov.com/posts/react-synthetic-events/</id>
+    <updated>2019-03-10T03:09:45.284Z</updated>
+    <summary>The events that you get when your event handlers get triggered are actually SyntheticEvents an abstraction around browser events provided by React. It has the same interface as the browser’s native event, including stopP</summary>
+  </entry>
+  <entry>
+    <title>React Pure Components</title>
+    <link href="https://maksimivanov.com/posts/react-pure-component/" />
+    <id>https://maksimivanov.com/posts/react-pure-component/</id>
+    <updated>2019-03-10T02:10:45.284Z</updated>
+    <summary>By default, a plain React.Component has shouldComponentUpdate set to return true. You can write your own implementation of this method to avoid unnecessady re renders. What Is PureComponent? React provides React.PureComp</summary>
+  </entry>
+  <entry>
+    <title>React Functional Components</title>
+    <link href="https://maksimivanov.com/posts/react-functional-components/" />
+    <id>https://maksimivanov.com/posts/react-functional-components/</id>
+    <updated>2019-03-10T02:09:45.284Z</updated>
+    <summary>The simplest way to define a component in React is to use function. You just declare a function that receives props and returns some JSX layout. Here is an example: You can use object destructuring to get specific props:</summary>
+  </entry>
+  <entry>
+    <title>Pure Functions And Side Effects</title>
+    <link href="https://maksimivanov.com/posts/pure-functions-and-side-effects/" />
+    <id>https://maksimivanov.com/posts/pure-functions-and-side-effects/</id>
+    <updated>2019-03-10T02:08:45.284Z</updated>
+    <summary>In computer programming pure function is a function that satisfies two conditions: It is deterministic , which means that for any given input it will always return same output. It has no side effects . Which means it doe</summary>
+  </entry>
+  <entry>
+    <title>React Lifecycle Methods</title>
+    <link href="https://maksimivanov.com/posts/react-lifecycle-methods/" />
+    <id>https://maksimivanov.com/posts/react-lifecycle-methods/</id>
+    <updated>2019-03-10T01:59:45.284Z</updated>
+    <summary>ReactJS provides a bunch of methods that are executed during different stages of components life. Those are called lifecycle methods . Lifecycle methods are only available for class based components. For functional compo</summary>
+  </entry>
+  <entry>
+    <title>How To Add Named Anchor In Markdown</title>
+    <link href="https://maksimivanov.com/posts/named-anchor-markdown/" />
+    <id>https://maksimivanov.com/posts/named-anchor-markdown/</id>
+    <updated>2019-03-10T01:56:45.284Z</updated>
+    <summary>Sometimes you might want to have a link to an item inside your markdown document. It can pe especially useful when you create table of contents for your document. The most common way to do this is to provide a named anch</summary>
+  </entry>
+  <entry>
+    <title>What Is The Difference Between Let, Const and Var In Javascript</title>
+    <link href="https://maksimivanov.com/posts/javascript-let-const-var/" />
+    <id>https://maksimivanov.com/posts/javascript-let-const-var/</id>
+    <updated>2019-03-09T01:58:45.284Z</updated>
+    <summary>One of the most important things in programming is to clearly express your intent. With release of ES6 we got two new keywords to define identifiers for our values: let and const. Before that we had only var in our toolb</summary>
+  </entry>
+  <entry>
+    <title>React Concept - Virtual DOM</title>
+    <link href="https://maksimivanov.com/posts/virtual-dom/" />
+    <id>https://maksimivanov.com/posts/virtual-dom/</id>
+    <updated>2019-03-08T04:58:45.284Z</updated>
+    <summary>Unlike many other frameworks React doesn&apos;t update DOM directly on every change and uses VirtualDOM to to optimize re renders. What Is DOM DOM (Document Object Model) is a programming api for your HTML (or XML) documents.</summary>
+  </entry>
+  <entry>
+    <title>How To Localize React Application Using `react-intl`</title>
+    <link href="https://maksimivanov.com/posts/how-to-localize-react-application-using-react-intl/" />
+    <id>https://maksimivanov.com/posts/how-to-localize-react-application-using-react-intl/</id>
+    <updated>2019-02-28T01:58:45.284Z</updated>
+    <summary>In this tutorial we&apos;ll localize React application from start to finish using react intl made by Yahoo. We&apos;ll use create react app to generate a new application and then we&apos;ll go through the whole set of steps needed to l</summary>
+  </entry>
+  <entry>
+    <title>React Dev Tools</title>
+    <link href="https://maksimivanov.com/posts/react-dev-tools/" />
+    <id>https://maksimivanov.com/posts/react-dev-tools/</id>
+    <updated>2019-02-27T01:58:45.284Z</updated>
+    <summary>To develop React applications effectively you&apos;ll need to use React DevTools browser extension. It&apos;s available for both Chrome and Firefox. It has two main features: view of a component tree and the current state and prop</summary>
+  </entry>
+  <entry>
+    <title>Javascript `this`</title>
+    <link href="https://maksimivanov.com/posts/javascript-this/" />
+    <id>https://maksimivanov.com/posts/javascript-this/</id>
+    <updated>2019-02-26T01:58:45.284Z</updated>
+    <summary>A lot of people find this keyword in Javascript very confusing. Depending on where is it used and defined it can have different value. This In Functions In normal Javascript functions this refers to global object. It wil</summary>
+  </entry>
+  <entry>
+    <title>Handling Events In ReactJS</title>
+    <link href="https://maksimivanov.com/posts/reactjs-handling-events/" />
+    <id>https://maksimivanov.com/posts/reactjs-handling-events/</id>
+    <updated>2019-02-25T04:58:45.284Z</updated>
+    <summary>Handling events in ReactJS is very similar to how it&apos;s done on DOM elements. There are a few differences though. Event names are camelCased, so instead of onclick you have to use onClick: Also as you can see event handle</summary>
+  </entry>
+  <entry>
+    <title>React Props</title>
+    <link href="https://maksimivanov.com/posts/reactjs-props/" />
+    <id>https://maksimivanov.com/posts/reactjs-props/</id>
+    <updated>2019-02-24T04:58:45.284Z</updated>
+    <summary>In ReactJS props is how components get data from their parent. When you add a tag to your JSX code and pass it some attributes the components referenced by this tag will receive them as a props object. In this example na</summary>
+  </entry>
+  <entry>
+    <title>Html Entities</title>
+    <link href="https://maksimivanov.com/posts/html-entities/" />
+    <id>https://maksimivanov.com/posts/html-entities/</id>
+    <updated>2019-02-23T01:58:45.284Z</updated>
+    <summary>HTML entities are strigns inside HTML code that start with ampersand &amp; and end with semicolon ;. They allow you to add wide variety of characters to your HTML code. For example characters are reserved in HTML because the</summary>
+  </entry>
+  <entry>
+    <title>Typescript Constructor Shorthand</title>
+    <link href="https://maksimivanov.com/posts/typescript-constructor-shorthand/" />
+    <id>https://maksimivanov.com/posts/typescript-constructor-shorthand/</id>
+    <updated>2019-02-22T01:58:45.284Z</updated>
+    <summary>Here is a thing, in Typescript there is a shorthand to create and assign class properties from constructor params. Imagine you have following code, let&apos;s say you have class User: You can write same class using shorter sy</summary>
+  </entry>
+  <entry>
+    <title>React Components</title>
+    <link href="https://maksimivanov.com/posts/react-components/" />
+    <id>https://maksimivanov.com/posts/react-components/</id>
+    <updated>2019-02-21T01:58:45.284Z</updated>
+    <summary>Introduction to ReactJS Components. What Is Component A component is an isolated piece of interface. It contains some piece of layout describing what should appear on the screen. It can also have some bound state and con</summary>
+  </entry>
+  <entry>
+    <title>Lists And Keys In React</title>
+    <link href="https://maksimivanov.com/posts/react-lists-and-keys/" />
+    <id>https://maksimivanov.com/posts/react-lists-and-keys/</id>
+    <updated>2019-02-20T01:58:45.284Z</updated>
+    <summary>How to display lists of elements in React? You can use map method to loop through an array of items and then use curly braces to insert it into your JSX code: Here we mapped through the array of strings array using the a</summary>
+  </entry>
+  <entry>
+    <title>Javascript Generators</title>
+    <link href="https://maksimivanov.com/posts/javascript-generators/" />
+    <id>https://maksimivanov.com/posts/javascript-generators/</id>
+    <updated>2019-02-19T01:58:45.284Z</updated>
+    <summary>Watch the video on YouTube ES6 brought a bunch of new functions to deal with asynchronous data streams. Generator functions and async/await syntax among them. Generators are special kind of function that can be paused an</summary>
+  </entry>
+  <entry>
+    <title>Conditional Rendering In JSX</title>
+    <link href="https://maksimivanov.com/posts/conditional-rendering-in-jsx/" />
+    <id>https://maksimivanov.com/posts/conditional-rendering-in-jsx/</id>
+    <updated>2019-02-18T01:58:45.284Z</updated>
+    <summary>There are many ways to have conditional expressions in your JSX code. Let&apos;s look at them. If Statement The easiest way to have condition in your render code is to use if statement in render() method of your component. Yo</summary>
+  </entry>
+  <entry>
+    <title>Starting With JSX</title>
+    <link href="https://maksimivanov.com/posts/starting-with-jsx/" />
+    <id>https://maksimivanov.com/posts/starting-with-jsx/</id>
+    <updated>2019-02-17T01:58:45.284Z</updated>
+    <summary>Watch the video on YouTube Today we continue to learn ReactJS. In this React tutorial for beginners you&apos;ll get familiar with JSX syntax used in React applications to describe the layout of your components. At this moment</summary>
+  </entry>
+  <entry>
+    <title>What&apos;s New in ES10? Javascript Features ES2019</title>
+    <link href="https://maksimivanov.com/posts/new-es10-es2019-javascript-features/" />
+    <id>https://maksimivanov.com/posts/new-es10-es2019-javascript-features/</id>
+    <updated>2019-02-16T04:58:45.284Z</updated>
+    <summary>It is 2019, and there is a bunch of new features that got approved by the TC39 consortium and soon will become part of ES10 standard. Array.flat First thing we&apos;re gonna look at is Array.flat method. What it does is it fl</summary>
+  </entry>
+  <entry>
+    <title>How To Install ReactJS</title>
+    <link href="https://maksimivanov.com/posts/how-to-install-react/" />
+    <id>https://maksimivanov.com/posts/how-to-install-react/</id>
+    <updated>2019-02-16T01:58:45.284Z</updated>
+    <summary>Watch the video on YouTube How to install React? ReactJS is a Javascript library so by asking how to install it you most likely mean &quot;How to setup a React project?&quot;. Use A Sandbox If you just want to tackle with React an</summary>
+  </entry>
+  <entry>
+    <title>Introduction To ReactJS</title>
+    <link href="https://maksimivanov.com/posts/introduction-to-reactjs/" />
+    <id>https://maksimivanov.com/posts/introduction-to-reactjs/</id>
+    <updated>2019-02-15T01:58:45.284Z</updated>
+    <summary>Watch the video on YouTube An introduction to ReactJS for beginners. What Is ReactJS? ReactJS is a Javascript Library for building User Interfaces. It was initially created by Jordan Walke in Facebook. First time it was </summary>
+  </entry>
+  <entry>
+    <title>How do you serve a page with content in multiple languages?</title>
+    <link href="https://maksimivanov.com/posts/serve-page-in-multiple-languages/" />
+    <id>https://maksimivanov.com/posts/serve-page-in-multiple-languages/</id>
+    <updated>2019-02-03T01:58:45.284Z</updated>
+    <summary>How do you serve a page with content in multiple languages? Serving webpages in multiple languages is a very big topic and for me it breaks down into three main parts. First we need to recognize what language is preferre</summary>
+  </entry>
+  <entry>
+    <title>What is doctype in HTML documents? And why do you have to specify the doctype?</title>
+    <link href="https://maksimivanov.com/posts/doctype-html/" />
+    <id>https://maksimivanov.com/posts/doctype-html/</id>
+    <updated>2019-01-30T04:58:45.284Z</updated>
+    <summary>If you open any webpage, and look at it&apos;s source code, you&apos;ll always see a little thingy just before the opening html tag. So what is it, and what does it do? This string is a document type declaration, and it&apos;s importan</summary>
+  </entry>
+  <entry>
+    <title>React App Video Course, Parts 6-10</title>
+    <link href="https://maksimivanov.com/posts/weather-app-2/" />
+    <id>https://maksimivanov.com/posts/weather-app-2/</id>
+    <updated>2018-08-10T04:58:45.284Z</updated>
+    <summary>I&apos;m super proud of myself, managed to deliver an episode daily so far. And the best part is that it&apos;s getting easier with each one. 6 Watch the video on YouTube 7 Watch the video on YouTube 8 Watch the video on YouTube 9</summary>
+  </entry>
+  <entry>
+    <title>React App Video Course, Parts 1-5</title>
+    <link href="https://maksimivanov.com/posts/weather-app/" />
+    <id>https://maksimivanov.com/posts/weather-app/</id>
+    <updated>2018-08-05T04:58:45.284Z</updated>
+    <summary>Initially I was going to just use this app as an example in my basicreact.com course. But then I decided to make a separate series on YouTube to practice making videos. My biggest mistake when doing tutorial videos was s</summary>
+  </entry>
+  <entry>
+    <title>Git Stash</title>
+    <link href="https://maksimivanov.com/posts/git-stash/" />
+    <id>https://maksimivanov.com/posts/git-stash/</id>
+    <updated>2018-07-12T22:58:45.284Z</updated>
+    <summary>Sometimes you have uncommited changes and you need to switch to another branch. Here is where git stash is very handy. Basic Usage Watch the video on YouTube When switching between tasks you sometimes have uncommited wor</summary>
+  </entry>
+  <entry>
+    <title>Life Updates 2018</title>
+    <link href="https://maksimivanov.com/posts/life-updates/" />
+    <id>https://maksimivanov.com/posts/life-updates/</id>
+    <updated>2018-06-13T07:58:45.284Z</updated>
+    <summary>For me 2018 is a year of dramatic changes. New people, new places, new projects. Let me share what happened to me during these months. I Moved To Sweden Right after new year I got hired to 0x.se consultancy and moved to </summary>
+  </entry>
+  <entry>
+    <title>How To Comment React JSX Code</title>
+    <link href="https://maksimivanov.com/posts/how-to-comment/" />
+    <id>https://maksimivanov.com/posts/how-to-comment/</id>
+    <updated>2018-05-13T22:58:45.284Z</updated>
+    <summary>Sometimes you need to comment out some JSX code or just add some informative comment to your layout. How to do it? First problem is that JSX is not HTML and HTML comments wont work: Even though JSX will be compiled to Ja</summary>
+  </entry>
+  <entry>
+    <title>What Is React?</title>
+    <link href="https://maksimivanov.com/posts/what-is-react/" />
+    <id>https://maksimivanov.com/posts/what-is-react/</id>
+    <updated>2018-05-06T22:58:45.284Z</updated>
+    <summary>This article is part of react course I&apos;m currently working on. It will be free beginners course published on Udemy. This is an introduction, where I tell what is React, what are React key features and give a quick app ex</summary>
+  </entry>
+  <entry>
+    <title>My First Javascript Talk</title>
+    <link href="https://maksimivanov.com/posts/my-first-talk/" />
+    <id>https://maksimivanov.com/posts/my-first-talk/</id>
+    <updated>2018-04-21T22:58:45.284Z</updated>
+    <summary>Last Tuesday I had my first talk in Stockholm and actually ever in life. Recently (3 months ago) I moved to Stockholm. Now I work in 0+x as a consultant. And recently I had a chance to participate in local ReactJS meetup</summary>
+  </entry>
+  <entry>
+    <title>Js Statements Vs Expressions</title>
+    <link href="https://maksimivanov.com/posts/statements-expressions-js/" />
+    <id>https://maksimivanov.com/posts/statements-expressions-js/</id>
+    <updated>2018-04-20T22:58:45.284Z</updated>
+    <summary>Let&apos;s talk about statements and expressions . It&apos;s very important to understand difference between them. I&apos;ve checked several articles on this topic and in a lot of them authors say something like: OK, we have statements</summary>
+  </entry>
+  <entry>
+    <title>Do You Need Static Type Checking?</title>
+    <link href="https://maksimivanov.com/posts/static-type-checking-js/" />
+    <id>https://maksimivanov.com/posts/static-type-checking-js/</id>
+    <updated>2018-04-08T05:58:45.284Z</updated>
+    <summary>We&apos;ll talk about types and static type checking in Javascript. Why you might want it and how to apply it. WAT? Javascript Has No Types Well, maybe I went a bit extreme. Let me explain myself. If you will search the inter</summary>
+  </entry>
+  <entry>
+    <title>CryptoKitties Clone Part 3 Adding Frontend</title>
+    <link href="https://maksimivanov.com/posts/gradient-coin-tutorial-part-3/" />
+    <id>https://maksimivanov.com/posts/gradient-coin-tutorial-part-3/</id>
+    <updated>2018-03-28T04:58:45.284Z</updated>
+    <summary>In last part we added an auction contract. Now we can buy and sell our GradientTokens. Let&apos;s add some nice UI for that. This is what we&apos;ll be building: Create React App Let&apos;s start by bootstrapping the front end with cre</summary>
+  </entry>
+  <entry>
+    <title>React 16 Course - Managing State</title>
+    <link href="https://maksimivanov.com/posts/react-state/" />
+    <id>https://maksimivanov.com/posts/react-state/</id>
+    <updated>2018-03-22T04:58:45.284Z</updated>
+    <summary>state in react is a plain Javascript object used to manage data specific to some component. Keep in mind that only data that is going to be needed for rendering should belong to the state. Contents What Is State Differen</summary>
+  </entry>
+  <entry>
+    <title>CryptoKitties Clone Part 2 Adding An Auction</title>
+    <link href="https://maksimivanov.com/posts/gradient-coin-tutorial-part-2/" />
+    <id>https://maksimivanov.com/posts/gradient-coin-tutorial-part-2/</id>
+    <updated>2018-03-19T02:58:45.284Z</updated>
+    <summary>In last part we created our own non fungible token. For the sake of simplicity, we didn&apos;t create as many fields as CryptoKitties have and went with just 2. Inner and outer color of our GradientToken. In this part, we&apos;ll </summary>
+  </entry>
+  <entry>
+    <title>Surviving The Javascript Type System</title>
+    <link href="https://maksimivanov.com/posts/javascript-type-system/" />
+    <id>https://maksimivanov.com/posts/javascript-type-system/</id>
+    <updated>2018-03-12T04:58:45.284Z</updated>
+    <summary>&quot;Everything is crooked. Reality is poison. I want to go back, I hate this. I can’t live like this.&quot; Morty from the Morty&apos;s Mindblowers episode. Also me after investigating about Javascript type system. What Type System D</summary>
+  </entry>
+  <entry>
+    <title>React 16 Course - Component Lifecycle Methods</title>
+    <link href="https://maksimivanov.com/posts/react_lifecycle_methods/" />
+    <id>https://maksimivanov.com/posts/react_lifecycle_methods/</id>
+    <updated>2018-03-11T04:58:45.284Z</updated>
+    <summary>Like everything in existence – react components follow their natural cycle of creation, existence and destruction. This article is part of WIP React 2018 course for beginners. React Lifecycle Methods Let&apos;s see what happe</summary>
+  </entry>
+  <entry>
+    <title>CryptoKitties Clone In 20 minutes. Non-fungible Token Tutorial</title>
+    <link href="https://maksimivanov.com/posts/gradient-coin-tutorial/" />
+    <id>https://maksimivanov.com/posts/gradient-coin-tutorial/</id>
+    <updated>2018-03-05T12:58:45.284Z</updated>
+    <summary>If you&apos;ve read previous articles about Ethereum DAPPs (First, Second) – you already have your very own ERC20 compliant token. Today we&apos;ll make ourselves familiar with ERC721 . What Are We Going To Build I think everyone </summary>
+  </entry>
+  <entry>
+    <title>Firebase React Authentication Tutorial</title>
+    <link href="https://maksimivanov.com/posts/firebase-react-tutorial/" />
+    <id>https://maksimivanov.com/posts/firebase-react-tutorial/</id>
+    <updated>2018-03-04T05:58:45.284Z</updated>
+    <summary>Watch the video on YouTube Sometimes you just need to make a fast prototype and you don&apos;t want to mess with back end, authentication, authorization and all of that. Here is where Google&apos;s firebase can help you. In this t</summary>
+  </entry>
+  <entry>
+    <title>Quick D3 Voronoi Example</title>
+    <link href="https://maksimivanov.com/posts/quick-voronoi-example/" />
+    <id>https://maksimivanov.com/posts/quick-voronoi-example/</id>
+    <updated>2018-02-28T15:58:45.284Z</updated>
+    <summary>Today I saw a tweet from @levelsio where he asked how to draw areas on his HoodMaps project as vector curves instead of blocks. Here is my version. Here is the question itself: I propose to use Voronoi algorithm from D3j</summary>
+  </entry>
+  <entry>
+    <title>Ethereum Distributed App With React Tutorial – Part 2</title>
+    <link href="https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2/" />
+    <id>https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2/</id>
+    <updated>2018-02-14T05:58:45.284Z</updated>
+    <summary>So, we have a token. Time to create front end part and try to send it between accounts. This article has two parts: How to create ERC20 token How to create ReactJS front end for your DAPP (this one) Go read the first par</summary>
+  </entry>
+  <entry>
+    <title>Ethereum Distributed App With React Tutorial</title>
+    <link href="https://maksimivanov.com/posts/ethereum-react-dapp-tutorial/" />
+    <id>https://maksimivanov.com/posts/ethereum-react-dapp-tutorial/</id>
+    <updated>2018-02-13T05:58:45.284Z</updated>
+    <summary>ICO&apos;s, crypto, blockchain, DAPPs. Everyone is discussing it nowadays (or at leas heard). Today I&apos;m going to show you how to create your first distributed app on Ethereum blockchain, using ReactJS. This article has two pa</summary>
+  </entry>
+  <entry>
+    <title>React Native Mobx Tutorial - Part 2</title>
+    <link href="https://maksimivanov.com/posts/react-native-mobx-tutorial-part-2/" />
+    <id>https://maksimivanov.com/posts/react-native-mobx-tutorial-part-2/</id>
+    <updated>2018-02-13T05:58:45.284Z</updated>
+    <summary>This is second part of the MobX tutorial series, today we&apos;ll setup project and add our MobX stores. Table Of Contents 1. What is MobX 2. Making ReactNative app 2. Testing stores 2. Testing views with Enzyme Setting Up OK</summary>
+  </entry>
+  <entry>
+    <title>React Native Mobx Tutorial - Part 1</title>
+    <link href="https://maksimivanov.com/posts/react-native-mobx-tutorial/" />
+    <id>https://maksimivanov.com/posts/react-native-mobx-tutorial/</id>
+    <updated>2018-01-01T22:58:45.284Z</updated>
+    <summary>MobX is state management solution that is gaining popularity very fast. I&apos;ll show you how to create a simple React Native app using MobX . What Are We Going To Build I have a few crypto coins on some exchanges. Not like </summary>
+  </entry>
+  <entry>
+    <title>React Native E2E Testing With Detox</title>
+    <link href="https://maksimivanov.com/posts/react-native-e2e-tests-with-detox/" />
+    <id>https://maksimivanov.com/posts/react-native-e2e-tests-with-detox/</id>
+    <updated>2017-11-29T22:58:45.284Z</updated>
+    <summary>When you develop for web you have a lot of options to set up your e2e tests. Protractor, CasperJS, PhantomJS, DalekJS and a lot of others. That&apos;s not the case in the world of mobile development. But worry not, I&apos;m going </summary>
+  </entry>
+  <entry>
+    <title>Reducers VS Transducers</title>
+    <link href="https://maksimivanov.com/posts/reducers-vs-transducers/" />
+    <id>https://maksimivanov.com/posts/reducers-vs-transducers/</id>
+    <updated>2017-11-28T22:58:45.284Z</updated>
+    <summary>Sweet chunk of functional paradigm for you today. I don&apos;t know why did I write &quot;versus&quot; while they compliment each other. Anyway, let&apos;s get to the good&amp;nbsp;stuff… Reducers Simply speaking a Reducer is a function that ta</summary>
+  </entry>
+  <entry>
+    <title>Why Should You Use Transform Class Properties Plugin</title>
+    <link href="https://maksimivanov.com/posts/why-you-should-use-transform-class-properties-plugin/" />
+    <id>https://maksimivanov.com/posts/why-you-should-use-transform-class-properties-plugin/</id>
+    <updated>2017-11-27T20:58:45.284Z</updated>
+    <summary>In my previous post I used pretty interesting syntax to define class methods for my Popup component. I was able to use arrow functions to change the scope of this to class level. Hmm, but it&apos;s not actually Javascript, so</summary>
+  </entry>
+  <entry>
+    <title>Popup With ReactJS For Jekyll Blog</title>
+    <link href="https://maksimivanov.com/posts/react-modal-window/" />
+    <id>https://maksimivanov.com/posts/react-modal-window/</id>
+    <updated>2017-11-23T20:58:45.284Z</updated>
+    <summary>Once upon a time (yesterday) I decided that my blog lacks a good old pop up. You know, the one that unannoyingly asks to join the mailing list. So if you have Jekyll blog and you want to know how to create a pop up using</summary>
+  </entry>
+  <entry>
+    <title>Open/Closed Principle - SOLID</title>
+    <link href="https://maksimivanov.com/posts/open-closed-principle/" />
+    <id>https://maksimivanov.com/posts/open-closed-principle/</id>
+    <updated>2017-11-13T20:58:45.284Z</updated>
+    <summary>OCP states that software entities (classes, modules, functions) should be open for extension, but closed for modification. Let&apos;s figure out what exactly does it mean… That basically means that you should write your modul</summary>
+  </entry>
+  <entry>
+    <title>Don&apos;t Mock What You Don&apos;t Own</title>
+    <link href="https://maksimivanov.com/posts/dont-mock-what-you-dont-own/" />
+    <id>https://maksimivanov.com/posts/dont-mock-what-you-dont-own/</id>
+    <updated>2017-11-11T20:58:45.284Z</updated>
+    <summary>I was refactoring specs of some Rails application when I decided to mock the ImageUploader class of CarierWave. I wanted to be able to check for specific image url. But was it a good idea? No, Don&apos;t Do It I know it might</summary>
+  </entry>
+  <entry>
+    <title>Liskov Substitution Principle - SOLID</title>
+    <link href="https://maksimivanov.com/posts/liskov-substitution-principle/" />
+    <id>https://maksimivanov.com/posts/liskov-substitution-principle/</id>
+    <updated>2017-11-10T20:58:45.284Z</updated>
+    <summary>In 1988 Barbara Liskov wrote something that now stands for L in SOLID principles. Let&apos;s dive in and learn what is it and how does it relate to TDD . Here is the original formulation: &quot;If for each object o1 of type S ther</summary>
+  </entry>
+  <entry>
+    <title>Basic Karma JS Tutorial</title>
+    <link href="https://maksimivanov.com/posts/basic-karma-js/" />
+    <id>https://maksimivanov.com/posts/basic-karma-js/</id>
+    <updated>2017-10-08T22:58:45.284Z</updated>
+    <summary>Watch the video on YouTube Psst, do you write Javascript that runs in browser? I have something for you, it&apos;s&amp;nbsp;called&amp;nbsp; Karma , you&apos;ll like it. When you write Javascript code, you have to test it. The same code m</summary>
+  </entry>
+  <entry>
+    <title>Add Specific Lines With Git Patch</title>
+    <link href="https://maksimivanov.com/posts/git-add-patch/" />
+    <id>https://maksimivanov.com/posts/git-add-patch/</id>
+    <updated>2017-10-07T22:58:45.284Z</updated>
+    <summary>You know that git add adds files to index. But did do you know that it can add specific&amp;nbsp;lines of files? Or even add files, ignoring their contents? Let&apos;s check this out! First let&apos;s get familiar with git add patch c</summary>
+  </entry>
+  <entry>
+    <title>Getting Schwifty With Pull Requests</title>
+    <link href="https://maksimivanov.com/posts/getting-schwifty-with-pull-requests/" />
+    <id>https://maksimivanov.com/posts/getting-schwifty-with-pull-requests/</id>
+    <updated>2017-10-01T22:58:45.284Z</updated>
+    <summary>Once I was working on a big feature. Everything was going fine until I got carried away and started to commit everything in one branch instead of splitting to multiple smaller ones. As a result I ended up with a huge PR </summary>
+  </entry>
+  <entry>
+    <title>7 Skills Of An Effective Developer</title>
+    <link href="https://maksimivanov.com/posts/skills-of-an-effective-developer/" />
+    <id>https://maksimivanov.com/posts/skills-of-an-effective-developer/</id>
+    <updated>2017-09-30T22:58:45.284Z</updated>
+    <summary>When you see the term effective developer , you probably imagine a person who does a lot of stuff. If yes, then well, you are wrong. To be effective doesn&apos;t mean to do more things, it means to do the right things . In to</summary>
+  </entry>
+  <entry>
+    <title>Magical Mystery Guide For Async/Await In Javascript</title>
+    <link href="https://maksimivanov.com/posts/magical-mystery-guide-for-async-await-in-javascript/" />
+    <id>https://maksimivanov.com/posts/magical-mystery-guide-for-async-await-in-javascript/</id>
+    <updated>2017-09-28T22:58:45.284Z</updated>
+    <summary>Hey there! Today we are going to look at async and await keywords that allow you to pause functions execution, and therefore let you write asynchronous code that reads like synchronous . But first let&apos;s go through other </summary>
+  </entry>
+</feed>

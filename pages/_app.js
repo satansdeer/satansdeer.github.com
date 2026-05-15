@@ -1,8 +1,6 @@
 import "../styles/globals.css";
 // import "prismjs/themes/prism.css";
 import "prism-themes/themes/prism-dracula.css";
-import { PrismicProvider } from "@prismicio/react";
-import { linkResolver } from "../prismicio";
 import { ThemeProvider } from "next-themes";
 import * as Fathom from 'fathom-client';
 import { useEffect } from 'react';
@@ -33,9 +31,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <ThemeProvider attribute="class">
-      <PrismicProvider linkResolver={linkResolver}>
-        <Component {...pageProps} />
-      </PrismicProvider>
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }

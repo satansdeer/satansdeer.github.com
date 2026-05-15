@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "prebuild": "node scripts/generate-static-assets.js",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
+    "cf:deploy": "wrangler pages deploy out --project-name maksimivanov-com",
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
@@ -35,6 +37,7 @@
     "eslint-config-next": "12.1.6",
     "postcss": "^8.4.13",
     "slice-machine-ui": "^0.3.7",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "wrangler": "^4.91.0"
   }
 }

@@ -1,0 +1,25 @@
+# Cloudflare Pages redirects and rewrites for recovered URLs
+/posts/7-skills-of-an-effective-developer /posts/skills-of-an-effective-developer/ 301
+/posts/7-skills-of-an-effective-developer/ /posts/skills-of-an-effective-developer/ 301
+/feed /rss.xml 200
+/feed/ /rss.xml 200
+/feed.xml /rss.xml 200
+/feed/rss /rss.xml 200
+/feed/rss/ /rss.xml 200
+/feed/json /feed.json 200
+/feed/json/ /feed.json 200
+/feed/atom /atom.xml 200
+/feed/atom/ /atom.xml 200
+/rss /rss.xml 301
+/posts /posts/ 301
+/posts/:slug /posts/:slug/ 301
+/categories/:category /categories/:category/ 301
+/category/:category /categories/:category/ 301
+/category/uncategorized/ /posts/ 301
+/articles /articles/ 301
+/books /books/ 301
+/2023/06/27/hello-world/ / 301
+/sample-page/ /about/ 301
+/how-i-clock-in-my-work-time/ /posts/ 302
+/what-does-11-12-mean-in-git/ /categories/git/ 302
+/setting-up-jupyterlab-with-a-rust-server-using-nix-on-mac-os/ /posts/ 302

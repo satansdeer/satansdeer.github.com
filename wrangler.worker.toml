@@ -1,0 +1,8 @@
+name = "maksimivanov-com-proxy"
+main = "workers/pages-proxy.js"
+compatibility_date = "2026-05-15"
+
+routes = [
+  { pattern = "maksimivanov.com/*", zone_name = "maksimivanov.com" },
+  { pattern = "www.maksimivanov.com/*", zone_name = "maksimivanov.com" },
+]
