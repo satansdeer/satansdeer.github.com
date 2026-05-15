@@ -4,7 +4,7 @@ title: Make Cloudflare Pages production deploys repeatable
 status: In Progress
 assignee: []
 created_date: '2026-05-15 10:30'
-updated_date: '2026-05-15 13:46'
+updated_date: '2026-05-15 13:50'
 labels:
   - deploy
   - automation
@@ -18,6 +18,7 @@ references:
 modified_files:
   - .github/workflows/deploy-pages.yml
   - README.md
+  - components/site/MarkdownContent.jsx
 priority: medium
 ordinal: 4000
 ---
@@ -50,4 +51,6 @@ Implemented .github/workflows/deploy-pages.yml as the repeatable production depl
 Manual recovery deploy was tested after commit 0642abc9b702d8d6a4f4ce663f768bd0bf7f3b05 using the documented Wrangler fallback shape with an explicit empty env file. Wrangler created deployment https://b52b2a03.maksimivanov-com.pages.dev. Smoke checks passed: deployment root 200, deployment /posts/javascript-this/ 200, production root https://maksimivanov.com/ 200, and production /feed 200 with RSS content type. Wrangler warned about uncommitted changes because the pre-existing untracked logs/ directory remains outside the repository, but the deployment used explicit commit metadata and --commit-dirty=false. AC #3 is now satisfied by the explicit and tested manual fallback. AC #2 remains open until the GitHub Actions secrets are installed and verified.
 
 After observing that the pushed Deploy Cloudflare Pages workflow failed on the default branch while secrets are absent, adjusted the workflow to keep the branch clean: it now installs dependencies, checks whether both Cloudflare GitHub Actions secrets are present, always builds the static export, and skips only the Cloudflare deploy step with a warning until secrets are configured. Once secrets are added, the same workflow deploys on the next push or manual dispatch.
+
+Fixed the GitHub Actions build failure caused by the fresh CI install enforcing react/jsx-no-target-blank in components/site/MarkdownContent.jsx. The anchor prop spread now appears before the enforced external-link target and rel attributes, so markdown external links keep rel="noopener noreferrer". Local npm run build passes again with only the existing non-blocking warnings.
 <!-- SECTION:NOTES:END -->

@@ -32,9 +32,9 @@ export const MarkdownContent = ({ children }) => {
           return (
             <a
               href={href}
+              {...props}
               target={isExternal ? "_blank" : undefined}
               rel={isExternal ? "noopener noreferrer" : undefined}
-              {...props}
             >
               {children}
             </a>
