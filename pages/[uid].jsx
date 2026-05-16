@@ -8,14 +8,19 @@ import { getAllPosts } from "../lib/legacy-content";
 const staticPages = {
   about: {
     title: "About",
-    description: "About Maksim Ivanov.",
+    description:
+      "About Maksim Ivanov, a full-stack developer working across Go, Python, JavaScript, TypeScript, and Flutter.",
     content: `# Hey, Nice To Meet You!
 
-My name is Maksim Ivanov. I am a frontend developer focused on React, TypeScript, JavaScript, and practical web development.
+My name is Maksim Ivanov. I am a full-stack developer working across Go, Python, JavaScript, TypeScript, and Flutter codebases.
 
-I have worked on admin interfaces for Spotify, web services around Minecraft and Minecraft Dungeons, and in-game UI for Battlefield V.
+These days I work at [Massive](https://usemassive.com/), where I maintain and evolve production systems across several stacks. I am also building [Mont](https://usemont.com/), a video editor with built-in slides for workflows that need to stay editable after recording: presentations, onboardings with animated clicks, product walkthroughs, and similar material.
 
-You can find me on [GitHub](https://github.com/satansdeer), [Twitter](https://twitter.com/satansdeer), and [YouTube](https://www.youtube.com/user/satansdeer1/videos).`,
+Before that I worked on the collections system and internal editor-facing pages at Spotify, Minecraft and Minecraft Dungeons web services at Mojang, and in-game UI for Battlefield V.
+
+This site keeps my recovered articles about React, JavaScript, TypeScript, Git, and practical software development, along with selected [projects](/projects/) such as Mont, courses, and books.
+
+You can find me on [LinkedIn](https://www.linkedin.com/in/mivanovm/), [GitHub](https://github.com/satansdeer), [Twitter](https://twitter.com/satansdeer), and [YouTube](https://www.youtube.com/user/satansdeer1/videos).`,
   },
   articles: {
     title: "Articles",
