@@ -1,23 +1,38 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../components/Header";
 import { Post } from "../components/Post";
+import { Seo } from "../components/Seo";
 import {
   getAllPosts,
   getCategories,
   getFeaturedPosts,
 } from "../lib/legacy-content";
+import {
+  buildCollectionPageJsonLd,
+  buildPersonJsonLd,
+  buildWebsiteJsonLd,
+} from "../lib/seo";
+
+const description =
+  "Frontend developer tutorials on React, JavaScript, TypeScript, Git, and web development.";
 
 const Index = ({ featuredPosts, latestPosts, categories }) => {
   return (
     <>
-      <Head>
-        <title>Maksim Ivanov</title>
-        <meta
-          name="description"
-          content="Frontend developer tutorials on React, JavaScript, TypeScript, Git, and web development."
-        />
-      </Head>
+      <Seo
+        title="Maksim Ivanov"
+        description={description}
+        path="/"
+        jsonLd={[
+          buildWebsiteJsonLd(),
+          buildPersonJsonLd(),
+          buildCollectionPageJsonLd({
+            title: "Maksim Ivanov",
+            description,
+            path: "/",
+          }),
+        ]}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">

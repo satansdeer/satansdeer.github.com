@@ -1,18 +1,33 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../../components/Header";
+import { Seo } from "../../components/Seo";
 import { getAllProjects, getProjectUrl } from "../../lib/projects";
+import {
+  buildBreadcrumbJsonLd,
+  buildCollectionPageJsonLd,
+} from "../../lib/seo";
+
+const description = "Selected courses, books, and products by Maksim Ivanov.";
 
 const ProjectsIndex = ({ projects }) => {
   return (
     <>
-      <Head>
-        <title>Projects | Maksim Ivanov</title>
-        <meta
-          name="description"
-          content="Selected courses, books, and products by Maksim Ivanov."
-        />
-      </Head>
+      <Seo
+        title="Projects"
+        description={description}
+        path="/projects/"
+        jsonLd={[
+          buildCollectionPageJsonLd({
+            title: "Projects",
+            description,
+            path: "/projects/",
+          }),
+          buildBreadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Projects", path: "/projects/" },
+          ]),
+        ]}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">

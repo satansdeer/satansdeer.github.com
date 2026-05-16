@@ -1,26 +1,38 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../../components/Header";
+import { Seo } from "../../components/Seo";
 import { MarkdownContent } from "../../components/site/MarkdownContent";
 import {
   getAllPosts,
   getPostBySlug,
   getPostSlugs,
 } from "../../lib/legacy-content";
+import {
+  buildBlogPostingJsonLd,
+  buildBreadcrumbJsonLd,
+} from "../../lib/seo";
 
 const PostPage = ({ post, previousPost, nextPost }) => {
   return (
     <>
-      <Head>
-        <title>{post.title} | Maksim Ivanov</title>
-        <meta name="description" content={post.excerpt} />
-        <link rel="canonical" href={post.canonicalUrl} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={post.title} />
-        <meta property="og:description" content={post.excerpt} />
-        <meta property="og:url" content={post.canonicalUrl} />
-        {post.image && <meta property="og:image" content={post.image} />}
-      </Head>
+      <Seo
+        title={post.title}
+        description={post.excerpt}
+        path={post.url}
+        type="article"
+        image={post.image}
+        publishedTime={post.date}
+        modifiedTime={post.date}
+        jsonLd={[
+          buildBlogPostingJsonLd(post),
+          buildBreadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Posts", path: "/posts/" },
+            { name: post.category, path: `/categories/${post.categorySlug}/` },
+            { name: post.title, path: post.url },
+          ]),
+        ]}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">

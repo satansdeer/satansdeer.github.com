@@ -1,21 +1,35 @@
-import Head from "next/head";
 import { Header } from "../../components/Header";
 import { Post } from "../../components/Post";
+import { Seo } from "../../components/Seo";
 import {
   getCategories,
   getPostsByCategory,
 } from "../../lib/legacy-content";
+import {
+  buildBreadcrumbJsonLd,
+  buildCollectionPageJsonLd,
+} from "../../lib/seo";
 
 const CategoryPage = ({ category, posts }) => {
+  const title = `${category.title} Articles`;
+  const description = `${category.title} articles by Maksim Ivanov.`;
+  const path = `/categories/${category.slug}/`;
+
   return (
     <>
-      <Head>
-        <title>{category.title} Articles | Maksim Ivanov</title>
-        <meta
-          name="description"
-          content={`${category.title} articles by Maksim Ivanov.`}
-        />
-      </Head>
+      <Seo
+        title={title}
+        description={description}
+        path={path}
+        jsonLd={[
+          buildCollectionPageJsonLd({ title, description, path }),
+          buildBreadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Posts", path: "/posts/" },
+            { name: category.title, path },
+          ]),
+        ]}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">

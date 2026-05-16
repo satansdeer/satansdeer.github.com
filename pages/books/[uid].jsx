@@ -1,7 +1,11 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../../components/Header";
-import { getProjectBySlug, getProjectCanonicalUrl } from "../../lib/projects";
+import { Seo } from "../../components/Seo";
+import { getProjectBySlug } from "../../lib/projects";
+import {
+  buildBreadcrumbJsonLd,
+  buildCreativeWorkJsonLd,
+} from "../../lib/seo";
 
 const books = {
   "command-line-git-everything-you-need-to-know-to-get-started": {
@@ -9,14 +13,23 @@ const books = {
   },
 };
 
-const BookPage = ({ book }) => {
+const BookPage = ({ book, bookPath }) => {
   return (
     <>
-      <Head>
-        <title>{book.title} | Maksim Ivanov</title>
-        <meta name="description" content={book.summary} />
-        <link rel="canonical" href={getProjectCanonicalUrl(book)} />
-      </Head>
+      <Seo
+        title={book.title}
+        description={book.summary}
+        path={bookPath}
+        type="book"
+        jsonLd={[
+          buildCreativeWorkJsonLd(book, bookPath),
+          buildBreadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Books", path: "/books/" },
+            { name: book.title, path: bookPath },
+          ]),
+        ]}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
@@ -73,7 +86,10 @@ export async function getStaticProps({ params }) {
   }
 
   return {
-    props: { book },
+    props: {
+      book,
+      bookPath: `/books/${params.uid}/`,
+    },
   };
 }
 

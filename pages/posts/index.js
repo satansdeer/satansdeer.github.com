@@ -1,19 +1,35 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../../components/Header";
 import { Post } from "../../components/Post";
+import { Seo } from "../../components/Seo";
 import { getAllPosts, getCategories } from "../../lib/legacy-content";
+import {
+  buildBreadcrumbJsonLd,
+  buildCollectionPageJsonLd,
+} from "../../lib/seo";
+
+const description =
+  "Recovered Maksim Ivanov articles about React, JavaScript, TypeScript, Git, and frontend development.";
 
 const PostsIndex = ({ posts, categories }) => {
   return (
     <>
-      <Head>
-        <title>Posts | Maksim Ivanov</title>
-        <meta
-          name="description"
-          content="Recovered Maksim Ivanov articles about React, JavaScript, TypeScript, Git, and frontend development."
-        />
-      </Head>
+      <Seo
+        title="Posts"
+        description={description}
+        path="/posts/"
+        jsonLd={[
+          buildCollectionPageJsonLd({
+            title: "Posts",
+            description,
+            path: "/posts/",
+          }),
+          buildBreadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Posts", path: "/posts/" },
+          ]),
+        ]}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">

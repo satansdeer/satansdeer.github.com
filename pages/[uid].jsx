@@ -1,9 +1,15 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../components/Header";
+import { Seo } from "../components/Seo";
 import { MarkdownContent } from "../components/site/MarkdownContent";
 import { Post } from "../components/Post";
 import { getAllPosts } from "../lib/legacy-content";
+import {
+  buildBreadcrumbJsonLd,
+  buildCollectionPageJsonLd,
+  buildPersonJsonLd,
+  buildWebPageJsonLd,
+} from "../lib/seo";
 
 const staticPages = {
   about: {
@@ -40,15 +46,38 @@ Start with [Command Line Git](/projects/command-line-git/), my beginner-friendly
   },
 };
 
-const StaticPage = ({ page, posts }) => {
+const StaticPage = ({ page, posts, uid }) => {
   const pagefindProps = page.searchable ? { "data-pagefind-body": true } : {};
+  const path = `/${uid}/`;
+  const pageJsonLd = page.postsList
+    ? buildCollectionPageJsonLd({
+        title: page.title,
+        description: page.description,
+        path,
+      })
+    : buildWebPageJsonLd({
+        title: page.title,
+        description: page.description,
+        path,
+        type: uid === "about" ? "AboutPage" : "WebPage",
+      });
+  const jsonLd = [
+    pageJsonLd,
+    uid === "about" ? buildPersonJsonLd() : null,
+    buildBreadcrumbJsonLd([
+      { name: "Home", path: "/" },
+      { name: page.title, path },
+    ]),
+  ];
 
   return (
     <>
-      <Head>
-        <title>{page.title} | Maksim Ivanov</title>
-        <meta name="description" content={page.description} />
-      </Head>
+      <Seo
+        title={page.title}
+        description={page.description}
+        path={path}
+        jsonLd={jsonLd}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
@@ -96,6 +125,7 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       page,
+      uid: params.uid,
       posts: page.postsList ? getAllPosts() : [],
     },
   };

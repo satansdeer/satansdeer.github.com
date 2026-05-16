@@ -1,26 +1,35 @@
-import Head from "next/head";
 import Link from "next/link";
 import { Header } from "../../components/Header";
+import { Seo } from "../../components/Seo";
 import {
   getProjectBySlug,
-  getProjectCanonicalUrl,
   getProjectSlugs,
+  getProjectUrl,
 } from "../../lib/projects";
+import {
+  buildBreadcrumbJsonLd,
+  buildCreativeWorkJsonLd,
+} from "../../lib/seo";
 
 const ProjectPage = ({ project }) => {
-  const title = `${project.title} | Maksim Ivanov`;
+  const path = getProjectUrl(project);
 
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={project.summary} />
-        <link rel="canonical" href={getProjectCanonicalUrl(project)} />
-        <meta property="og:type" content="article" />
-        <meta property="og:title" content={project.title} />
-        <meta property="og:description" content={project.summary} />
-        <meta property="og:url" content={getProjectCanonicalUrl(project)} />
-      </Head>
+      <Seo
+        title={project.title}
+        description={project.summary}
+        path={path}
+        type="article"
+        jsonLd={[
+          buildCreativeWorkJsonLd(project, path),
+          buildBreadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Projects", path: "/projects/" },
+            { name: project.title, path },
+          ]),
+        ]}
+      />
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
