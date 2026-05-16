@@ -13,10 +13,13 @@ const PUBLISHED_SOURCE_MAP = {
   "7634553095103581462": "/posts/stop-storing-secret-keys-in-env-files/",
   bZwOlUq7JDM: "/posts/stop-storing-secret-keys-in-env-files/",
   Cw_JrTcRtpg: "/posts/make-your-first-video-in-mont/",
+  D2QbCZRrBbU: "/posts/mont-slides-and-video-timeline/",
   EKGyk1Q0Dbo: "/posts/record-screen-in-mont/",
   mNfEigGQ35o: "/posts/localize-your-app-without-translation-keys/",
+  THqqfIFoumM: "/posts/use-subagents-to-keep-ai-context-clean/",
   tjakK9Nj4bA: "/posts/build-it-and-they-will-not-come/",
   ufdMQ142PxA: "/posts/record-saas-demo-video-from-screenshots/",
+  "9vMjt-6ow8s": "/posts/architecture-literacy-for-vibe-coders/",
 };
 
 function parseArgs(argv) {
@@ -411,7 +414,14 @@ function suggestAngle(post, transcript, cluster) {
   const text = `${post.title}\n${transcript}`;
 
   if (/not your architect|architecture|speed without architecture|debt/i.test(text)) {
+    if (/architectural literacy|compact model|fits in your head|vibe coder/i.test(text)) {
+      return "Build enough architecture literacy to move an AI-built app past the MVP";
+    }
     return "How to use Claude Code without losing the architecture of your app";
+  }
+
+  if (/sub ?agents?|compaction|main context|long conversation|spawn a sub/i.test(text)) {
+    return "Use subagents to keep long AI coding sessions clean and responsive";
   }
 
   if (/console\.log|debug logs?|stringify|debugging|prefix/i.test(text)) {

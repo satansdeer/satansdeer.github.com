@@ -5,6 +5,27 @@
     <link>https://maksimivanov.com</link>
     <description>Frontend developer tutorials by Maksim Ivanov.</description>
     <item>
+      <title>How Mont Combines Slides And Video On One Timeline</title>
+      <link>https://maksimivanov.com/posts/mont-slides-and-video-timeline/</link>
+      <guid>https://maksimivanov.com/posts/mont-slides-and-video-timeline/</guid>
+      <pubDate>Sat, 16 May 2026 19:05:00 GMT</pubDate>
+      <description>Mont is built around a simple idea: slides and video should live on the same timeline. That makes it possible to create a product demo, tutorial, or presentation video without choosing between a slide editor and a video </description>
+    </item>
+    <item>
+      <title>Architecture Literacy For Vibe Coders</title>
+      <link>https://maksimivanov.com/posts/architecture-literacy-for-vibe-coders/</link>
+      <guid>https://maksimivanov.com/posts/architecture-literacy-for-vibe-coders/</guid>
+      <pubDate>Sat, 16 May 2026 18:55:00 GMT</pubDate>
+      <description>If you are building with AI coding tools, architecture is not optional. You can get to an MVP with prompts and persistence. Moving past the MVP requires enough architectural literacy to understand what the system is beco</description>
+    </item>
+    <item>
+      <title>Use Subagents To Keep Long AI Coding Sessions Clean</title>
+      <link>https://maksimivanov.com/posts/use-subagents-to-keep-ai-context-clean/</link>
+      <guid>https://maksimivanov.com/posts/use-subagents-to-keep-ai-context-clean/</guid>
+      <pubDate>Sat, 16 May 2026 18:45:00 GMT</pubDate>
+      <description>Long AI coding conversations get worse as they grow. The model has more context to carry, summaries become lossy, and the main thread starts following instructions less precisely. One practical way to slow that decay is </description>
+    </item>
+    <item>
       <title>How To Record Your Screen In Mont</title>
       <link>https://maksimivanov.com/posts/record-screen-in-mont/</link>
       <guid>https://maksimivanov.com/posts/record-screen-in-mont/</guid>

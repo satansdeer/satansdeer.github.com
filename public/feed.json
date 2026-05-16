@@ -6,6 +6,36 @@
   "description": "Frontend developer tutorials by Maksim Ivanov.",
   "items": [
     {
+      "id": "https://maksimivanov.com/posts/mont-slides-and-video-timeline/",
+      "url": "https://maksimivanov.com/posts/mont-slides-and-video-timeline/",
+      "title": "How Mont Combines Slides And Video On One Timeline",
+      "summary": "Mont is built around a simple idea: slides and video should live on the same timeline. That makes it possible to create a product demo, tutorial, or presentation video without choosing between a slide editor and a video ",
+      "date_published": "2026-05-16T19:05:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/architecture-literacy-for-vibe-coders/",
+      "url": "https://maksimivanov.com/posts/architecture-literacy-for-vibe-coders/",
+      "title": "Architecture Literacy For Vibe Coders",
+      "summary": "If you are building with AI coding tools, architecture is not optional. You can get to an MVP with prompts and persistence. Moving past the MVP requires enough architectural literacy to understand what the system is beco",
+      "date_published": "2026-05-16T18:55:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/use-subagents-to-keep-ai-context-clean/",
+      "url": "https://maksimivanov.com/posts/use-subagents-to-keep-ai-context-clean/",
+      "title": "Use Subagents To Keep Long AI Coding Sessions Clean",
+      "summary": "Long AI coding conversations get worse as they grow. The model has more context to carry, summaries become lossy, and the main thread starts following instructions less precisely. One practical way to slow that decay is ",
+      "date_published": "2026-05-16T18:45:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
       "id": "https://maksimivanov.com/posts/record-screen-in-mont/",
       "url": "https://maksimivanov.com/posts/record-screen-in-mont/",
       "title": "How To Record Your Screen In Mont",

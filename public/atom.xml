@@ -2,8 +2,29 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Maksim Ivanov Blog</title>
   <link href="https://maksimivanov.com/" />
-  <updated>2026-05-16T18:35:00.000Z</updated>
+  <updated>2026-05-16T19:05:00.000Z</updated>
   <id>https://maksimivanov.com/</id>
+  <entry>
+    <title>How Mont Combines Slides And Video On One Timeline</title>
+    <link href="https://maksimivanov.com/posts/mont-slides-and-video-timeline/" />
+    <id>https://maksimivanov.com/posts/mont-slides-and-video-timeline/</id>
+    <updated>2026-05-16T19:05:00.000Z</updated>
+    <summary>Mont is built around a simple idea: slides and video should live on the same timeline. That makes it possible to create a product demo, tutorial, or presentation video without choosing between a slide editor and a video </summary>
+  </entry>
+  <entry>
+    <title>Architecture Literacy For Vibe Coders</title>
+    <link href="https://maksimivanov.com/posts/architecture-literacy-for-vibe-coders/" />
+    <id>https://maksimivanov.com/posts/architecture-literacy-for-vibe-coders/</id>
+    <updated>2026-05-16T18:55:00.000Z</updated>
+    <summary>If you are building with AI coding tools, architecture is not optional. You can get to an MVP with prompts and persistence. Moving past the MVP requires enough architectural literacy to understand what the system is beco</summary>
+  </entry>
+  <entry>
+    <title>Use Subagents To Keep Long AI Coding Sessions Clean</title>
+    <link href="https://maksimivanov.com/posts/use-subagents-to-keep-ai-context-clean/" />
+    <id>https://maksimivanov.com/posts/use-subagents-to-keep-ai-context-clean/</id>
+    <updated>2026-05-16T18:45:00.000Z</updated>
+    <summary>Long AI coding conversations get worse as they grow. The model has more context to carry, summaries become lossy, and the main thread starts following instructions less precisely. One practical way to slow that decay is </summary>
+  </entry>
   <entry>
     <title>How To Record Your Screen In Mont</title>
     <link href="https://maksimivanov.com/posts/record-screen-in-mont/" />

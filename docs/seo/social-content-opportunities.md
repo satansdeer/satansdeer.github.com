@@ -27,7 +27,7 @@ YouTube Shorts ignored: 59
 | 1 | [tiktok:7631897804771757334](https://www.tiktok.com/@webdevivanov/video/7631897804771757334) | 2026-04-23 | TikTok 7631897804771757334 | 19,663 | 3.8% | yes | [published](/posts/map-ai-generated-codebase-architecture/) | AI coding workflow | How to use Claude Code without losing the architecture of your app |
 | 2 | [tiktok:7634553095103581462](https://www.tiktok.com/@webdevivanov/video/7634553095103581462) | 2026-04-30 | TikTok 7634553095103581462 | 66,227 | 2.6% | yes | [published](/posts/stop-storing-secret-keys-in-env-files/) | Secrets and security | Why .env files are the wrong place to keep long-lived secret keys |
 | 3 | [tiktok:7631569099822320918](https://www.tiktok.com/@webdevivanov/video/7631569099822320918) | 2026-04-22 | Day 38 launching Mont video editor | 31,918 | 2.5% | yes | [published](/posts/claude-code-architecture/) | AI coding workflow | How to use Claude Code without losing the architecture of your app |
-| 4 | [tiktok:7631927253911309590](https://www.tiktok.com/@webdevivanov/video/7631927253911309590) | 2026-04-23 | TikTok 7631927253911309590 | 11,362 | 2.5% | yes | [published](/posts/map-ai-generated-codebase-architecture/) | AI coding workflow | How to use Claude Code without losing the architecture of your app |
+| 4 | [tiktok:7631927253911309590](https://www.tiktok.com/@webdevivanov/video/7631927253911309590) | 2026-04-23 | TikTok 7631927253911309590 | 11,362 | 2.5% | yes | [published](/posts/map-ai-generated-codebase-architecture/) | AI coding workflow | Build enough architecture literacy to move an AI-built app past the MVP |
 | 5 | [tiktok:7632178414580960534](https://www.tiktok.com/@webdevivanov/video/7632178414580960534) | 2026-04-24 | TikTok 7632178414580960534 | 2,109 | 3.2% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
 | 6 | [tiktok:7632624123184794902](https://www.tiktok.com/@webdevivanov/video/7632624123184794902) | 2026-04-25 | TikTok 7632624123184794902 | 1,562 | 3.9% | yes | queued | AI coding workflow | A practical logging trick for debugging AI-generated front-end code |
 | 7 | [tiktok:7635724327610076438](https://www.tiktok.com/@webdevivanov/video/7635724327610076438) | 2026-05-03 | TikTok 7635724327610076438 | 2,095 | 2.1% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
@@ -48,14 +48,14 @@ YouTube Shorts ignored: 59
 | 22 | [tiktok:7630041378025721110](https://www.tiktok.com/@webdevivanov/video/7630041378025721110) | 2026-04-18 | Day 34 launching Mont video editor I use codex btw | 327 | 6.1% | needed | queued | AI coding workflow | What building a browser video editor teaches about product engineering |
 | 23 | [tiktok:7632356677152640279](https://www.tiktok.com/@webdevivanov/video/7632356677152640279) | 2026-04-24 | TikTok 7632356677152640279 | 575 | 5.0% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
 | 24 | [tiktok:7632291992055106838](https://www.tiktok.com/@webdevivanov/video/7632291992055106838) | 2026-04-24 | TikTok 7632291992055106838 | 999 | 2.3% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
-| 25 | [tiktok:7639384793561484566](https://www.tiktok.com/@webdevivanov/video/7639384793561484566) | 2026-05-13 | TikTok 7639384793561484566 | 872 | 2.4% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
+| 25 | [youtube:THqqfIFoumM](https://www.youtube.com/watch?v=THqqfIFoumM) | 2026-04-26 | 26 April 2026 | 495 | 2.8% | yes | [published](/posts/use-subagents-to-keep-ai-context-clean/) | AI coding workflow | Use subagents to keep long AI coding sessions clean and responsive |
 
 ## Keyword Seeds By Cluster
 
 ### AI coding workflow
 
-- Social candidates: 8
-- Total views: 67,974
+- Social candidates: 9
+- Total views: 68,469
 - Seed keywords: claude code architecture, ai coding workflow, vibe coding, debug claude code
 
 ### Secrets and security
@@ -66,8 +66,8 @@ YouTube Shorts ignored: 59
 
 ### General developer content
 
-- Social candidates: 30
-- Total views: 24,346
+- Social candidates: 29
+- Total views: 23,851
 - Seed keywords: developer productivity, software development
 
 ### Video tooling
