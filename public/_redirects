@@ -18,6 +18,8 @@
 /category/uncategorized/ /posts/ 301
 /articles /articles/ 301
 /books /books/ 301
+/projects /projects/ 301
+/projects/:project /projects/:project/ 301
 /2023/06/27/hello-world/ / 301
 /sample-page/ /about/ 301
 /how-i-clock-in-my-work-time/ /posts/ 302

@@ -27,9 +27,9 @@ You can find me on [GitHub](https://github.com/satansdeer), [Twitter](https://tw
     description: "Books and longer-form writing by Maksim Ivanov.",
     content: `# Books
 
-Longer-form material is being rebuilt into the static archive.
+Longer-form material and project pages are being rebuilt into the static archive.
 
-For now, the recovered article archive is available under [Posts](/posts/).`,
+Start with [Command Line Git](/projects/command-line-git/), my beginner-friendly book about using Git from the command line.`,
   },
 };
 

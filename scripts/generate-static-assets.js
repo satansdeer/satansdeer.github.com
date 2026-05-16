@@ -5,6 +5,7 @@ const {
   getAllPosts,
   getCategories,
 } = require("../lib/legacy-content");
+const { getAllProjects, getProjectUrl } = require("../lib/projects");
 
 const rootDir = process.cwd();
 const publicDir = path.join(rootDir, "public");
@@ -137,13 +138,15 @@ function writeJsonFeed(posts) {
   fs.writeFileSync(path.join(publicDir, "feed.json"), `${JSON.stringify(feed, null, 2)}\n`);
 }
 
-function writeSitemap(posts, categories) {
+function writeSitemap(posts, categories, projects) {
   const urls = [
     "/",
     "/about/",
     "/articles/",
     "/books/",
     "/books/command-line-git-everything-you-need-to-know-to-get-started/",
+    "/projects/",
+    ...projects.map(getProjectUrl),
     "/posts/",
     ...categories.map((category) => `/categories/${category.slug}/`),
     ...posts.map((post) => post.url),
@@ -181,6 +184,8 @@ function writeRedirects() {
 /category/uncategorized/ /posts/ 301
 /articles /articles/ 301
 /books /books/ 301
+/projects /projects/ 301
+/projects/:project /projects/:project/ 301
 /2023/06/27/hello-world/ / 301
 /sample-page/ /about/ 301
 /how-i-clock-in-my-work-time/ /posts/ 302
@@ -228,12 +233,13 @@ function main() {
 
   const posts = getAllPosts();
   const categories = getCategories();
+  const projects = getAllProjects();
 
   copyPostAssets();
   writeRss(posts);
   writeAtom(posts);
   writeJsonFeed(posts);
-  writeSitemap(posts, categories);
+  writeSitemap(posts, categories, projects);
   writeRedirects();
   writeHeaders();
 
