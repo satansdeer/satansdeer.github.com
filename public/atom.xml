@@ -2,8 +2,43 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Maksim Ivanov Blog</title>
   <link href="https://maksimivanov.com/" />
-  <updated>2026-05-16T14:30:00.000Z</updated>
+  <updated>2026-05-16T17:55:00.000Z</updated>
   <id>https://maksimivanov.com/</id>
+  <entry>
+    <title>How To Record A SaaS Demo Video From Screenshots</title>
+    <link href="https://maksimivanov.com/posts/record-saas-demo-video-from-screenshots/" />
+    <id>https://maksimivanov.com/posts/record-saas-demo-video-from-screenshots/</id>
+    <updated>2026-05-16T17:55:00.000Z</updated>
+    <summary>A SaaS demo video does not always need a full screen recording. If the goal is to explain a workflow, show a polished product tour, or make a launch video quickly, screenshots can be a better starting point. You can prep</summary>
+  </entry>
+  <entry>
+    <title>Build It And They Will Not Come: Finding Users For Your SaaS</title>
+    <link href="https://maksimivanov.com/posts/build-it-and-they-will-not-come/" />
+    <id>https://maksimivanov.com/posts/build-it-and-they-will-not-come/</id>
+    <updated>2026-05-16T17:40:00.000Z</updated>
+    <summary>Building the product is not the hard finish line. It is the start of the next problem. If you are building an app or SaaS and quietly believing that users will appear after launch, you are probably setting yourself up fo</summary>
+  </entry>
+  <entry>
+    <title>Localize Your App Without Inventing Translation Keys For Every String</title>
+    <link href="https://maksimivanov.com/posts/localize-your-app-without-translation-keys/" />
+    <id>https://maksimivanov.com/posts/localize-your-app-without-translation-keys/</id>
+    <updated>2026-05-16T17:05:00.000Z</updated>
+    <summary>When an app grows past one language, the first instinct is usually to invent a translation key for every visible string. That sounds organized. It often makes the system harder to maintain. This post is adapted from a Yo</summary>
+  </entry>
+  <entry>
+    <title>Map Your AI-Generated Codebase Before You Rewrite It</title>
+    <link href="https://maksimivanov.com/posts/map-ai-generated-codebase-architecture/" />
+    <id>https://maksimivanov.com/posts/map-ai-generated-codebase-architecture/</id>
+    <updated>2026-05-16T16:15:00.000Z</updated>
+    <summary>If you are using Claude Code, Cursor, or another AI coding tool to build an app quickly, make a map of the codebase before you start rewriting pieces of it. AI tools can move fast enough that the codebase becomes hard to</summary>
+  </entry>
+  <entry>
+    <title>Where To Store API Keys: Stop Putting Secrets in .env Files</title>
+    <link href="https://maksimivanov.com/posts/stop-storing-secret-keys-in-env-files/" />
+    <id>https://maksimivanov.com/posts/stop-storing-secret-keys-in-env-files/</id>
+    <updated>2026-05-16T16:05:00.000Z</updated>
+    <summary>Do not treat .env files as your long term secret storage. A local .env file can be a convenient development input when it is ignored by Git and only exists on your machine. The mistake is using .env as the place where re</summary>
+  </entry>
   <entry>
     <title>Claude Code Architecture: How to Keep AI-Generated Code Maintainable</title>
     <link href="https://maksimivanov.com/posts/claude-code-architecture/" />

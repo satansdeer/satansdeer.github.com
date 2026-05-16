@@ -61,6 +61,8 @@ That is your job.
 
 Before asking Claude Code to implement a feature, write the boundary in plain language.
 
+If the codebase is already too large to explain from memory, pause here and map it first. I wrote a practical follow-up for that workflow: [Map Your AI-Generated Codebase Before You Rewrite It](/posts/map-ai-generated-codebase-architecture/).
+
 For example:
 
 ```text

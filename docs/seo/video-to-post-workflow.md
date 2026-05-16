@@ -14,6 +14,8 @@ Goal: turn a video into a standalone article that can rank without requiring the
 
 Use the YouTube channel, TikTok account, and `stats-dashboard` exports as the source backlog. Only consider videos published after the last recovered text post unless an older short-form video has unusually strong social proof.
 
+For YouTube, ignore Shorts. The metrics sync stores `durationSeconds` from the YouTube API, and the website-side queue treats YouTube videos under 61 seconds as short-form. TikTok remains short-form by default.
+
 Current cutoff:
 
 - Last recovered text post: July 24, 2019.
@@ -34,7 +36,7 @@ If transcript extraction is not available from public endpoints, use `stats-dash
 ```bash
 cd ../stats-dashboard
 make analyze-post ARGS='--post-id tiktok_7631569099822320918'
-make analyze-post ARGS='--post-id youtube_dlwm8yb5fb0 --platform youtube'
+make analyze-post ARGS='--post-id youtube_mnfeiggq35o --platform youtube'
 ```
 
 Then regenerate the website-side report:
@@ -61,7 +63,7 @@ When a transcript exists, create a structured conversion draft from the analysis
 
 ```bash
 npm run seo:post-draft -- --post-id=tiktok_7631897804771757334 --output=docs/seo/post-drafts/vibe-coding-codebase-map.md
-npm run seo:post-draft -- --post-id=youtube_s48bhbka_uu --output=docs/seo/post-drafts/day-33-video-tooling.md
+npm run seo:post-draft -- --post-id=youtube_mnfeiggq35o --output=docs/seo/post-drafts/localization-with-source-text-keys.md
 ```
 
 The draft includes source metadata, a post skeleton, and the transcript in an HTML comment for editing context. Do not publish the raw transcript.

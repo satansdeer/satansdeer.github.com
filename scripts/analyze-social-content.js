@@ -5,8 +5,15 @@ const path = require("path");
 
 const DEFAULT_AFTER = "2019-07-24";
 const DEFAULT_LIMIT = 25;
+const YOUTUBE_REGULAR_VIDEO_MIN_SECONDS = 61;
 const PUBLISHED_SOURCE_MAP = {
   "7631569099822320918": "/posts/claude-code-architecture/",
+  "7631897804771757334": "/posts/map-ai-generated-codebase-architecture/",
+  "7631927253911309590": "/posts/map-ai-generated-codebase-architecture/",
+  "7634553095103581462": "/posts/stop-storing-secret-keys-in-env-files/",
+  mNfEigGQ35o: "/posts/localize-your-app-without-translation-keys/",
+  tjakK9Nj4bA: "/posts/build-it-and-they-will-not-come/",
+  ufdMQ142PxA: "/posts/record-saas-demo-video-from-screenshots/",
 };
 
 function parseArgs(argv) {
@@ -101,6 +108,7 @@ function normalizePost(post) {
   const views = number(post.views);
   const likes = number(post.likes);
   const comments = number(post.comments);
+  const durationSeconds = number(post.durationSeconds);
 
   return {
     id: post.id || sourceVideoId,
@@ -110,12 +118,22 @@ function normalizePost(post) {
     views,
     likes,
     comments,
+    durationSeconds,
+    isShortForm: Boolean(post.isShortForm),
     engagementRate: views ? (likes + comments) / views : 0,
     publishedAt: post.publishedAt || "",
     date: post.publishedAt ? post.publishedAt.slice(0, 10) : "",
     url: post.url || "",
     source: post.source || {},
   };
+}
+
+function isIgnoredYouTubeShort(post) {
+  return (
+    post.platform === "youtube" &&
+    (post.isShortForm ||
+      (post.durationSeconds > 0 && post.durationSeconds < YOUTUBE_REGULAR_VIDEO_MIN_SECONDS))
+  );
 }
 
 function extractExternalId(url) {
@@ -219,11 +237,46 @@ function scanAnalysisArtifacts(analysisDir, successfulDir) {
 
 const CLUSTERS = [
   {
+    name: "Localization and i18n",
+    patterns: [
+      /\blocali[sz]ation\b/i,
+      /\bi18n\b/i,
+      /\btranslation keys?\b/i,
+      /\btranslate\b/i,
+      /\bgettext\b/i,
+      /\bnon-english\b/i,
+    ],
+    keywordSeeds: [
+      "app localization",
+      "translation keys",
+      "gettext javascript",
+      "i18n best practices",
+    ],
+  },
+  {
+    name: "SaaS distribution",
+    patterns: [
+      /\bearly adopters?\b/i,
+      /\bfirst users?\b/i,
+      /\bget users?\b/i,
+      /\buser acquisition\b/i,
+      /\bdistribution\b/i,
+      /\bbuild it\b/i,
+      /\bthey will come\b/i,
+    ],
+    keywordSeeds: [
+      "find first users for saas",
+      "saas user acquisition",
+      "how to get early adopters",
+      "build it and they will come",
+    ],
+  },
+  {
     name: "AI coding workflow",
     patterns: [
       /\bclaude\b/i,
       /\bcodex\b/i,
-      /\bcursor\b/i,
+      /\bcursor (?:ai|editor|ide|agent)\b/i,
       /\bllm\b/i,
       /\bai[- ]?coding\b/i,
       /\bvibe code\b/i,
@@ -248,12 +301,20 @@ const CLUSTERS = [
       /\bremotion\b/i,
       /\bffmpeg\b/i,
       /\bscreen recorder\b/i,
+      /\bscreen recording\b/i,
+      /\bdemo video\b/i,
+      /\bapp demo\b/i,
+      /\bproduct demo\b/i,
+      /\bsaas demo\b/i,
+      /\bcursor animation\b/i,
+      /\bzoom effect\b/i,
     ],
     keywordSeeds: [
       "browser video editor",
       "generate video subtitles",
       "programmatic video editing",
       "remotion alternative",
+      "record saas demo video",
     ],
   },
   {
@@ -350,12 +411,24 @@ function suggestAngle(post, transcript, cluster) {
     return "How to use Claude Code without losing the architecture of your app";
   }
 
-  if (/logs?|stringify|debugging|prefix/i.test(text)) {
+  if (/console\.log|debug logs?|stringify|debugging|prefix/i.test(text)) {
     return "A practical logging trick for debugging AI-generated front-end code";
+  }
+
+  if (/locali[sz]ation|i18n|translation keys?|gettext|non-english/i.test(text)) {
+    return "Localize an app without inventing translation keys for every string";
   }
 
   if (/secrets?|secret keys?|api keys?|\.env|env file|secret manager|security/i.test(text)) {
     return "Why .env files are the wrong place to keep long-lived secret keys";
+  }
+
+  if (/early adopters?|first users?|get users?|user acquisition|distribution|build it|they will come/i.test(text)) {
+    return "Find users for a SaaS before assuming launch will solve distribution";
+  }
+
+  if (/record.*demo|demo video|app demo|product demo|saas demo|cursor animation|zoom effect/i.test(text)) {
+    return "Record a SaaS demo video from screenshots without re-recording every edit";
   }
 
   if (/subtitles?|captions?/i.test(text)) {
@@ -532,6 +605,7 @@ function renderMarkdown(report) {
     `Stats updated: ${report.metadata.updatedAt || "unknown"}`,
     `Posts analyzed: ${report.metadata.postCount}`,
     `Cutoff date: ${report.metadata.after}`,
+    `YouTube Shorts ignored: ${report.metadata.ignoredYouTubeShorts}`,
     "",
     "## Platform Summary",
     "",
@@ -612,7 +686,7 @@ function renderMarkdown(report) {
     "```bash",
     "cd ../stats-dashboard",
     "make analyze-post ARGS='--post-id tiktok_7631569099822320918'",
-    "make analyze-post ARGS='--post-id youtube_dlwm8yb5fb0 --platform youtube'",
+    "make analyze-post ARGS='--post-id youtube_mnfeiggq35o --platform youtube'",
     "```",
     "",
     "Regenerate this report from the website repo:",
@@ -632,6 +706,7 @@ function renderMarkdown(report) {
     "",
     "```bash",
     "npm run seo:post-draft -- --post-id=tiktok_7631897804771757334 --output=docs/seo/post-drafts/example.md",
+    "npm run seo:post-draft -- --post-id=youtube_mnfeiggq35o --output=docs/seo/post-drafts/localization-with-source-text-keys.md",
     "```"
   );
 
@@ -642,9 +717,12 @@ function buildReport(args) {
   const postsPath = path.resolve(args.posts);
   const source = readJson(postsPath);
   const cutoff = new Date(`${args.after}T00:00:00.000Z`).getTime();
-  const posts = (source.posts || source.videos || [])
+  const normalizedPosts = (source.posts || source.videos || [])
     .map(normalizePost)
-    .filter((post) => !post.publishedAt || new Date(post.publishedAt).getTime() >= cutoff)
+    .filter((post) => !post.publishedAt || new Date(post.publishedAt).getTime() >= cutoff);
+  const ignoredYouTubeShorts = normalizedPosts.filter(isIgnoredYouTubeShort).length;
+  const posts = normalizedPosts
+    .filter((post) => !isIgnoredYouTubeShort(post))
     .filter((post) => post.views >= args.minViews);
 
   const stats = platformStats(posts);
@@ -674,6 +752,7 @@ function buildReport(args) {
       postsPath,
       updatedAt: source.updatedAt,
       postCount: posts.length,
+      ignoredYouTubeShorts,
       after: args.after,
     },
     platforms: stats.sort((a, b) => b.totalViews - a.totalViews),
