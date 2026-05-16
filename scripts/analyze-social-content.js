@@ -6,19 +6,26 @@ const path = require("path");
 const DEFAULT_AFTER = "2019-07-24";
 const DEFAULT_LIMIT = 25;
 const YOUTUBE_REGULAR_VIDEO_MIN_SECONDS = 61;
+const YOUTUBE_SHORT_MAX_SECONDS = 180;
 const PUBLISHED_SOURCE_MAP = {
   "7631569099822320918": "/posts/claude-code-architecture/",
   "7631897804771757334": "/posts/map-ai-generated-codebase-architecture/",
   "7631927253911309590": "/posts/map-ai-generated-codebase-architecture/",
   "7634553095103581462": "/posts/stop-storing-secret-keys-in-env-files/",
+  "2TioQir4Pr8": "/posts/map-ai-generated-codebase-architecture/",
   bZwOlUq7JDM: "/posts/stop-storing-secret-keys-in-env-files/",
   Cw_JrTcRtpg: "/posts/make-your-first-video-in-mont/",
   D2QbCZRrBbU: "/posts/mont-slides-and-video-timeline/",
   EKGyk1Q0Dbo: "/posts/record-screen-in-mont/",
+  eZh03k61wQM: "/posts/mont-slides-and-video-timeline/",
+  GQ1_QaOjsWg: "/posts/record-presentation-voiceover-from-pdf/",
+  Gze_w1iFRDA: "/posts/mont-slides-and-video-timeline/",
   mNfEigGQ35o: "/posts/localize-your-app-without-translation-keys/",
+  CMj1p0saSX8: "/posts/build-it-and-they-will-not-come/",
   THqqfIFoumM: "/posts/use-subagents-to-keep-ai-context-clean/",
   tjakK9Nj4bA: "/posts/build-it-and-they-will-not-come/",
   ufdMQ142PxA: "/posts/record-saas-demo-video-from-screenshots/",
+  yltyunpWyhg: "/posts/mont-slides-and-video-timeline/",
   "9vMjt-6ow8s": "/posts/architecture-literacy-for-vibe-coders/",
 };
 
@@ -134,11 +141,45 @@ function normalizePost(post) {
   };
 }
 
-function isIgnoredYouTubeShort(post) {
+function artifactForPost(post, artifacts) {
+  return (
+    artifacts.get(normalizeKey(post.id)) ||
+    artifacts.get(normalizeKey(post.externalId)) ||
+    {}
+  );
+}
+
+function isLikelyDailyYouTubeShort(post) {
+  return (
+    post.platform === "youtube" &&
+    post.durationSeconds > 0 &&
+    post.durationSeconds <= YOUTUBE_SHORT_MAX_SECONDS &&
+    (/^day \d+\b/i.test(post.title) || /^\d{1,2} [a-z]+ \d{4}$/i.test(post.title))
+  );
+}
+
+function isVerticalYouTubeShort(post, artifact) {
+  const sourceInfo = artifact?.sourceInfo || {};
+  const width = number(sourceInfo.width);
+  const height = number(sourceInfo.height);
+  const durationSeconds = number(sourceInfo.durationSeconds || post.durationSeconds);
+
+  return (
+    post.platform === "youtube" &&
+    width > 0 &&
+    height > width &&
+    durationSeconds > 0 &&
+    durationSeconds <= YOUTUBE_SHORT_MAX_SECONDS
+  );
+}
+
+function isIgnoredYouTubeShort(post, artifact = {}) {
   return (
     post.platform === "youtube" &&
     (post.isShortForm ||
-      (post.durationSeconds > 0 && post.durationSeconds < YOUTUBE_REGULAR_VIDEO_MIN_SECONDS))
+      (post.durationSeconds > 0 && post.durationSeconds < YOUTUBE_REGULAR_VIDEO_MIN_SECONDS) ||
+      isVerticalYouTubeShort(post, artifact) ||
+      isLikelyDailyYouTubeShort(post))
   );
 }
 
@@ -195,6 +236,24 @@ function readInfoKeys(infoPath) {
   }
 }
 
+function readSourceInfo(infoPath) {
+  if (!fs.existsSync(infoPath)) {
+    return {};
+  }
+
+  try {
+    const info = readJson(infoPath);
+    return {
+      durationSeconds: number(info.duration),
+      width: number(info.width),
+      height: number(info.height),
+      aspectRatio: number(info.aspect_ratio),
+    };
+  } catch {
+    return {};
+  }
+}
+
 function scanAnalysisArtifacts(analysisDir, successfulDir) {
   const artifacts = new Map();
 
@@ -217,6 +276,7 @@ function scanAnalysisArtifacts(analysisDir, successfulDir) {
           analysisPath: dirPath,
           transcriptPath: fs.existsSync(transcriptPath) ? transcriptPath : "",
           reportPath: fs.existsSync(reportPath) ? reportPath : "",
+          sourceInfo: readSourceInfo(infoPath),
         });
       });
   }
@@ -514,10 +574,7 @@ function annotatePosts(posts, artifacts, stats) {
   const statByPlatform = new Map(stats.map((item) => [item.platform, item]));
 
   return posts.map((post) => {
-    const artifact =
-      artifacts.get(normalizeKey(post.id)) ||
-      artifacts.get(normalizeKey(post.externalId)) ||
-      {};
+    const artifact = artifactForPost(post, artifacts);
     const transcript = readTextIfExists(artifact.transcriptPath);
     const cluster = classifyCluster(post, transcript);
     const hasTranscript = Boolean(artifact.transcriptPath);
@@ -730,19 +787,21 @@ function buildReport(args) {
   const postsPath = path.resolve(args.posts);
   const source = readJson(postsPath);
   const cutoff = new Date(`${args.after}T00:00:00.000Z`).getTime();
-  const normalizedPosts = (source.posts || source.videos || [])
-    .map(normalizePost)
-    .filter((post) => !post.publishedAt || new Date(post.publishedAt).getTime() >= cutoff);
-  const ignoredYouTubeShorts = normalizedPosts.filter(isIgnoredYouTubeShort).length;
-  const posts = normalizedPosts
-    .filter((post) => !isIgnoredYouTubeShort(post))
-    .filter((post) => post.views >= args.minViews);
-
-  const stats = platformStats(posts);
   const artifacts = scanAnalysisArtifacts(
     path.resolve(args.analysisDir),
     path.resolve(args.successfulDir)
   );
+  const normalizedPosts = (source.posts || source.videos || [])
+    .map(normalizePost)
+    .filter((post) => !post.publishedAt || new Date(post.publishedAt).getTime() >= cutoff);
+  const ignoredYouTubeShorts = normalizedPosts.filter((post) =>
+    isIgnoredYouTubeShort(post, artifactForPost(post, artifacts))
+  ).length;
+  const posts = normalizedPosts
+    .filter((post) => !isIgnoredYouTubeShort(post, artifactForPost(post, artifacts)))
+    .filter((post) => post.views >= args.minViews);
+
+  const stats = platformStats(posts);
   const annotated = annotatePosts(posts, artifacts, stats)
     .sort((a, b) => b.score - a.score || b.views - a.views);
   const candidates = annotated.slice(0, args.limit);

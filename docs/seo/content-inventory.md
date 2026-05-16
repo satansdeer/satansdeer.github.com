@@ -4,12 +4,13 @@ Last updated: 2026-05-16.
 
 ## Existing Text Archive
 
-The site currently contains 89 posts.
+The site currently contains 90 posts.
 
 Latest published text post:
 
 - May 16, 2026: `map-ai-generated-codebase-architecture` - Map Your AI-Generated Codebase Before You Rewrite It
 - May 16, 2026: `stop-storing-secret-keys-in-env-files` - Where To Store API Keys: Stop Putting Secrets in .env Files
+- May 16, 2026: `record-presentation-voiceover-from-pdf` - How To Record A Presentation Voiceover From A PDF
 - May 16, 2026: `mont-slides-and-video-timeline` - How Mont Combines Slides And Video On One Timeline
 - May 16, 2026: `architecture-literacy-for-vibe-coders` - Architecture Literacy For Vibe Coders
 - May 16, 2026: `use-subagents-to-keep-ai-context-clean` - Use Subagents To Keep Long AI Coding Sessions Clean
@@ -31,7 +32,7 @@ Category coverage:
 | React | 30 |
 | Javascript | 14 |
 | Git | 11 |
-| Programming | 15 |
+| Programming | 16 |
 | Ethereum | 5 |
 | HTML | 4 |
 | Random | 3 |
@@ -47,7 +48,7 @@ Immediate implication: React still has the deepest archive, Git now has a solid 
 
 Source: YouTube RSS feed for `satansdeer1`.
 
-The fuller source queue now comes from `../stats-dashboard/data/posts.json`, which includes YouTube and TikTok posts with views, likes, comments, publish dates, durations, and URLs. The queue ignores YouTube Shorts by excluding YouTube entries under 61 seconds. Regenerate the ranked queue with:
+The fuller source queue now comes from `../stats-dashboard/data/posts.json`, which includes YouTube and TikTok posts with views, likes, comments, publish dates, durations, and URLs. The queue ignores YouTube Shorts by excluding known short-form entries, analyzed vertical clips under three minutes, and date-based daily clips under three minutes. Regenerate the ranked queue with:
 
 ```bash
 npm run seo:social -- --output=docs/seo/social-content-opportunities.md

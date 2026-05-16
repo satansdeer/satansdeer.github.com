@@ -6,6 +6,16 @@
   "description": "Frontend developer tutorials by Maksim Ivanov.",
   "items": [
     {
+      "id": "https://maksimivanov.com/posts/record-presentation-voiceover-from-pdf/",
+      "url": "https://maksimivanov.com/posts/record-presentation-voiceover-from-pdf/",
+      "title": "How To Record A Presentation Voiceover From A PDF",
+      "summary": "If your slides are in Google Slides, PowerPoint, Keynote, or another presentation tool, the easiest way to record a voiceover is often to export the deck as a PDF first. Once the slides are a PDF, you can import them int",
+      "date_published": "2026-05-16T19:15:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
       "id": "https://maksimivanov.com/posts/mont-slides-and-video-timeline/",
       "url": "https://maksimivanov.com/posts/mont-slides-and-video-timeline/",
       "title": "How Mont Combines Slides And Video On One Timeline",
