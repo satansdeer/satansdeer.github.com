@@ -26,7 +26,7 @@ const ProjectsIndex = ({ projects }) => {
               </p>
               <div className="not-prose mt-10 grid gap-6">
                 {projects.map((project) => (
-                  <Link key={project.slug} href={getProjectUrl(project)}>
+                  <Link legacyBehavior key={project.slug} href={getProjectUrl(project)}>
                     <a className="block rounded-lg border border-gray-200 bg-white p-6 no-underline shadow-md hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                       <div className="mb-3 flex flex-wrap gap-3 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
                         <span>{project.type}</span>

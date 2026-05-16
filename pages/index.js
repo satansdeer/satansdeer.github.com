@@ -30,7 +30,7 @@ const Index = ({ featuredPosts, latestPosts, categories }) => {
                 TypeScript, Git, and practical web development.
               </p>
               <p>
-                <Link href="/posts/">
+                <Link legacyBehavior href="/posts/">
                   <a>Browse all posts</a>
                 </Link>
               </p>
@@ -57,7 +57,7 @@ const Index = ({ featuredPosts, latestPosts, categories }) => {
               <ul>
                 {categories.map((category) => (
                   <li key={category.slug}>
-                    <Link href={`/categories/${category.slug}/`}>
+                    <Link legacyBehavior href={`/categories/${category.slug}/`}>
                       <a>
                         {category.title} ({category.count})
                       </a>

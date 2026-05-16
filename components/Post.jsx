@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Post = ({ post }) => {
   return (
-    <Link href={post.url}>
+    <Link legacyBehavior href={post.url}>
       <a className="block group p-6 rounded-lg border border-gray-200 shadow-md no-underline bg-white hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
         <h3 className="mb-2 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
           {post.title}

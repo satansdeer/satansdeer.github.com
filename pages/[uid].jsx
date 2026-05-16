@@ -54,7 +54,7 @@ const StaticPage = ({ page, posts }) => {
                 <>
                   <h1>{page.title}</h1>
                   <p>
-                    <Link href="/posts/">
+                    <Link legacyBehavior href="/posts/">
                       <a>Browse the full recovered archive.</a>
                     </Link>
                   </p>

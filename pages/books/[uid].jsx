@@ -33,7 +33,7 @@ const BookPage = ({ book }) => {
                 ))}
               </ul>
               <p>
-                <Link href="/projects/command-line-git/">
+                <Link legacyBehavior href="/projects/command-line-git/">
                   <a>Read the full project page</a>
                 </Link>
               </p>

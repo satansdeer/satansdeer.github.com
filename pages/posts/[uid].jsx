@@ -32,7 +32,7 @@ const PostPage = ({ post, previousPost, nextPost }) => {
               <div className="mb-10 flex flex-wrap gap-4 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
                 {post.dateLabel && <span>{post.dateLabel}</span>}
                 {post.category && (
-                  <Link href={`/categories/${post.categorySlug}/`}>
+                  <Link legacyBehavior href={`/categories/${post.categorySlug}/`}>
                     <a>{post.category}</a>
                   </Link>
                 )}
@@ -43,14 +43,14 @@ const PostPage = ({ post, previousPost, nextPost }) => {
             </main>
             <nav className="mt-16 flex flex-col gap-6 border-t border-slate-200 pt-8 text-slate-800 dark:border-slate-700 dark:text-slate-200 sm:flex-row sm:justify-between">
               {previousPost ? (
-                <Link href={previousPost.url}>
+                <Link legacyBehavior href={previousPost.url}>
                   <a rel="prev">Previous: {previousPost.title}</a>
                 </Link>
               ) : (
                 <span />
               )}
               {nextPost ? (
-                <Link href={nextPost.url}>
+                <Link legacyBehavior href={nextPost.url}>
                   <a rel="next">Next: {nextPost.title}</a>
                 </Link>
               ) : (

@@ -84,7 +84,7 @@ const ProjectPage = ({ project }) => {
               </p>
             </main>
             <nav className="mt-16 border-t border-slate-200 pt-8 text-slate-800 dark:border-slate-700 dark:text-slate-200">
-              <Link href="/projects/">
+              <Link legacyBehavior href="/projects/">
                 <a>Back to projects</a>
               </Link>
             </nav>

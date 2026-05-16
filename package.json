@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node scripts/generate-static-assets.js",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "cf:deploy": "wrangler pages deploy out --project-name maksimivanov-com",
@@ -14,30 +14,35 @@
   "dependencies": {
     "@headlessui/react": "^1.6.1",
     "@heroicons/react": "^1.0.6",
-    "@prismicio/client": "^6.4.3",
-    "@prismicio/helpers": "^2.3.0",
-    "@prismicio/next": "^0.1.2",
-    "@prismicio/react": "^2.3.0",
-    "@prismicio/slice-simulator-react": "^0.2.2",
+    "@prismicio/client": "^7.21.8",
+    "@prismicio/helpers": "^2.3.9",
+    "@prismicio/next": "^2.2.4",
+    "@prismicio/react": "^3.4.1",
+    "@prismicio/slice-simulator-react": "^0.2.3",
+    "@react-spring/web": "^9.7.5",
     "fathom-client": "^3.4.1",
     "feed": "^4.2.2",
-    "next": "12.1.6",
+    "next": "^15.5.18",
     "next-themes": "^0.2.0",
     "prism-themes": "^1.9.0",
-    "prismjs": "^1.28.0",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "react-markdown": "^8.0.3",
-    "react-spring": "^9.4.5"
+    "prismjs": "^1.30.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-markdown": "^8.0.3"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.7",
-    "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6",
-    "postcss": "^8.4.13",
-    "slice-machine-ui": "^0.3.7",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "^15.5.18",
+    "postcss": "^8.5.10",
+    "slice-machine-ui": "^2.21.3",
     "tailwindcss": "^3.0.24",
     "wrangler": "^4.91.0"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "8.5.10"
+    }
   }
 }

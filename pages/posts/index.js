@@ -22,7 +22,7 @@ const PostsIndex = ({ posts, categories }) => {
               <h1>Posts</h1>
               <div className="not-prose mb-10 flex flex-wrap gap-3">
                 {categories.map((category) => (
-                  <Link key={category.slug} href={`/categories/${category.slug}/`}>
+                  <Link legacyBehavior key={category.slug} href={`/categories/${category.slug}/`}>
                     <a className="rounded border border-slate-300 px-3 py-1 text-sm font-semibold text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
                       {category.title} ({category.count})
                     </a>

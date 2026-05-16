@@ -42,7 +42,7 @@ export const Header = () => {
       <div className="container mx-auto p-6">
         <div className="max-w-screen-md mx-auto flex flex-col gap-6 sm:flex-row sm:gap-10 sm:items-center">
           <div className="flex items-center justify-between">
-            <Link href="/">
+            <Link legacyBehavior href="/">
               <a aria-label="Maksim Ivanov home">
                 <Logo
                   theme={theme}
@@ -66,7 +66,7 @@ export const Header = () => {
                         {item.title}
                       </a>
                     ) : (
-                      <Link href={item.href}>
+                      <Link legacyBehavior href={item.href}>
                         <a>{item.title}</a>
                       </Link>
                     )}
