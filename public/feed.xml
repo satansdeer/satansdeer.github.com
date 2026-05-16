@@ -5,6 +5,20 @@
     <link>https://maksimivanov.com</link>
     <description>Frontend developer tutorials by Maksim Ivanov.</description>
     <item>
+      <title>How To Record Your Screen In Mont</title>
+      <link>https://maksimivanov.com/posts/record-screen-in-mont/</link>
+      <guid>https://maksimivanov.com/posts/record-screen-in-mont/</guid>
+      <pubDate>Sat, 16 May 2026 18:35:00 GMT</pubDate>
+      <description>Mont can record your screen and camera into separate timeline layers. That matters because a screen recording is rarely perfect on the first take. If the camera and screen are separate layers, you can reposition them, cr</description>
+    </item>
+    <item>
+      <title>How To Make Your First Video In Mont</title>
+      <link>https://maksimivanov.com/posts/make-your-first-video-in-mont/</link>
+      <guid>https://maksimivanov.com/posts/make-your-first-video-in-mont/</guid>
+      <pubDate>Sat, 16 May 2026 18:25:00 GMT</pubDate>
+      <description>The fastest way to understand Mont is to make one small video from start to export. This post is adapted from a YouTube tutorial about making your first video in Mont. It walks through a simple flow: create a project, ad</description>
+    </item>
+    <item>
       <title>How To Record A SaaS Demo Video From Screenshots</title>
       <link>https://maksimivanov.com/posts/record-saas-demo-video-from-screenshots/</link>
       <guid>https://maksimivanov.com/posts/record-saas-demo-video-from-screenshots/</guid>

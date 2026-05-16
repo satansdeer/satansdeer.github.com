@@ -4,12 +4,14 @@ Last updated: 2026-05-16.
 
 ## Existing Text Archive
 
-The site currently contains 84 posts.
+The site currently contains 86 posts.
 
 Latest published text post:
 
 - May 16, 2026: `map-ai-generated-codebase-architecture` - Map Your AI-Generated Codebase Before You Rewrite It
 - May 16, 2026: `stop-storing-secret-keys-in-env-files` - Where To Store API Keys: Stop Putting Secrets in .env Files
+- May 16, 2026: `record-screen-in-mont` - How To Record Your Screen In Mont
+- May 16, 2026: `make-your-first-video-in-mont` - How To Make Your First Video In Mont
 - May 16, 2026: `record-saas-demo-video-from-screenshots` - How To Record A SaaS Demo Video From Screenshots
 - May 16, 2026: `build-it-and-they-will-not-come` - Build It And They Will Not Come: Finding Users For Your SaaS
 - May 16, 2026: `localize-your-app-without-translation-keys` - Localize Your App Without Inventing Translation Keys For Every String
@@ -26,7 +28,7 @@ Category coverage:
 | React | 30 |
 | Javascript | 14 |
 | Git | 11 |
-| Programming | 10 |
+| Programming | 12 |
 | Ethereum | 5 |
 | HTML | 4 |
 | Random | 3 |

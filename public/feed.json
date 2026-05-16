@@ -6,6 +6,26 @@
   "description": "Frontend developer tutorials by Maksim Ivanov.",
   "items": [
     {
+      "id": "https://maksimivanov.com/posts/record-screen-in-mont/",
+      "url": "https://maksimivanov.com/posts/record-screen-in-mont/",
+      "title": "How To Record Your Screen In Mont",
+      "summary": "Mont can record your screen and camera into separate timeline layers. That matters because a screen recording is rarely perfect on the first take. If the camera and screen are separate layers, you can reposition them, cr",
+      "date_published": "2026-05-16T18:35:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/make-your-first-video-in-mont/",
+      "url": "https://maksimivanov.com/posts/make-your-first-video-in-mont/",
+      "title": "How To Make Your First Video In Mont",
+      "summary": "The fastest way to understand Mont is to make one small video from start to export. This post is adapted from a YouTube tutorial about making your first video in Mont. It walks through a simple flow: create a project, ad",
+      "date_published": "2026-05-16T18:25:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
       "id": "https://maksimivanov.com/posts/record-saas-demo-video-from-screenshots/",
       "url": "https://maksimivanov.com/posts/record-saas-demo-video-from-screenshots/",
       "title": "How To Record A SaaS Demo Video From Screenshots",

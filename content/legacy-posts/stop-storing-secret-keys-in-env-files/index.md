@@ -11,7 +11,7 @@ A local `.env` file can be a convenient development input when it is ignored by 
 
 That is not secret management. That is a text file waiting to be copied, committed, pasted into a chat, included in a crash report, or leaked through a build.
 
-This post is adapted from [a short TikTok video](https://www.tiktok.com/@webdevivanov/video/7634553095103581462) about a mistake that is especially easy to make when you are moving fast with AI coding tools.
+This post is adapted from [a short TikTok video](https://www.tiktok.com/@webdevivanov/video/7634553095103581462) and [the matching YouTube video](https://www.youtube.com/watch?v=bZwOlUq7JDM) about a mistake that is especially easy to make when you are moving fast with AI coding tools.
 
 ![Contact sheet from the source video](./contact-sheet.jpg)
 

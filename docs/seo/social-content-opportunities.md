@@ -41,14 +41,14 @@ YouTube Shorts ignored: 59
 | 15 | [youtube:ufdMQ142PxA](https://www.youtube.com/watch?v=ufdMQ142PxA) | 2026-03-23 | The easiest way to record demo of your App or Saas | 374 | 4.8% | yes | [published](/posts/record-saas-demo-video-from-screenshots/) | Video tooling | Record a SaaS demo video from screenshots without re-recording every edit |
 | 16 | [tiktok:7635289471306566934](https://www.tiktok.com/@webdevivanov/video/7635289471306566934) | 2026-05-02 | TikTok 7635289471306566934 | 1,350 | 2.1% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
 | 17 | [tiktok:7633385118777740566](https://www.tiktok.com/@webdevivanov/video/7633385118777740566) | 2026-04-27 | TikTok 7633385118777740566 | 784 | 4.1% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
-| 18 | [tiktok:7631592898273824003](https://www.tiktok.com/@webdevivanov/video/7631592898273824003) | 2026-04-22 | pov: you built a video editor for SaaS teams and then the internet decided claude code + remotion = RIP video editors... | 1,405 | 0.7% | needed | queued | AI coding workflow | What building a browser video editor teaches about product engineering |
-| 19 | [tiktok:7634911689397325078](https://www.tiktok.com/@webdevivanov/video/7634911689397325078) | 2026-05-01 | TikTok 7634911689397325078 | 903 | 3.5% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
-| 20 | [tiktok:7630041378025721110](https://www.tiktok.com/@webdevivanov/video/7630041378025721110) | 2026-04-18 | Day 34 launching Mont video editor I use codex btw | 327 | 6.1% | needed | queued | AI coding workflow | What building a browser video editor teaches about product engineering |
-| 21 | [tiktok:7632356677152640279](https://www.tiktok.com/@webdevivanov/video/7632356677152640279) | 2026-04-24 | TikTok 7632356677152640279 | 575 | 5.0% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
-| 22 | [tiktok:7632291992055106838](https://www.tiktok.com/@webdevivanov/video/7632291992055106838) | 2026-04-24 | TikTok 7632291992055106838 | 999 | 2.3% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
-| 23 | [youtube:Cw_JrTcRtpg](https://www.youtube.com/watch?v=Cw_JrTcRtpg) | 2026-03-14 | How to make your first video in Mont | 224 | 5.8% | needed | queued | Video tooling | What building a browser video editor teaches about product engineering |
-| 24 | [tiktok:7639384793561484566](https://www.tiktok.com/@webdevivanov/video/7639384793561484566) | 2026-05-13 | TikTok 7639384793561484566 | 872 | 2.4% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
-| 25 | [youtube:bZwOlUq7JDM](https://www.youtube.com/watch?v=bZwOlUq7JDM) | 2026-04-30 | 30 April 2026 | 1,150 | 1.3% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
+| 18 | [youtube:bZwOlUq7JDM](https://www.youtube.com/watch?v=bZwOlUq7JDM) | 2026-04-30 | 30 April 2026 | 1,150 | 1.3% | yes | [published](/posts/stop-storing-secret-keys-in-env-files/) | Secrets and security | Why .env files are the wrong place to keep long-lived secret keys |
+| 19 | [tiktok:7631592898273824003](https://www.tiktok.com/@webdevivanov/video/7631592898273824003) | 2026-04-22 | pov: you built a video editor for SaaS teams and then the internet decided claude code + remotion = RIP video editors... | 1,405 | 0.7% | needed | queued | AI coding workflow | What building a browser video editor teaches about product engineering |
+| 20 | [youtube:Cw_JrTcRtpg](https://www.youtube.com/watch?v=Cw_JrTcRtpg) | 2026-03-14 | How to make your first video in Mont | 224 | 5.8% | yes | [published](/posts/make-your-first-video-in-mont/) | Video tooling | What building a browser video editor teaches about product engineering |
+| 21 | [tiktok:7634911689397325078](https://www.tiktok.com/@webdevivanov/video/7634911689397325078) | 2026-05-01 | TikTok 7634911689397325078 | 903 | 3.5% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
+| 22 | [tiktok:7630041378025721110](https://www.tiktok.com/@webdevivanov/video/7630041378025721110) | 2026-04-18 | Day 34 launching Mont video editor I use codex btw | 327 | 6.1% | needed | queued | AI coding workflow | What building a browser video editor teaches about product engineering |
+| 23 | [tiktok:7632356677152640279](https://www.tiktok.com/@webdevivanov/video/7632356677152640279) | 2026-04-24 | TikTok 7632356677152640279 | 575 | 5.0% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
+| 24 | [tiktok:7632291992055106838](https://www.tiktok.com/@webdevivanov/video/7632291992055106838) | 2026-04-24 | TikTok 7632291992055106838 | 999 | 2.3% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
+| 25 | [tiktok:7639384793561484566](https://www.tiktok.com/@webdevivanov/video/7639384793561484566) | 2026-05-13 | TikTok 7639384793561484566 | 872 | 2.4% | needed | queued | General developer content | Rewrite as a search-focused general developer content article |
 
 ## Keyword Seeds By Cluster
 
@@ -60,14 +60,14 @@ YouTube Shorts ignored: 59
 
 ### Secrets and security
 
-- Social candidates: 1
-- Total views: 66,227
+- Social candidates: 2
+- Total views: 67,377
 - Seed keywords: where to store api keys, secret manager for developers, env file secrets, api key security
 
 ### General developer content
 
-- Social candidates: 31
-- Total views: 25,496
+- Social candidates: 30
+- Total views: 24,346
 - Seed keywords: developer productivity, software development
 
 ### Video tooling
