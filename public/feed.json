@@ -6,6 +6,16 @@
   "description": "Frontend developer tutorials by Maksim Ivanov.",
   "items": [
     {
+      "id": "https://maksimivanov.com/posts/claude-code-architecture/",
+      "url": "https://maksimivanov.com/posts/claude-code-architecture/",
+      "title": "Claude Code Architecture: How to Keep AI-Generated Code Maintainable",
+      "summary": "Claude Code is fast at producing code, but it is not your architect. That distinction matters. If you let an AI coding tool decide every boundary for you, the first version can feel incredible and the second version can ",
+      "date_published": "2026-05-16T14:30:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
       "id": "https://maksimivanov.com/posts/git-staging-area-explained/",
       "url": "https://maksimivanov.com/posts/git-staging-area-explained/",
       "title": "Git Staging Area Explained: What git add Really Does",

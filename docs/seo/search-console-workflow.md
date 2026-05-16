@@ -2,6 +2,11 @@
 
 Use Google Search Console as the source of truth for keyword decisions.
 
+If the property is still processing and there is no performance data yet, use:
+
+- `docs/seo/keyword-planner-workflow.md` for demand validation.
+- `docs/seo/social-content-opportunities.md` for YouTube/TikTok-backed content priorities.
+
 ## Exports
 
 Create two exports from **Performance > Search results**:

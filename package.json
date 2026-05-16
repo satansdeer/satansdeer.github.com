@@ -8,6 +8,8 @@
     "build": "next build && pagefind --site out --output-subdir pagefind",
     "start": "next start",
     "seo:gsc": "node scripts/analyze-search-console.js",
+    "seo:keywords": "node scripts/analyze-keyword-planner.js",
+    "seo:social": "node scripts/analyze-social-content.js",
     "lint": "next lint",
     "cf:deploy": "wrangler pages deploy out --project-name maksimivanov-com",
     "slicemachine": "start-slicemachine"

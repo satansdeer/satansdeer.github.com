@@ -4,9 +4,13 @@ Last updated: 2026-05-16.
 
 ## Existing Text Archive
 
-The recovered archive currently contains 72 posts.
+The site currently contains 79 posts.
 
-Latest recovered text post:
+Latest published text post:
+
+- May 16, 2026: `claude-code-architecture` - Claude Code Architecture: How to Keep AI-Generated Code Maintainable
+
+Recovered archive cutoff:
 
 - July 24, 2019: `react-console-snake-game-tutorial` - Command Line Applications Using React - Snake Game Tutorial
 
@@ -16,10 +20,10 @@ Category coverage:
 | --- | ---: |
 | React | 30 |
 | Javascript | 14 |
-| Git | 5 |
+| Git | 11 |
 | Ethereum | 5 |
+| Programming | 5 |
 | HTML | 4 |
-| Programming | 4 |
 | Random | 3 |
 | ReactNative | 3 |
 | Graphql | 1 |
@@ -27,11 +31,17 @@ Category coverage:
 | Typescript | 1 |
 | VSCode | 1 |
 
-Immediate implication: React has the deepest archive and is likely the easiest cluster to defend or expand. Git has fewer existing posts but stronger product fit because of the Command Line Git book.
+Immediate implication: React still has the deepest archive, Git now has a solid tutorial cluster, and Programming is the right home for AI-coding workflow posts until that cluster is large enough to split out.
 
 ## Recent YouTube Candidates
 
 Source: YouTube RSS feed for `satansdeer1`.
+
+The fuller source queue now comes from `../stats-dashboard/data/posts.json`, which includes YouTube and TikTok posts with views, likes, comments, publish dates, and URLs. Regenerate the ranked queue with:
+
+```bash
+npm run seo:social -- --output=docs/seo/social-content-opportunities.md
+```
 
 The public feed currently exposes these videos after the last recovered text post:
 

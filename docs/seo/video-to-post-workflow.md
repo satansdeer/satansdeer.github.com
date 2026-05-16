@@ -5,27 +5,43 @@ Goal: turn a video into a standalone article that can rank without requiring the
 ## Inputs
 
 - YouTube URL.
+- TikTok URL when the same topic performed better there.
 - Transcript or detailed notes.
 - Target query from Search Console or keyword research.
 - Related existing posts for internal links.
 
 ## Source Queue
 
-Use the YouTube channel as the source backlog and only consider videos published after the last recovered text post.
+Use the YouTube channel, TikTok account, and `stats-dashboard` exports as the source backlog. Only consider videos published after the last recovered text post unless an older short-form video has unusually strong social proof.
 
 Current cutoff:
 
 - Last recovered text post: July 24, 2019.
-- Source channel feed: `https://www.youtube.com/feeds/videos.xml?user=satansdeer1`.
+- YouTube source: `../stats-dashboard/data/posts.json` and `https://www.youtube.com/feeds/videos.xml?user=satansdeer1`.
+- TikTok source: `../stats-dashboard/data/posts.json`.
+- Current social report: `docs/seo/social-content-opportunities.md`.
 
 For each candidate, collect:
 
 - Video URL and publish date.
+- Platform performance: views, likes, comments, and engagement rate.
 - Transcript when available.
 - Short topic summary if the transcript is not available.
 - Related existing post or project page for internal links.
 
-If transcript extraction is not available from public endpoints, keep the video queued until a transcript, notes, or a manual summary is provided.
+If transcript extraction is not available from public endpoints, use `stats-dashboard` to download and transcribe the post:
+
+```bash
+cd ../stats-dashboard
+make analyze-post ARGS='--post-id tiktok_7631569099822320918'
+make analyze-post ARGS='--post-id youtube_dlwm8yb5fb0 --platform youtube'
+```
+
+Then regenerate the website-side report:
+
+```bash
+npm run seo:social -- --output=docs/seo/social-content-opportunities.md
+```
 
 ## Article Shape
 
@@ -86,10 +102,19 @@ Recap the takeaway and link to related posts.
 Prioritize videos when at least one is true:
 
 - Search Console shows impressions for the topic.
+- Keyword Planner shows relevant search demand for the topic.
+- `docs/seo/social-content-opportunities.md` shows strong social proof.
 - There is an existing related post ranking in positions 5-20.
 - The video maps to React, Git, JavaScript, TypeScript, or developer tooling.
 - The video can answer a query with a durable tutorial, not only news or commentary.
 - The video was published after the recovered blog archive stopped and can fill a visible freshness gap.
+
+When Search Console is unavailable, use this fallback order:
+
+1. Existing site authority.
+2. Social proof from YouTube/TikTok.
+3. Keyword Planner validation.
+4. Transcript availability.
 
 ## Publishing Checklist
 
