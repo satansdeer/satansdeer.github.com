@@ -20,9 +20,12 @@ const BookPage = ({ book }) => {
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
-          <article className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20">
+          <article
+            className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20"
+            data-pagefind-body
+          >
             <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
-              <h1>{book.title}</h1>
+              <h1 data-pagefind-meta="title">{book.title}</h1>
               <p>{book.summary}</p>
               <h2>My Role</h2>
               <p>{book.role}</p>

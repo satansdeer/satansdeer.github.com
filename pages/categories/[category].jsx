@@ -19,7 +19,10 @@ const CategoryPage = ({ category, posts }) => {
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
-          <article className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20">
+          <article
+            className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20"
+            data-pagefind-ignore="all"
+          >
             <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
               <h1>{category.title}</h1>
               <div className="not-prose">

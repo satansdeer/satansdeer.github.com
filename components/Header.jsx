@@ -7,6 +7,7 @@ import { RSSIcon } from "./RSSIcon";
 const navigationLinks = [
   { href: "/posts/", title: "Posts" },
   { href: "/projects/", title: "Projects" },
+  { href: "/search/", title: "Search" },
   { href: "/about/", title: "About" },
   { href: "https://www.youtube.com/user/satansdeer1/videos", title: "Videos" },
 ];

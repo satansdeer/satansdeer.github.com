@@ -10,6 +10,7 @@ const staticPages = {
     title: "About",
     description:
       "About Maksim Ivanov, a full-stack developer working across Go, Python, JavaScript, TypeScript, and Flutter.",
+    searchable: true,
     content: `# Hey, Nice To Meet You!
 
 My name is Maksim Ivanov. I am a full-stack developer working across Go, Python, JavaScript, TypeScript, and Flutter codebases.
@@ -30,6 +31,7 @@ You can find me on [LinkedIn](https://www.linkedin.com/in/mivanovm/), [GitHub](h
   books: {
     title: "Books",
     description: "Books and longer-form writing by Maksim Ivanov.",
+    searchable: true,
     content: `# Books
 
 Longer-form material and project pages are being rebuilt into the static archive.
@@ -39,6 +41,8 @@ Start with [Command Line Git](/projects/command-line-git/), my beginner-friendly
 };
 
 const StaticPage = ({ page, posts }) => {
+  const pagefindProps = page.searchable ? { "data-pagefind-body": true } : {};
+
   return (
     <>
       <Head>
@@ -48,7 +52,10 @@ const StaticPage = ({ page, posts }) => {
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
-          <article className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20">
+          <article
+            className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20"
+            {...pagefindProps}
+          >
             <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
               {page.postsList ? (
                 <>

@@ -24,9 +24,15 @@ const PostPage = ({ post, previousPost, nextPost }) => {
       <Header />
       <div className="w-full flex flex-col flex-grow">
         <div className="container mx-auto px-6">
-          <article className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20">
+          <article
+            className="max-w-screen-md mx-auto mt-10 mb-16 lg:mt-24 md:mt-20"
+            data-pagefind-body
+          >
             <header>
-              <h1 className="w-full max-w-screen-md mb-6 text-3xl font-black text-slate-900 dark:text-white lg:text-6xl md:text-5xl sm:text-4xl lg:mb-8 leading-tighter">
+              <h1
+                className="w-full max-w-screen-md mb-6 text-3xl font-black text-slate-900 dark:text-white lg:text-6xl md:text-5xl sm:text-4xl lg:mb-8 leading-tighter"
+                data-pagefind-meta="title"
+              >
                 {post.title}
               </h1>
               <div className="mb-10 flex flex-wrap gap-4 text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
@@ -41,7 +47,10 @@ const PostPage = ({ post, previousPost, nextPost }) => {
             <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
               <MarkdownContent>{post.content}</MarkdownContent>
             </main>
-            <nav className="mt-16 flex flex-col gap-6 border-t border-slate-200 pt-8 text-slate-800 dark:border-slate-700 dark:text-slate-200 sm:flex-row sm:justify-between">
+            <nav
+              className="mt-16 flex flex-col gap-6 border-t border-slate-200 pt-8 text-slate-800 dark:border-slate-700 dark:text-slate-200 sm:flex-row sm:justify-between"
+              data-pagefind-ignore="all"
+            >
               {previousPost ? (
                 <Link legacyBehavior href={previousPost.url}>
                   <a rel="prev">Previous: {previousPost.title}</a>
