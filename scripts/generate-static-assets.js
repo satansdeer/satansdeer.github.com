@@ -146,7 +146,6 @@ function writeSitemap(posts, categories, projects) {
     "/books/",
     "/books/command-line-git-everything-you-need-to-know-to-get-started/",
     "/projects/",
-    "/search/",
     ...projects.map(getProjectUrl),
     "/posts/",
     ...categories.map((category) => `/categories/${category.slug}/`),
@@ -188,7 +187,6 @@ function writeRedirects() {
 /books /books/ 301
 /projects /projects/ 301
 /projects/:project /projects/:project/ 301
-/search /search/ 301
 /2023/06/27/hello-world/ / 301
 /sample-page/ /about/ 301
 /how-i-clock-in-my-work-time/ /posts/ 302
