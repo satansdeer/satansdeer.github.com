@@ -181,6 +181,7 @@ function writeRedirects() {
 /posts/:slug /posts/:slug/ 301
 /categories/:category /categories/:category/ 301
 /category/:category /categories/:category/ 301
+/category/:category/ /categories/:category/ 301
 /category/uncategorized/ /posts/ 301
 /articles /articles/ 301
 /books /books/ 301

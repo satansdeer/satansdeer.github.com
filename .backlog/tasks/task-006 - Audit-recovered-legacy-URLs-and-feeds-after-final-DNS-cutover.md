@@ -1,9 +1,10 @@
 ---
 id: TASK-006
 title: Audit recovered legacy URLs and feeds after final DNS cutover
-status: To Do
+status: In Progress
 assignee: []
 created_date: '2026-05-15 10:30'
+updated_date: '2026-05-16 07:49'
 labels:
   - audit
   - links
@@ -35,3 +36,9 @@ Verify the restored static archive from the public production host after direct 
 - [ ] #4 Sample post image assets return successful responses from production.
 - [ ] #5 Any broken internal link discovered by the crawl is fixed or tracked as a new Backlog task with URL details.
 <!-- AC:END -->
+
+## Implementation Plan
+
+<!-- SECTION:PLAN:BEGIN -->
+1. Fetch and validate the production sitemap from maksimivanov.com. 2. Check every sitemap URL for expected successful HTTP responses. 3. Check representative legacy redirects, feed endpoints, and sample post image assets. 4. Crawl internal links from sitemap pages and record or fix any broken internal links. 5. Record audit evidence in Backlog, mark the task done if all acceptance criteria pass, then commit and push the task update.
+<!-- SECTION:PLAN:END -->
