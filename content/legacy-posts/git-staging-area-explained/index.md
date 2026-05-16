@@ -2,6 +2,7 @@
 title: Git Staging Area Explained: What git add Really Does
 date: 2026-05-16T13:30:00.000Z
 categories: Git
+image: staging-area.png
 ---
 
 The Git staging area is the place where you prepare the next commit.
@@ -21,6 +22,8 @@ When you are editing a project, Git is usually comparing three places:
 The last commit is the saved version of the project. Your working directory is the files you are editing right now. The staging area is the draft of the next commit.
 
 You can think of a commit as a package you are about to send. The working directory is your desk, with everything you are currently touching. The staging area is the package contents. `git add` puts things into the package. `git commit` seals it and writes the label.
+
+![Adding files to the Git staging area](./staging-area.png)
 
 That separation matters because real work is messy. You might fix a typo, add a feature, change a config file, and leave a debug line in the code before you notice that these changes should not all go into the same commit.
 
@@ -52,6 +55,8 @@ git status
 
 Now `README.md` appears under "Changes to be committed". This means Git has prepared the file for the next commit.
 
+![Selecting changes before creating a Git commit](./staging-snapshot.png)
+
 Commit it:
 
 ```bash
@@ -59,6 +64,8 @@ git commit -m "Add project notes"
 ```
 
 After that, `git status` should say that the working tree is clean.
+
+If the word commit still feels abstract, read [What Is a Git Commit?](/posts/what-is-a-git-commit/) next. The staging area prepares a commit; the commit records the prepared snapshot.
 
 ## Staged Does Not Mean Finished
 
@@ -246,5 +253,7 @@ Expected result: one change is staged and the other remains unstaged.
 The staging area is not extra ceremony. It is Git giving you control over the next commit.
 
 Use `git add` to prepare changes. Use `git diff --staged` to inspect the commit draft. Use `git restore --staged` to remove changes from that draft without deleting your work. Use `git add -p` when a file contains more than one logical change.
+
+After you understand staging and commits, use [Git Log for Beginners](/posts/git-log-for-beginners/) to inspect the history you created.
 
 If you want a fuller beginner path through Git, I keep the book project here: [Command Line Git](/projects/command-line-git/). The book page is also available at [Command Line Git: Everything You Need to Know to Get Started](/books/command-line-git-everything-you-need-to-know-to-get-started/).

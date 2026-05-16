@@ -16,6 +16,26 @@
       ]
     },
     {
+      "id": "https://maksimivanov.com/posts/git-log-for-beginners/",
+      "url": "https://maksimivanov.com/posts/git-log-for-beginners/",
+      "title": "Git Log for Beginners: How to Read Commit History",
+      "summary": "git log shows the commit history of a repository. It answers questions like: What changed recently? Who made a change? Which commit introduced this code? What branch did this work come from? What did a specific commit co",
+      "date_published": "2026-05-16T13:22:00.000Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
+      "id": "https://maksimivanov.com/posts/what-is-a-git-commit/",
+      "url": "https://maksimivanov.com/posts/what-is-a-git-commit/",
+      "title": "What Is a Git Commit? A Beginner-Friendly Mental Model",
+      "summary": "A Git commit is a saved snapshot of your project. That is the simplest useful definition. When you run git commit, Git takes the changes you prepared in the staging area and records them as a new point in the project his",
+      "date_published": "2026-05-16T13:21:00.000Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
       "id": "https://maksimivanov.com/posts/react-console-snake-game-tutorial/",
       "url": "https://maksimivanov.com/posts/react-console-snake-game-tutorial/",
       "title": "Command Line Applications Using React - Snake Game Tutorial",

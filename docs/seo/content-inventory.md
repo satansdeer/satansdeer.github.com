@@ -76,9 +76,9 @@ Initial post formats to extract from the book:
 
 Initial chapter-to-post queue:
 
-- `book/10-adding-files-to-the-staging-area.md` -> `git-staging-area-explained` - concept explainer with exercises. Status: published locally.
-- `book/11-commiting-changes.md` -> `what-is-a-git-commit` - explain commits, hashes, parents, and amend.
-- `book/13-viewing-commit-history.md` -> `git-log-for-beginners` - practical history inspection workflow.
+- `book/10-adding-files-to-the-staging-area.md` -> `git-staging-area-explained` - concept explainer with exercises. Status: published.
+- `book/11-commiting-changes.md` -> `what-is-a-git-commit` - explain commits, IDs, parents, and amend. Status: published.
+- `book/13-viewing-commit-history.md` -> `git-log-for-beginners` - practical history inspection workflow. Status: published.
 - `book/16-resetting-working-directory.md` + `book/17-undoing-changes.md` -> `undo-changes-in-git` - troubleshooting post.
 - `book/19-resolving-merge-conflicts.md` -> `resolve-git-merge-conflicts` - exercise-heavy guide.
 - `book/21-using-remote-repositories.md` -> `git-remote-origin-push-pull` - remotes and collaboration explainer.

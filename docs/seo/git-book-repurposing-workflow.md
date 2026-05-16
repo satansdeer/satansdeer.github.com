@@ -123,8 +123,8 @@ Every Git-derived post should link to:
 
 ## First Batch
 
-- `git-staging-area-explained`: adapted from the staging chapter as a beginner concept explainer with new examples and four exercises.
-- `what-is-a-git-commit`: adapt the commit chapter around hashes, parents, merge commits, and amend.
-- `git-log-for-beginners`: adapt the history chapter into a command reference plus inspection workflow.
+- `git-staging-area-explained`: adapted from the staging chapter as a beginner concept explainer with new examples and four exercises. Status: published.
+- `what-is-a-git-commit`: adapted from the commit chapter around commit IDs, parents, merge commits, amend, and beginner exercises. Status: published.
+- `git-log-for-beginners`: adapted from the history chapter into a command reference plus inspection workflow. Status: published.
 - `undo-changes-in-git`: combine the reset and undo chapters into a recovery-focused article.
 - `resolve-git-merge-conflicts`: adapt the merge-conflict chapter into a practice guide.

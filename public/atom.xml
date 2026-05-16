@@ -12,6 +12,20 @@
     <summary>The Git staging area is the place where you prepare the next commit. That is the short version. The more useful version is this: git add does not simply &quot;save&quot; a file. It takes the current version of a file, or part of a</summary>
   </entry>
   <entry>
+    <title>Git Log for Beginners: How to Read Commit History</title>
+    <link href="https://maksimivanov.com/posts/git-log-for-beginners/" />
+    <id>https://maksimivanov.com/posts/git-log-for-beginners/</id>
+    <updated>2026-05-16T13:22:00.000Z</updated>
+    <summary>git log shows the commit history of a repository. It answers questions like: What changed recently? Who made a change? Which commit introduced this code? What branch did this work come from? What did a specific commit co</summary>
+  </entry>
+  <entry>
+    <title>What Is a Git Commit? A Beginner-Friendly Mental Model</title>
+    <link href="https://maksimivanov.com/posts/what-is-a-git-commit/" />
+    <id>https://maksimivanov.com/posts/what-is-a-git-commit/</id>
+    <updated>2026-05-16T13:21:00.000Z</updated>
+    <summary>A Git commit is a saved snapshot of your project. That is the simplest useful definition. When you run git commit, Git takes the changes you prepared in the staging area and records them as a new point in the project his</summary>
+  </entry>
+  <entry>
     <title>Command Line Applications Using React - Snake Game Tutorial</title>
     <link href="https://maksimivanov.com/posts/react-console-snake-game-tutorial/" />
     <id>https://maksimivanov.com/posts/react-console-snake-game-tutorial/</id>

@@ -43,7 +43,7 @@ export const MarkdownContent = ({ children }) => {
             </a>
           );
         },
-        img: ({ src, alt, ...props }) => (
+        img: ({ src, alt, node, ...props }) => (
           <img
             src={normalizeImageSrc(src)}
             alt={alt || ""}
