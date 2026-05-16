@@ -2,8 +2,15 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Maksim Ivanov Blog</title>
   <link href="https://maksimivanov.com/" />
-  <updated>2019-07-24T03:09:45.284Z</updated>
+  <updated>2026-05-16T13:30:00.000Z</updated>
   <id>https://maksimivanov.com/</id>
+  <entry>
+    <title>Git Staging Area Explained: What git add Really Does</title>
+    <link href="https://maksimivanov.com/posts/git-staging-area-explained/" />
+    <id>https://maksimivanov.com/posts/git-staging-area-explained/</id>
+    <updated>2026-05-16T13:30:00.000Z</updated>
+    <summary>The Git staging area is the place where you prepare the next commit. That is the short version. The more useful version is this: git add does not simply &quot;save&quot; a file. It takes the current version of a file, or part of a</summary>
+  </entry>
   <entry>
     <title>Command Line Applications Using React - Snake Game Tutorial</title>
     <link href="https://maksimivanov.com/posts/react-console-snake-game-tutorial/" />
@@ -485,7 +492,7 @@
     <link href="https://maksimivanov.com/posts/git-add-patch/" />
     <id>https://maksimivanov.com/posts/git-add-patch/</id>
     <updated>2017-10-07T22:58:45.284Z</updated>
-    <summary>You know that git add adds files to index. But did do you know that it can add specific&amp;nbsp;lines of files? Or even add files, ignoring their contents? Let&apos;s check this out! First let&apos;s get familiar with git add patch c</summary>
+    <summary>You know that git add adds files to index. But did do you know that it can add specific&amp;nbsp;lines of files? Or even add files, ignoring their contents? Let&apos;s check this out! If the staging area itself still feels fuzzy,</summary>
   </entry>
   <entry>
     <title>Getting Schwifty With Pull Requests</title>

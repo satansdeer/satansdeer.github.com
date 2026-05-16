@@ -4,7 +4,7 @@ Goal: adapt Command Line Git material into public blog posts without duplicating
 
 ## Inputs
 
-- Chapter source from the private book repository.
+- Chapter source from `satansdeer/using-git-from-command-line-everything-you-need-to-know-to-get-started`.
 - Target reader stage: beginner, early intermediate, or troubleshooting.
 - One primary query from Search Console or keyword research.
 - One exercise set.
@@ -120,3 +120,11 @@ Every Git-derived post should link to:
 - The intro answers the query quickly.
 - Book links are contextual, not sales-heavy.
 - `npm run build` passes.
+
+## First Batch
+
+- `git-staging-area-explained`: adapted from the staging chapter as a beginner concept explainer with new examples and four exercises.
+- `what-is-a-git-commit`: adapt the commit chapter around hashes, parents, merge commits, and amend.
+- `git-log-for-beginners`: adapt the history chapter into a command reference plus inspection workflow.
+- `undo-changes-in-git`: combine the reset and undo chapters into a recovery-focused article.
+- `resolve-git-merge-conflicts`: adapt the merge-conflict chapter into a practice guide.

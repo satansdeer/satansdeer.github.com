@@ -26,7 +26,7 @@ export const MarkdownContent = ({ children }) => {
   return (
     <ReactMarkdown
       components={{
-        a: ({ href, children, ...props }) => {
+        a: ({ href, children, node, ...props }) => {
           const isExternal = href && /^https?:\/\//.test(href);
 
           if (isExternal) {

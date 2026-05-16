@@ -6,6 +6,16 @@
   "description": "Frontend developer tutorials by Maksim Ivanov.",
   "items": [
     {
+      "id": "https://maksimivanov.com/posts/git-staging-area-explained/",
+      "url": "https://maksimivanov.com/posts/git-staging-area-explained/",
+      "title": "Git Staging Area Explained: What git add Really Does",
+      "summary": "The Git staging area is the place where you prepare the next commit. That is the short version. The more useful version is this: git add does not simply \"save\" a file. It takes the current version of a file, or part of a",
+      "date_published": "2026-05-16T13:30:00.000Z",
+      "tags": [
+        "Git"
+      ]
+    },
+    {
       "id": "https://maksimivanov.com/posts/react-console-snake-game-tutorial/",
       "url": "https://maksimivanov.com/posts/react-console-snake-game-tutorial/",
       "title": "Command Line Applications Using React - Snake Game Tutorial",
@@ -689,7 +699,7 @@
       "id": "https://maksimivanov.com/posts/git-add-patch/",
       "url": "https://maksimivanov.com/posts/git-add-patch/",
       "title": "Add Specific Lines With Git Patch",
-      "summary": "You know that git add adds files to index. But did do you know that it can add specific&nbsp;lines of files? Or even add files, ignoring their contents? Let's check this out! First let's get familiar with git add patch c",
+      "summary": "You know that git add adds files to index. But did do you know that it can add specific&nbsp;lines of files? Or even add files, ignoring their contents? Let's check this out! If the staging area itself still feels fuzzy,",
       "date_published": "2017-10-07T22:58:45.284Z",
       "tags": [
         "Git"

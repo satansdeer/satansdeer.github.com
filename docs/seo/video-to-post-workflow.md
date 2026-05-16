@@ -9,6 +9,24 @@ Goal: turn a video into a standalone article that can rank without requiring the
 - Target query from Search Console or keyword research.
 - Related existing posts for internal links.
 
+## Source Queue
+
+Use the YouTube channel as the source backlog and only consider videos published after the last recovered text post.
+
+Current cutoff:
+
+- Last recovered text post: July 24, 2019.
+- Source channel feed: `https://www.youtube.com/feeds/videos.xml?user=satansdeer1`.
+
+For each candidate, collect:
+
+- Video URL and publish date.
+- Transcript when available.
+- Short topic summary if the transcript is not available.
+- Related existing post or project page for internal links.
+
+If transcript extraction is not available from public endpoints, keep the video queued until a transcript, notes, or a manual summary is provided.
+
 ## Article Shape
 
 Use this structure by default:
@@ -71,6 +89,7 @@ Prioritize videos when at least one is true:
 - There is an existing related post ranking in positions 5-20.
 - The video maps to React, Git, JavaScript, TypeScript, or developer tooling.
 - The video can answer a query with a durable tutorial, not only news or commentary.
+- The video was published after the recovered blog archive stopped and can fill a visible freshness gap.
 
 ## Publishing Checklist
 

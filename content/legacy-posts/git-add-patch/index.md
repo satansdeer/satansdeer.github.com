@@ -7,6 +7,8 @@ image: git_patch_thumb.jpg
 
 You know that `git add` adds files to index. But did do you know that it can add **specific&nbsp;lines** of files? Or even add files, ignoring their contents? Let's check this out!
 
+If the staging area itself still feels fuzzy, start with [Git Staging Area Explained: What git add Really Does](/posts/git-staging-area-explained/), then come back here for the line-by-line workflow.
+
 First let's get familiar with `git add --patch` command or it's shorthand `git add -p`. What does it do?
 
 Let's imagine that you've been working on some task. During the process you've got carried away and introduced some changes not related to your current task.
