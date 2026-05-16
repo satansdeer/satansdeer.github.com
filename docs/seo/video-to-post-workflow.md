@@ -43,6 +43,29 @@ Then regenerate the website-side report:
 npm run seo:social -- --output=docs/seo/social-content-opportunities.md
 ```
 
+To prepare the next missing transcripts from the website repo, use the batch helper:
+
+```bash
+npm run seo:transcripts -- --platform=all --limit=5
+npm run seo:transcripts -- --platform=youtube --limit=3
+npm run seo:transcripts -- --platform=tiktok --limit=3
+```
+
+The helper is dry-run by default. Add `--run` to execute the generated `stats-dashboard` jobs:
+
+```bash
+npm run seo:transcripts -- --platform=youtube --limit=3 --run
+```
+
+When a transcript exists, create a structured conversion draft from the analysis folder:
+
+```bash
+npm run seo:post-draft -- --post-id=tiktok_7631897804771757334 --output=docs/seo/post-drafts/vibe-coding-codebase-map.md
+npm run seo:post-draft -- --post-id=youtube_s48bhbka_uu --output=docs/seo/post-drafts/day-33-video-tooling.md
+```
+
+The draft includes source metadata, a post skeleton, and the transcript in an HTML comment for editing context. Do not publish the raw transcript.
+
 ## Article Shape
 
 Use this structure by default:

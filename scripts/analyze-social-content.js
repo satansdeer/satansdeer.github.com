@@ -257,6 +257,25 @@ const CLUSTERS = [
     ],
   },
   {
+    name: "Secrets and security",
+    patterns: [
+      /\bsecrets?\b/i,
+      /\bsecret keys?\b/i,
+      /\bapi keys?\b/i,
+      /\bcredentials?\b/i,
+      /\b\.env\b/i,
+      /\benv file\b/i,
+      /\bsecret manager\b/i,
+      /\bsecurity\b/i,
+    ],
+    keywordSeeds: [
+      "where to store api keys",
+      "secret manager for developers",
+      "env file secrets",
+      "api key security",
+    ],
+  },
+  {
     name: "Git and GitHub",
     patterns: [
       /\bgit\b/i,
@@ -333,6 +352,10 @@ function suggestAngle(post, transcript, cluster) {
 
   if (/logs?|stringify|debugging|prefix/i.test(text)) {
     return "A practical logging trick for debugging AI-generated front-end code";
+  }
+
+  if (/secrets?|secret keys?|api keys?|\.env|env file|secret manager|security/i.test(text)) {
+    return "Why .env files are the wrong place to keep long-lived secret keys";
   }
 
   if (/subtitles?|captions?/i.test(text)) {
@@ -596,6 +619,19 @@ function renderMarkdown(report) {
     "",
     "```bash",
     "npm run seo:social -- --output=docs/seo/social-content-opportunities.md",
+    "```",
+    "",
+    "Prepare the next transcript queue without running it:",
+    "",
+    "```bash",
+    "npm run seo:transcripts -- --platform=all --limit=5",
+    "npm run seo:transcripts -- --platform=youtube --limit=3",
+    "```",
+    "",
+    "Create a conversion draft after an analysis folder exists:",
+    "",
+    "```bash",
+    "npm run seo:post-draft -- --post-id=tiktok_7631897804771757334 --output=docs/seo/post-drafts/example.md",
     "```"
   );
 
@@ -672,4 +708,12 @@ function main() {
   console.log(markdown);
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  buildReport,
+  cleanUrl,
+  renderMarkdown,
+};
