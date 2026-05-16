@@ -12,6 +12,27 @@
       <description>The Git staging area is the place where you prepare the next commit. That is the short version. The more useful version is this: git add does not simply &quot;save&quot; a file. It takes the current version of a file, or part of a</description>
     </item>
     <item>
+      <title>Git Remote Origin, Push, Pull, and Fetch Explained</title>
+      <link>https://maksimivanov.com/posts/git-remote-origin-push-pull/</link>
+      <guid>https://maksimivanov.com/posts/git-remote-origin-push-pull/</guid>
+      <pubDate>Sat, 16 May 2026 13:25:00 GMT</pubDate>
+      <description>A Git remote is a named connection to another copy of the repository. Most often, that other copy lives on GitHub, GitLab, Bitbucket, or a private server. The default remote name is usually origin. You use remotes to sha</description>
+    </item>
+    <item>
+      <title>Resolve Git Merge Conflicts: A Practical Beginner Guide</title>
+      <link>https://maksimivanov.com/posts/resolve-git-merge-conflicts/</link>
+      <guid>https://maksimivanov.com/posts/resolve-git-merge-conflicts/</guid>
+      <pubDate>Sat, 16 May 2026 13:24:00 GMT</pubDate>
+      <description>A Git merge conflict happens when Git cannot safely combine two changes by itself. Most merges are automatic. Conflicts happen when two branches change the same part of the same file, or when one branch changes a file in</description>
+    </item>
+    <item>
+      <title>Undo Changes in Git: Restore, Revert, Reset, and Clean</title>
+      <link>https://maksimivanov.com/posts/undo-changes-in-git/</link>
+      <guid>https://maksimivanov.com/posts/undo-changes-in-git/</guid>
+      <pubDate>Sat, 16 May 2026 13:23:00 GMT</pubDate>
+      <description>Undoing changes in Git depends on where the change lives. Before choosing a command, answer one question: is the change uncommitted, committed locally, or already pushed? That distinction matters because some commands on</description>
+    </item>
+    <item>
       <title>Git Log for Beginners: How to Read Commit History</title>
       <link>https://maksimivanov.com/posts/git-log-for-beginners/</link>
       <guid>https://maksimivanov.com/posts/git-log-for-beginners/</guid>
