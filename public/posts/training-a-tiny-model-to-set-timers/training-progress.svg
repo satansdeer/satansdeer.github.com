@@ -2,8 +2,7 @@
   <title id="title">Training progress for the natural-language timer model</title>
   <desc id="desc">Line chart of strict exact validation score through four decision points. Flan-T5-small improves from 33.3 percent to 100 percent after compressed DSL. T5-Efficient-tiny improves from 25.6 percent, dips to 6.8 percent on broad count data, reaches 99.1 percent with compressed DSL, then 100 percent after label-copy repair.</desc>
   <rect width="1100" height="620" fill="#ffffff"/>
-  <text x="70" y="54" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Strict Exact Score Through Training Decisions</text>
-  <text x="70" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Each point is the best checkpoint for that decision. Validation size changes when harder cases are added.</text>
+  <text x="70" y="54" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Training Progress</text>
 
   <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748b">
     <line x1="120" y1="475" x2="980" y2="475" stroke="#cbd5e1" stroke-width="1"/>
@@ -20,18 +19,18 @@
   </g>
 
   <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#334155" text-anchor="middle">
-    <text x="170" y="505">Line-by-line DSL</text>
-    <text x="170" y="524">39 validation</text>
-    <text x="390" y="505">Count-stress data</text>
-    <text x="390" y="524">117 validation</text>
-    <text x="610" y="505">Compressed DSL</text>
-    <text x="610" y="524">117 validation</text>
-    <text x="830" y="505">Label-copy repair</text>
-    <text x="830" y="524">139 validation</text>
+    <text x="170" y="505">Line DSL</text>
+    <text x="170" y="524">n=39</text>
+    <text x="390" y="505">Count data</text>
+    <text x="390" y="524">n=117</text>
+    <text x="610" y="505">Compressed</text>
+    <text x="610" y="524">n=117</text>
+    <text x="830" y="505">Repair</text>
+    <text x="830" y="524">n=139</text>
   </g>
 
-  <polyline points="170,348.5 390,199.1 610,95 830,111.3" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-  <polyline points="170,377.7 390,449.2 610,98.4 830,95" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170 348.5 L390 199.1 L610 95 L830 111.3" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M170 377.7 L390 449.2 L610 98.4 L830 95" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 
   <g font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">
     <circle cx="170" cy="348.5" r="6" fill="#2563eb"/>
@@ -41,7 +40,7 @@
     <text x="170" y="333" text-anchor="middle" fill="#2563eb">13/39</text>
     <text x="390" y="184" text-anchor="middle" fill="#2563eb">85/117</text>
     <text x="610" y="80" text-anchor="middle" fill="#2563eb">117/117</text>
-    <text x="830" y="96" text-anchor="middle" fill="#2563eb">133/139</text>
+    <text x="830" y="132" text-anchor="middle" fill="#2563eb">133/139</text>
 
     <circle cx="170" cy="377.7" r="6" fill="#059669"/>
     <circle cx="390" cy="449.2" r="6" fill="#059669"/>
@@ -49,7 +48,7 @@
     <circle cx="830" cy="95" r="6" fill="#059669"/>
     <text x="170" y="396" text-anchor="middle" fill="#059669">10/39</text>
     <text x="390" y="467" text-anchor="middle" fill="#059669">8/117</text>
-    <text x="610" y="119" text-anchor="middle" fill="#059669">116/117</text>
+    <text x="645" y="128" text-anchor="middle" fill="#059669">116/117</text>
     <text x="830" y="80" text-anchor="middle" fill="#059669">139/139</text>
   </g>
 
@@ -60,5 +59,4 @@
     <text x="854" y="561">T5-Efficient-tiny</text>
   </g>
 
-  <text x="70" y="586" font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748b">The steep jump came from changing the output language, not from blindly adding more generic data.</text>
 </svg>

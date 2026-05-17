@@ -133,17 +133,17 @@ Early model comparison was useful, but only after the target was made reasonable
 
 With line-by-line DSL, `google/flan-t5-small` was the best local candidate, but the best score was only `13/39`. The efficient-family models were smaller, but still weak. Tiny reached `10/39` in the early setup. That was not enough to ship.
 
-After compressed DSL, the comparison changed completely.
+After compressed DSL, the comparison changed completely. The chart that mattered was not accuracy alone; it was accuracy against model footprint.
 
-![Model comparison before and after compressed DSL](./model-comparison.svg)
+![Performance and checkpoint size comparison for Flan-T5-small and T5-Efficient-tiny](./model-comparison.svg)
 
-Flan-T5-small hit `117/117` on the compressed validation set. More importantly, `google/t5-efficient-tiny` hit `116/117`.
+Flan-T5-small hit `117/117` on the compressed validation set. `google/t5-efficient-tiny` hit `116/117`.
 
 That changed the decision.
 
-Locally, the Flan checkpoint was about `76.96M` parameters and `296 MB`. The tiny checkpoint was about `15.57M` parameters and `62 MB`. Tiny had roughly one fifth of the footprint and one remaining validation failure.
+Locally, the Flan checkpoint was about `76.96M` parameters and `296 MB`. The tiny checkpoint was about `15.57M` parameters and `62 MB`.
 
-At that point, the right move was not "use the larger perfect model." It was "fix the one tiny failure mode."
+So tiny was one validation row worse, but roughly `4.8x` smaller on disk. That is why tiny won. At that point, the right move was not "use the larger perfect model." It was "fix the one tiny failure mode."
 
 ## The Last Failure
 
