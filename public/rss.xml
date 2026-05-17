@@ -5,6 +5,13 @@
     <link>https://maksimivanov.com</link>
     <description>Frontend developer tutorials by Maksim Ivanov.</description>
     <item>
+      <title>Training A Tiny Model To Set Timers From Natural Language</title>
+      <link>https://maksimivanov.com/posts/training-a-tiny-model-to-set-timers/</link>
+      <guid>https://maksimivanov.com/posts/training-a-tiny-model-to-set-timers/</guid>
+      <pubDate>Sun, 17 May 2026 07:45:00 GMT</pubDate>
+      <description>Natural language timers look like a small problem until you require exact output. I wanted to see whether a small browser friendly model could translate workout instructions into exact timer sequences. The interesting pa</description>
+    </item>
+    <item>
       <title>How To Record A Presentation Voiceover From A PDF</title>
       <link>https://maksimivanov.com/posts/record-presentation-voiceover-from-pdf/</link>
       <guid>https://maksimivanov.com/posts/record-presentation-voiceover-from-pdf/</guid>

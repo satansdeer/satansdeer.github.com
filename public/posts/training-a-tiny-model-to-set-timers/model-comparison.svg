@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="680" viewBox="0 0 1100 680" role="img" aria-labelledby="title desc">
+  <title id="title">Model comparison for the timer training decisions</title>
+  <desc id="desc">Two-panel bar chart. Early line-by-line DSL scores were weak: Flan-T5-small 33.3 percent, T5-Efficient-tiny 25.6 percent, T5-Efficient-small 17.9 percent, T5-Efficient-mini 12.8 percent. After compressed DSL, Flan scored 100 percent, tiny scored 99.1 percent, and final tiny with label-copy repair scored 100 percent.</desc>
+  <rect width="1100" height="680" fill="#ffffff"/>
+  <text x="70" y="54" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Model Comparisons That Changed The Decision</text>
+  <text x="70" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Only decision-making checkpoints are shown. Bars are strict exact match after parsing model output into timers.</text>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="70" y="130" font-size="18" font-weight="700" fill="#0f172a">Before compressed DSL: model choice was inconclusive</text>
+    <text x="70" y="154" font-size="13" fill="#64748b">Line-by-line output made every repeated interval another chance to fail.</text>
+
+    <g font-size="14" fill="#0f172a">
+      <text x="70" y="198">Flan-T5-small</text>
+      <rect x="240" y="181" width="210" height="24" rx="4" fill="#2563eb"/>
+      <text x="462" y="199" fill="#2563eb" font-weight="700">13/39</text>
+
+      <text x="70" y="242">T5-Efficient-tiny</text>
+      <rect x="240" y="225" width="161" height="24" rx="4" fill="#059669"/>
+      <text x="413" y="243" fill="#059669" font-weight="700">10/39</text>
+
+      <text x="70" y="286">T5-Efficient-small</text>
+      <rect x="240" y="269" width="113" height="24" rx="4" fill="#0891b2"/>
+      <text x="365" y="287" fill="#0891b2" font-weight="700">7/39</text>
+
+      <text x="70" y="330">T5-Efficient-mini</text>
+      <rect x="240" y="313" width="81" height="24" rx="4" fill="#f97316"/>
+      <text x="333" y="331" fill="#f97316" font-weight="700">5/39</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <text x="70" y="402" font-size="18" font-weight="700" fill="#0f172a">After compressed DSL: tiny became the candidate</text>
+    <text x="70" y="426" font-size="13" fill="#64748b">The task changed from emitting long repeated lists to extracting counts, durations, and labels.</text>
+
+    <g font-size="14" fill="#0f172a">
+      <text x="70" y="470">Flan-T5-small</text>
+      <rect x="240" y="453" width="630" height="24" rx="4" fill="#2563eb"/>
+      <text x="884" y="471" fill="#2563eb" font-weight="700">117/117</text>
+
+      <text x="70" y="514">T5-Efficient-tiny</text>
+      <rect x="240" y="497" width="625" height="24" rx="4" fill="#059669"/>
+      <text x="879" y="515" fill="#059669" font-weight="700">116/117</text>
+
+      <text x="70" y="558">Tiny + label-copy repair</text>
+      <rect x="240" y="541" width="630" height="24" rx="4" fill="#16a34a"/>
+      <text x="884" y="559" fill="#16a34a" font-weight="700">139/139</text>
+    </g>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif">
+    <rect x="720" y="126" width="300" height="152" rx="8" fill="#f8fafc" stroke="#cbd5e1"/>
+    <text x="742" y="162" font-size="16" font-weight="700" fill="#0f172a">Footprint mattered</text>
+    <text x="742" y="194" font-size="14" fill="#334155">Local checkpoints:</text>
+    <text x="742" y="222" font-size="14" fill="#334155">Flan: 76.96M params, 296 MB</text>
+    <text x="742" y="250" font-size="14" fill="#334155">Tiny: 15.57M params, 62 MB</text>
+
+    <rect x="720" y="310" width="300" height="118" rx="8" fill="#ecfdf5" stroke="#86efac"/>
+    <text x="742" y="346" font-size="16" font-weight="700" fill="#065f46">Decision</text>
+    <text x="742" y="378" font-size="14" fill="#065f46">Once compressed DSL worked,</text>
+    <text x="742" y="404" font-size="14" fill="#065f46">the smaller model was worth fixing.</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="12" fill="#64748b">
+    <line x1="240" y1="350" x2="870" y2="350" stroke="#cbd5e1"/>
+    <text x="240" y="370" text-anchor="middle">0%</text>
+    <text x="555" y="370" text-anchor="middle">50%</text>
+    <text x="870" y="370" text-anchor="middle">100%</text>
+    <line x1="240" y1="578" x2="870" y2="578" stroke="#cbd5e1"/>
+    <text x="240" y="598" text-anchor="middle">0%</text>
+    <text x="555" y="598" text-anchor="middle">50%</text>
+    <text x="870" y="598" text-anchor="middle">100%</text>
+  </g>
+</svg>

@@ -6,6 +6,16 @@
   "description": "Frontend developer tutorials by Maksim Ivanov.",
   "items": [
     {
+      "id": "https://maksimivanov.com/posts/training-a-tiny-model-to-set-timers/",
+      "url": "https://maksimivanov.com/posts/training-a-tiny-model-to-set-timers/",
+      "title": "Training A Tiny Model To Set Timers From Natural Language",
+      "summary": "Natural language timers look like a small problem until you require exact output. I wanted to see whether a small browser friendly model could translate workout instructions into exact timer sequences. The interesting pa",
+      "date_published": "2026-05-17T07:45:00.000Z",
+      "tags": [
+        "Programming"
+      ]
+    },
+    {
       "id": "https://maksimivanov.com/posts/record-presentation-voiceover-from-pdf/",
       "url": "https://maksimivanov.com/posts/record-presentation-voiceover-from-pdf/",
       "title": "How To Record A Presentation Voiceover From A PDF",

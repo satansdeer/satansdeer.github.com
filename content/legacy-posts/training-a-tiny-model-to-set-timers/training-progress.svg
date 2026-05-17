@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620" role="img" aria-labelledby="title desc">
+  <title id="title">Training progress for the natural-language timer model</title>
+  <desc id="desc">Line chart of strict exact validation score through four decision points. Flan-T5-small improves from 33.3 percent to 100 percent after compressed DSL. T5-Efficient-tiny improves from 25.6 percent, dips to 6.8 percent on broad count data, reaches 99.1 percent with compressed DSL, then 100 percent after label-copy repair.</desc>
+  <rect width="1100" height="620" fill="#ffffff"/>
+  <text x="70" y="54" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#0f172a">Strict Exact Score Through Training Decisions</text>
+  <text x="70" y="82" font-family="Inter, Arial, sans-serif" font-size="15" fill="#475569">Each point is the best checkpoint for that decision. Validation size changes when harder cases are added.</text>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748b">
+    <line x1="120" y1="475" x2="980" y2="475" stroke="#cbd5e1" stroke-width="1"/>
+    <line x1="120" y1="380" x2="980" y2="380" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="120" y1="285" x2="980" y2="285" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="120" y1="190" x2="980" y2="190" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="120" y1="95" x2="980" y2="95" stroke="#e2e8f0" stroke-width="1"/>
+    <line x1="120" y1="95" x2="120" y2="475" stroke="#cbd5e1" stroke-width="1"/>
+    <text x="74" y="480">0%</text>
+    <text x="66" y="385">25%</text>
+    <text x="66" y="290">50%</text>
+    <text x="66" y="195">75%</text>
+    <text x="58" y="100">100%</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="13" fill="#334155" text-anchor="middle">
+    <text x="170" y="505">Line-by-line DSL</text>
+    <text x="170" y="524">39 validation</text>
+    <text x="390" y="505">Count-stress data</text>
+    <text x="390" y="524">117 validation</text>
+    <text x="610" y="505">Compressed DSL</text>
+    <text x="610" y="524">117 validation</text>
+    <text x="830" y="505">Label-copy repair</text>
+    <text x="830" y="524">139 validation</text>
+  </g>
+
+  <polyline points="170,348.5 390,199.1 610,95 830,111.3" fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="170,377.7 390,449.2 610,98.4 830,95" fill="none" stroke="#059669" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">
+    <circle cx="170" cy="348.5" r="6" fill="#2563eb"/>
+    <circle cx="390" cy="199.1" r="6" fill="#2563eb"/>
+    <circle cx="610" cy="95" r="6" fill="#2563eb"/>
+    <circle cx="830" cy="111.3" r="6" fill="#2563eb"/>
+    <text x="170" y="333" text-anchor="middle" fill="#2563eb">13/39</text>
+    <text x="390" y="184" text-anchor="middle" fill="#2563eb">85/117</text>
+    <text x="610" y="80" text-anchor="middle" fill="#2563eb">117/117</text>
+    <text x="830" y="96" text-anchor="middle" fill="#2563eb">133/139</text>
+
+    <circle cx="170" cy="377.7" r="6" fill="#059669"/>
+    <circle cx="390" cy="449.2" r="6" fill="#059669"/>
+    <circle cx="610" cy="98.4" r="6" fill="#059669"/>
+    <circle cx="830" cy="95" r="6" fill="#059669"/>
+    <text x="170" y="396" text-anchor="middle" fill="#059669">10/39</text>
+    <text x="390" y="467" text-anchor="middle" fill="#059669">8/117</text>
+    <text x="610" y="119" text-anchor="middle" fill="#059669">116/117</text>
+    <text x="830" y="80" text-anchor="middle" fill="#059669">139/139</text>
+  </g>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="14" fill="#0f172a">
+    <rect x="690" y="548" width="16" height="16" fill="#2563eb" rx="3"/>
+    <text x="714" y="561">Flan-T5-small</text>
+    <rect x="830" y="548" width="16" height="16" fill="#059669" rx="3"/>
+    <text x="854" y="561">T5-Efficient-tiny</text>
+  </g>
+
+  <text x="70" y="586" font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748b">The steep jump came from changing the output language, not from blindly adding more generic data.</text>
+</svg>
