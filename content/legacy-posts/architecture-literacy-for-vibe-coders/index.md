@@ -5,7 +5,7 @@ categories: Programming
 image: contact-sheet.jpg
 ---
 
-If you are building with AI coding tools, architecture is not optional.
+Architecture is not optional when you are building with AI coding tools.
 
 You can get to an MVP with prompts and persistence. Moving past the MVP requires enough architectural literacy to understand what the system is becoming, where it is hard to reason about, and which parts are starting to fight back.
 
@@ -107,11 +107,11 @@ If you cannot fill this out, the feature may not have a clear shape yet.
 
 ## Common Mistakes
 
-The first mistake is treating architecture as something senior developers do later.
+Treating architecture as something senior developers do later.
 
-The second is assuming the AI understands your system boundaries better than you do.
+Assuming the AI understands your system boundaries better than you do.
 
-The third is waiting until the codebase is painful before mapping it. By then, every change is already harder.
+Waiting until the codebase is painful before mapping it. By then, every change is already harder.
 
 ## Exercise
 
@@ -125,9 +125,3 @@ Then find:
 - one place where tests would protect a boundary.
 
 That list is your starting architecture lesson.
-
-## Summary
-
-Vibe coding can get you to an MVP quickly. Architecture literacy is what helps you keep going after that.
-
-Start with the app in front of you. Build a compact model, notice where the model strains, and use that strain to guide your next refactor.

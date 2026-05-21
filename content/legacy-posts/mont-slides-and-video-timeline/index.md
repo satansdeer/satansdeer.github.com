@@ -5,7 +5,7 @@ categories: Programming
 image: contact-sheet.jpg
 ---
 
-Mont is built around a simple idea: slides and video should live on the same timeline.
+Mont puts slides and video on the same timeline.
 
 That makes it possible to create a product demo, tutorial, or presentation video without choosing between a slide editor and a video editor. A slide can behave like a clip, and a clip can sit beside editable slides, recordings, text, arrows, and effects.
 
@@ -106,7 +106,7 @@ The copy changes. The UI changes. The feature order changes. A sensitive detail 
 
 If the demo is one flattened video, every change is expensive. If the demo is made from editable slides and timeline layers, small changes stay small.
 
-That is the reason to combine slide editing and video editing in one place.
+Combining slide editing and video editing in one place keeps small changes small.
 
 ## Exercise
 
@@ -121,9 +121,3 @@ Slide: call to action
 ```
 
 Then list which parts should stay editable after recording. Those are the parts that should be slides, text, arrows, or effects instead of baked into one raw video.
-
-## Summary
-
-Mont treats slides as part of the video timeline.
-
-That gives product videos a more editable structure: slides for layout, video for motion, annotations for focus, and timeline editing for timing. The result is a workflow where product demos can change without starting from scratch.

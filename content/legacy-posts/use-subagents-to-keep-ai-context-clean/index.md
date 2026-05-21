@@ -93,7 +93,7 @@ The main thread receives the useful part without carrying the whole investigatio
 
 ## Common Mistakes
 
-The first mistake is making the subagent task too broad.
+Making the subagent task too broad.
 
 ```text
 Analyze the whole codebase.
@@ -101,9 +101,9 @@ Analyze the whole codebase.
 
 That is vague. The result will be vague too.
 
-The second mistake is delegating the urgent blocker. If the main session cannot move until the answer comes back, delegation may not help.
+Delegating the urgent blocker. If the main session cannot move until the answer comes back, delegation may not help.
 
-The third mistake is ignoring the result. A subagent is useful only if its output changes the next decision.
+Ignoring the result. A subagent is useful only if its output changes the next decision.
 
 ## Exercise
 
@@ -116,9 +116,3 @@ Take one AI coding task you are working on and split it into:
 Keep the main decision in the main thread. Delegate the side investigation. Run the verification after the edit.
 
 That structure keeps the main conversation cleaner and makes the work easier to review.
-
-## Summary
-
-Subagents help long AI coding sessions stay useful by keeping side work out of the main context.
-
-Use them for bounded exploration, isolated checks, and parallel tasks. Keep architectural judgment and immediate blockers in the main conversation.

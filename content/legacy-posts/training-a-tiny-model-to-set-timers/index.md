@@ -56,8 +56,6 @@ The parser owns the exact part: expand repeats, normalize durations, infer timer
 
 ## The Metric
 
-The useful metric was not training loss.
-
 The useful metric was strict exact match after parsing:
 
 - same number of timers,
@@ -71,7 +69,7 @@ I also tracked semantic exact match, which ignores labels. That was useful for d
 
 The first attempt was conventional: prepare natural-language requests and train the model to emit strict JSON.
 
-That was the wrong target. Earlier in the session, Qwen2.5 0.5B moved from `0/40` to only `5/40` after 300 LoRA iterations on JSON output. That did not prove Qwen was bad. It proved the target was making a small model spend capacity on braces, quotes, arrays, and property names.
+That was the wrong target. Earlier in the session, Qwen2.5 0.5B moved from `0/40` to only `5/40` after 300 LoRA iterations on JSON output. That `5/40` score did not mean Qwen was bad. The target was making a small model spend capacity on braces, quotes, arrays, and property names.
 
 Switching to a DSL helped, but not enough at first.
 
@@ -143,7 +141,7 @@ That changed the decision.
 
 Locally, the Flan checkpoint was about `76.96M` parameters and `296 MB`. The tiny checkpoint was about `15.57M` parameters and `62 MB`.
 
-So tiny was one validation row worse, but roughly `4.8x` smaller on disk. That is why tiny won. At that point, the right move was not "use the larger perfect model." It was "fix the one tiny failure mode."
+Tiny was one validation row worse, but roughly `4.8x` smaller on disk. Fixing the one tiny failure mode made more sense than switching to the larger perfect model.
 
 ## The Last Failure
 
@@ -181,9 +179,7 @@ The final tiny checkpoint reached:
 - `39/39` strict exact on the original validation set,
 - `22/22` on the explicit label-copy validation category.
 
-The key lesson was not "add more data."
-
-It was "add the data that represents the skill the model is missing, and weight it enough that a tiny model cannot ignore it."
+The fix was targeted: add the data that represents the skill the model is missing, and weight it enough that a tiny model cannot ignore it.
 
 ## The Parser Became The Product Boundary
 
@@ -220,18 +216,3 @@ I would keep this structure for any narrow natural-language-to-action model:
 6. Compare models only after the target is fair.
 
 For this timer app, the compressed DSL was the actual breakthrough. Model size mattered after that, but before that the models were mostly being punished for an output format that made counting harder than it needed to be.
-
-## Summary
-
-The final result was a tiny seq2seq model that can translate natural-language timer requests into a compact timer DSL, with a deterministic parser expanding that into exact app timers.
-
-The model comparison was useful only when it changed decisions:
-
-- JSON output made small models look worse than they were.
-- Line-by-line DSL proved syntax was learnable but count control was weak.
-- Count-focused data helped the larger model but not the tiny one.
-- Compressed DSL made both models strong.
-- Tiny became the better browser candidate once it was `116/117` and five times smaller.
-- Targeted label-copy continuation took tiny to `139/139`.
-
-The interesting part is that the final model did not need to become generally smarter. The task needed a better language boundary.

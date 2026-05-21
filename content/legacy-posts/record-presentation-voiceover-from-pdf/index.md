@@ -5,7 +5,7 @@ categories: Programming
 image: contact-sheet.jpg
 ---
 
-If your slides are in Google Slides, PowerPoint, Keynote, or another presentation tool, the easiest way to record a voiceover is often to export the deck as a PDF first.
+Exporting your slides to PDF is the easiest way to record a voiceover when they live in Google Slides, PowerPoint, Keynote, or another presentation tool.
 
 Once the slides are a PDF, you can import them into a video tool, record narration while moving through the slides, adjust the camera or slide layout afterward, and export the final video.
 
@@ -91,11 +91,11 @@ Then export the file.
 
 ## Common Mistakes
 
-The first mistake is recording the presentation app directly when you know you will need edits.
+Recording the presentation app directly makes edits harder later.
 
-The second is leaving the camera over important slide content.
+Leaving the camera over important slide content blocks the view.
 
-The third is exporting before watching the whole video once. Timing issues are much easier to catch in playback than while recording.
+Exporting before watching the whole video misses timing issues that are easy to catch in playback.
 
 ## Exercise
 
@@ -104,9 +104,3 @@ Take a three-slide deck and export it as PDF.
 Record a one-minute voiceover with camera enabled. Then unlink the camera and slides, move the camera to a better position, and export the revised version.
 
 That exercise teaches the whole workflow without needing a long presentation.
-
-## Summary
-
-To record a presentation voiceover, export the slides as PDF, import them into Mont, record narration while moving through the deck, edit the layout, and export.
-
-The PDF-based workflow keeps the presentation editable after recording, which makes it easier to polish than a raw screen capture.
