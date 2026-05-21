@@ -26,6 +26,12 @@ Start with seed terms from assets we already control:
 
 In Keyword Planner, generate ideas from the seed list and export the keyword ideas CSV.
 
+Prepared seed upload:
+
+```text
+docs/seo/keyword-planner-seeds.csv
+```
+
 Preferred columns:
 
 - Keyword

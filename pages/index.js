@@ -14,7 +14,7 @@ import {
 } from "../lib/seo";
 
 const description =
-  "Frontend developer tutorials on React, JavaScript, TypeScript, Git, and web development.";
+  "Notes from building and launching Mont, with practical writing on product development, software engineering, and web development.";
 
 const Index = ({ featuredPosts, latestPosts, categories }) => {
   return (
@@ -41,11 +41,18 @@ const Index = ({ featuredPosts, latestPosts, categories }) => {
             data-pagefind-ignore="all"
           >
             <main className="prose dark:prose-invert sm:prose-lg lg:prose-xl">
-              <h1>Improve Your Frontend Skills</h1>
+              <h1>Building And Launching Mont</h1>
               <p>
-                Hey, I am Maksim Ivanov. This site collects my recovered
-                frontend tutorials, mostly around React, JavaScript,
-                TypeScript, Git, and practical web development.
+                Hey, I am Maksim Ivanov. I am building Mont, a browser-based
+                video editor for editable product demos, presentations, and
+                onboarding videos.
+              </p>
+              <p>
+                This site is where I share the product development journey:
+                what I am shipping, how I am finding users, and the engineering
+                decisions behind the launch. The archive still includes my
+                React, JavaScript, TypeScript, and Git articles, but the center
+                of gravity is now building and launching useful products.
               </p>
               <p>
                 <Link legacyBehavior href="/posts/">
@@ -53,7 +60,12 @@ const Index = ({ featuredPosts, latestPosts, categories }) => {
                 </Link>
               </p>
 
-              <h2>Recommended Articles</h2>
+              <h2>Start Here</h2>
+              <p>
+                A few posts that match the current direction: building Mont,
+                finding users, and making product demos with a video workflow
+                that stays editable after recording.
+              </p>
               <div className="not-prose">
                 {featuredPosts.map((post) => (
                   <div key={post.slug} className="my-10">
@@ -62,7 +74,7 @@ const Index = ({ featuredPosts, latestPosts, categories }) => {
                 ))}
               </div>
 
-              <h2>Latest Recovered Posts</h2>
+              <h2>Latest Posts</h2>
               <div className="not-prose">
                 {latestPosts.map((post) => (
                   <div key={post.slug} className="my-10">

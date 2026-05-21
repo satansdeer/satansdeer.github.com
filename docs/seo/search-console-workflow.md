@@ -2,6 +2,58 @@
 
 Use Google Search Console as the source of truth for keyword decisions.
 
+## API Access
+
+This repo can use live Search Console data with a local OAuth desktop client.
+Secrets stay outside the repo:
+
+- OAuth client: `~/.config/codex/secrets/google-search-console-oauth-client.json`
+- OAuth token: `~/.config/codex/secrets/google-search-console-token.json`
+
+Authorize once:
+
+```sh
+npm run seo:gsc:auth
+```
+
+Verify available properties:
+
+```sh
+npm run seo:gsc:sites
+```
+
+The active property is:
+
+```sh
+sc-domain:maksimivanov.com
+```
+
+Run a sitemap/live status audit for the indexability issues Google reported:
+
+```sh
+npm run seo:gsc:audit -- --property=sc-domain:maksimivanov.com --site-url=https://maksimivanov.com --sitemap=public/sitemap.xml
+```
+
+Remove a stale submitted sitemap:
+
+```sh
+npm run seo:gsc:delete-sitemap -- --property=sc-domain:maksimivanov.com --sitemap-url=https://store.maksimivanov.com/sitemap.xml
+```
+
+The sunset `store.maksimivanov.com` host is served by the `maksimivanov-store-gone` Cloudflare Worker and should return `410 Gone` with `X-Robots-Tag: noindex` for every path.
+
+Inspect one URL through Google's URL Inspection API:
+
+```sh
+npm run seo:gsc:inspect -- --property=sc-domain:maksimivanov.com --url=https://maksimivanov.com/
+```
+
+Pull current Search Analytics rows:
+
+```sh
+npm run seo:gsc:performance -- --property=sc-domain:maksimivanov.com --days=90 --limit=50
+```
+
 If the property is still processing and there is no performance data yet, use:
 
 - `docs/seo/keyword-planner-workflow.md` for demand validation.

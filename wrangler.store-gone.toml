@@ -1,0 +1,8 @@
+name = "maksimivanov-store-gone"
+main = "workers/store-gone.js"
+compatibility_date = "2026-05-18"
+account_id = "ee13217ce6d0d1a961c275db7e351868"
+
+routes = [
+  { pattern = "store.maksimivanov.com/*", zone_name = "maksimivanov.com" }
+]

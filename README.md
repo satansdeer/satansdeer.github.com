@@ -50,6 +50,18 @@ Do not commit Cloudflare tokens or local `.env*.local` files. The currently depl
 
 Until both GitHub Actions secrets exist, the workflow still builds the static export but skips the Cloudflare deploy step with a warning. After the secrets are installed, the next push to `master` or manual workflow dispatch deploys to Cloudflare Pages.
 
+## Sunset Store Host
+
+The old Shopify store at `store.maksimivanov.com` is intentionally gone. It is handled by a separate Cloudflare Worker that returns `410 Gone` for every path, including `/robots.txt` and `/sitemap.xml`, so search engines can crawl the host and remove stale indexed URLs.
+
+Deploy the Worker with Wrangler OAuth, not the local DNS-only API token:
+
+```bash
+npm run cf:deploy:store-gone
+```
+
+The DNS record for `store.maksimivanov.com` should remain proxied in Cloudflare so the Worker route `store.maksimivanov.com/*` runs before any origin response.
+
 ## Manual Recovery Deploy
 
 Use this fallback when GitHub Actions is unavailable. It assumes Wrangler is already logged in with Pages deploy access, or that the shell environment contains a Pages-capable `CLOUDFLARE_API_TOKEN`.
