@@ -177,11 +177,3 @@ Pick one feature in your app and make a six-screen demo:
 6. Final outcome.
 
 Then record a one-minute narration over those screens. Add only two cursor clicks and one zoom. That constraint forces you to choose the important moments.
-
-## Summary
-
-A good SaaS demo does not need to be a messy screen recording.
-
-Start with screenshots, record narration, add cursor movement, use zoom sparingly, generate captions, and keep the whole thing editable. The result is faster to revise and easier for viewers to follow.
-
-For product tutorials, launch videos, and app walkthroughs, that editability matters more than capturing every second of the real interface.

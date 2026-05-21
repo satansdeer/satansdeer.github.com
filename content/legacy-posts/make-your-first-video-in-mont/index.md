@@ -110,11 +110,11 @@ Use the first export as a test. Watch it once without editing. You will usually 
 
 ## Common Mistakes
 
-The first mistake is recording too early. Put the visual structure on the timeline before adding voiceover or camera.
+Recording too early. Put the visual structure on the timeline before adding voiceover or camera.
 
-The second is treating the first export as final. Always watch the exported file once.
+Treating the first export as final. Always watch the exported file once.
 
-The third is trying to make the first video complex. Start with one clear idea, a few slides, and one recording layer.
+Trying to make the first video complex. Start with one clear idea, a few slides, and one recording layer.
 
 ## Exercise
 
@@ -128,9 +128,3 @@ Camera or voiceover: one short explanation
 ```
 
 Export it, watch it, and make one timing improvement.
-
-## Summary
-
-Your first Mont video should be small.
-
-Create a project, arrange slides or clips, record camera or voiceover, adjust timing, polish the layout, and export. Once you understand that loop, larger product demos and tutorials become much easier to build.

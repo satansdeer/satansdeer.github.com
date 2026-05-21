@@ -15,7 +15,7 @@ This post is adapted from [a YouTube video about app localization](https://www.y
 
 ## The Problem With Naming Every String
 
-Imagine you are localizing a sign-in screen.
+Start with a sign-in screen.
 
 The button says:
 
@@ -156,11 +156,3 @@ For each string, ask:
 - Would changing this text mean the translation should be reviewed?
 
 If the answer is yes to the last two questions, a gettext-style source key is probably enough.
-
-## Summary
-
-Localization gets harder when you name every string too early.
-
-For many UI strings, the text itself is the best key. It keeps the code readable, makes copy changes visible, and avoids a translation file full of names that no longer match the product.
-
-If you are using AI coding tools, make that rule explicit in the prompt. The model will happily invent translation keys forever unless you give it a better constraint.

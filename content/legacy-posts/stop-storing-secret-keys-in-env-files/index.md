@@ -177,9 +177,3 @@ Open one project and answer these questions:
 - Where would you rotate each key if it leaked?
 
 If you cannot answer the last question quickly, secret management is part of your next cleanup task.
-
-## Summary
-
-`.env` files are fine as local development inputs. They are not a secret management system.
-
-Keep private keys out of the browser, keep real secrets out of Git, and use a secret manager or platform secrets for shared and production values. If a real key has already leaked, rotate it instead of pretending deletion fixed the problem.

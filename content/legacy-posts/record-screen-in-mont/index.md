@@ -28,7 +28,7 @@ To record your screen in Mont:
 9. Add zoom effects if needed.
 10. Export the file.
 
-The important part is that recording is not the final step. Editing after recording is where the video becomes useful.
+Recording is not the final step. Editing after recording is where the video becomes useful.
 
 ## Step 1: Switch To Recording Mode
 
@@ -136,9 +136,3 @@ After recording, make three edits:
 3. Add one zoom effect to the most important action.
 
 Export the result and compare it to the raw recording.
-
-## Summary
-
-Mont screen recording is useful because recording and editing are part of the same workflow.
-
-Capture the screen, optionally capture camera, keep them editable as separate layers, add focused zoom effects, and export only after previewing the result.
