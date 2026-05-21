@@ -195,34 +195,3 @@ The file can look clean but still be logically wrong. After resolving conflicts,
 ### Not Checking Status
 
 Use `git status` after every step. It tells you which files still need resolution and when the merge is ready to commit.
-
-## Exercises
-
-### Exercise 1: Identify the Sides
-
-Open a conflicted file and identify which block is from `HEAD` and which block is from the incoming branch.
-
-Expected result: you can explain which branch each version came from.
-
-### Exercise 2: Keep Both Ideas
-
-Resolve a conflict by combining both sides into a new final version.
-
-Expected result: the final file has no conflict markers and preserves the useful parts of both branches.
-
-### Exercise 3: Abort a Merge
-
-Start a merge that conflicts, then run:
-
-```bash
-git merge --abort
-git status
-```
-
-Expected result: the repository returns to the pre-merge state.
-
-## Summary
-
-Merge conflicts are normal. Use `git status`, edit the conflicted files, remove the markers, stage the result, and commit the merge. Use `git merge --abort` when you need to back out and restart.
-
-For more beginner Git workflow, see [Git Log for Beginners](/posts/git-log-for-beginners/), [Undo Changes in Git](/posts/undo-changes-in-git/), and [Command Line Git](/projects/command-line-git/).

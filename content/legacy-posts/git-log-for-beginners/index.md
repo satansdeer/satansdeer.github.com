@@ -254,9 +254,3 @@ git log --follow -- path/to/file
 ```
 
 Expected result: Git shows only commits related to that file.
-
-## Summary
-
-Use `git log --oneline` for a compact history. Use `git show` to inspect one commit. Use `--graph --decorate` to understand branches. Use `--follow` for one file. Use `--grep` for commit messages and `-S` for code changes.
-
-If `git log` feels abstract, first read [What Is a Git Commit?](/posts/what-is-a-git-commit/). For a structured beginner path, see [Command Line Git](/projects/command-line-git/) and the [book page](/books/command-line-git-everything-you-need-to-know-to-get-started/).

@@ -226,11 +226,3 @@ git log --oneline
 ```
 
 Expected result: you still have one commit for that change, but the commit ID changed.
-
-## Summary
-
-A Git commit is a saved project snapshot with metadata and a link to the commit that came before it.
-
-Use commits to record meaningful steps in the project history. Use the staging area to control what goes into each commit. Use `git log` to read the history afterward.
-
-Next, read [Git Log for Beginners: How to Read Commit History](/posts/git-log-for-beginners/) to inspect commits after you create them. For the full beginner path, see [Command Line Git](/projects/command-line-git/) and the [book page](/books/command-line-git-everything-you-need-to-know-to-get-started/).

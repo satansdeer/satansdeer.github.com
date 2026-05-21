@@ -206,9 +206,3 @@ Ask for the map. Then, without editing code, write down:
 - one boundary you want tests around before changing.
 
 That list is more useful than a vague feeling that the project needs a rewrite.
-
-## Summary
-
-AI coding tools are good at filling in code once the shape is clear. They are weaker at preserving that shape across many fast edits.
-
-Before you rewrite an AI-generated app, map it. Ask for responsibilities, inputs, outputs, and dependencies. Use the strain of understanding as a signal. Then turn the map into a small refactor queue and work through it one boundary at a time.

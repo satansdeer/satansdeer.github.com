@@ -165,11 +165,3 @@ Before prompting again, write:
 - One test that proves the boundary works.
 
 Then give Claude Code that shape first, and only then ask for the implementation.
-
-## Summary
-
-Claude Code can make you faster, but only if you still do the architectural work.
-
-Use it to fill in well-shaped tasks. Do not use it as the thing that decides the shape of the system.
-
-The practical rule is simple: define the boundary before the prompt, keep patches small, and review dependency direction before you accept the code.

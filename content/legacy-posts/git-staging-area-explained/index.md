@@ -247,13 +247,3 @@ git diff --staged
 ```
 
 Expected result: one change is staged and the other remains unstaged.
-
-## Summary
-
-The staging area is not extra ceremony. It is Git giving you control over the next commit.
-
-Use `git add` to prepare changes. Use `git diff --staged` to inspect the commit draft. Use `git restore --staged` to remove changes from that draft without deleting your work. Use `git add -p` when a file contains more than one logical change.
-
-After you understand staging and commits, use [Git Log for Beginners](/posts/git-log-for-beginners/) to inspect the history you created.
-
-If you want a fuller beginner path through Git, I keep the book project here: [Command Line Git](/projects/command-line-git/). The book page is also available at [Command Line Git: Everything You Need to Know to Get Started](/books/command-line-git-everything-you-need-to-know-to-get-started/).

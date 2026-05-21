@@ -2,7 +2,6 @@
 title: Build It And They Will Not Come: Finding Users For Your SaaS
 date: 2026-05-16T17:40:00.000Z
 categories: Programming
-image: contact-sheet.jpg
 ---
 
 Building the product is not the hard finish line. It is the start of the next problem.
@@ -10,8 +9,6 @@ Building the product is not the hard finish line. It is the start of the next pr
 If you are building an app or SaaS and quietly believing that users will appear after launch, you are probably setting yourself up for a painful surprise. The market is full of other builders doing the same thing, talking to the same audience, using the same platforms, and searching for the same early adopters.
 
 This post is adapted from [a YouTube video about finding users for a SaaS](https://www.youtube.com/watch?v=tjakK9Nj4bA). The video came from a real attempt to find early users for Mont, my browser-based video editor.
-
-![Contact sheet from the user acquisition video](./contact-sheet.jpg)
 
 ## The Trap
 
@@ -167,11 +164,11 @@ Distribution gets easier when the content comes from real questions instead of g
 
 ## Common Mistakes
 
-The first mistake is waiting until launch to learn where users are.
+Waiting until launch to learn where users are.
 
-The second is treating other builders as proof of customer demand.
+Treating other builders as proof of customer demand.
 
-The third is posting only product updates. Product updates are useful for people who already care. Problem-focused content is how you reach people who do not yet know you exist.
+Posting only product updates. Product updates are useful for people who already care. Problem-focused content is how you reach people who do not yet know you exist.
 
 ## Exercise
 
@@ -188,11 +185,3 @@ For each phrase, record:
 - whether your product would naturally fit the conversation.
 
 That list is the beginning of a distribution plan.
-
-## Summary
-
-"Build it and they will come" is not a strategy.
-
-Build the product, but start learning distribution at the same time. Look for real conversations, learn the user's language, separate builders from buyers, and turn repeated questions into useful content.
-
-The earlier you start that loop, the less lonely launch day becomes.

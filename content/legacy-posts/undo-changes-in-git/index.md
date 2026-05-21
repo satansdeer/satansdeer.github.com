@@ -224,9 +224,3 @@ git status
 ```
 
 Expected result: the commit is gone from history, but its changes are staged.
-
-## Summary
-
-Use `restore` for tracked working-directory and staging-area changes. Use `clean` for untracked files. Use `revert` for pushed commits. Use `reset` for local commits, and be especially careful with `--hard`.
-
-For the surrounding mental model, read [What Is a Git Commit?](/posts/what-is-a-git-commit/) and [Git Log for Beginners](/posts/git-log-for-beginners/). The complete beginner path is in [Command Line Git](/projects/command-line-git/) and the [book page](/books/command-line-git-everything-you-need-to-know-to-get-started/).

@@ -208,9 +208,3 @@ git push -u origin practice-branch
 ```
 
 Expected result: Git creates the remote branch and connects your local branch to it.
-
-## Summary
-
-Remotes connect your repository to other repositories. `origin` is the conventional remote name. `push` sends commits, `fetch` downloads remote history, and `pull` fetches plus integrates changes.
-
-For the history side of this workflow, read [Git Log for Beginners](/posts/git-log-for-beginners/). For conflict recovery after a difficult pull or merge, read [Resolve Git Merge Conflicts](/posts/resolve-git-merge-conflicts/). The full beginner book lives at [Command Line Git](/projects/command-line-git/) and the [book page](/books/command-line-git-everything-you-need-to-know-to-get-started/).
