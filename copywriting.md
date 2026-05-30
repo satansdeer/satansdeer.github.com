@@ -60,6 +60,20 @@ A standardized framework for high-quality, human-sounding copywriting that avoid
 - ✅ "you believe" not "quietly believing"
 - ✅ "you are setting yourself up" not "you are probably setting yourself up"
 
+**Concessive Constructions (X, but Y)**
+- ❌ "X is useful, but it can distort..." → just say the point
+- ❌ "X is great, but..." → state the limitation directly
+- ❌ "X has benefits, however..." → get to the issue
+- ✅ Instead: State the main point without the softening setup
+- ✅ "Builder communities can distort your sense of demand." not "Builder communities are useful, but they can distort..."
+
+**Concessive Constructions (X, but Y)**
+- ❌ "X is useful, but it can distort..." → just say the point
+- ❌ "X is great, but..." → state the limitation directly
+- ❌ "X has benefits, however..." → get to the issue
+- ✅ Instead: State the main point without the softening setup
+- ✅ "Builder communities can distort your sense of demand." not "Builder communities are useful, but they can distort..."
+
 **Frame-Setting Constructions**
 - ❌ "Let's dive in"
 - ❌ "Let's unpack this"

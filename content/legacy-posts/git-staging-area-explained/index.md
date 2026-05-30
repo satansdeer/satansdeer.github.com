@@ -164,7 +164,7 @@ This is useful when one file contains changes for two different commits. For a d
 
 `git add .` stages changes under the current directory.
 
-It is convenient, but it is also easy to stage more than you intended. Before using it, check:
+It is easy to stage more than you intended. Before using it, check:
 
 ```bash
 git status

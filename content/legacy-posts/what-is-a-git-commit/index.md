@@ -87,7 +87,7 @@ git commit --amend
 git rebase
 ```
 
-These commands are useful, but they rewrite commits. Rewriting local commits is normal. Rewriting commits that other people already pulled can create confusion.
+These commands rewrite commits. Rewriting local commits is normal. Rewriting commits that other people already pulled can create confusion.
 
 Beginner rule: amend freely before pushing, be careful after pushing.
 

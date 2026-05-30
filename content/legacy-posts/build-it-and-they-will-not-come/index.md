@@ -87,7 +87,7 @@ Those conversations teach you more than a cold launch page.
 
 ## Do Not Confuse Other Builders With Your Market
 
-Builder communities are useful, but they can distort your sense of demand.
+Builder communities can distort your sense of demand.
 
 Other founders understand the struggle. They may like your posts. They may give feedback. They may even share encouragement.
 

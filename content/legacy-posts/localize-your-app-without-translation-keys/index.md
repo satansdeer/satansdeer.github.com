@@ -97,7 +97,7 @@ Source-text keys make that change visible.
 
 AI-built apps tend to grow quickly.
 
-That is useful, but it also means you can accumulate string keys before you have a stable product language. If every prompt adds five named strings, you can end up with a translation layer that reflects yesterday's component names more than today's product.
+That means you can accumulate string keys before you have a stable product language. If every prompt adds five named strings, you can end up with a translation layer that reflects yesterday's component names more than today's product.
 
 For early-stage apps, source-text keys keep the copy close to the interface.
 
