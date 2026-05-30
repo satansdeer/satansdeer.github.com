@@ -32,7 +32,7 @@ That is the real shape of the problem. You are not only competing with existing 
 
 ## The Second Phase Problem
 
-The first phase is a phase of building where progress feels concrete.
+In the first phase, progress feels concrete.
 
 You add features. You fix bugs. You polish the UI. You record a demo. You ship another version. Every day produces something visible.
 
