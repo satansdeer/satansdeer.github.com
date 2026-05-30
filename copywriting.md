@@ -19,6 +19,20 @@ A standardized framework for high-quality, human-sounding copywriting that avoid
 - Replace vague buzzwords with direct language
 - Active voice unless passive genuinely serves meaning
 
+### Self-Aware Commentary
+- Pause after a list or sequence to point out what the reader just read
+- Use "See how..." or "Notice..." to make the reader aware of a pattern in the previous text
+- This replaces abstract claims with concrete observation
+- Example: after a list of pre-product activities, add "See how none of these require a finished product."
+- Use sparingly — only when the structure itself carries meaning worth highlighting
+
+### Self-Aware Commentary
+- Pause after a list or sequence to point out what the reader just read
+- Use "See how..." or "Notice..." to make the reader aware of a pattern in the previous text
+- This replaces abstract claims with concrete observation
+- Example: after a list of pre-product activities, add "See how none of these require a finished product."
+- Use sparingly — only when the structure itself carries meaning worth highlighting
+
 ### Specificity Over Abstraction
 - Show concrete examples, not abstract claims
 - Use specific details instead of generic benefits
