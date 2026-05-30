@@ -7,7 +7,7 @@ image: contact-sheet.jpg
 
 Mont can record your screen and camera into separate timeline layers.
 
-That matters because a screen recording is rarely perfect on the first take. If the camera and screen are separate layers, you can reposition them, crop them, apply zoom effects, and edit the result before exporting.
+That matters because a screen recording is perfect on the first take. If the camera and screen are separate layers, you can reposition them, crop them, apply zoom effects, and edit the result before exporting.
 
 This post is adapted from [a YouTube tutorial about recording your screen in Mont](https://www.youtube.com/watch?v=EKGyk1Q0Dbo). For a broader demo workflow, see [How To Record A SaaS Demo Video From Screenshots](/posts/record-saas-demo-video-from-screenshots/).
 
@@ -62,7 +62,7 @@ Before recording, check the layout.
 
 If you are recording both screen and camera, decide where the camera should appear. Keep it away from the UI controls the viewer needs to see.
 
-Good camera positions usually avoid:
+Good camera positions avoid:
 
 - primary buttons,
 - navigation,
@@ -76,7 +76,7 @@ If the camera covers important information, move it before recording or plan to 
 
 Press record and walk through the flow.
 
-Keep the recording focused. A useful screen recording usually has one job:
+Keep the recording focused. A useful screen recording has one job:
 
 ```text
 show one feature

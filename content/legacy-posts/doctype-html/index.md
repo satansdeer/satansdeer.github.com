@@ -6,9 +6,9 @@ image: doctype_html.jpg
 ---
 
 If you open any webpage, and look at it's source code, you'll always see
-a little thingy just before the opening html tag. So what is it, and what does it do?
+a little thingy before the opening html tag. What is it, and what does it do?
 
-This string is a document type declaration, and it's important to note that it's not an html tag itself, but it's an instruction for the browser on what version of HTML is used on this page.
+This string is a document type declaration, and it's not an html tag itself, but it's an instruction for the browser on what version of HTML is used on this page.
 
 Good news, modern web developers don't have to know any doctypes other than doctype html, because since the html5 it's the only doctype you should set for your webpages.
 
@@ -26,7 +26,7 @@ But as I said the modern type declaration doesn't' require you to specify the li
 
 Now why, do you need to specify it?
 
-In the dark ages of the internet, before the web standards, there we two huge browsers: Netscape Navigator and Microsoft Internet Explorer. And web pages were usually developed separately for each of them.
+In the dark ages of the internet, before the web standards, there we two browsers: Netscape Navigator and Microsoft Internet Explorer. Web pages were developed separately for each of them.
 
 After the creation of the standards browsers introduced two ways of rendering, one for standards compliant websites and quirks mode to support the legacy sites.
 

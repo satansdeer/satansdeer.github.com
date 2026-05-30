@@ -1,0 +1,33 @@
+---
+extends: substitution
+message: "Remove this dramatic adjective: state the fact directly."
+level: error
+swap:
+  painful: ""
+  incredible: ""
+  devastating: ""
+  remarkable: ""
+  extraordinary: ""
+  phenomenal: ""
+  outstanding: ""
+  exceptional: ""
+  tremendous: ""
+  enormous: ""
+  massive: ""
+  huge: ""
+  vast: ""
+  immense: ""
+  staggering: ""
+  breathtaking: ""
+  stunning: ""
+  astonishing: ""
+  amazing: ""
+  wonderful: ""
+  fantastic: ""
+  fabulous: ""
+  marvelous: ""
+  spectacular: ""
+  magnificent: ""
+  glorious: ""
+  brilliant: ""
+---

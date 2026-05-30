@@ -106,7 +106,7 @@ Do not overdo this on the first video. The goal is to make the result clear and 
 
 When the preview looks right, export the video.
 
-Use the first export as a test. Watch it once without editing. You will usually notice one or two timing or layout issues. Fix those, export again, and stop when the video communicates the point clearly.
+Use the first export as a test. Watch it once without editing. You will notice one or two timing or layout issues. Fix those, export again, and stop when the video communicates the point clearly.
 
 ## Common Mistakes
 

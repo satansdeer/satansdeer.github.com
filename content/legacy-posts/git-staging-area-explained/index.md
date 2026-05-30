@@ -1,5 +1,5 @@
 ---
-title: Git Staging Area Explained: What git add Really Does
+title: "Git Staging Area Explained: What git add Really Does"
 date: 2026-05-16T13:30:00.000Z
 categories: Git
 image: staging-area.png
@@ -7,13 +7,13 @@ image: staging-area.png
 
 The Git staging area is the place where you prepare the next commit.
 
-That is the short version. The more useful version is this: `git add` does not simply "save" a file. It takes the current version of a file, or part of a file, and puts that version into a proposed commit. Until you run `git commit`, you can still change your mind.
+That is the short version. The more useful version is this: `git add` does not "save" a file. It takes the current version of a file, or part of a file, and puts that version into a proposed commit. Until you run `git commit`, you can still change your mind.
 
-This is one of the Git ideas that feels unnecessary at first and then becomes very useful. The staging area lets you separate "what I changed" from "what I want to record right now".
+This is one of the Git ideas that feels unnecessary at first and then becomes useful. The staging area lets you separate "what I changed" from "what I want to record right now".
 
 ## The Three Places Git Cares About
 
-When you are editing a project, Git is usually comparing three places:
+When you are editing a project, Git is comparing three places:
 
 1. The last commit.
 2. Your working directory.
@@ -69,7 +69,7 @@ If the word commit still feels abstract, read [What Is a Git Commit?](/posts/wha
 
 ## Staged Does Not Mean Finished
 
-Here is the part that often surprises beginners: staging a file does not create a permanent save point. It only updates the next commit draft.
+Here is the part that surprises beginners: staging a file does not create a permanent save point. It only updates the next commit draft.
 
 Change the file:
 

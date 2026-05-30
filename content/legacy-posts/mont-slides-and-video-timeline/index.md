@@ -43,7 +43,7 @@ You may need:
 - a short camera explanation,
 - a final call to action.
 
-Traditional tools often make this awkward. Slide tools are good at layout but weak at timeline editing. Video editors are good at clips but make text and structured slides slower to update.
+Traditional tools make this awkward. Slide tools are good at layout but weak at timeline editing. Video editors are good at clips but make text and structured slides slower to update.
 
 Mont tries to put those workflows together.
 
@@ -76,7 +76,7 @@ For video work, editable text matters because copy changes are common. A label, 
 
 ## Effects And Annotations
 
-Product videos often need more than text.
+Product videos need more than text.
 
 Useful annotation elements include:
 
@@ -100,7 +100,7 @@ For a video editor that includes design elements, those small controls matter. T
 
 ## Why This Helps Product Demos
 
-A product demo changes often.
+A product demo changes .
 
 The copy changes. The UI changes. The feature order changes. A sensitive detail needs to be hidden. A callout should point somewhere else.
 

@@ -111,7 +111,7 @@ Treating architecture as something senior developers do later.
 
 Assuming the AI understands your system boundaries better than you do.
 
-Waiting until the codebase is painful before mapping it. By then, every change is already harder.
+Waiting until the codebase is broken before mapping it. By then, every change is harder.
 
 ## Exercise
 

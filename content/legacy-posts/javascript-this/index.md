@@ -5,7 +5,7 @@ categories: Javascript
 image: thumb.jpg
 ---
 
-A lot of people find `this` keyword in Javascript very confusing. Depending on where is it used and defined it can have different value.
+A lot of people find `this` keyword in Javascript confusing. Depending on where is it used and defined it can have different value.
 
 ## This In Functions
 

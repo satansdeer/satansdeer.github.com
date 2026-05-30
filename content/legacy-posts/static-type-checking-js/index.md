@@ -34,7 +34,7 @@ Those definitions can be grouped into two categories:
 
 First three definitions are the most common. And they describe the language from the practical point of view. Dynamic means that data types are bound to values and types are checked at run time.
 
-Weak/loose typing is more value, but most often it describes the fact that Javascript coerces types automatically.
+Weak/loose typing is more value, but most it describes the fact that Javascript coerces types automatically.
 
 So Javascript allows you to do all kinds of crazy stuff with your values:
 
@@ -48,9 +48,9 @@ Here I'll refer to the definition of Benjamin Pierce book "Types and Programming
 
 OK, I hope that I look smart now 🤓.
 
-And basically, this phrase means that type system allows to check the syntax of the program and mark some phrases invalid if kinds of values it computes don't align.
+And , this phrase means that type system allows to check the syntax of the program and mark some phrases invalid if kinds of values it computes don't align.
 
-The fact that we can tell it just by the syntax – means that we do it statically, not at runtime.
+The fact that we can tell it by the syntax – means that we do it statically, not at runtime.
 
 In Javascript there is no way to say that some values won't align, all of that expressions are valid:
 
@@ -77,7 +77,7 @@ Now let's discuss why you might want to add static type checking.
 
 Programming is hard. And the longer you develop some program – the harder it becomes.
 
-Probably everyone has noticed that __it's always easier to develop new projects__ than support old ones. That's because of complexity that tends to grow pretty fast as we add new features to the program.
+Probably everyone has noticed that __it's always easier to develop new projects__ than support old ones. That's because of complexity that tends to grow fast as we add new features to the program.
 
 ### Separating by units
 
@@ -99,19 +99,19 @@ And here is where Javascript dynamic nature doesn't help us at all. You can pass
 
 ![javascript dynamic nature](/brokula-pica-i-pas.gif)
 
-In React world there is a very popular way to do it – the PropTypes. But it's a runtime check, so you might see some errors late and also it's applicable only to react components.
+In React world there is a popular way to do it – the PropTypes. But it's a runtime check, so you might see some errors late and also it's applicable only to react components.
 
 There is a better solution. We can add static type checking to Javascript. For example with Flow.
 
 ## Flow
 
-Flow is a static type checker made by Facebook. It's pretty easy to start using. Just install the `npm` package:
+Flow is a static type checker made by Facebook. It's easy to start using. Just install the `npm` package:
 
 ```js
 yarn add --dev flow-bin
 ```
 
-Run `yarn run flow init` and then just run `yarn run flow` to check your project for type errors.
+Run `yarn run flow init` and then run `yarn run flow` to check your project for type errors.
 
 I recommend using comments for flow type annotations. Flow has it's own comments syntax, to use it add a double colon in the beginning of the comments block.
 
@@ -179,7 +179,7 @@ concat(true, false);  // Error!
 
 ### Literal, Union, Intersection, Interface
 
-Now you can be very specific with kinds of values your functions accept. You can limit it to nominal types, literals, or even structural types, using interfaces.
+Now you can be specific with kinds of values your functions accept. You can limit it to nominal types, literals, or even structural types, using interfaces.
 
 Actually, I was lacking interfaces in Javascript for a long time. Now you can the define some interface and ensure that only objects that conform to it (have all required methods and properties) will be accepted in some function.
 
@@ -189,7 +189,7 @@ It's a lot more powerful than what `PropTypes` can provide.
 
 ## Conclusion And My Thoughts
 
-Static type checking is a very powerful instrument. It allows preventing bugs by defining clear contracts for your units of code. It adds some noise when you read and you have to type (pun intended) a bit more. 
+Static type checking is a powerful instrument. It allows preventing bugs by defining clear contracts for your units of code. It adds some noise when you read and you have to type (pun intended) a bit more. 
 
 In this article, I used Flow as an example of static type checking tool. There are others, you can use TypeScript, Elm, ReasonML etc.
 
@@ -199,4 +199,4 @@ My main point is that static type checking will help you to ensure that your mod
 
 I've released a `WIP` version of my [React Course](https://basicreact.com), check it out.
 
-I really want to make it useful, so join the [Slack Channel](https://join.slack.com/t/frontendartisans/shared_invite/enQtMzM1MjM3ODYyMDY1LWUwYzM4ZDc5ZDU1MjY1ZWM2OWZmNWUzZmZlNGJhOGRiYzA1ZmFiZDBkZDg2YmI3MzMyNTcxODVhZjgzMjNiZjc) and let me know what you'd like to see in __your perfect react course__.
+I want to make it useful, so join the [Slack Channel](https://join.slack.com/t/frontendartisans/shared_invite/enQtMzM1MjM3ODYyMDY1LWUwYzM4ZDc5ZDU1MjY1ZWM2OWZmNWUzZmZlNGJhOGRiYzA1ZmFiZDBkZDg2YmI3MzMyNTcxODVhZjgzMjNiZjc) and let me know what you'd like to see in __your perfect react course__.

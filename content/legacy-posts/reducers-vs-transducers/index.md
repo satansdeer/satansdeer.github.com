@@ -57,7 +57,7 @@ const helloWorld = stringReducer("Hello", "world!")
 
 ## Map And Filter As Reducers
 
-The other cool thing about reducers is that you can chain them to perform a series of operations on some data. This opens up huge possibilities for composition and reuse of small reducer functions.
+The other cool thing about reducers is that you can chain them to perform a series of operations on some data. This opens up possibilities for composition and reuse of small reducer functions.
 
 Let's say you have an ordered array of numbers. You want to get even numbers from it and then multiply by 2.
 
@@ -69,7 +69,7 @@ The ordinary way to do it would be to use `.map` and `.filter` functions:
   .map((x) => x * 2)
 ```
 
-But what if your array had 1000,000 elements? You have to loop through the whole array for every operation, that's extremely ineffective.
+But what if your array had 1000,000 elements? You have to loop through the whole array for every operation, that's ineffective.
 
 We need some way to combine the functions we passed to `map` and `filter`. But we can't do this as they have different interface. The function
 that we passed to `filter` is called __predicate__ and it takes a value and returns __True__ or __False__ depending on inner logic. And the function
@@ -131,7 +131,7 @@ const transducer => (reducer) => {
 }
 ```
 
-So basically transducer looks like this `(oneReducer) => anotherReducer`.
+So transducer looks like this `(oneReducer) => anotherReducer`.
 
 Let's rewrite our __mapping__ reducer as well:
 
@@ -167,7 +167,7 @@ const mapDouble = map(doubleTransformer);
 
 Actually we could make our map method a transducer as well and continue this composition indefinitely.
 
-But just imagine having to compose more than 2 transducers. We have to find more convenient way to compose them.
+But imagine having to compose more than 2 transducers. We have to find more convenient way to compose them.
 
 ## Better Composition
 
@@ -185,11 +185,11 @@ const compose = (...functions) =>
     (...args) => accumulation(fn(args)), x => x)
 ```
 
-The function is very compact, let's break it down.
+The function is compact, let's break it down.
 
 Imagine that we called that function like this `compose(fn1, fn2, fn3)(x)`.
 
-First look at the `x => x` part. In lambda calculus it's called __identity function__. It just returns whatever it takes as an argument without changing. We need it here to start our unfolding.
+First look at the `x => x` part. In lambda calculus it's called __identity function__. It returns whatever it takes as an argument without changing. We need it here to start our unfolding.
 
 So after fist iteration we'll have that __identity function__ (for convenience let's call it __I__) called with the __fn1__ function as an argument:
 
@@ -220,7 +220,7 @@ Yay, we calculated the `accumulation` value after the first iteration. Let's do 
   (...args) => I(fn1(fn2(args)))
 ```
 
-I think you got the idea. Now just repeat steps 3 and 4 for `fn3` and voila, you've converted your `compose(fn1, fn2, fn3)(x)` to `fn1(fn2(fn3(x)))`.
+I think you got the idea. Now repeat steps 3 and 4 for `fn3` and voila, you've converted your `compose(fn1, fn2, fn3)(x)` to `fn1(fn2(fn3(x)))`.
 
 Now we can compose our `map` and `filter` like this:
 

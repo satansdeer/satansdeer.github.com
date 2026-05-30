@@ -9,11 +9,11 @@ Javascrpt is dynamic language, it doesn't have static typechecking. You can't
 syntactically specify that you function works only with strings, or only with numbers.
 
 Same applies to React components. You can pass a `prop` that you component won't
-use, or forget to pass the `prop` that it actually uses. Or just pass the `prop` of a wrong type.
+use, or forget to pass the `prop` that it actually uses. Or pass the `prop` of a wrong type.
 
 This whole set of problems can be solved by **static typing**.
 
-You can use [Flow]() or [Typescript]() to do that, but that would be quite big transition. And if you develop a React components library - your consumers will also have to use same static typing solution to benefit type annotations.
+You can use [Flow]() or [Typescript]() to do that, but that would be big transition. And if you develop a React components library - your consumers will also have to use same static typing solution to benefit type annotations.
 
 **PropTypes** provide React-specific typechecking for your components. And your consumers will get **PropTypes** warnings even if they don't use **PropTypes** themselves.
 
@@ -134,7 +134,7 @@ Sometimes you want `props` to have some value by default.
 
 For this cases you can use `defaultProps`.
 
-It's syntax is very similar to `propTypes`. For example you can specify it on an already defined component.
+It's syntax is similar to `propTypes`. For example you can specify it on an already defined component.
 
 ```jsx
 import PropTypes from "prop-types";
@@ -254,6 +254,6 @@ MyComponent.propTypes = {
 };
 ```
 
-Overall **PropTypes** provide a convinient way of runtime typisation and can greatly increase productivity.
+**PropTypes** provide a convenient way of runtime type checking and can increase productivity.
 
 You can use static type checking (Flow, Typescript) as an alternative or together with PropTypes.

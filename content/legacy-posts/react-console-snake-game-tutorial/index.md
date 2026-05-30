@@ -31,7 +31,7 @@ Let's begin by bootstrapping our console application.
 
 ## Display The Game Field
 
-Ink provides a bunch of components to display. We'll use `Text` and `Box`. `Box` is somewhat similar to `div` in HTML.
+Ink provides a bunch of components to display. We'll use `Text` and `Box`. `Box` is similar to `div` in HTML.
 
 - Define the field size:
 
@@ -364,7 +364,7 @@ At this point the game should be playable. But it's impossible to loose. Let's f
 
 ## Conclusion
 
-Even though Ink is not intended to make games - as you can see even this is totally possible.
+Even though Ink is not intended to make games - as you can see even this is possible.
 
 I like how easy it is now to create cli apps of any level of complexity, yay!
 

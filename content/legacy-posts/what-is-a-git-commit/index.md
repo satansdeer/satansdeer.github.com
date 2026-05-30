@@ -15,7 +15,7 @@ You can come back to that point later. You can compare it with another point. Yo
 
 A commit is more than the changed lines of code. It stores enough information for Git to place that snapshot in history.
 
-A commit usually contains:
+A commit contains:
 
 - The project snapshot.
 - A unique commit ID.
@@ -102,7 +102,7 @@ These are good commit boundaries:
 - Rename a component and update imports.
 - Add one test for one behavior.
 
-These are usually poor commit boundaries:
+These are poor commit boundaries:
 
 - Fix login, rewrite styles, and update dependencies.
 - Add a feature and include unrelated formatting changes.
@@ -168,7 +168,7 @@ The merge commit says: this new point in history comes from both the current bra
 
 ![A Git merge commit with two parents](./merge-commit.png)
 
-You do not need to master merge commits on day one. Just know that when `git log --graph` shows two lines joining together, the commit where they join is usually a merge commit.
+You do not need to master merge commits on day one. Just know that when `git log --graph` shows two lines joining together, the commit where they join is a merge commit.
 
 ## Amending the Last Commit
 

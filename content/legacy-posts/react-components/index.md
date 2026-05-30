@@ -33,7 +33,7 @@ If you use arrow function to define your component and you only have layout code
 const SimpleComponent = () => <div>Very basic component.</div>;
 ```
 
-If your code takes more than one line - just wrap it into brackets:
+If your code takes more than one line - wrap it into brackets:
 
 ```jsx{numberLines: true}
 const SimpleComponent = () => (

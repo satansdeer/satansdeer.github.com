@@ -6,9 +6,9 @@ image: statements_expressions.png
 comments: true
 ---
 
-Let's talk about __statements__ and __expressions__. It's very important to understand difference between them.
+Let's talk about __statements__ and __expressions__. It's important to understand difference between them.
 
-I've checked several articles on this topic and in a lot of them authors say something like: OK, we have statements, we have expressions, we can use expressions in place of statements but not in reverse. It is kind of true, but not completely.
+I've checked several articles on this topic and in a lot of them authors say something like: OK, we have statements, we have expressions, we can use expressions in place of statements but not in reverse. It is kind of true, but not .
 
 It's not like you can apply hammer-wrench 🛠️ analogy. Like __statement__ is a hammer 🔨 and __expression__ is a wrench 🔧. And as like with heavy enough wrench you can use it as a hammer – you can apply __expression__ in place of a __statement__.
 
@@ -24,11 +24,11 @@ No, it's not like that. An expression is always part of statement. Even if that 
 ## Statements
 
 When we write programs - we describe the sequences of actions that should be performed to get a desired result. In programming languages those actions are called statements. 
-So every _Javascript_ program basically consists of statements. In Javascript statements are separated by semicolons.
+So every _Javascript_ program consists of statements. In Javascript statements are separated by semicolons.
 
 Important note:
 
-> You can use just newlines and omit semicolons, because Javascript puts semicolons in the end of lines automatically, but ❌ __this is not recommended__. There are cases where it can lead to ambiguity. See the [automatic semicolon insertion](https://www.ecma-international.org/ecma-262/#sec-automatic-semicolon-insertion) section of ECMAScript specification.
+> You can use newlines and omit semicolons, because Javascript puts semicolons in the end of lines automatically, but ❌ __this is not recommended__. There are cases where it can lead to ambiguity. See the [automatic semicolon insertion](https://www.ecma-international.org/ecma-262/#sec-automatic-semicolon-insertion) section of ECMAScript specification.
 
 All of those are statements:
 
@@ -42,7 +42,7 @@ if(true){} // if is statement
 // Even though it consists from only one expression
 ```
 
-As you can see statements just do things. They are kind of language _phrases_. They can contain smaller parts, for example expressions.
+As you can see statements do things. They are kind of language _phrases_. They can contain smaller parts, for example expressions.
 
 <a name='expressions'></a>
 ## Expressions
@@ -58,7 +58,7 @@ declaredVariable // whatever the variable value was
 declaredVariable = 'new value' // assignment is an expression
 ```
 
-Actually just `"foo"`, `{foo: 'bar'}`, `[1,2,3]`, or `42` are also expressions, they are called `literals` (string, object, array and number literal) because they just return their literal value.
+Just `"foo"`, `{foo: 'bar'}`, `[1,2,3]`, or `42` are also expressions, they are called `literals` (string, object, array and number literal) because they return their literal value.
 
 And even this small expressions can be statements on their own.
 

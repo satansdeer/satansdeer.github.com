@@ -1,5 +1,5 @@
 ---
-title: Where To Store API Keys: Stop Putting Secrets in .env Files
+title: "Where To Store API Keys: Stop Putting Secrets in .env Files"
 date: 2026-05-16T16:05:00.000Z
 categories: Programming
 image: contact-sheet.jpg
@@ -90,7 +90,7 @@ Even then, production should inject that value from a controlled secret store, n
 
 Use a secret manager that supports programmatic access.
 
-The exact tool depends on where the app runs, but the shape is usually the same:
+The exact tool depends on where the app runs, but the shape is the same:
 
 - Store the secret in the platform's secret store.
 - Grant access only to the service that needs it.
@@ -160,11 +160,11 @@ Local development should not need broad production access. Use separate keys, se
 
 ### Mistake 3: Hiding Secrets In Front-End Environment Variables
 
-Build tools often expose selected environment variables to browser code. If it ends up in the bundle, users can read it.
+Build tools expose selected environment variables to browser code. If it ends up in the bundle, users can read it.
 
 ### Mistake 4: Giving Every Service Every Secret
 
-Each app, worker, and job should receive only the secrets it needs. This makes leaks smaller and rotation less painful.
+Each app, worker, and job should receive only the secrets it needs. This makes leaks smaller and rotation less .
 
 ## Exercise
 

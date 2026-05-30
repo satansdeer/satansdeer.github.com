@@ -21,7 +21,7 @@ function* generator() {
 }
 ```
 
-Inside generator function you can use new keyword `yield`. It works kind of like `return` but instead of stopping function completely it pauses it so you can continue execution from that place later.
+Inside generator function you can use new keyword `yield`. It works kind of like `return` but instead of stopping function it pauses it so you can continue execution from that place later.
 
 ```js
 function* generator() {
@@ -63,7 +63,7 @@ console.log(iterator.next()); // {value: "Now stopped.", done: true}
 
 You can also pass data back to your generator function.
 
-To do this just call `next()` method of your iterator with an argument.
+To do this call `next()` method of your iterator with an argument.
 
 ```js
 function* sampleGenerator() {

@@ -35,7 +35,7 @@ function ErrorMessage({ error }) {
 
 In this example if the prop `error` will be false component won't render.
 
-It is the most simple way, often used for early return from your component rendering code.
+It is the most simple way, used for early return from your component rendering code.
 
 ## Ternary Operator
 
@@ -65,7 +65,7 @@ function ToDoList({ items, isLoading}) {
 
 In general I would recommend to avoid that as it makes code less readable.
 
-Overall ternary operator is a great way to have conditions in your **JSX**. I recommend using them over `if/else` statements.
+Ternary operator is a great way to have conditions in your **JSX**. I recommend using them over `if/else` statements.
 
 ## Logical AND
 
@@ -75,7 +75,7 @@ Often times you don't need the `else` part of your ternary operator. Instead of 
 <div>{isLoading && <p>Loading...</p>}</div>
 ```
 
-If `isLoading` is `false`, this code will result in just empty `<div/>`.
+If `isLoading` is `false`, this code results in empty `<div/>`.
 
 ## Switch Case
 

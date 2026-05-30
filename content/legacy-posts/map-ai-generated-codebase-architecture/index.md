@@ -29,7 +29,7 @@ If you cannot explain the whole map in plain language, do not start a rewrite ye
 
 ## Why This Matters
 
-When you are "vibe coding" an application, the first version can arrive very quickly.
+When you are "vibe coding" an application, the first version can arrive quickly.
 
 That speed hides a problem: the app can grow faster than your mental model of it. You keep adding features, the AI keeps editing files, and eventually you are no longer sure which module owns which responsibility.
 
@@ -123,7 +123,7 @@ Input: user id and form values.
 Output: validation result and saved profile.
 ```
 
-An unhealthy module often sounds like:
+An unhealthy module sounds like:
 
 ```text
 It gets some state, maybe updates the database, calls the API sometimes, and also changes the UI.
@@ -133,7 +133,7 @@ That strain of explanation is the point. When the explanation is hard, maintenan
 
 ### Duplicate Almost-Modules
 
-AI tools often create similar helpers because they are optimizing for the current request.
+AI tools create similar helpers because they are optimizing for the current request.
 
 The map can reveal two modules that should be one concept, or one module that should be split into two concepts.
 
@@ -154,7 +154,7 @@ For each one, explain:
 
 Then pick one.
 
-Good first refactors are usually small boundary improvements:
+Good first refactors are small boundary improvements:
 
 - move API client code out of UI components,
 - move validation into a dedicated module,
@@ -195,7 +195,7 @@ After that, you can ask for one refactor at a time.
 
 ## Exercise
 
-Pick one project that has been mostly built or heavily edited with AI coding tools.
+Pick one project that has been built or heavily edited with AI coding tools.
 
 Ask for the map. Then, without editing code, write down:
 

@@ -293,7 +293,7 @@ In this tutorial, we'll set up our application using `create-react-app`.
 
   Here I've used `npx` command to run `create-react-app`. You can run `create-react-app` directly if you have it installed locally.
 
-  > `npx` is an npm package runner. It is available with `NodeJS` installation since version `6.0`. It's often being used to run one-time commands without installing them first. But it can be used for other tasks too, read more about it [here](https://www.npmjs.com/package/npx)
+ > `npx` is an npm package runner. It is available with `NodeJS` installation since version `6.0`. It's being used to run one-time commands without installing them first. But it can be used for other tasks too, read more about it [here](https://www.npmjs.com/package/npx)
 
 ### Step 2: Install dependencies
 
@@ -343,7 +343,7 @@ After we have all the dependencies installed - we need to initialize GraphQL cli
 
 ### Step 4: Integrate React
 
-To connect Apollo Client to React, we'll use the `ApolloProvider`. It works just like React Context provider, you can read more about React Context API [here](https://maksimivanov.com/posts/react-context-api/)
+To connect Apollo Client to React, we'll use the `ApolloProvider`. It works like React Context provider, you can read more about React Context API [here](https://maksimivanov.com/posts/react-context-api/)
 
 * In `index.js`, wrap your `App` with an `ApolloProvider`.
 

@@ -146,7 +146,7 @@ try {
 }
 ```
 
-So if you don't need that `error` parameter you can just omit it.
+So if you don't need that `error` parameter you can omit it.
 
 ```js
 try {
@@ -156,7 +156,7 @@ try {
 }
 ```
 
-I have to note that it's quite controversial, and you might want to read an extensive [article by Axel Rauschmayer](http://2ality.com/2017/08/optional-catch-binding.html) where he talks about implications of this method and some alternatives.
+I have to note that it's controversial, and you might want to read an extensive [article by Axel Rauschmayer](http://2ality.com/2017/08/optional-catch-binding.html) where he talks about implications of this method and some alternatives.
 
 It's a good read - so check it out.
 
@@ -248,6 +248,6 @@ In that repo you'll find documents describing proposals on 4 stages:
 * Stage 4 - Finished
   If the proposal gets to this stage it means that it will be included in next edition of the formal ECMAScript standard.
 
-Now just check out this repo from time to time, read the proposals and be on the bleeding edge of Javascript.
+Now check out this repo from time to time, read the proposals and be on the bleeding edge of Javascript.
 
 `youtube:https://www.youtube.com/embed/8Ie7hHxVbA8`

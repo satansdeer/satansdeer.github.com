@@ -1,0 +1,26 @@
+---
+extends: substitution
+message: "Remove this dramatic modifier: use '%s' instead."
+level: error
+swap:
+  incredibly: very
+  remarkably: very
+  devastating: terrible
+  excruciating: terrible
+  profoundly: very
+  absolutely: ""
+  completely: ""
+  entirely: ""
+  totally: ""
+  extremely: very
+  exceptionally: very
+  extraordinarily: very
+  tremendously: very
+  immensely: very
+  vastly: very
+  enormously: very
+  overwhelmingly: very
+  significantly: ""
+  substantially: ""
+  considerably: ""
+---

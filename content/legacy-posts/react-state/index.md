@@ -23,9 +23,9 @@ image: state_thumb.jpg
 <a name="what_is_state"></a>
 ## What Is State
 
-So basically `state` is a plain Javascript object where component stores relevant data. The difference between `state` and any other object you can store inside your component is that React monitors it and will trigger re-render on `state` update.
+So `state` is a plain Javascript object where component stores relevant data. The difference between `state` and any other object you can store inside your component is that React monitors it and will trigger re-render on `state` update.
 
-As state updates cause re-render – it makes sense to only store variables that are needed for rendering. So if you have some variable related to the component, but that you don't use in your `render` method – it makes sense to just use it as a regular instance variable and not put it into `state`.
+As state updates cause re-render – it makes sense to only store variables that are needed for rendering. So if you have some variable related to the component, but that you don't use in your `render` method – it makes sense to use it as a regular instance variable and not put it into `state`.
 
 Also, consider `state` as private to the component. So you can only access or update `state` from inside the component. You can't access it from its parent nor from its children.
 
@@ -171,7 +171,7 @@ this.setState((prevState, props) => ({
 
 And second thing – as `setState` updates state asynchronously – you cant rely on `this.state` immediately after calling `this.setState`.
 
-If you need some code to be executed only after state is really updated and all values are assigned – use callback provided by `this.setState`.
+If you need some code to be executed only after state is updated and all values are assigned – use callback provided by `this.setState`.
 
 ```js
 this.setState({
@@ -211,6 +211,6 @@ In this example `this.state.someOtherKey` will remain unchanged.
 
 ## Free React Course
 
-I'm going to release the whole course about modern react. It will be completely free, subscribe to mailing list to not miss the day when it will be out 😀.
+I'm going to release the whole course about modern react. It will be free, subscribe to mailing list to not miss the day when it will be out 😀.
 
 <sign-up-form></sign-up-form>

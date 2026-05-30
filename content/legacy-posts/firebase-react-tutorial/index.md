@@ -7,7 +7,7 @@ image: firebase_react.jpg
 
 `youtube:https://www.youtube.com/embed/unr4s3jd9qA`
 
-Sometimes you just need to make a fast prototype and you don't want to mess with back end, authentication, authorization and all of that. Here is where Google's firebase can help you. In this tutorial I'll show you how to connect your react app with Firebase authentication module.
+Sometimes you to make a fast prototype and you don't want to mess with back end, authentication, authorization and all of that. Here is where Google's firebase can help you. In this tutorial I'll show you how to connect your react app with Firebase authentication module.
 
 ## What Are We Going To Build
 
@@ -122,7 +122,7 @@ const App = () => {
 export default App;
 ```
 
-Create `Home`, `LogIn` and `SignUp` components, for now just render some header. Here, for instance `src/Home.js`:
+Create `Home`, `LogIn` and `SignUp` components, for now some header. Here, for instance `src/Home.js`:
 
 ```js
 import React from "react";
@@ -212,11 +212,11 @@ This component will handle our sign up logic.
 
 Let's look at our `handleSignUp` function. It's defined as an anonymous arrow function. I did it here to avoid using `bind(this)`.
 
-In this example I really need class level `this` because of the `history` object I get from props by using `withRouter` wrapper. Otherwize I'd better define it as a regular function.
+In this example I class level `this` because of the `history` object I get from props by using `withRouter` wrapper. Otherwize I'd better define it as a regular function.
 
 So in this function I `preventDefault` to avoid reloading page, get `password` and `email` from form `elements` and try to create new user on Firebase using `createUserWithEmailAndPassword` function.
 
-Our `LogIn` component will be almost the same, just change the `createUserWithEmailAndPassword` function call to `signInWithEmailAndPassword`
+Our `LogIn` component will be the same, change `createUserWithEmailAndPassword` function call to `signInWithEmailAndPassword`
 
 ### Add Private Routes
 

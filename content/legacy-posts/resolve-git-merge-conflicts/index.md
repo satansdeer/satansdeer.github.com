@@ -1,5 +1,5 @@
 ---
-title: Resolve Git Merge Conflicts: A Practical Beginner Guide
+title: "Resolve Git Merge Conflicts: A Practical Beginner Guide"
 date: 2026-05-16T13:24:00.000Z
 categories: Git
 image: merge-conflict.png
@@ -28,7 +28,7 @@ git add <file>
 git commit
 ```
 
-If Git already prepared a merge message, you can usually use:
+If Git already prepared a merge message, you can use:
 
 ```bash
 git commit --no-edit
@@ -93,7 +93,7 @@ git commit --no-edit
 
 ## Use Ours or Theirs for One File
 
-Sometimes you know you want one side completely.
+Sometimes you know you want one side .
 
 Keep the current branch version:
 
@@ -119,7 +119,7 @@ If the merge is going badly and you want to return to the state before the merge
 git merge --abort
 ```
 
-This is often the right move when you realize you started from the wrong branch or need to update your branch first.
+This is the right move when you realize you started from the wrong branch or need to update your branch first.
 
 ## How To Avoid Conflicts
 

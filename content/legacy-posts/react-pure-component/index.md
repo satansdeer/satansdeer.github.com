@@ -38,9 +38,9 @@ const secondUser = clone(user);
 console.log(user === secondUser); // false
 ```
 
-Main benefit of using shallow check for equality is that it's _really_ fast.
+Main benefit of using shallow check for equality is that it's __ fast.
 
-So basically using `PureComponent` is an equivalent of writing your own `shouldComponentUpdate` with the following code:
+So using `PureComponent` is an equivalent of writing your own `shouldComponentUpdate` with the following code:
 
 ```jsx
 if (type.prototype && type.prototype.isPureReactComponent) {
@@ -53,7 +53,7 @@ It's preferred to use `PureComponent` instead of implementing your own `shouldCo
 
 It's important to note here that if `props` or `state` contain some complex data structures and some deeply nested parts of them will change - `PureComponent` might produce false negatives and your component won't be re-rendered.
 
-Overall if your React component’s `render()` function renders the same result given the same props and state - you can get performance boost if you will use `PureComponent`.
+if your React component’s `render()` function renders the same result given the same props and state - you can get performance boost if you will use `PureComponent`.
 
 If you use functional component - you can wrap it into `React.memo` for similar result.
 

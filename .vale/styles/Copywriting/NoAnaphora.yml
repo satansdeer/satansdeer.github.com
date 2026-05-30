@@ -1,0 +1,11 @@
+---
+extends: existence
+message: "Avoid repetitive sentence openings (anaphora)."
+level: error
+tokens:
+  - "(?m)^The first\b.*\n^The second\b"
+  - "(?m)^The first\b.*\n^The third\b"
+  - "(?m)^This allows\b.*\n^This enables\b"
+  - "(?m)^This enables\b.*\n^This helps\b"
+  - "(?m)^This allows\b.*\n^This helps\b"
+---

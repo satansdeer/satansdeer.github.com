@@ -7,13 +7,13 @@ image: thumb-image.jpg
 
 Hey there! Today we are going to look at __async__ and __await__ keywords that allow you to pause functions execution, and therefore let you write __asynchronous__ code that reads like __synchronous__.
 
-But first let's go through other ways of dealing with asynchronicity in Javascript. You know, just to make you __appreciate__ how async/await allows you to write more readable asynchronous code.
+But first let's go through other ways of dealing with asynchronicity in Javascript. You know, to make you __appreciate__ how async/await allows you to write more readable asynchronous code.
 
 ## First We Had Callbacks
 
 Imagine that we have some __MagicalWorldAPI__, and we need to get a list of quests of the hero of some imaginary world.
 
-With callbacks it would look somewhat like this.
+With callbacks it would look like this.
 
 ```js
 getWorld(function(err, world){
@@ -37,7 +37,7 @@ getWorld(function(err, world){
 });
 ```
 
-Doesn't look very good, right? A lot of nesting, also you have to handle errors separately in every callback and it's kinda error prone. You might forget to add a return statement after you've handled an error, or do another silly mistake.
+Doesn't look good, right? A lot of nesting, also you have to handle errors separately in every callback and it's kinda error prone. You might forget to add a return statement after you've handled an error, or do another silly mistake.
 
 Can we improve this? 
 
@@ -100,7 +100,7 @@ async function(){
   }
 }
 ```
-Looks familiar, right? We just changed `yield` to `await`, instead of `fuction*` we now have `async function` statement and we don't use the `co` function here.
+Looks familiar, right? We changed `yield` to `await`, instead of `fuction*` we now have `async function` statement and we don't use the `co` function here.
 
 Oh, and another thing, we now use the `try/catch` to handle errors. This is good, because we can now handle both synchronous and asynchronous code errors the same way.
 
@@ -120,7 +120,7 @@ Today we've learned that using `async` statement you can create __asynchronous f
 
 Inside that function you can use the `await` statement in front of expression that returns a `Promise`.
 
-When the __async function__ will by executed, it will pause just where the `await` statement is until that `Promise` is resolved.
+When the __async function__ will by executed, it will pause where the `await` statement is until that `Promise` is resolved.
 
 And also we've learned that using `async/await` you can simplify reading of an asynchronous code by giving a more synchronous flow to it.
 

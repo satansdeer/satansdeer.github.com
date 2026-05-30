@@ -5,7 +5,7 @@ categories: VSCode
 image: thumb.jpg
 ---
 
-In this tutorial, we'll learn how to create a VSCode extension that will communicate with Node Inspector to collect execution data - basically a Quokka.js clone.
+In this tutorial, we'll learn how to create a VSCode extension that will communicate with Node Inspector to collect execution data - a Quokka.js clone.
 
 For those who don't know what Quokka.js is - it's a live scratchpad for Javascript/Typescript that allows you to see the results of code execution right in your editor.
 
@@ -119,7 +119,7 @@ Since version 6.3 node provides a built-in inspector which API we are gonna use 
         post(method: "HeapProfiler.stopSampling", callback?: (err: Error | null, params: HeapProfiler.StopSamplingReturnType) => void): void;
     ```
 
-    As you can see this type allows only `HeapProfiler.stopSampling` as `method`, and we want to use just regular `string` type.
+ As you can see this type allows only `HeapProfiler.stopSampling` as `method`, and we want to use regular `string` type.
 
     I didn't want to deal with complex type annotations in this tutorial. Alternatively, you could create your custom `promisify` function that will overcome that limitation.
 
@@ -148,7 +148,7 @@ Since version 6.3 node provides a built-in inspector which API we are gonna use 
 
     See those `!.` - it tells Typescript that there definitely, 100% certainly, I swear by god is a be a value in the previous field.
 
-    It is called [non-null assertion operator](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#non-null-assertion-operator). It's important that it is not the same as `?.` that is [optional chaining operator](https://tc39.es/proposal-optional-chaining/) (that might be familiar to Ruby, C# and probably other language users) and is not currently available neither in Typescript nor in Javascript.
+ It is called [non-null assertion operator](https://github.com/Microsoft/TypeScript/wiki/What's-new-in-TypeScript#non-null-assertion-operator). It's important that it is not the same as `?.` that is [optional chaining operator](https://tc39.es/proposal-optional-chaining/) (that might be familiar to Ruby, C# and other language users) and is not currently available neither in Typescript nor in Javascript.
 
 * Get `document` and `fileName` for later use:
 
@@ -190,7 +190,7 @@ Since version 6.3 node provides a built-in inspector which API we are gonna use 
 
     In the next steps, we'll get their values.
 
-    Of course, this is not how Quokka.js does that, but for this tutorial, it's just enough.
+ Of course, this is not how Quokka.js does that, but for this tutorial, it's enough.
 
 *  Map through the variable names and get their values: 
 
@@ -255,7 +255,7 @@ Back to the tutorial:
 
   Due to how those decorations work we need to create a separate `decorationType` for each case because we want to have different `contextText` values.
 
-  Then we define range - in our case, it's just one line so start and end sections of this range are the same.
+ Then we define range - in our case, it's one line so start and end sections of this range are the same.
 
   And finally, we apply created a decoration to the `activeEditor`.
 
@@ -308,11 +308,11 @@ Publishing VSCode extensions is done using `vsce` tool.
 
 There is a [guide](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) in VSCode docs that explains how to do that.
 
-You'll need to obtain your personal `publishedID` and then just run `vsce publish`.
+You'll need to obtain your personal `publishedID` and then run `vsce publish`.
 
 ## Final Words
 
-Of course, this extension we've made is very basic and is missing 99.9999999% functionality that is needed to use it for real.
+Of course, this extension we've made is basic and is missing 99.9999999% functionality that is needed to use it for real.
 
 In reality, I believe you would have to also get the AST tree of the script to know exact locations of all the variables you want to track.
 

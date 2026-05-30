@@ -13,7 +13,7 @@ ReactJS is a Javascript library so by asking how to install it - you most likely
 
 ## Use A Sandbox
 
-If you just want to tackle with React and you don't want to install it locally - you can use one of the sandboxes available online.
+If you want to tackle with React and you don't want to install it locally - you can use one of the sandboxes available online.
 
 For example can use [CodeSandbox](https://codesandbox.io/s). Follow the link and then select **ReactJS** in the list of available templates.
 
@@ -36,7 +36,7 @@ To do this you need to add three script tags, one for ReactJS itself,one for Rea
 </html>
 ```
 
-Now you need to add so called **mounting point**, basically an HTML node, for example `div` that will serve as a container to your ReactJS application on this page.
+Now you need to add so called **mounting point**, an HTML node, for example `div` that will serve as a container to your ReactJS application on this page.
 
 ```html
 <!-- ... existing HTML ... -->

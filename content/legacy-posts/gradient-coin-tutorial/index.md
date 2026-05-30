@@ -5,7 +5,7 @@ categories: Ethereum
 image: erc721.jpg
 ---
 
-If you've read previous articles about Ethereum DAPPs ([First](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your very own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
+If you've read previous articles about Ethereum DAPPs ([First](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial), [Second](https://maksimivanov.com/posts/ethereum-react-dapp-tutorial-part-2)) – you already have your own __ERC20__ compliant token. Today we'll make ourselves familiar with __ERC721__.
 
 <a name='observables'></a>
 ## What Are We Going To Build
@@ -14,14 +14,14 @@ I think everyone has already heard about CryptoKitties. A game based on Ethereum
 
 ![cryptokitties image](/cryptokitties.png)
 
-The game has huge success and a lot of kittens are sold for a crazy amount of money, like hundreds of thousands of dollars.  
-The game is mostly open-source with a few exceptions (breeding and genetic algorithms).
+The game has success and a lot of kittens are sold for a crazy amount of money, like hundreds of thousands of dollars. 
+The game is open-source with a few exceptions (breeding and genetic algorithms).
 
 We'll also do a collectible token but with way simpler logic. Our token won't be able to breed, only you as an owner will be able to mint new tokens.
 
 You'll learn how to create non fungible tokens, how to write tests for Ethereum contracts and how to connect them to js front end.
 
-We'll build a wallet for unique collectibles: gradient tokens. Every token will be represented as a unique CSS gradient and will look somewhat like this:
+We'll build a wallet for unique collectibles: gradient tokens. Every token will be represented as a unique CSS gradient and will look like this:
 
 <p>
 <div style="display: inline-block; margin-right: 15px; width: 50px; height: 50px; border-radius: 50%; background: #FDF574; background: -webkit-radial-gradient(center,#FDF574,#D6A128); background: -o-radial-gradient(center,#FDF574,#D6A128); background: -moz-radial-gradient(center,#FDF574,#D6A128); background: radial-gradient(ellipse at center, #FDF574, #D6A128); box-shadow: 1px 8px 10px 0px rgba(50, 50, 50, 0.3);"></div>
@@ -53,13 +53,13 @@ In this tutorial I assume that you have basic knowledge about ReactJS and went t
 <a name='erc721'></a>
 ## What Is ERC721
 
-ERC721 describes non-fungible token. BTW it is also knowns as __NFT__, which basically means exactly that (__Non Fungible Token__). Non-fungible means that every token is not equal to any other token. As opposite to ERC20 where all tokens are equal.
+ERC721 describes non-fungible token. BTW it is also knowns as __NFT__, which means exactly that (__Non Fungible Token__). Non-fungible means that every token is not equal to any other token. As opposite to ERC20 where all tokens are equal.
 
 Most known example of ERC721 is CryptoKitties, where each kitten is a token described by the ERC721 compliant contract with a bunch of additional functions.
 
 Most known example of ERC20, therefore, is any ICO, as 99% of them are based on ERC20 compliant Ethereum contracts.
 
-Unlike ERC20 you can't just store amount of tokens in a wallet. Every token is unique so you have to store owner of each token instead.
+Unlike ERC20 you can't store amount of tokens in a wallet. Every token is unique so you have to store owner of each token instead.
 
 With NFT you want to know several things: 
 
@@ -78,7 +78,7 @@ This is it, ERC721 provides functions for all of that.
 
 ### ERC721 Interface
 
-So basically ERC721 describes ownership and requires following functions to be implemented:
+So ERC721 describes ownership and requires following functions to be implemented:
 
 * _totalSupply()_ - Total amount of emitted tokens.
 * _balanceOf( _owner )_ - Amount of tokens in specific `_owner`'s wallet.
@@ -180,7 +180,7 @@ ganache-cli -p 7545
 
 Truffle uses `Mocha` as a testing framework, with one additional scope: `contract()`.
 
-`contract()` is very similar to `describe()` but it provides some additional features:
+`contract()` is similar to `describe()` but it provides some additional features:
 
 * Before each `contract()` block you contract are re-deployed to Ethereum network. So you have clean contract state.
 * It provides a list of `accounts` that you can use to write tests.
@@ -207,7 +207,7 @@ This test is unnecessary as this functionality is already tested by the `Ownable
 
 Here we run the `contract` block, that deploys our contract. We wait for the contract to be deployed and request `owner()` which returns owners address. Then we assert that owners address is the same as `account[0]`
 
-When you deploy contracts your first contract will usually be the deployer.
+When you deploy contracts your first contract will be the deployer.
 
 Run the test:
 
@@ -302,7 +302,7 @@ function getGradient( uint _gradientId ) public view returns(string outer, strin
 }
 ```
 
-This function is also `public`, also we define it as `view` basically promising to only __VIEW__ stuff and not modify the state.
+This function is also `public`, also we define it as `view` promising to only __VIEW__ stuff and not modify the state.
 
 We defined temporary `memory` variable `_grad` that we got from our `gradients` array by requested `_gradientId`.
 
@@ -385,7 +385,7 @@ Add import statement in the beginning of file:
 import assertRevert from "zeppelin-solidity/test/helpers/assertRevert";
 ```
 
-OK, now it won't run. You can just use `import` in your tests.
+OK, now it won't run. You can use `import` in your tests.
 
 <a name="fix_setup"></a>
 ## Fix The Setup

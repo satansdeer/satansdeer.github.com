@@ -5,18 +5,18 @@ categories: ReactNative
 image: react_native_mobx_1_thumb.jpg
 ---
 
-__MobX__ is state management solution that is gaining popularity very fast. I'll show you
+__MobX__ is state management solution that is gaining popularity fast. I'll show you
 how to create a simple __React-Native__ app using __MobX__.
 
 ## What Are We Going To Build
 
-I have a few crypto coins on some exchanges. Not like I'm trading or something, I just bought some tokens that I liked and now just hold them and buy/sell occasionally.
+I have a few crypto coins on some exchanges. Not like I'm trading or something, I bought some tokens that I liked and now hold them and buy/sell.
 
 On [Binance](https://www.binance.com/?ref=12930619) you can see how many coins you have and what's their worth in bitcoin and even in dollars, but you can't see what's the difference since the last time you've checked it.
 
 We are going to build portfolio tracker for it. On first run we'll save all the coins prices and then we'll show the difference.
 
-It'll look somewhat like this:
+It'll look like this:
 
 ![binance tracker](/binance_tracker.png)
 
@@ -31,9 +31,9 @@ We'll learn how to store data locally, use flatlist, navigator and do multi-scre
 
 ## Why MobX?
 
-MobX is usually faster than Redux, requires less boilerplate and in general it's easier to grasp for novice.
+MobX is faster than Redux, requires less boilerplate and in general it's easier to grasp for novice.
 
-MobX has very few core concepts:
+MobX has few core concepts:
 
 * [Observables](#observables)
 * [Computed values](#computed_values)
@@ -116,7 +116,7 @@ render() {
 <a name='reactions'></a>
 ### Reactions
 
-Reactions are very similar to computed values but instead of returning new value they are used to produce side-effects (making network requests, patching DOM etc.)
+Reactions are similar to computed values but instead of returning new value they are used to produce side-effects (making network requests, patching DOM etc.)
 
 MobX provides 3 types of reaction functions [when](https://mobx.js.org/refguide/when.html), [autorun](https://mobx.js.org/refguide/autorun.html) and [reaction](https://mobx.js.org/refguide/reaction.html)
 
@@ -148,7 +148,7 @@ Actions are anything that alters the state. So you can use them to explicitly ma
 This decorator takes function and wraps it into `transaction`, `untracked` and `allowStateChanges`.
 
 * `transaction` is used to batch state updates so no observers will be notified until that function is completed. So you can update multiple properties at once.
-* `untracked` allows you to run code without establishing observers (just like reactions, or unlike computed's)
+* `untracked` allows you to run code without establishing observers ( like reactions, or unlike computed's)
 * `allowStateChanges` is used to allow/disallow state changes for certain function. By default allows `action` to make changes (and disallows for `computed` and `observer`).
 
 ## Observers

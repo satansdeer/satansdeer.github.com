@@ -5,7 +5,7 @@ categories: React
 image: thumb.jpg
 ---
 
-Sometimes you need to comment out some `JSX` code or just add some informative comment to your layout. How to do it?
+Sometimes you need to comment out some `JSX` code or add some informative comment to your layout. How to do it?
 
 First problem is that `JSX` is not `HTML` and `HTML` comments wont work:
 

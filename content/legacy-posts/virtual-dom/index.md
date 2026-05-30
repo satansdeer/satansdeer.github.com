@@ -13,7 +13,7 @@ DOM (Document Object Model) is a programming api for your HTML (or XML) document
 
 It has tree-like structure and allows you to traverse, access and modify its nodes.
 
-You are probably familiar with DOM API methods:
+You are familiar with DOM API methods:
 
 ```js
 document.getElementById(id)

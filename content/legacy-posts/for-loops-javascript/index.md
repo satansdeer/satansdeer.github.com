@@ -42,7 +42,7 @@ Then goes the `statement`, or group of statements in curly brackets that will be
 
 When a for loop executes, the following occurs:
 
-1. The initializing expression `initialExpression`, if any, is executed. This expression usually initializes one or more loop counters. This expression can also declare variables.
+1. The initializing expression `initialExpression`, if any, is executed. This expression one or more loop counters. This expression can also declare variables.
 
     In theory if you don't need to initialize additional variables to use them in this loop - you can omit this part. But you'll have to leave the semicolon.
 
@@ -71,7 +71,7 @@ Currently it checks that `i` is less than `10`. `i` equals 0, it's less than `10
 
 Then `i` get's incremented by 1, and we continue from the condition part.
 
-Now theoretically you could just return `false` from the condition, so it will never be execetud.
+Now you could return `false` from the condition, so it will never be execetud.
 
 ```js
 for(let i = 0; false; i++){

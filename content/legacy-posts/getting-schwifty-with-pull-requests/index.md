@@ -5,7 +5,7 @@ categories: Git
 image: test.jpg
 ---
 
-Once I was working on a big feature. Everything was going fine until I got carried away and started to commit everything in one branch instead of splitting to multiple smaller ones. As a result I ended up with a huge PR that no one was able to review properly.
+Once I was working on a big feature. Everything was going fine until I got carried away and started to commit everything in one branch instead of splitting to multiple smaller ones. As a result I ended up with a PR that no one was able to review properly.
 
 Let's see how can you avoid getting in that situation and what to do if you already did.
 
@@ -13,7 +13,7 @@ First of all – do some planning and break task in parts. This is the only way 
 
 Then you'll have two options, with both of them you create small PR's with gradual improvements:
 
-* Merging PR's to master early and often.
+* Merging PR's to master early and .
 * Having a long running feature PR with small reviewable child PR's.
 
 The difference is what you are basing them off. In first case you base them on `master` and in second you base them on a feature branch.
@@ -36,9 +36,9 @@ Don't forget to do the housekeeping and creating small PR's for every new featur
 
 It started as a long running feature PR approach. But then I kinda slacked off with the housekeeping and started to commit everything in one of the child PRs.
 
-Eventually I ended up with a huge PR with 100+ commits and 1.5k lines of code.
+Eventually I ended up with a PR with 100+ commits and 1.5k lines of code.
 
-This is a very bad situation. Even if someone would dare to review it, he'll be more likely to overlook something.
+This is a bad situation. Even if someone would dare to review it, he'll be more likely to overlook something.
 
 So if you found yourself in similar situation – you need to do something to this PR to make it reviewable. For example you can…
 
@@ -48,7 +48,7 @@ When searching for a solution I found [this blog-post](https://graysonkoonce.com
 
 ## First step
 
-First you want to create a new branch based on `master` with all the changes from that huge PR unstaged.
+First you want to create a new branch based on `master` with all the changes from that PR unstaged.
 
 ```bash
 $ git checkout master
@@ -57,7 +57,7 @@ $ git reset master
 $ git status
 ```
 
-Now you'll see all the changes that were introduced in that huge PR in uncommited state.
+Now you'll see all the changes that were introduced in that PR in uncommited state.
 You can start commiting the changes and making stacked PRs.
 
 ## First Pull Request

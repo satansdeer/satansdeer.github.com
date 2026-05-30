@@ -28,9 +28,9 @@ But not only it's meaningless…
 
 I mean, __TDD is not only about testing__, it's also about design. Mocking external lib won't help you to create good design, because you don't have any control over it.
 
-The idea is to use mocks as quick and rough prototypes, to see how your _thing_ will be integrated into existing code. If you see that the interface is not very handy – you just write the mock differently, with different methods or with different method signatures.
+The idea is to use mocks as quick and rough prototypes, to see how your _thing_ is integrated into existing code. If you see that the interface is not handy – you write the mock differently, with different methods or with different method signatures.
 
-So you just prototype your interface first and write your implementation later.
+So you prototype your interface first and write your implementation later.
 
 Now if you apply this logic to mocking external library (which interface you cannot change), you'll see that it makes zero sense.
 
@@ -38,7 +38,7 @@ Got it? Let's continue…
 
 ## It's Also Harmful
 
-Most obvious danger is getting false positives (or negatives, depends on perspective). In other words your test will pass where the actual thing won't work. Either because you've mocked it in a wrong way or the library you were mocking changed slightly after an upgrade.
+Most obvious danger is getting false positives (or negatives, depends on perspective). In other words your test will pass where the actual thing won't work. Either because you've mocked it in a wrong way or the library you were mocking changed after an upgrade.
 
 Also by mocking an external lib you are binding yourself to a specific implementation and it will be much harder to change the library in the future.
 
@@ -46,15 +46,15 @@ Another downside is that you might end up with a lot of excessive code that does
 
 ## But HTTP And Database Calls Make My Tests Slow
 
-If that's really a problem – __create wrappers__ around that third party _thing_.
+If that's a problem – __create wrappers__ around that third party _thing_.
 
 Don't forget to write integration tests for that wrappers.
 
-As a bonus you'll make it clear what functions of that external lib you __really use__, and it will be much easier to replace that dependency later.
+As a bonus you'll make it clear what functions of that external lib you use, and it will be easier to replace that dependency later.
 
 ## Summary
 
-In my case I went with using `ImageUploader` directly, writing a wrapper for it would be just crazy.
+In my case I went with using `ImageUploader` directly, writing a wrapper for it would be crazy.
 
 I hope this small article will help you avoid this caveat.
 

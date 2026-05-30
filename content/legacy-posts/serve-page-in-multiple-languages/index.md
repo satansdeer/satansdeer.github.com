@@ -7,7 +7,7 @@ image: multiple_languages.jpg
 
 How do you serve a page with content in multiple languages?
 
-Serving webpages in multiple languages is a very big topic and for me it breaks down into three main parts.
+Serving webpages in multiple languages is a big topic and for me it breaks down into three main parts.
 
 First we need to recognize what language is preferred by current user.
 
@@ -63,7 +63,7 @@ The syntax for it is the following.
 
 First goes the MIME type, in our case `text/html`, then after a semicolon goes charset.
 
-Another way to provide the charset for the html document is by using the `<meta charset="utf-8"/>` tag. Actually you should always do this even if charset is already provided in headers. In this case just make sure they match.
+Another way to provide the charset for the html document is by using the `<meta charset="utf-8"/>` tag. Actually you should always do this even if charset is already provided in headers. In this case make sure they match.
 
 There is also an html attribute `lang`, that allows you to provide the info about the language of the current page or part of the page, for example a paragraph.
 

@@ -1,12 +1,12 @@
 ---
-title: Build It And They Will Not Come: Finding Users For Your SaaS
+title: "Build It And They Will Not Come: Finding Users For Your SaaS"
 date: 2026-05-16T17:40:00.000Z
 categories: Programming
 ---
 
 Building the product is the start of the next problem: finding users.
 
-If you are building an app or SaaS and quietly believing that users will appear after launch, you are probably setting yourself up for a painful surprise. The market is full of other builders doing the same thing, talking to the same audience, using the same platforms, and searching for the same early adopters.
+If you are building an app or SaaS and believing that users will appear after launch, you are setting yourself up for a surprise. The market is full of other builders doing the same thing, talking to the same audience, using the same platforms, and searching for the same early adopters.
 
 This post is adapted from [a YouTube video about finding users for a SaaS](https://www.youtube.com/watch?v=tjakK9Nj4bA). The video came from a real attempt to find early users for Mont, my browser-based video editor.
 
@@ -32,7 +32,7 @@ That is the real shape of the problem. You are not only competing with existing 
 
 ## The Second Phase Problem
 
-There is a phase of building where progress feels very concrete.
+There is a phase of building where progress feels concrete.
 
 You add features. You fix bugs. You polish the UI. You record a demo. You ship another version. Every day produces something visible.
 
@@ -42,7 +42,7 @@ Then you reach the second phase:
 How do I get people to care?
 ```
 
-That problem is less comfortable because it does not behave like a backlog item. You cannot simply implement "get users" in one pull request.
+That problem is less comfortable because it does not behave like a backlog item. You cannot implement "get users" in one pull request.
 
 User acquisition is a system of repeated attempts:
 

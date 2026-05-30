@@ -7,7 +7,7 @@ image: thumb.jpg
 
 The simplest way to define a component in React is to use function.
 
-You just declare a function that receives `props` and returns some **JSX** layout.
+You declare a function that receives `props` and returns some **JSX** layout.
 
 Here is an example:
 
@@ -23,7 +23,7 @@ const Header = ({text}) => <h1>{text}</h1>;
 
 ## Why Use Functional Components
 
-Overall functions is preferred way of writing components in react.
+Functions are the preferred way of writing components in React.
 
 This is due to the fact that functions, especially if they are [pure](https://maksimivanov.com/posts/pure-functions-and-side-effects/) are easy to read, test and reason about.
 

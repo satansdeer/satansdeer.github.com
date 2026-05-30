@@ -123,7 +123,7 @@ You can define your own components. There is one important rule though. Your cus
 
 This is due to the fact that React determines if it should use custom component refence or html tag depending on the first letter of the tag name. If it's capital letter - it will use custom component reference, otherwise - html element.
 
-There are mainly two ways of defining a component in react: using class or using a function.
+There are two ways of defining a component in react: using class or using a function.
 
 If you define a class based component - you have to define `render()` function to specify the layout of your component.
 
@@ -202,7 +202,7 @@ To do this we use [Babel](https://babeljs.io/).
 
 You can play around with transpiling **JSX** to Javascript at [Babel Interactive Playground](https://babeljs.io/repl#?babili=false&browsers=&build=&builtIns=false&spec=false&loose=false&code_lz=FBA&debug=false&forceAllTransforms=false&shippedProposals=false&circleciRepo=&evaluate=false&fileSize=false&timeTravel=false&sourceType=module&lineWrap=true&presets=es2015%2Creact%2Cstage-2&prettier=true&targets=&version=7.3.3)
 
-You'll see that all the JSX expressions become just calls to `React.createElement`. This method takes three attributes. First goes kind of the element you are going to create. It will be string if you create html elements, like `<h1 />`, `<div />` or `<p />`. Otherwise it will be reference to your custom component.
+You'll see that all the JSX expressions become calls to `React.createElement`. This method takes three attributes. First goes kind of the element you are going to create. It will be string if you create html elements, like `<h1 />`, `<div />` or `<p />`. Otherwise it will be reference to your custom component.
 
 Next goes list of attributes passed to the element. It is a simple Javascript object. It's also a reason why the attributes passed to JSX should be `camelCased`.
 

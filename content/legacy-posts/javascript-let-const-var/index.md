@@ -105,7 +105,7 @@ console.log(i)
 // 99
 ```
 
-And I think it's more desirable behavior. I can't really think of an example where you would want to have access to that `i` variable outside of the `for` loop.
+And I think it's more desirable behavior. I can't think of an example where you would want to have access to that `i` variable outside of the `for` loop.
 
 In fact I think that the behavior of `var` in this case is even more bug prone. Because it allows the unwanted use of previously defined variables and can lead to confusion.
 
@@ -117,7 +117,7 @@ console.log(myName);
 let myName = "Maksim";
 ```
 
-And again, I can't come up with an example where you would really want to have the variable **hoisted**.
+And again, I can't come up with an example where you would want to have the variable **hoisted**.
 
 So in modern environments `let` seems to be a better, more controlled alternative for `var`. And if you need an identifier which value you can change - `let` is a preferred option.
 
@@ -140,6 +140,6 @@ So as a recap `let` is **non-hoisted**, **block-scoped** version of `var`. And `
 
 In my code I prefer to use `const` whenever possible. This allows me to signalize to myself and other developers that certain variable is not meant to change.
 
-I don't use `for` loops often, when I work with arrays I prefer to use `map`. But when I do - I use `let`.
+I don't use `for` loops , when I work with arrays I prefer to use `map`. But when I do - I use `let`.
 
 So my recommendation is to never use `var` and prefer `const` and `let` instead, as they provide more context to develope and act more predictably.

@@ -30,7 +30,7 @@ The main agent stays focused on the decision and integration. The subagent does 
 
 ## Why Long AI Sessions Degrade
 
-AI coding sessions often start sharp.
+AI coding sessions start sharp.
 
 The first few prompts are clear. The tool understands the goal. It reads the right files. It makes the obvious edits.
 
@@ -66,7 +66,7 @@ That result can come back as a short summary instead of hundreds of lines of exp
 
 Do not delegate the work that defines the current decision.
 
-If you need to decide the architecture, keep the reasoning in the main thread. If you need to make a subtle product call, keep it in the main thread. If the next step depends entirely on the answer, it may be faster to do it directly.
+If you need to decide the architecture, keep the reasoning in the main thread. If you need to make a subtle product call, keep it in the main thread. If the next step depends on the answer, it may be faster to do it directly.
 
 Subagents are best for parallel context gathering and bounded execution, not for outsourcing judgment.
 

@@ -126,7 +126,7 @@ Good places to zoom:
 - timeline controls,
 - before/after results.
 
-Avoid zooming just because the tool allows it. Too many zooms make the video feel nervous.
+Avoid zooming because the tool allows it. Too many zooms make the video feel nervous.
 
 ## Step 5: Keep The Demo Editable
 
@@ -134,7 +134,7 @@ The biggest benefit of this workflow is what happens after recording.
 
 If one screen changes, update one screenshot. If one step becomes irrelevant, remove one slide. If you need to hide private information, edit the image and keep the rest of the video.
 
-With a normal screen recording, a small correction often means recording again.
+With a normal screen recording, a small correction means recording again.
 
 With a screenshot-based demo, the structure stays intact.
 

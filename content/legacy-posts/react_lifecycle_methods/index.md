@@ -11,7 +11,7 @@ Like everything in existence – react components follow their natural cycle of 
 
 Let's see what happens when you add your component to render tree.
 
-Overall we have 4 big phases in components life.
+There are 4 main phases in a component's lifecycle.
 
 * [Initialization](#initialization),
 * [Mounting](#mounting)
@@ -35,7 +35,7 @@ Don't use this method for anything other than setting up your component. Please,
 
 Initialization phase is followed by __mounting__ phase.
 
-First method that gets executed in this phase is `componentWillMount` and its usage is mostly same as of `constructor` – to set up initial state and default props. Warning, `componentWillMount` and other `componentWill...` methods are deprecated, use `componentDidMount` or `constructor` instead of this one.
+First method that gets executed in this phase is `componentWillMount` and its usage is same as of `constructor` – to set up initial state and default props. Warning, `componentWillMount` and other `componentWill...` methods are deprecated, use `componentDidMount` or `constructor` instead of this one.
 
 Next `render` method is executed. You are already familiar with this one. This method mounts component to DOM.
 
@@ -72,12 +72,12 @@ And the final phase of life of any react component is __unmounting__ phase.
 
 There is only one method in this phase. It's `componentWillUnmount` and this is the only one `compoenentWIll...` method that didn't get deprecated.
 
-This method is executed just before your component gets removed from the __DOM__
+This method is executed before your component gets removed from the __DOM__
 
 Use this method to clean up after your component. Remove all timers or listeners created during the lifetime of your component to prevent memory leaks.
 
 ## Free React Course
 
-I'm going to release the whole course about modern react. It will be completely free, subscribe to mailing list to not miss the day when it will be out 😀.
+I'm going to release the whole course about modern react. It will be free, subscribe to mailing list to not miss the day when it will be out 😀.
 
 <sign-up-form></sign-up-form>

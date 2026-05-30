@@ -6,7 +6,7 @@ image: modal_window_react.jpg
 comments: true
 ---
 
-Once upon a time (yesterday) I decided that my blog lacks a good old pop up. You know, the one that unannoyingly asks to join the mailing list. So if you have Jekyll blog and you want to know how to create a pop up using __ReactJS__ –this post is totally relevant.
+Once upon a time (yesterday) I decided that my blog lacks a good old pop up. You know, the one that unannoyingly asks to join the mailing list. So if you have Jekyll blog and you want to know how to create a pop up using __ReactJS__ –this post is relevant.
 
 First let's get all pragmatic and see an example of what we'll get.
 
@@ -99,7 +99,7 @@ Run webpack, it should build your `bundle.js` inside `/assets/javascripts` folde
 ➜ webpack
 ```
 
-Now put add this line in your layout. I don't know maybe in your footer or just in the bottom of your `_layouts/default.html`:
+Now put add this line in your layout. I don't know maybe in your footer or in the bottom of your `_layouts/default.html`:
 
 ```html
 <script type="text/javascript" src="/assets/javascripts/bundle.js" charset="utf-8"></script>
@@ -191,9 +191,9 @@ It returns `null` and renders nothing if we pass false, or renders our pop up la
 
 We've also passed `closePopup` as value of `onClosed` prop. And now we trigger it as `onClick` callback of close button.
 
-The `{this.props.children}` part allowed us to pass the nested component `SubscriptionForm` that basically contains opt-in form provided by Mailchimp.
+The `{this.props.children}` part allowed us to pass the nested component `SubscriptionForm` that contains opt-in form provided by Mailchimp.
 
-I just changed `inputs` to use closed tag, and changed some attributes to their React versions. Like `class`/`className`, `for`/`htmlFor`.
+I changed `inputs` to use closed tag, and changed some attributes to their React versions. Like `class`/`className`, `for`/`htmlFor`.
 
 Here is my `SubscriptionForm`:
 

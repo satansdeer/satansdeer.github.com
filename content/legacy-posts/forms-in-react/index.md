@@ -47,7 +47,7 @@ class ProfileForm extends Component {
 }
 ```
 
-This is quick and dirty way of handling forms. It is mostly useful for simple forms or when you are _just learning React_.
+This is quick and dirty way of handling forms. It is for simple forms or when you are _learning _.
 
 ## Controlled Forms
 

@@ -52,6 +52,14 @@ A standardized framework for high-quality, human-sounding copywriting that avoid
 - ❌ Using em-dashes for dramatic effect or emphasis
 - ✅ Use only for genuine parenthetical breaks (sparingly)
 
+**Unnecessary Modifiers**
+- ❌ Adverbs that hedge: probably, quietly, simply, just, really, very, incredibly
+- ❌ Adjectives that dramatize without adding information: painful, incredible, devastating, remarkable
+- ❌ "quietly believing", "probably setting up", "incredibly useful"
+- ✅ Instead: State the fact directly. Remove modifiers that add drama or hedging but not meaning
+- ✅ "you believe" not "quietly believing"
+- ✅ "you are setting yourself up" not "you are probably setting yourself up"
+
 **Frame-Setting Constructions**
 - ❌ "Let's dive in"
 - ❌ "Let's unpack this"
@@ -168,6 +176,8 @@ Search content for these patterns and remove:
 4. **Banned words** - Run against forbidden list
 5. **Vague claims** - Replace with specific examples
 6. **Competitor-agnostic statements** - Add unique proof
+7. **Unnecessary modifiers** - Remove adverbs and adjectives that add drama or hedging but not meaning (probably, quietly, simply, incredibly, painful, devastating)
+7. **Unnecessary modifiers** - Remove adverbs and adjectives that add drama or hedging but not meaning (probably, quietly, simply, incredibly, painful, devastating)
 
 ### Voice Verification
 

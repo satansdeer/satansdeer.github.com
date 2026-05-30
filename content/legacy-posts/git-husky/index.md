@@ -13,11 +13,11 @@ Git provides an interface to run some code as reaction on specific triggers. Tho
 
 You can check out the whole list on [git documentation page](https://git-scm.com/docs/githooks).
 
-It might be quite cumbersome to manage githooks and make them available for the whole team.
+It might be cumbersome to manage githooks and make them available for the whole team.
 
 Luckily there is a tool called [Husky](https://github.com/typicode/husky) that provides nice interface to manage githooks.
 
-It is an **npm** package so it's usually used with Javascript projects.
+It is an **npm** package so it's used with Javascript projects.
 
 ## Install Husky
 

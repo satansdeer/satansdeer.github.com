@@ -24,7 +24,7 @@ I worked there the whole winter and bigger part of spring, until...
 
 ## I Got Hired To Dice
 
-I was super surprised when I got the opportunity to work there. It's quite unusual, but they use React for game UI.
+I was super surprised when I got the opportunity to work there. It's unusual, but they use React for game UI.
 
 ![dice](dice.jpg)
 
@@ -39,7 +39,7 @@ That was super awesome. I got to visit Paris with guys from Dice.
 
 Markus Thurlin gave a lightning talk about the tech behind Battlefield UI.
 
-I visited Louvre, which is mostly about Mona Lisa. Seriously, you can see signs with instructions on how to get to Mona Lisa on every corner. Also a lot of ridiculous merch.
+I visited Louvre, which is about Mona Lisa. Seriously, you can see signs with instructions on how to get to Mona Lisa on every corner. Also a lot of ridiculous merch.
 
 Lip balm, anyone?
 

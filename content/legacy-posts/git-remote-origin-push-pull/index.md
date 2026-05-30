@@ -7,7 +7,7 @@ image: git-remote-origin.png
 
 A Git remote is a named connection to another copy of the repository.
 
-Most often, that other copy lives on GitHub, GitLab, Bitbucket, or a private server. The default remote name is usually `origin`.
+Most , that other copy lives on GitHub, GitLab, Bitbucket, or a private server. The default remote name is `origin`.
 
 You use remotes to share commits with other machines and other people.
 
@@ -15,9 +15,9 @@ You use remotes to share commits with other machines and other people.
 
 ## What Is `origin`?
 
-`origin` is just a name.
+`origin` is a name.
 
-When you clone a repository, Git usually creates a remote named `origin` pointing back to the repository you cloned from:
+When you clone a repository, Git creates a remote named `origin` pointing back to the repository you cloned from:
 
 ```bash
 git clone git@github.com:example/project.git
@@ -32,7 +32,7 @@ origin  git@github.com:example/project.git (fetch)
 origin  git@github.com:example/project.git (push)
 ```
 
-The same remote is listed twice because Git can use one URL for fetching and another URL for pushing. In normal projects, they are often the same.
+The same remote is listed twice because Git can use one URL for fetching and another URL for pushing. In normal projects, they are the same.
 
 ## Add a Remote to an Existing Repository
 
@@ -68,7 +68,7 @@ The first time, set the upstream relationship:
 git push -u origin main
 ```
 
-After that, Git knows that your local `main` branch tracks `origin/main`. Future pushes can usually be:
+After that, Git knows that your local `main` branch tracks `origin/main`. Future pushes can be:
 
 ```bash
 git push
@@ -158,7 +158,7 @@ Always check:
 git remote -v
 ```
 
-before pushing a repository you just cloned or inherited.
+before pushing a repository you cloned or inherited.
 
 ### Pulling Without Checking Local Work
 

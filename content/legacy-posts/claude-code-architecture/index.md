@@ -1,5 +1,5 @@
 ---
-title: Claude Code Architecture: How to Keep AI-Generated Code Maintainable
+title: "Claude Code Architecture: How to Keep AI-Generated Code Maintainable"
 date: 2026-05-16T14:30:00.000Z
 categories: Programming
 image: contact-sheet.jpg
@@ -7,7 +7,7 @@ image: contact-sheet.jpg
 
 Claude Code is fast at producing code, but it is not your architect.
 
-That distinction matters. If you let an AI coding tool decide every boundary for you, the first version can feel incredible and the second version can feel expensive. The codebase grows quickly, but the shape of the system may not improve with it.
+That distinction matters. If you let an AI coding tool decide every boundary for you, the first version feels good and the second version feels expensive. The codebase grows quickly, but the shape of the system may not improve with it.
 
 This post is adapted from [a short video on TikTok](https://www.tiktok.com/@webdevivanov/video/7631569099822320918) and [the matching YouTube post](https://www.youtube.com/watch?v=dLWm8YB5FB0). The video point was simple: speed without architecture is not speed. It is debt with a good first impression.
 
@@ -29,13 +29,13 @@ That is where architecture starts to matter.
 
 ## Where The Slowdown Starts
 
-The slowdown usually does not appear on the first prompt.
+The slowdown does not appear on the first prompt.
 
 At first, Claude Code writes the missing function, adds the component, updates the route, and wires the state together. Everything moves.
 
 Then you ask for a small change.
 
-The tool adds a condition on top of another condition. Then a special case. Then a helper that knows a little too much about a different part of the app. Then a second helper that almost duplicates the first one, but not quite.
+The tool adds a condition on top of another condition. Then a special case. Then a helper that knows a little too much about a different part of the app. Then a second helper that duplicates the first one.
 
 Now you are not slow because too little code exists. You are slow because too much code exists in the wrong shape.
 

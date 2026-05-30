@@ -32,7 +32,7 @@ To open them in Firefox:
 
 On the left side of the React DevTools tab you can see the component tree. 
 
-This view is very similar to the plain HTML tree you can see on the `Elements` tab (`Inspector` in Firefox).
+This view is similar to the plain HTML tree you can see on the `Elements` tab (`Inspector` in Firefox).
 
 You can navigate it by clicking the elements, or using arrows on your keyboard or (`hjkl` buttons like in Vim).
 
@@ -58,7 +58,7 @@ Another super-handy feature is highlighting updates on the page. Toggle `Highlig
 
 ![highlight updates](/highlight_updates.png)
 
-It will start visualizing components that got re-rendered. Depending on the frequency of updates, a different color is used. Blue shows infrequent updates, ranging to green, yellow, and red for components that update frequently.
+It will start visualizing components that got re-rendered. Depending on the frequency of updates, a different color is used. Blue shows infrequent updates, ranging to green, yellow, and red for components that update .
 
 ## Console Features
 

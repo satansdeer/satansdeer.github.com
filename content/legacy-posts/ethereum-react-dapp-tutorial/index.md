@@ -26,15 +26,15 @@ We'll use [Truffle](https://truffleframework.com/) to compile and deploy our tok
 
 ## About ERC20
 
-ERC20 basically represents fungible token, that means that any token of this kind is equal to any other token of this kind. Like 1$ is always equal to 1$.
+ERC20 represents fungible token, that means that any token of this kind is equal to any other token of this kind. Like 1$ is always equal to 1$.
 
-Overall this standard requires to have 6 methods and 2 events defined.
+This standard requires to have 6 methods and 2 events defined.
 
-3 of those methods are totally necessary to make a fungible token and a remaining 3 are needed to make it ERC20 compliant (they are needed to do automatic transactions).
+3 of those methods are necessary to make a fungible token and a remaining 3 are needed to make it ERC20 compliant (they are needed to do automatic transactions).
 
 ### Super Necessary Fungible Token Methods
 
-So if you want to have a coin – you need to know how many coins exist in total, how many coins are in this particular wallet and be able to transfer those coins from one wallet to another. That's practically it and that's what those 3 essential functions do.
+So if you want to have a coin – you need to know how many coins exist in total, how many coins are in this particular wallet and be able to transfer those coins from one wallet to another. That's it and that's what those 3 essential functions do.
 
 * `totalSupply` returns total amount of existing tokens.
 * `balanceOf` accepts wallet address and returns balance of this wallet
@@ -42,11 +42,11 @@ So if you want to have a coin – you need to know how many coins exist in total
 
 Also it needs to define the `Transfer` event that tells *who* sent *what amount of tokens* to *who*.
 
-As you can see, no magic here, and it's totally understandable why do you need to have such methods.
+As you can see, no magic here, and it's why do you need to have such methods.
 
 ### Remaining Methods
 
-Those methods are needed to execute automated transactions. Like recurring payments, or payments based on some external event. For instance you could make a subscription service based completely on blockchain.
+Those methods are needed to execute automated transactions. Like recurring payments, or payments based on some external event. For instance you could make a subscription service based blockchain.
 
 * `allowance` accepts owner and spender wallet addresses and returns the amount of tokens allowed to spender to withdraw automatically.
 * `approve` accepts spenders wallet address and amount of tokens. Sets the amount of tokens allowed to for given spender.

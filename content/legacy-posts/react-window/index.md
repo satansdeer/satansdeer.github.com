@@ -9,7 +9,7 @@ image: thumb.jpg
 
 This is a tutorial on [react-window](https://github.com/bvaughn/react-window), at the end of the article there is a link to a Github repo with code examples.
 
-Rendering lists in React is simple, I would say trivial. You just map through an array of items and output elements.
+Rendering lists in React is simple, I would say trivial. You map through an array of items and output elements.
 
 Like here:
 
@@ -21,7 +21,7 @@ Like here:
 </ul>
 ```
 
-Oh, just don't forget to specify the `key`. Read more about it in [article about lists and keys in React](https://maksimivanov.com/posts/react-lists-and-keys/).
+Oh, don't forget to specify the `key`. Read more about it in [article about lists and keys in React](https://maksimivanov.com/posts/react-lists-and-keys/).
 
 But what if you need to render a couple of thousand items at once?
 
@@ -41,7 +41,7 @@ export default () => (
 )
 ```
 
-The browser just hangs and prompts us to stop the script.
+The browser hangs and prompts us to stop the script.
 
 ![simple list in react](./lists.png)
 
@@ -155,7 +155,7 @@ import AutoSizer from "react-virtualized-auto-sizer"
   )
   ```
 
-  Here we just display current `index`. Also, we apply even or odd class to the element.
+ Here we display current `index`. Also, we apply even or odd class to the element.
 
 * Run your application:
 
@@ -232,7 +232,7 @@ In this example, we will display a list of cities with their population. We will
   const isItemLoaded = ({ index }) => !!items[index]
   ```
 
-  As you can tell by the name, `InfiniteLoader` uses this function to determine if a particular item was loaded. Here we just check that an item with specified `index` exists in our `items` object.
+ As you can tell by the name, `InfiniteLoader` uses this function to determine if a particular item was loaded. Here we check that an item with specified `index` exists in our `items` object.
 
   We use double negation `!!` to transform object stored in `items` to `boolean`.
 

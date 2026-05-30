@@ -138,7 +138,7 @@ Cool beans, time to commit this thing.
 ➜  git_add_patch (master) ✗ git commit -m "Complete the first couplet"
 ```
 
-Git splits hunks by the empty lines, but what if you really need to stage only **specific&nbsp;lines**.
+Git splits hunks by the empty lines, but what if you need to stage only **specific&nbsp;lines**.
 
 ## Behold The Power Of E
 
@@ -160,7 +160,7 @@ index 9737e9f..a2baecd 100644
 +And so do you.
 ```
 
-And you are really concerned about that onion part, but you don't want to remove it. So you want to stage only the _"Flowers smell good"_ and _"And so do you"_ lines.
+And you are concerned about that onion part, but you don't want to remove it. So you want to stage only the _"Flowers smell good"_ and _"And so do you"_ lines.
 
 Now the **s** option won't help us, because those lines aren't separated by empty lines, and git considers them as one hunk.
 

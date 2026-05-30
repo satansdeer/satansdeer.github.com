@@ -1,5 +1,5 @@
 ---
-title: Undo Changes in Git: Restore, Revert, Reset, and Clean
+title: "Undo Changes in Git: Restore, Revert, Reset, and Clean"
 date: 2026-05-16T13:23:00.000Z
 categories: Git
 image: git-reset-modes.png
@@ -127,7 +127,7 @@ Use [Git Log for Beginners](/posts/git-log-for-beginners/) if you need help find
 
 ## Undo a Local Commit With Reset
 
-If the commit is local and has not been pushed, `git reset` is often useful.
+If the commit is local and has not been pushed, `git reset` is useful.
 
 There are three common modes:
 

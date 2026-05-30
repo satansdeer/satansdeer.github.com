@@ -1,0 +1,11 @@
+---
+extends: existence
+message: "Avoid antithetical parallelism. Make the point directly with specific details."
+level: error
+tokens:
+  - "(?i)\b(it'?s|that'?s|this is) not [^,]+, (it'?s|that'?s|this is|it is)\b"
+  - "(?i)\b(isn'?t just about|is more than just|goes beyond)\b"
+  - "(?i)\b(not only [^,]+, but also)\b"
+  - "(?i)\b(cannot be overstated|can'?t be overstated)\b"
+  - "(?i)\b(don'?t underestimate the power of|never overlook the importance of)\b"
+---

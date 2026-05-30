@@ -131,7 +131,7 @@ Early model comparison was useful, but only after the target was made reasonable
 
 With line-by-line DSL, `google/flan-t5-small` was the best local candidate, but the best score was only `13/39`. The efficient-family models were smaller, but still weak. Tiny reached `10/39` in the early setup. That was not enough to ship.
 
-After compressed DSL, the comparison changed completely. The chart that mattered was not accuracy alone; it was accuracy against model footprint.
+After compressed DSL, the comparison changed . The chart that mattered was not accuracy alone; it was accuracy against model footprint.
 
 ![Performance and checkpoint size comparison for Flan-T5-small and T5-Efficient-tiny](./model-comparison.svg)
 
@@ -153,7 +153,7 @@ The model handled compressed count syntax, but when the input looked like:
 30 seconds plank, 45 seconds squats, 1 minute rest
 ```
 
-it sometimes produced a generic timer command instead of preserving labels:
+it produced a generic timer command instead of preserving labels:
 
 ```text
 30s: Timer
@@ -215,4 +215,4 @@ I would keep this structure for any narrow natural-language-to-action model:
 5. Add data by failure category, not by vague volume.
 6. Compare models only after the target is fair.
 
-For this timer app, the compressed DSL was the actual breakthrough. Model size mattered after that, but before that the models were mostly being punished for an output format that made counting harder than it needed to be.
+For this timer app, the compressed DSL was the actual breakthrough. Model size mattered after that, but before that the models were being punished for an output format that made counting harder than it needed to be.

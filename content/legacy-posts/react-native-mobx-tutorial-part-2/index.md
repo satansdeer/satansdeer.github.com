@@ -226,7 +226,7 @@ export default class ApiKeysStore {
 }
 ```
 
-The store is pretty simple, it has two observable properties (`apiKey` and `apiSecret`), actions to set those properties and functions to save and load those keys with `AsyncStorage`.
+The store is simple, it has two observable properties (`apiKey` and `apiSecret`), actions to set those properties and functions to save and load those keys with `AsyncStorage`.
 
 ## Getting Data From API
 

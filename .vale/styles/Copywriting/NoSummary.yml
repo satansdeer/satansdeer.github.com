@@ -1,0 +1,8 @@
+---
+extends: existence
+message: "Remove this summary section. End on the strongest point instead."
+level: error
+scope: heading
+raw:
+  - '^#{1,6}\s+Summary\s*$'
+---

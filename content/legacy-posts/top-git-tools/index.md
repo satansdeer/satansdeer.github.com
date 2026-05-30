@@ -31,7 +31,7 @@ Husky allows you to define git-hooks in a simple config file and share them acro
 
 Yesterday I've read a blog post where some dude said that he set up a simple script that simplifies making git commit for him, by automatically adding message "Update".
 
-Honestly I think it's a very bad idea, and if you do this - eventually you'll have a hard time navigating though history to find some bug introduced awhile ago.
+Honestly I think it's a bad idea, and if you do this - eventually you'll have a hard time navigating though history to find some bug introduced awhile ago.
 
 A better option is to use [Commitizen](http://commitizen.github.io/cz-cli/).
 
@@ -57,7 +57,7 @@ The opposite of that is [sentimental versioning](http://sentimentalversioning.or
 
 Another neat feature of having you commits well organized and having descriptive messages - is that you'll now be able to generate your [changelog](https://keepachangelog.com/en/1.0.0/) automatically.
 
-So you'll be able to track notable changes to your project at basically zero cost.
+So you'll be able to track notable changes to your project at zero cost.
 
 ## CommitLint
 

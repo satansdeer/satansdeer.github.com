@@ -1,0 +1,25 @@
+---
+extends: existence
+message: "Avoid this frame-setting construction."
+level: error
+tokens:
+  - "(?i)\blet'?s dive in\b"
+  - "(?i)\blet'?s unpack this\b"
+  - "(?i)\bimagine a world where\b"
+  - "(?i)\bin today'?s fast-paced\b"
+  - "(?i)\bin today'?s ever-evolving\b"
+  - "(?i)\bin conclusion\b"
+  - "(?i)\bin summary\b"
+  - "(?i)\bin essence\b"
+  - "(?i)\bto sum up\b"
+  - '(?i)\boverall,?\s'
+  - "(?i)\bthe key takeaway is\b"
+  - "(?i)\bno fluff\b"
+  - "(?i)\bcut the fluff\b"
+  - "(?i)\bby focusing on\b"
+  - "(?i)\bmoreover\b"
+  - "(?i)\bfurthermore\b"
+  - "(?i)\bit'?s important to note\b"
+  - "(?i)\bthe interesting part is\b"
+  - "(?i)\bthe interesting part was\b"
+---

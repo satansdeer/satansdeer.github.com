@@ -65,7 +65,7 @@ It is important that `keys` would be unique among siblings, so in our example we
 
 ## Using Lists With Components
 
-In previous examples we were using `li` items, but in real React applications you'll often use custom components inside your lists.
+In previous examples we were using `li` items, but in real React applications you'll use custom components inside your lists.
 
 ```jsx
 const todos = [

@@ -184,7 +184,7 @@ const rejectedPromise = Promise.reject("Failure");
 
 ### Promise.all
 
-Accepts an iterable container of promises (usually an array) and returns a new promise that resolves when all promises in container resolve.
+Accepts an iterable container of promises ( an array) and returns a new promise that resolves when all promises in container resolve.
 
 The resolved promise will contain an array of results of passed promises.
 
@@ -206,7 +206,7 @@ Here even though first promise has the longest delay and will be resolved last, 
 
 ### Promise.race
 
-Takes an iterable container of promises (usually an array) and returns a new promise that resolves when the first promise in this container resolves.
+Takes an iterable container of promises ( an array) and returns a new promise that resolves when the first promise in this container resolves.
 
 `Promise.race` will resolve with first resolved promise value.
 

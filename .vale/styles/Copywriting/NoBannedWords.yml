@@ -1,0 +1,42 @@
+---
+extends: existence
+message: "Remove this banned word: '%s'"
+level: error
+tokens:
+  - delve
+  - delves
+  - delving
+  - delved
+  - tapestry
+  - tapestries
+  - leverage
+  - leverages
+  - leveraged
+  - leveraging
+  - utilize
+  - utilizes
+  - utilized
+  - utilizing
+  - robust solution
+  - seamlessly integrated
+  - harness the power of
+  - navigate the complexities
+  - multifaceted
+  - cutting-edge
+  - revolutionary
+  - revolutionize
+  - transformative
+  - game-changing
+  - game changing
+  - empowering
+  - pivotal
+  - testament
+  - nestled
+  - realm
+  - landscape
+  - symphony
+  - beacon
+  - plethora
+  - multitude
+  - indeed
+---

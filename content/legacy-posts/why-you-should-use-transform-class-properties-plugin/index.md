@@ -6,7 +6,7 @@ image: class_level_properties.jpg
 comments: true
 ---
 
-In my [previous post](https://maksimivanov.com/posts/react-modal-window) I used pretty interesting syntax to define class methods for my `Popup` component. I was able to use arrow functions to change the scope of `this` to class level. Hmm, but it's not actually Javascript, so how did I do that?
+In my [previous post](https://maksimivanov.com/posts/react-modal-window) I used interesting syntax to define class methods for my `Popup` component. I was able to use arrow functions to change the scope of `this` to class level. Hmm, but it's not actually Javascript, so how did I do that?
 
 First let's refresh your memory, I'm talking about this code:
 
@@ -79,7 +79,7 @@ More traditional and verbose approach would be to bind `this` manually. You can 
   }
 ```
 
-You have to do this for every function that will use `this` reference, and it's very repetitive.
+You have to do this for every function that will use `this` reference, and it's repetitive.
 
 ## You Can Bind In Render Function
 
@@ -95,11 +95,11 @@ Or by using arrow functions:
 <button onClick={e => this.openPopup(e)}>
 ```
 
-Both of these require additional hassle, look ugly and have performance implications as you basically reallocate the function on every render.
+Both of these require additional hassle, look ugly and have performance implications as you reallocate the function on every render.
 
 ## Summary
 
-This is why you better use class level properties. And by the way there is a [proposal about class fields](https://github.com/tc39/proposal-class-fields) for future JS versions and it's already __Stage 3__. That means that it's very likely to become part of the language.
+This is why you better use class level properties. And by the way there is a [proposal about class fields](https://github.com/tc39/proposal-class-fields) for future JS versions and it's already __Stage 3__. That means that it's likely to become part of the language.
 
 If you are interested in learning new Javascript features (maybe even ones that are not included yet) – make sure to subscribe to my mailing list:
 

@@ -11,11 +11,11 @@ Here is the original formulation: _"If for each object __o1__ of type __S__ ther
 
 Simply speaking: _"Derived class objects must be substitutable for the base class objects. That means objects of the derived class must behave in a manner consistent with the promises made in the base class contract."_
 
-Speaking even more simply: _"Derived class objects should __complement__, not __substitute__ base class behaviour."_
+Speaking even more : _"Derived class objects should __complement__, not __substitute__ base class behaviour."_
 
 ![liskov](/liskov_1.png)
 
-LSP can also be described as a counter-example of [Duck Test](https://en.wikipedia.org/wiki/Duck_test): _"If it looks like a duck, quacks like a duck, but needs batteries – you probably have the wrong abstraction"_
+LSP can also be described as a counter-example of [Duck Test](https://en.wikipedia.org/wiki/Duck_test): _"If it looks like a duck, quacks like a duck, but needs batteries – you have the wrong abstraction"_
 
 ## So, In Real World
 
@@ -23,7 +23,7 @@ If you have some class __Foo__ and a derived class __SubFoo__, then if you chang
 
 ## Let's See The Example
 
-Getting back to ducks. Let's describe a `Duck`. We have very low expectations on it. We only expect it to be able to quack and nothing else.
+Getting back to ducks. Let's describe a `Duck`. We have low expectations on it. We only expect it to be able to quack and nothing else.
 
 ```js
 describe('Duck', function(){
@@ -70,7 +70,7 @@ class MechanicalDuck extends Duck{
 
 Now according to LSP, we should be able to safely change instances of base class to instances of derived class. Let's change our spec a bit and try to use `MechanicalDuck` instead of `Duck`.
 
-Uh-oh, test failed. `MechanicalDuck` needs battery to quack. So `MechanicalDuck` here is clearly not a duck. Even though it's interface might look similar, it's __behaviour__ is totally different.
+Uh-oh, test failed. `MechanicalDuck` needs battery to quack. So `MechanicalDuck` here is clearly not a duck. Even though it's interface might look similar, it's __behaviour__ is different.
 
 ## But What Would Be A Proper Subclass?
 

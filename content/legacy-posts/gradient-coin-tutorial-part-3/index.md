@@ -90,7 +90,7 @@ const getProvider = () => {
 export default getProvider;
 ```
 
-Here we connect directly to our local network. You can also use the provider injected to `window` object by __MetaMask__. We'll just use `HttpProvider` for simplicity.
+Here we connect directly to our local network. You can also use the provider injected to `window` object by __MetaMask__. We'll use `HttpProvider` for simplicity.
 
 Let's use our `getProvider` function. Create `front/src/utils/getGradientContractInstance` with following content:
 
@@ -191,7 +191,7 @@ setup = async () => {
 }
 ```
 
-Create the `setOwner` method we've just used, add the `owner` class property with the initial value of `null` and add it to the `decorate` wrapper:
+Create the `setOwner` method we've used, add the `owner` class property with the initial value of `null` and add it to the `decorate` wrapper:
 
 ```js
 class GradientTokenStore {
@@ -235,7 +235,7 @@ Add new method `fetchTokens` to `GradientTokenStore`:
 
 First, we call our contract method `tokensOf`. It will return an array of token ids, now we need to get associated gradients. We call the `getGradient` method for every id. And in order to wait until all the promises will be resolved - we wrap it into `Promise.all`
 
-After gradients are loaded - we update the `isLoading` attribute, and if `gradients` array is not empty we call the `setTokens` method. `setTokens` is trivial it is just a MobX action that sets the `tokens` attribute:
+After gradients are loaded - we update the `isLoading` attribute, and if `gradients` array is not empty we call the `setTokens` method. `setTokens` is trivial it is a MobX action that sets the `tokens` attribute:
 
 ```js
 setTokens(tokens) {
@@ -243,7 +243,7 @@ setTokens(tokens) {
 }
 ```
 
-The `indexedTokens` just adds an index to every gradient – it's needed for `React`. We are going to show our tokens in a list. And list elements in react should have unique `key` prop:
+The `indexedTokens` adds an index to every gradient – it's needed for `React`. We are going to show our tokens in a list. And list elements in react should have unique `key` prop:
 
 ```js
 indexedTokens(gradients) {

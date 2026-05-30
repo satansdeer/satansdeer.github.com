@@ -19,7 +19,7 @@ First let's generate our boilerplate, run `create-react-app`:
 npx create-react-app react-intl-example
 ```
 
-I'm using `npx` here, but you can just run `create-react-app` if you have it installed globally.
+I'm using `npx` here, but you can run `create-react-app` if you have it installed globally.
 
 ## 2. Install `react-intl`
 
@@ -98,7 +98,7 @@ export default App;
 
 ## 5. Extract Messages
 
-Sometimes this step is performed manually, just by adding id's and with text values to the translation files.
+Sometimes this step is performed manually, by adding id's and with text values to the translation files.
 
 It can, and I think it should, be automated. We'll use `react-intl-cra`. It is a package that is pre-configured to work with `create-react-app` generated applications. Install this script:
 

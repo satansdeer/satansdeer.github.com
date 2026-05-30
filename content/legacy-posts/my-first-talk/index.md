@@ -17,7 +17,7 @@ Here I'd like to share the link to event recording and slides:
 * [Slides](https://t.co/UFs48Ytw5e)
 * [Recorded Video](https://www.facebook.com/0plusx/videos/350180662055043/)
 
-Also this article is basically a text version of the talk - [Do You Need Static Type Checking?](http://localhost:8000/posts/static-type-checking-js/)
+Also this article is a text version of the talk - [Do You Need Static Type Checking?](http://localhost:8000/posts/static-type-checking-js/)
 
 ## Some Images
 

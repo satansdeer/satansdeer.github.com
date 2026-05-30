@@ -55,7 +55,7 @@ Don't copy `props` to `state`. It’s unnecessary (you can use `this.props.color
 
 Next method being executed is `getDerivedStateFromProps`.
 
-This method is used very rarely. The only thing it does - it allows to calculate state based on passed props.
+This method is used . The only thing it does - it allows to calculate state based on passed props.
 
 Next goes `render` method. And it's the only method that is required when you declare `class` based component.
 
@@ -83,7 +83,7 @@ Next big stage is is updating. Methods of this stage get called every time `prop
 
 First method that get's called during this stage is `getDerivedStateFromProps`.
 
-As I already mentioned this method is rarely used.
+As I already mentioned this method is used.
 
 Then `shouldComponentUpdate` is called, if the update was initiated by changed `props` or `state`.
 
@@ -97,7 +97,7 @@ If `shouldComponentUpdate` returned `true` - `render` method is executed.
 
 Next method being called is `getSnapshotBeforeUpdate`. It is being executed right before the changes from Virtual DOM are to be reflected in the DOM.
 
-This method is also used very rarely. Use it if you need to access some data in DOM before it gets overriden.
+This method is also used . Use it if you need to access some data in DOM before it gets overriden.
 
 If you return value from this method it will be passed as third argument to `componentDidUpdate` that is being executed next.
 

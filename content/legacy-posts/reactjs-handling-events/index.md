@@ -5,7 +5,7 @@ categories: React
 image: thumb.jpg
 ---
 
-Handling events in ReactJS is very similar to how it's done on DOM elements. There are a few differences though.
+Handling events in ReactJS is similar to how it's done on DOM elements. There are a few differences though.
 
 Event names are camelCased, so instead of `onclick` you have to use `onClick`:
 

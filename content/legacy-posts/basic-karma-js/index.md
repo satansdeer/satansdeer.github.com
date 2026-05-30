@@ -10,7 +10,7 @@ comments: true
 
 _Psst, do you write Javascript that runs in browser?_ I have something for you, it's&nbsp;called&nbsp;**Karma**, you'll like it.
 
-When you write Javascript code, you have to test it. The same code might work slightly differently in different browsers, so you better test your code at least in most common of them.
+When you write Javascript code, you have to test it. The same code works differently in different browsers, so you better test your code at least in most common of them.
 
 That's what **Karma** is for.
 
@@ -92,7 +92,7 @@ Now **Karma** should say that config file was successfully created.
 
 ## Let's write some specs!
 
-You are probably familiar with the problem we are going to describe with specs. Keep in mind that **Karma** doesn't give you any functionality to write specs. All those `describe`, `it`, `expect` are coming from **Jasmine**, that we are using as testing framework here.
+You are familiar with the problem we are going to describe with specs. Keep in mind that **Karma** doesn't give you any functionality to write specs. All those `describe`, `it`, `expect` are coming from **Jasmine**, that we are using as testing framework here.
 
 Create file `test/fizzbuzz_spec.js` and paste the following contents to it:
 

@@ -7,7 +7,7 @@ image: e2e_with_detox.jpg
 
 When you develop for web you have a lot of options to set up your e2e tests. _Protractor, CasperJS, PhantomJS, DalekJS_ and a lot of others. That's not the case in the world of mobile development. But worry not, I'm going to show you the best way (__in my opinion__) to test your application from __users point of view__.
 
-I think everyone will agree that having bugs is lame. Testing your application manually is also lame: it requires a lot of time, and you can forget to test certain scenarios or just overlook bugs.
+I think everyone will agree that having bugs is lame. Testing your application manually is also lame: it requires a lot of time, and you can forget to test certain scenarios or overlook bugs.
 
 If only you could make robots do your job!
 
@@ -125,7 +125,7 @@ This is super simple usage scenario, but it's enough for our purposes. Let's aut
 
 ## Setup Detox
 
-Even though there are other options like Appium, I highly recommend [Detox](https://github.com/wix/detox). Reasons are totally practical:
+Even though there are other options like Appium, I highly recommend [Detox](https://github.com/wix/detox). Reasons are practical:
 
 * It's faster.
 * It's less flaky.
@@ -218,7 +218,7 @@ Phew, almost there. Let's write our test.
 
 ## First Test
 
-First and the only. Our application is very simple so will be our test.
+First and the only. Our application is simple so will be our test.
 
 ```js
 describe('Example test', () => {

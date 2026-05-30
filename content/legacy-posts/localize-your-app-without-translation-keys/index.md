@@ -5,9 +5,9 @@ categories: Programming
 image: contact-sheet.jpg
 ---
 
-When an app grows past one language, the first instinct is usually to invent a translation key for every visible string.
+When an app grows past one language, the first instinct is to invent a translation key for every visible string.
 
-That sounds organized. It often makes the system harder to maintain.
+That sounds organized. It makes the system harder to maintain.
 
 This post is adapted from [a YouTube video about app localization](https://www.youtube.com/watch?v=mNfEigGQ35o). The short version: for many product strings, the source text itself is a better key than a made-up name like `login_button_text`.
 
@@ -89,7 +89,7 @@ with:
 Sign in
 ```
 
-the translation should probably be reviewed. Not because translators cannot guess what happened, but because wording changes often carry nuance. A "Log in" button, a "Sign in" button, and a "Continue" button can imply different flows in different languages.
+the translation should be reviewed. Not because translators cannot guess what happened, but because wording changes nuance. A "Log in" button, a "Sign in" button, and a "Continue" button can imply different flows in different languages.
 
 Source-text keys make that change visible.
 
@@ -155,4 +155,4 @@ For each string, ask:
 - Could the English source text be the key?
 - Would changing this text mean the translation should be reviewed?
 
-If the answer is yes to the last two questions, a gettext-style source key is probably enough.
+If the answer is yes to the last two questions, a gettext-style source key is enough.

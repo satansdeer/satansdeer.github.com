@@ -59,7 +59,7 @@ Good analogy is HTML, as it is a **declarative** way to describe layout of web p
 
 Second important concept is **component**. In fact it is the central part of ReactJS paradigm.
 
-Basically it's an isolated piece of interface, that can contain some layout, some bound state and some logic. Component can be as simple as just a button or text input, or it can be complex and be composed from many other simpler components.
+Basically it's an isolated piece of interface, that can contain some layout, some bound state and some logic. Component can be as simple as a button or text input, or it can be complex and be composed from many other simpler components.
 
 ![react component structure](/react_component_structure.png)
 

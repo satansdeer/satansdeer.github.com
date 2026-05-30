@@ -1,5 +1,5 @@
 ---
-title: Git Log for Beginners: How to Read Commit History
+title: "Git Log for Beginners: How to Read Commit History"
 date: 2026-05-16T13:22:00.000Z
 categories: Git
 image: commit-history-map.png
@@ -75,7 +75,7 @@ To inspect one commit, use `git show`:
 git show a8c92f1
 ```
 
-You can use the short ID from `git log --oneline`. Git usually only needs enough characters to identify one commit in the repository.
+You can use the short ID from `git log --oneline`. Git only needs enough characters to identify one commit in the repository.
 
 `git show` displays:
 
@@ -205,7 +205,7 @@ This workflow gives you context before you start editing.
 
 `git log` reads from newest to oldest. This is the opposite of how many people expect a history list to work.
 
-### A short hash is usually enough
+### A short hash is enough
 
 You do not need to copy the full commit ID every time. Use the short hash from `git log --oneline` unless Git says it is ambiguous.
 

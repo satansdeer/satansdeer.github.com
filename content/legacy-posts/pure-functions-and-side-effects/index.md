@@ -69,7 +69,7 @@ First of all **pure functions** are easier to read. Pure functions tend to be sm
 
 **Pure functions** are easier to test. Since there are no side effects and the output depends only on the input, your test cases are straightforward.
 
-**Pure functions** are very composable. In functional programming it is very common to compose small pure functions into more complex ones.
+**Pure functions** are composable. In functional programming it is easy to compose small pure functions into more complex ones.
 
 ```js
 const add = (a, b) => a + b;

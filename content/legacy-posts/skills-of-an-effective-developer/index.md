@@ -5,7 +5,7 @@ categories: Random
 image: top_10_skills_thumb.jpg
 ---
 
-When you see the term __effective developer__, you probably imagine a person who does a lot of stuff. If yes, then well, you are wrong.
+When you see the term __effective developer__, you imagine a person who does a lot of stuff. If yes, then well, you are wrong.
 
 To be __effective__ doesn't mean to do more things, it means to do __the right things__.
 
@@ -40,7 +40,7 @@ __Example #2:__
 
 Meet designer Paul, and developer Marco. They work on a website for _CheapBargainMart.com_ online store.
 
-Paul created a design for exit intent pop up. It would capture visitors that didn’t buy anything from the store. He didn’t know that they already had a very similar pop up implemented earlier and he could reuse parts of it.
+Paul created a design for exit intent pop up. It would capture visitors that didn’t buy anything from the store. He didn’t know that they already had a similar pop up implemented earlier and he could reuse parts of it.
 
 Marco knew about that other pop up, but __assumed__ that Paul created the new design from scratch for a reason.
 
@@ -50,9 +50,9 @@ __Example #3:__
 
 Here are two developers, Kathy and Jen. They work on a dating app _Datingtron_. It matches people using their names and star signs.
 
-Kathy is new to the project, but she is really devoted. She get's a task to implement an alternative matching algorithm. What she didn't know, was that they already had a special DSL for matching algorithms.
+Kathy is new to the project, but she is devoted. She get's a task to implement an alternative matching algorithm. What she didn't know, was that they already had a special DSL for matching algorithms.
 
-Jen was aware of that DSL, she actually wrote it. But Jen was very busy working on a different task.
+Jen was aware of that DSL, she actually wrote it. But Jen was busy working on a different task.
 
 After a few days of dedicated work Kathy presents the functionality. Everything works as it should, but Kathy spent a lot more time on that task. Also they now have a part of codebase that is not intact with other code.
 
@@ -114,7 +114,7 @@ This is a crucial skill to write high quality code. If you think that by jumping
 
 __Example:__
 
-Maria is a freelance developer. And she just got her first project.
+Maria is a freelance developer. And she got her first project.
 
 She had a call with her customer and they discussed the project in every detail. The tasks seems clear. Maria gives some estimation to a customer and starts coding.
 
@@ -133,7 +133,7 @@ Maria wants to use `git bisect` to find the exact commit where that error was in
 The deadline is tomorrow, so Maria decides to work all night.
 
 Finally she manages to complete the task. All the functionality works, specs are passing and the customer is happy.
-But did it really have to be so stressful?
+But did it have to be so stressful?
 
 __Conclusion:__
 
@@ -153,9 +153,9 @@ If you lack the presentation skills (even though you are a good programmer) you 
 
 __Example:__
 
-Michael is a super intelligent guy. He has almost super-human abilities in understanding how stuff works. He can create very complex things as well.
+Michael is a super intelligent guy. He has almost super-human abilities in understanding how stuff works. He can create complex things as well.
 
-One day he creates an efficient but very sophisticated script to bundle assets for an application his team is working on.
+One day he creates an efficient but sophisticated script to bundle assets for an application his team is working on.
 
 Now it's time to present how the thing works and how to use it.
 
@@ -179,7 +179,7 @@ __Actionable points:__
 
 ## Documentation
 
-A typical project structure usually gets complex very fast. Not only the code itself, but the infrastructure around the project also tends to become more complicated over time.
+A typical project structure gets complex. Not only the code itself, but the infrastructure around the project also tends to become more complicated over time.
 
 Without proper documentation you are guaranteed to get lost in that digital jungle.
 
@@ -187,13 +187,13 @@ __The story of Leo's onboarding:__
 
 _CoderSoft_ is a market leader in AI and Text Editors development. They created an offensively smart IDE that needs a programmer only to type in settings and then it starts to work on it's own.
 
-This was a very successful year for _CoderSoft_ and they hired a bunch of new developers.
+This was a successful year for _CoderSoft_ and they hired a bunch of new developers.
 
-Leo is an AI specialist. He's very proud to join _CoderSoft_ and he's eager to start working and providing value to the company.
+Leo is an AI specialist. He's proud to join _CoderSoft_ and he's eager to start working and providing value to the company.
 
 His first day he opens the documentation and starts wandering around, trying to understand how to build the project locally.
 
-The documentation is very messy, by the most part it describes project structure. Some parts contain instructions for troubleshooting if the project crashed. And no description on how to build the project whatsoever.
+The documentation is messy, by the most part it describes project structure. Some parts contain instructions for troubleshooting if the project crashed. And no description on how to build the project whatsoever.
 
 Leo starts to investigate. OK, there seem to be some dependencies, let's install them first. Oh, those turned out to be written in _CoderSoft_. Let's ask some other developer how to install them.
 
@@ -215,33 +215,33 @@ __Actionable items:__
 
 ## Testing
 
-You can't expect to have a sustainable codebase without having a good test coverage. This is just impossible.
+You can't expect to have a sustainable codebase without having a good test coverage. This is impossible.
 
 __Example:__
 
 _MindBallet_ is a company specializing on educational software. They are developing a platform for interactive courses.
-Eventually the platform becomes very complicated. It is now very hard to add new functionality. Every time you make a change in one place you end up with a bug in another.
+Eventually the platform becomes complicated. It is hard to add new functionality. Every time you make a change in one place you end up with a bug in another.
 
 So Milton the lead developer decides to refactor the codebase.
 
 The team starts to work, but the more they refactor – the more new bugs they introduce.
 
-After a few months of exhausting "refactoring", guys end up with completely rewritten platform. Same level of complexity, same amount of bugs. Even though the code is new it already feels like legacy.
+After a few months of exhausting "refactoring", guys end up with rewritten platform. Same level of complexity, same amount of bugs. Even though the code is new it already feels like legacy.
 
 __Conclusion:__
 
-The team forgot about tests. Refactoring is impossible by definition without them. When you refactor you only change the code organization, not the functionality. So actually it wasn't refactoring at all, the team just rewrote the whole thing.
+The team forgot about tests. Refactoring is impossible by definition without them. When you refactor you only change the code organization, not the functionality. So actually it wasn't refactoring at all, the team rewrote the whole thing.
 
 __Actionable items:__
 * Start writing tests. This is a requirement when you develop new functionality. Writing tests before functionality is even a better idea.
 * Cover the module with tests before refactoring it. This is the only way you can guarantee that you won't change the functionality.
-* Red, green, refactor. Make sure you've seen tests failing. A test that never was red is very likely not testing anything.
+* Red, green, refactor. Make sure you've seen tests failing. A test that never was red is likely not testing anything.
 
 ## Git
 
 ![github](/github_fkc.png)
 
-It is the most popular VCS in modern web development community. It's not just the tool to save your development progress. It's an instrument of team collaboration. Make sure to master it.
+It is the most popular VCS in modern web development community. It's not the tool to save your development progress. It's an instrument of team collaboration. Make sure to master it.
 
 Some software or programming languages let you to shoot yourself in a foot. Well, git lets you to blow of legs of the whole team. It will allow to get all the legs back, but you still better know what you are doing.
 
@@ -249,7 +249,7 @@ __Example:__
 
 Jim and Mike worked together on the same webpage. Everything was fine until one day Jim decided to rebase their branch with `master` while Mike was still adding new functionality.
 
-Jim successfully resolved conflicts with the base branch and did `git push -f` just after Mike pushed all the commits he did today.
+Jim successfully resolved conflicts with the base branch and did `git push -f` after Mike pushed all the commits he did today.
 
 Mike informed the team that he finished adding new functionality. Jim saw his message, merged their branch to `master` and deleted it.
 
@@ -272,6 +272,6 @@ Communicate with your teammates, don't hurt other peoples feelings, plan your wo
 
 Learn how to write automated tests and make sure to master git.
 
-Those skills are crucial for effective collaboration. People often overlook them focusing on programming itself.
+Those skills are crucial for effective collaboration. People overlook them focusing on programming itself.
 
 <sign-up-form></sign-up-form>
