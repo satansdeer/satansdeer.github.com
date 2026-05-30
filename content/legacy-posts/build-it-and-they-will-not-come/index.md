@@ -34,7 +34,7 @@ That is the real shape of the problem. You are not only competing with existing 
 
 In the first phase, progress feels concrete.
 
-You add features. You fix bugs. You polish the UI. You record a demo. You ship another version. Every day produces something visible.
+You add features, fix bugs, polish the UI, record a demo, and ship another version. Every day produces something visible.
 
 Then you reach the second phase:
 

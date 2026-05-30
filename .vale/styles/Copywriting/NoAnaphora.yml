@@ -6,6 +6,7 @@ scope: text
 raw:
   - 'They may[^.]*[.] They may[^.]*[.] They may'
   - 'They \w+[^.]*[.] They \w+[^.]*[.] They \w+'
+  - 'You \w+[^.]*[.] You \w+[^.]*[.] You \w+'
   - 'You can[^.]*[.] You can[^.]*[.] You can'
   - 'You will[^.]*[.] You will[^.]*[.] You will'
   - 'It is[^.]*[.] It is[^.]*[.] It is'
