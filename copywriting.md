@@ -38,9 +38,12 @@ A standardized framework for high-quality, human-sounding copywriting that avoid
 - ✅ Instead: Make the point directly with specific details
 
 **Anaphora (Repetitive Openings)**
-- ❌ Three+ consecutive sentences starting the same way
+- ❌ Three+ consecutive sentences or clauses starting the same way
+- ❌ "They may... They may... They may..."
+- ❌ "You can... You can... You can..."
 - ❌ "This allows... This enables... This helps..."
-- ✅ Instead: Vary sentence structure naturally
+- ✅ Instead: Vary sentence structure, combine into a list, or use a single sentence with commas
+- ✅ "They might like your posts, leave feedback, share encouragement." not "They may like your posts. They may give feedback. They may even share encouragement."
 
 **Double Negations**
 - ❌ "Don't underestimate the power of..."

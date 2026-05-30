@@ -63,7 +63,7 @@ Date:   Sat May 16 13:22:00 2026 +0000
     Add account settings page
 ```
 
-The long commit ID is useful when you need an exact reference. The author and date explain when the commit was created and who authored it. The message gives the human reason for the snapshot.
+The long commit ID is useful when you need an exact reference. The author and date explain when the commit was created and by whom. The message gives the human reason for the snapshot.
 
 If Git opens the log in a pager, press `q` to exit.
 

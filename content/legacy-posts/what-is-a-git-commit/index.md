@@ -9,7 +9,7 @@ A Git commit is a saved snapshot of your project.
 
 That is the simplest useful definition. When you run `git commit`, Git takes the changes you prepared in the [staging area](/posts/git-staging-area-explained/) and records them as a new point in the project history.
 
-You can come back to that point later. You can compare it with another point. You can share it with other developers. You can use it to understand why the project changed.
+You can come back to that point later, compare it with another point, share it with other developers, or use it to understand why the project changed.
 
 ## What a Commit Contains
 

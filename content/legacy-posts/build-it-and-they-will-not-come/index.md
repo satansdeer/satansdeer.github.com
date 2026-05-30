@@ -89,7 +89,7 @@ Those conversations teach you more than a cold launch page.
 
 Builder communities can distort your sense of demand.
 
-Other founders understand the struggle. They may like your posts. They may give feedback. They may even share encouragement.
+Other founders will engage. They might like your posts, leave feedback, share encouragement.
 
 That does not always mean they are your buyers.
 

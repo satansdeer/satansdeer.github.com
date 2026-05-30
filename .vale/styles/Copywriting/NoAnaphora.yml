@@ -1,11 +1,15 @@
 ---
 extends: existence
-message: "Avoid repetitive sentence openings (anaphora)."
+message: "Three or more consecutive clauses start with the same words. Vary the structure or combine into a list."
 level: error
-tokens:
-  - "(?m)^The first\b.*\n^The second\b"
-  - "(?m)^The first\b.*\n^The third\b"
-  - "(?m)^This allows\b.*\n^This enables\b"
-  - "(?m)^This enables\b.*\n^This helps\b"
-  - "(?m)^This allows\b.*\n^This helps\b"
+scope: text
+raw:
+  - 'They may[^.]*[.] They may[^.]*[.] They may'
+  - 'They \w+[^.]*[.] They \w+[^.]*[.] They \w+'
+  - 'You can[^.]*[.] You can[^.]*[.] You can'
+  - 'You will[^.]*[.] You will[^.]*[.] You will'
+  - 'It is[^.]*[.] It is[^.]*[.] It is'
+  - 'This \w+[^.]*[.] This \w+[^.]*[.] This \w+'
+  - 'We \w+[^.]*[.] We \w+[^.]*[.] We \w+'
+  - 'Do not[^.]*[.] Do not[^.]*[.] Do not'
 ---
