@@ -54,7 +54,7 @@ User acquisition is a system of repeated attempts:
 - improve the product from what you hear
 - repeat the loop long enough to learn something
 
-See how none of these require a finished product. Or even a product at all, except for "improve the product from what you hear."
+See how none of these require a finished product. Or even a product at all, except for the "improve the product" step.
 
 If you wait until after the product is built, you start that loop late.
 
