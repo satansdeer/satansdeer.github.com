@@ -46,13 +46,15 @@ That problem is less comfortable because it does not behave like a backlog item.
 
 User acquisition is a system of repeated attempts:
 
-- finding where potential users already spend time,
-- learning the words they use for the problem,
-- testing messages,
-- replying to real conversations,
-- making useful content,
-- improving the product from what you hear,
-- repeating the loop long enough to learn something.
+- find where potential users already spend time
+- learn the words they use for the problem
+- test messages
+- reply to real conversations
+- make useful content
+- improve the product from what you hear
+- repeat the loop long enough to learn something
+
+See how none of these require a finished product. Or even a product at all, except for "improve the product from what you hear."
 
 If you wait until after the product is built, you start that loop late.
 
